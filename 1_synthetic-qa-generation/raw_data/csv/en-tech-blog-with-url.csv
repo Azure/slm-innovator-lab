@@ -1,0 +1,180 @@
+﻿context,image_info
+"Released by Microsoft in mid-June 2024 under an MIT license, Florence-2 is less than 1B in size (0.23B for the base model and 0.77B for the large model) and is efficient for vision and vision-language tasks (OCR, captioning, object detection, instance segmentation, and so on).
+
+All of Florence-2's weights are publicly available, so you can fine-tune it quickly and easily. However, many people struggle with fine-tuning the latest SLM/multi-modal models, including Florence-2, in Azure ML. So, we want to walk through a step-by-step guide on how to quickly and easily train and serve from end-to-end in Azure ML.
+
+## **1. Training preparation**
+
+---
+
+### Preliminaries: Azure ML Python SDK v2
+
+Azure ML Python SDK v2 is easy to use once you get the hang of it. When an `MLClient` instance is created to manipulate AzureML, the operation corresponding to the asset is executed asynchronously through the `create_or_update` function. Please see code snippets below.
+
+```python
+ml_client = MLClient.from_config(credential)
+
+### 1. Training phase
+# Create an environment asset
+ml_client.environments.create_or_update(env_docker_image)
+
+# Create a data asset
+ml_client.data.create_or_update(data)
+
+# Create a compute cluster
+ml_client.compute.begin_create_or_update(compute)
+
+# Start a training job
+ml_client.jobs.create_or_update(job)
+
+### 2. Serving phase
+# Create a model asset
+ml_client.models.create_or_update(run_model)
+
+# Create an endpoint
+ml_client.begin_create_or_update(endpoint)
+
+# Create a deployment
+ml_client.online_endpoints.begin_create_or_update(endpoint)  
+```
+
+### Data asset
+
+Model training/validation datasets can be uploaded directly locally, or registered as your Azure ML workspace Data asset. Data asset enables versioning of your data, allowing you to track changes to your dataset and revert to previous versions when necessary. This maintains data quality and ensures reproducibility of data analysis.
+
+Data assets are created by referencing data files or directories stored in Datastore. Datastore  represents a location that stores external data and can be connected to various Azure data storage services such as Azure Blob Storage, Azure File Share, Azure Data Lake Storage, and OneLake. When you create an Azure ML workspace, four datastores (`workspaceworkingdirectory`, `workspaceartifactstore`, `workspacefilestore`, `workspaceblobstore`) are automatically created by default. Among these, `workspaceblobstore` is Azure Blob Storage, which is used by default when storing model training data or large files.
+
+### Environment asset
+
+Azure ML defines Environment Asset in which your code will run. We can use the built-in environment or build a custom environment using Conda specification or Docker image. The pros and cons of Conda and Docker are as follows.
+
+**Conda environment**
+
+- **Advantages**
+    - Simple environment setup: The Conda environment file (`conda.yml`) is mainly used to specify Python packages and Conda packages. The file format is simple and easy to understand, and is suitable for specifying package and version information.
+    - Quick setup: The Conda environment automatically manages dependencies and resolves conflicts, so setup is relatively quick and easy.
+    - Lightweight environment: Conda environments can be lighter than Docker images because they only install specific packages.
+- **Disadvantages**
+    - Limited flexibility: Because the Conda environment focuses on Python packages and Conda packages, it is difficult to handle more complex system-level dependencies.
+    - Portability limitations: The Conda environment consists primarily of Python and Conda packages, making it difficult to include other languages or more complex system components.
+
+**Docker environment**
+
+- **Advantages**
+    - High flexibility: Docker allows you to define a complete environment, including all necessary packages and tools, starting at the operating system level. May contain system dependencies, custom settings, non-Python packages, etc.
+    - Portability: Docker images run the same everywhere, ensuring environment consistency. This significantly improves reproducibility and portability.
+    - Complex environment setup: With Docker, you can set up an environment containing complex applications or multiple services.
+- **Disadvantages**
+    - Complex setup: Building and managing Docker images can be more complex than setting up a Conda environment. You need to write a `Dockerfile` and include all required dependencies.
+    - Build time: Building a Docker image for the first time can take a long time, especially if the dependency installation process is complex.
+
+In Azure ML, it is important to choose the appropriate method based on the requirements of your project. For simple Python projects, the Conda environment may be sufficient, but if you need complex system dependencies, the Docker environment may be more appropriate. The easiest and fastest way to create a custom Docker image is to make minor modifications to the curated environment. Below is an example.
+
+Select `acft-hf-nlp-gpu` in the cured environment tab. (Of course, you can choose a different environment.)
+
+[image]
+
+Copy the Dockerfile and requirements.txt and modify them as needed.
+The code snippet below is the result of modifying the `Dockerfile`. 
+
+[image]
+
+```docker
+FROM mcr.microsoft.com/aifx/acpt/stable-ubuntu2004-cu118-py38-torch222:biweekly.202406.2
+
+USER root
+
+RUN apt-get update && apt-get -y upgrade
+RUN pip install --upgrade pip
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt --no-cache-dir
+
+RUN python -m nltk.downloader punkt
+RUN MAX_JOBS=4 pip install flash-attn==2.5.9.post1 --no-build-isolation
+```","{'Check out the Curated Environment in the Azure ML portal': 'https://techcommunity.microsoft.com/t5/image/serverpage/image-id/596751iEF00A9377D1B579A/image-dimensions/488x519?v=v2', 'Copy Dockerfile and requirements.txt published in Curated Environment': 'https://techcommunity.microsoft.com/t5/image/serverpage/image-id/596752i9766FE4F453E65E3/image-size/large?v=v2&amp;px=999'}"
+"## **2. Training**
+
+---
+
+### Training Script with MLflow
+
+Some people may think that they need to make significant changes to their existing training scripts or that the Mlflow toolkit is mandatory, but this is not true. If you are comfortable with your existing training environment, you don't need to adopt Mlflow. Nevertheless, Mlflow is a toolkit that makes training and deploying models on Azure ML very convenient, so we are going to briefly explain it in this post.
+
+In the your training script, Use `mlflow.start_run()` to start an experiment in MLflow, and `mlflow.end_run()` to end the experiment when it is finished. Wrapping it in `with` syntax eliminates the need to explicitly call end_run(). You can perform mlflow logging inside an mlflow block, our training script uses `mlflow.log_params()`, `mlflow.log_metric()`, and `mlflow.log_image()`. For more information, please see [here](https://learn.microsoft.com/azure/machine-learning/how-to-log-view-metrics).
+
+```python
+
+```
+
+**[Caution]**
+Florence-2 is a recently released model and does not support mlflow.transformers.log_model() as of July 2, 2024, when this article is being written! Therefore, you must save the model with the traditional `save_pretrained()`.
+
+Currently, when saving with `save_pretrained()`, additional dependency codes required for model inference are not saved together. So, you need to force it to be saved. See below for a code snippet reflecting these two caveats:
+
+```python
+model.save_pretrained(model_dir)
+processor.save_pretrained(model_dir)
+
+## Should include configuration_florence2.py, modeling_florence2.py, and processing_florence2.py
+dependencies_dir = ""dependencies""
+shutil.copytree(dependencies_dir, model_dir, dirs_exist_ok=True)
+```
+
+### Create a Compute Cluster and Training Job
+
+Once you have finished writing and debugging the training script, you can create a training job. As a baseline, you can use `Standard_NC24ads_A100_v4` with one NVIDIA A100 GPU. Provisioning a LowPriority VM costs just $0.74 per hour in the US East region in July 2024.
+
+The `command()` function is one of the Azure ML main functions used to define and run training tasks. This function specifies the training script and its required environment settings, and allows the job to be run on Azure ML's compute resources.
+
+```python
+from azure.ai.ml import command
+from azure.ai.ml import Input
+from azure.ai.ml.entities import ResourceConfiguration
+
+job = command(
+    inputs=dict(
+        #train_dir=Input(type=""uri_folder"", path=DATA_DIR), # Get data from local path
+        train_dir=Input(path=f""{AZURE_DATA_NAME}@latest""),  # Get data from Data asset
+        epoch=d['train']['epoch'],
+        train_batch_size=d['train']['train_batch_size'],
+        eval_batch_size=d['train']['eval_batch_size'],  
+        model_dir=d['train']['model_dir']
+    ),
+    code=""./src_train"",  # local path where the code is stored
+    compute=azure_compute_cluster_name,
+    command=""python train_mlflow.py --train_dir ${{inputs.train_dir}} --epochs ${{inputs.epoch}} --train_batch_size ${{inputs.train_batch_size}} --eval_batch_size ${{inputs.eval_batch_size}} --model_dir ${{inputs.model_dir}}"",
+    #environment=""azureml://registries/azureml/environments/acft-hf-nlp-gpu/versions/61"", # Use built-in Environment asset
+    environment=f""{azure_env_name}@latest"",
+    distribution={
+        ""type"": ""PyTorch"",
+        ""process_count_per_instance"": 1, # For multi-gpu training set this to an integer value more than 1
+    },
+)
+returned_job = ml_client.jobs.create_or_update(job)
+ml_client.jobs.stream(returned_job.name)
+```
+
+### Check your Training job
+
+Check whether model training is progressing normally through Jobs Asset.
+
+1. Overview tab allows you to view your overall training history. Params are parameters registered in `mlflow.log_params()` in our training script.
+
+[image] 
+
+2. Metrics tab allows you to view the metrics registered with `mlflow.log_metric()` at a glance.
+
+[image] 
+
+3. Images tab allows you to view images saved with mlflow.log_image(). We recommend that you save the inference results as an image to check whether the model training is progressing well.
+
+[image] 
+
+4. Outputs + logs tab checks and monitors your model training infrastructure, containers, and code for issues.
+
+[image] 
+
+`system_logs` folder records all key activities and events related to the Training cluster, data assets, hosted tools, etc.
+
+`user_logs` folder mainly plays an important role in storing logs and other files created by users within the training script, increasing transparency of the training process and facilitating debugging and monitoring. This allows users to see a detailed record of the training process and identify and resolve issues when necessary.","{'Check training overview in the Azure ML portal': 'https://techcommunity.microsoft.com/t5/image/serverpage/image-id/596754i9D13372D3BFFB861/image-size/large?v=v2&amp;px=999', 'Check metrics during training in the Azure ML portal': 'https://techcommunity.microsoft.com/t5/image/serverpage/image-id/596756i13BD0C0B15EA5B90/image-size/large?v=v2&amp;px=999', 'Check images saved for debugging during training': 'https://techcommunity.microsoft.com/t5/image/serverpage/image-id/596758iB113C7B3A72BC4C0/image-size/large?v=v2&amp;px=999', 'Check model artifacts and logs during training': 'https://techcommunity.microsoft.com/t5/image/serverpage/image-id/596759i16E8CAC6B7EA04EF/image-size/large?v=v2&px=999'}"
