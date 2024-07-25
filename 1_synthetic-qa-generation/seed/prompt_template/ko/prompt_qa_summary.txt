@@ -5,7 +5,7 @@ Don't begin summary with these phrases: This article, This document, This page, 
 Also, extract a Title from Text
 Output [Q] must be: Write a summary in X words for: <Title>
 Output [A] must be the summary
-Write in Korean Language.
+Language must be Korean
 <|separator|>
 
 Text:

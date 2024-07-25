@@ -3,7 +3,7 @@ Both Questions and Answers MUST BE extracted from given Text
 Answer must be long but not more than 3-4 sentences
 Question should be as detailed as possible from Text
 Output must always have the provided number of QnAs
-Write in Korean Language.
+Language must be Korean
 <|separator|>
 
 Text:

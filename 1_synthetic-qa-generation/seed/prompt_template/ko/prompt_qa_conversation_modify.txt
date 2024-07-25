@@ -1,7 +1,7 @@
 Make the questions short by replacing repeated ENTITIES with pronouns like it, they, she, etc.
 Replace singular ENTITY with singular pronouns like "it" and plural ENTITY with plural pronouns like "they"
 Keep the first question mentioning an ENTITY intact - change only the rest
-Write in Korean Language.
+Language must be Korean 
 <|separator|>
 
 Given:

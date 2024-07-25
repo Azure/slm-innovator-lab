@@ -4,7 +4,7 @@ Question should be about TOPIC REFINER from Text
 TOPIC REFINER should be mentioned in both QnA without using a pronoun
 Only 1-2 sentences should be used to create one QnA
 Conversation must always have the provided number of QnAs
-Write in Korean Language.
+Language must be Korean
 <|separator|>
 
 Text:

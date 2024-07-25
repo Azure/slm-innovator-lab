@@ -7,7 +7,7 @@ Answer must not be more than 5 words
 Answer must be picked from Text as is
 Question should be as descriptive as possible and must include as much context as possible from Text
 Output must always have the provided number of QnAs
-Write in Korean Language.
+Language must be Korean
 <|separator|>
 
 Text:
