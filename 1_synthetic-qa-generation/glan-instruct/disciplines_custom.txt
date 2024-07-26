@@ -3,7 +3,6 @@ Quantum Mechanics
 Thermodynamics
 Electromagnetism
 Optics
-Acoustics
 Organic Chemistry
 Inorganic Chemistry
 Physical Chemistry
@@ -12,9 +11,8 @@ Biochemistry
 Molecular Biology
 Genetics
 Ecology
+Evolutionary Biology
 Microbiology
-Botany
-Zoology
 Geology
 Meteorology
 Oceanography
@@ -30,15 +28,8 @@ Calculus
 Statistics
 Geometry
 Number Theory
-Topology
 Artificial Intelligence
-Machine Learning
-Cybersecurity
 Software Engineering
+Cybersecurity
 Data Science
 Human-Computer Interaction
-Conservation Biology
-Environmental Chemistry
-Climate Science
-Environmental Policy
-Sustainability Science
