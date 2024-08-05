@@ -26,7 +26,7 @@ markdown: kramdown
 theme: just-the-docs
 plugins:
   - jekyll-feed
-  
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -39,6 +39,7 @@ exclude:
   - README.md
   - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
   - 2_slm-fine-tuning-mlstudio/phi3/
+  - vendor
 
 # By default, all Capital letters come before all lowercase letters; 
 # you can add nav_sort: case_insensitive in the configuration file to ignore the case. 
