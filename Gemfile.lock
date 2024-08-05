@@ -296,7 +296,7 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-sitemap
   jemoji
-  just-the-docs
+  just-the-docs (= 0.8.2)
   minima (~> 2.0)
   tzinfo (~> 1.2)
   tzinfo-data
