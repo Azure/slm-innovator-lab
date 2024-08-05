@@ -169,3 +169,5 @@ cython_debug/
 **/._.DS_Store
 
 .ipynb_checkpoints/
+outputs/
+_site/
