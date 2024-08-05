@@ -15,7 +15,7 @@ gem "jekyll-default-layout"
 
 gem "just-the-docs"
 
-gem "jekyll", "~> 4.2"
+gem "jekyll"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"

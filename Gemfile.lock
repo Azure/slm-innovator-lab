@@ -288,7 +288,9 @@ PLATFORMS
 DEPENDENCIES
   faraday-retry (~> 2.2)
   github-pages
+  jekyll
   jekyll-avatar
+  jekyll-default-layout
   jekyll-feed (~> 0.6)
   jekyll-mentions
   jekyll-redirect-from

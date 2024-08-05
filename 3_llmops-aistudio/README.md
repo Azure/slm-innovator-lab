@@ -10,11 +10,17 @@ In this lab, you will learn how to set up, test, deploy, evaluate and monitor yo
 
 **Scenario 2: Basic LLMOps for your first gen AI application**
 
-**Scenario 3: Evaluate your all using Prompt Flow to improve the quality of service**
+**Scenario 3: Evaluate your models using Prompt Flow to improve the quality of service**
 
-**Scenario 4: Attach Azure API management and Azure Monitor for reliability and monitoring**
+**Scenario 4: Responsible AI, Content Safety with Azure AI studio before production** ​
 
-**Scenario 5: Responsible AI, Content Safety with Azure AI studio before production** ​
+**Scenario 5: Attach Azure API management and Azure Monitor for reliability and monitoring**
+
+[//]: # (**Scenario 6: Service Benchmark and optimization**)
+
+**Bonus track: Prompt flow Best Practices**
+
+[//]: # (**TODO: Automately translate all contents in Korean using Jekyll**)
 
 [//]: # (**Bonus track: Create Local LangChain project using a CLI version of​ Prompt flow**)
 
