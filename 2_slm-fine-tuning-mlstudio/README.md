@@ -4,7 +4,7 @@ This hands-on walks you through fine-tuning an open source LLM on Azure and serv
 
 ## Use cases
 
-- ### [Phi-3 Fine-tuning](phi3)
+- ### [Phi-3/Phi-3.5 Fine-tuning](phi3)
 
 - ### [Florence-2 Fine-tuning on DoCVQA](florence2-VQA)
 
@@ -17,7 +17,7 @@ This hands-on walks you through fine-tuning an open source LLM on Azure and serv
     pip install -r requirements.txt
     ```
 3. Choose the model to use for your desired use case.
-    - [Phi-3](phi3)
+    - [Phi-3, Phi-3.5](phi3)
         - [Option 1. MLflow] Run `1_training_mlflow.ipynb` and `2_serving.ipynb`, respectively.
         - [Option 2. Custom] Run `1_training_custom.ipynb` and `2_serving.ipynb`, respectively.
         - *(Optional)* If you are interested in LLM dataset preprocessing, see the hands-ons in `phi3/dataset-preparation` folder.
@@ -29,9 +29,13 @@ This hands-on walks you through fine-tuning an open source LLM on Azure and serv
 
 - [Azure Machine Learning examples](https://github.com/Azure/azureml-examples)
 
-### Phi-3
+### Phi-3/Phi-3.5
 - [Finetune Small Language Model (SLM) Phi-3 using Azure ML](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/finetune-small-language-model-slm-phi-3-using-azure-machine/ba-p/4130399)
 - [microsoft/Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct): This is Microsoft's official Phi-3-mini-4k-instruct model.
+- [microsoft/Phi-3-mini-128k-instruct](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct): This is Microsoft's official Phi-3-mini-128k-instruct model.
+- [microsoft/Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct): This is Microsoft's official Phi-3.5-mini-instruct model.
+- [microsoft/Phi-3.5-MoE-instruct](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct): This is Microsoft's official Phi-3.5-MoE-instruct model.
+- [Korean language proficiency evaluation for LLM/SLM models using KMMLU, CLIcK, and HAE-RAE dataset](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset)
 - [daekeun-ml/Phi-3-medium-4k-instruct-ko-poc-v0.1](https://huggingface.co/daekeun-ml/Phi-3-medium-4k-instruct-ko-poc-v0.1)
 
 ### Florence-2

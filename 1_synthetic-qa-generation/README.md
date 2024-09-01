@@ -69,7 +69,7 @@ If you want to use the Unstructured toolkit for processing a complex PDF, please
 Please start a new project by connecting to Codespace Project. The environment required for hands-on is automatically configured through devcontainer, so you only need to run a Jupyter notebook.
 
 ### Option 3. Your local PC
-Please start by installing the required packages on your local PC with `pip install -r requirements.txt`
+Please start by installing the required packages on your local PC with `cd .. && pip install -r requirements.txt`
 
 ## References
 - Evolve-Instruct: https://arxiv.org/pdf/2304.12244
