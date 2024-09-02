@@ -72,11 +72,6 @@ def apply_chat_template(
     return example
 
 def main(args):
-    
-    # MLflow experiment
-    # mlflow_tracking_uri = ml_client.workspaces.get(ml_client.workspace_name).mlflow_tracking_uri    
-    # mlflow.set_tracking_uri(mlflow_tracking_uri)
-    #mlflow.set_experiment(args.mlflow_experiment_name)
 
     ###################
     # Hyper-parameters
@@ -181,18 +176,7 @@ def main(args):
         desc="Applying chat template to test_sft",
     )
     
-    
-
     with mlflow.start_run() as run:     
-    
-#         mlflow.log_params({
-#             "epochs": epochs,
-#             "train_batch_size": args.train_batch_size,
-#             "eval_batch_size": args.eval_batch_size,
-#             "seed": args.seed,
-#             "lr_scheduler_type": args.lr_scheduler_type,        
-#             "grad_accum_steps": args.grad_accum_steps, 
-#         })
         
         log_params_from_dict(training_config, mlflow)
         log_params_from_dict(peft_config, mlflow)
@@ -241,14 +225,7 @@ def main(args):
                 
         trainer.log_metrics("train", metrics)
         trainer.save_metrics("train", metrics)
-        trainer.save_state()        
-
-        # model_info = mlflow.transformers.log_model(
-        #     transformers_model={"model": trainer.model, "tokenizer": tokenizer},
-        #     #prompt_template=prompt_template,
-        #     #signature=signature,
-        #     artifact_path="model",  # This is a relative path to save model files within MLflow run
-        # )
+        trainer.save_state()
         
         #############
         # Evaluation
