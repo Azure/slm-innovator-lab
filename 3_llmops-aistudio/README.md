@@ -8,29 +8,26 @@ In this lab, you will learn how to set up, test, deploy, evaluate and monitor yo
 
 **Scenario 1: Set Up Azure AI Studio for LLMOps**
 
-**Scenario 2: Basic LLMOps for your first gen AI application**
+**Scenario 2: Basic LLMOps for your first gen AI app with Promptflow**
 
 **Scenario 3: Evaluate your models using Prompt Flow to improve the quality of service**
 
 **Scenario 4: Responsible AI, Content Safety with Azure AI studio before production** ​
 
-**Scenario 5: Attach Azure API management and Azure Monitor for reliability and monitoring**
+[//]: # (**Scenario 5: Attach Azure API management and Azure Monitor for reliability and monitoring TBD**)
 
 [//]: # (**Scenario 6: Service Benchmark and optimization**)
 
-**Bonus track: Prompt flow Best Practices**
+[//]: # (**Bonus track: Prompt flow Best Practices**)
 
 [//]: # (**TODO: Automately translate all contents in Korean using Jekyll**)
 
 [//]: # (**Bonus track: Create Local LangChain project using a CLI version of​ Prompt flow**)
 
 ## Reference
-
-[LLMOps with prompt flow and GitHub](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/)
-
-[Azure DevOps CI/CD execution for Prompt flows](https://github.com/microsoft/llmops-promptflow-template/blob/main/docs/)
-
 [LLMOps Prompt flow template github](https://github.com/microsoft/llmops-promptflow-template) 
+
+[GenAIOps github](https://github.com/Azure/GenAIOps)
 
 https://github.com/just-the-docs/just-the-docs?tab=readme-ov-file#user-content-fn-2-6204df4f8c0dad5766232d4558ca98cf 
 
