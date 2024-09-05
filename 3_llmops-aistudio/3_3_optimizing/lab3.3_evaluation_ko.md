@@ -1,16 +1,12 @@
 ---
 layout: default
 title: Lab3.3 Evaluate your models using Prompt Flow to keep optimizing
-permalink: /3_3_optimizing/
 ---
 
 # Lab3.3 Evaluate your models using Prompt Flow to keep optimizing
 
-## Overview
-In this lab, you will explore your model in Azure AI studio and conduct A/B testing with your LLM nodes to evaluate the performance of prompt and LLM. You will learn how to create your variants which can help you test the model’s behavior under different conditions, such as different wording, formatting, context, temperature, or top-k, compare and find the best prompt and configuration that maximizes the model’s accuracy, diversity, or coherence.
-
-![LLMOps](images/3.3_evaluation_sample.png)
-
+![LLMOps](images/evaluation-monitor-flow.png)
+[Evaluating and monitoring of generative AI applications](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-approach-gen-ai#evaluating-and-monitoring-of-generative-ai-applications)
 
 ### Prerequisites
 
@@ -28,13 +24,29 @@ In this lab, you will explore your model in Azure AI studio and conduct A/B test
 - 1️⃣ Manual evaluations to review outputs of the selected model
 - 2️⃣ Conduct A/B testing with your LLM variants
 
-- 3️⃣ Create QnA Relevance Evaluation flow with variants
-- 4️⃣ Automated evaluation for Korean and English math questions
+- 3️⃣ Create Automated Evaluation with variants
+
+- 4️⃣ Create Custom Evaluation flow on Prompt flow
 
 ### 1️⃣ Manual evaluations to review outputs of the selected model 
-1. Go to the Azure AI Studio and select the model you want to evaluate.
-2. Click on the "Evaluation" tab to create an manual evaluation flow.
-3. Create a manual evaluation flow with the selected model.
+1. Go to the Azure AI Studio > Tools > Evaluation
+2. Click on the "Manual Evaluation" tab to create an manual evaluation to assess and compare AI application performance.
+![new manual evaluation](images/new_manual_evaluation.jpg)
+
+3. Select model you are going to test on the configurations and update the system message below. 
+```
+You are a math assistant, and you are going to read the context which includes simple math questions and answer with numbers only. 
+```
+4. Click the import test data button to import the test data. You can add your data as well if you want to test the model with the context.
+
+5. Select the dataset you want to test on the model.
+![select dataset](images/import_test_data_select_dataset.jpg)
+
+6. Map the test data. Select question as the input and answer as the output. Click the add button to import the test data.
+![map data](images/import_test_data_map_data.jpg)
+
+7. Click the Run button to test the model with the test data. After the test is done, you can see and export the results, and you can also compare the results with the expected answers. Use thumbs up or down to evaluate the model's performance. As this result is for the manual evaluation, you can handover the result dataset to automated evaluation to evaluate the model in bulk data.
+![run test](images/manual_eval_run_test.jpg)
 
 ### 2️⃣ Conduct A/B testing with your LLM variants
 Create a new chat flow with variants 
@@ -58,7 +70,7 @@ inputs:
   question:
     type: string
     is_chat_input: true
-  contenxt:
+  context:
     type: string
     default: >
       The Alpine Explorer Tent boasts a detachable divider for privacy, 
@@ -87,7 +99,7 @@ nodes:
     temperature: 0.7
     top_p: 1
     max_tokens: 512
-    context: ${inputs.contenxt}
+    context: ${inputs.context}
     firstName: ${inputs.firstName}
     question: ${inputs.question}
   api: chat
@@ -170,13 +182,30 @@ user:
 12. Now you can test the variants on the chat window setting one of variants as default. Click the Run button to test the variant. 
 
 
-
-
-
 ### 3️⃣ Create QnA Relevance Evaluation flow with variants
-1. Go to the Azure AI Studio and select the model you want to evaluate.
-2. Click on the "Evaluation" tab to create an evaluation flow.
-3. Create a QnA Relevance Evaluation flow with variants.
-4. Review the Evaluation flow and variants.
+1. Go to the Azure AI Studio > Tools > Evaluation
 
-### 4️⃣ Automated evaluation for Korean and English math questions
+2. Click on the "+New Evaluation" on the Automated evaluations tab to create. 
+
+3. Click on the "Prompt flow" to select a flow to evaluaute its output
+![new evaluation](images/new_promptflow_evaluation.jpg)
+
+4. Add basic information for the evaluation. Put the name of the evaluation as 'variant1_en' and select the flow you want to evaluate. Select "Question and answer with context" as your evaluation scenario. Click the Next button to continue.
+![basic information](images/evaluation_basic_info.jpg)
+
+5. Add 'simple_qna_data_en.jsonl' as your dataset and map the question, firstName, context and dataset column. Click the Next button to continue.
+![map data](images/evaluation_map_data.jpg)
+
+6. Select Evaluation Metrics. You can select the metrics against which you want to evaluate the model. Enter the connection and deployment model and click the Next button, then review the final configuration and click the Submit button to start/wait for the evaluation.
+![select metrics](images/evaluation_select_metrics.jpg)
+![running evaluation](images/evaluation_running.jpg)
+
+7. After the evaluation is done, 
+
+### 4️⃣ Create Custom Evaluation flow on Prompt flow
+
+**[Challenge]** Create a custom evaluation flow to evaluate the performance of the model with the given context and question. 
+
+
+> 🧪 +For Your Information<br>
+Evaluator is an asset that can be used to run evaluation. You can define evaluator in SDK and run evaluation to generate scores of one or more metrics. In order to use AI-assisted quality and safety evaluators with the prompt flow SDK, check the [Evaluate with the prompt flow SDK](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/flow-evaluate-sdk)  

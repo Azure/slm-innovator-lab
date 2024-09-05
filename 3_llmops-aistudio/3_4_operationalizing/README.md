@@ -1,15 +1,19 @@
 ---
 layout: default
-title: Lab3.3 valuate your models using Prompt Flow to improve the quality of service
-permalink: /3_3_evaluation/
+title: Lab3.4 Responsible AI, Content Safety with Azure AI studio before production
+permalink: /3_4_operationalizing/
 ---
 
-# Lab 3.3 Scenario 3: Responsible AI, Content Safety with Azure AI studio before production
+# Lab 3.4 Scenario 4: Responsible AI, Content Safety with Azure AI studio before production
 
 ## Overview
-In this lab, we will explore how to use the evaluation features in Azure AI Studio and promptflow to perform A/B testing with your LLM nodes to evaluate the performance of prompt and LLM. You will learn how to create your variants, which can help you test the model's behavior under different conditions, such as different wording, formatting, context, temperature, or top-k, compare, and find the best prompt and configuration that maximizes the model's accuracy, diversity, or coherence.
+In this lab, you will experience how to ensure production deployment using content filter. This content filtering system is powered by Azure AI Content Safety, and it works by running both the prompt input and completion output through an ensemble of classification models aimed at detecting and preventing the output of harmful content. Variations in API configurations and application design might affect completions and thus filtering behavior.
 
-![LLMOps](images/evaluation_requirements.jpg)
+
+![LLMOps](images/operation_requirement.jpg)
+
+### 🔨Limitations
+The content filtering models have been trained and tested on the following languages: English, German, Japanese, Spanish, French, Italian, Portuguese, and Chinese. However, the service can work in many other languages, but the quality can vary. In all cases, you should do your own testing to ensure that it works for your application.
 
 ### 🥇Other Resources
 Here are the reference architectures, best practices and guidances on this topic. Please refer to the resources below. 
