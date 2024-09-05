@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Lab3.4 Content Safety with Azure AI studio before production (KR)
-permalink: /3_41_contentfilter_kr/
+permalink: /3_4_contentfilter_kr/
+parent: Lab3.4 Overview
+nav_order: 2
 ---
 
 # Lab3.4 Content Safety with Azure AI studio before production

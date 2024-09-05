@@ -3,6 +3,7 @@ layout: default
 title: Lab3.4 Content Safety with Azure AI studio before production (EN)
 permalink: /3_4_contentfilter_en/
 parent: Lab3.4 Overview
+nav_order: 1
 ---
 
 # Lab3.4 Content Safety with Azure AI studio before production
