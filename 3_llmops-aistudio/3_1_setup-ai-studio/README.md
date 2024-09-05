@@ -63,10 +63,3 @@ We also provide VS code extension to help you develop prompt flow, learn more he
 
 Serverless compute sessions offer cost-effectiveness, scalability, reduced management overhead, and quick setup, but come with drawbacks like limited control and cold start latency. On the other hand, VS code extension for prompt flow provides customization, consistency, and flexibility, but can incur higher costs, require more management effort, and take longer to set up.
 
-
-### 3️⃣ Add the custom connection for the fine tune model endpoint
-1. Navigate to the Azure Machine Learning workspace you created
-2. 
-
-
-### 🗑️ Clean up resources

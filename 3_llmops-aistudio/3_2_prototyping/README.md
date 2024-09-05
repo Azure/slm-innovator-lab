@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Lab3.2 Prototype your first gen AI application with prompt flow
-permalink: /3_2_prototyping/
+title: Lab3.2 Overview
+permalink: /3_2_overview/
 ---
 
 # Lab 3.2 Scenario 1: Prototype your first gen AI application with prompt flow

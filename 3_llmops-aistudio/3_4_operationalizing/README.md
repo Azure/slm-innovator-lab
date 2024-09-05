@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Lab3.4 Content Safety with Azure AI studio before production
-permalink: /3_4_operationalizing/
+title: Lab3.4 Overview
+permalink: /3_4_overview/
 ---
 
 # Lab 3.4 Scenario 4: Content Safety with Azure AI studio before production
