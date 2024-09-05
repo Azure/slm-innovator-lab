@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab3.3 Overview
-permalink: /3_3_overview/
+permalink: /3_31_overview/
 ---
 
 # Lab 3.3 Scenario 3: Evaluate your models using Prompt Flow to keep optimizing
