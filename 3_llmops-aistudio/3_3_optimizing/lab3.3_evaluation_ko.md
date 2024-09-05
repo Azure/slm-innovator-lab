@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Lab3.3 Evaluate your models using Prompt Flow to keep optimizing
+title: Lab3.3 Evaluate your models using Prompt Flow to keep optimizing (KR)
+permalink: /3_3_evaluation_kr/
 ---
 
 # Lab3.3 Evaluate your models using Prompt Flow to keep optimizing
