@@ -1,16 +1,13 @@
 ---
 layout: default
-title: Lab3.4 Ensure production deployment using content safety / content filter
+title: Lab3.4 Ensure production deployment using content filter
 permalink: /3_4_operationalizing/
 ---
 
-# Lab3.3 Ensure production deployment using content safety / content filter
+# Lab3.4 Content Safety with Azure AI studio before production
 
-## Overview
-In this lab, you will experience how to ensure production deployment using content safety / content filter. 
-
-![LLMOps](images/3.3_evaluation_sample.png)
-
+![LLMOps](images/content_filtering_api_support.jpg)
+[Annotation availability in each API version](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython-new#:~:text=See%20the%20following%20table%20for%20the%20annotation%20availability%20in%20each%20API%20version%3A)
 
 ### Prerequisites
 
@@ -26,10 +23,10 @@ In this lab, you will experience how to ensure production deployment using conte
 
 
 ### TOC
-- 1️⃣ Manual evaluations to build the assistant 
-- 1️⃣ Create a QnA Relevance Evaluation flow with variants
-- 2️⃣ Review the QnA Relevance Evaluation flow 
-- 3️⃣ View Test Result of the Evaluation flow
-- 4️⃣ Automated evaluation for Korean and English math questions
+- 1️⃣ Test your training dataset using content safety
+- 2️⃣ Configure the content filter for your orchestration flows
+- 3️⃣ Create a custom blocklist to manage inappropriate content
+- 4️⃣ monitor the deployed application with metrics
 
-=
+### 1️⃣ Test your training dataset using content safety
+1. Go to the Azure AI Studio > AI Services > Content Safety
