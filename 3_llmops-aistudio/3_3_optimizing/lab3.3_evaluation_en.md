@@ -3,7 +3,7 @@ layout: default
 title: Lab3.3 Evaluate your models using Prompt Flow to keep optimizing (EN)
 permalink: /3_3_evaluation_en/
 parent: Lab3.3 Overview
-nav_order: 1
+nav_order: 3
 ---
 
 # Lab3.3 Evaluate your models using Prompt Flow to keep optimizing
