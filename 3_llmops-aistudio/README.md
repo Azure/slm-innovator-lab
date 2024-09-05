@@ -24,6 +24,9 @@ In this lab, you will learn how to set up, test, deploy, evaluate and monitor yo
 
 [//]: # (**Bonus track: Create Local LangChain project using a CLI version of​ Prompt flow**)
 
+## 🗑️ Clean up resources
+TBD
+
 ## Reference
 [LLMOps Prompt flow template github](https://github.com/microsoft/llmops-promptflow-template) 
 

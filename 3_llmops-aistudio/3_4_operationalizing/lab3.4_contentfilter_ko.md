@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Lab3.4 Ensure production deployment using content filter
-permalink: /3_4_operationalizing/
+title: Lab3.4 Content Safety with Azure AI studio before production (KR)
+permalink: /3_4_contentfilter_kr/
 ---
 
 # Lab3.4 Content Safety with Azure AI studio before production

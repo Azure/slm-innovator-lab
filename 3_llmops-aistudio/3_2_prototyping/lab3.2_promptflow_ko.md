@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Lab3.2 Prototype your first gen AI application with prompt flow
-permalink: /3_2_prototyping/
+title: Lab3.2 Prototype your first gen AI application with prompt flow (KR)
+permalink: /3_2_prototyping_kr/
 ---
 
 # Lab3.2 Azure AI Studio Prompt Flow를 활용한 Gen AI App 프로토타이핑
