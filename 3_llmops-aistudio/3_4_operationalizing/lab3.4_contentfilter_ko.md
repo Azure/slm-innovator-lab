@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab3.4 Content Safety with Azure AI studio before production (KR)
+title: Lab3.4.1 Content Safety with Azure AI studio before production (KR)
 permalink: /3_4_contentfilter_kr/
 ---
 

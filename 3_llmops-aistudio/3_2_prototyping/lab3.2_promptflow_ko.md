@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab3.2 Prototype your first gen AI application with prompt flow (KR)
+title: Lab3.2.1 Prototype your first gen AI application with prompt flow (KR)
 permalink: /3_2_prototyping_kr/
 ---
 
