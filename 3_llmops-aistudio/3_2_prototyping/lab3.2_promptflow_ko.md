@@ -8,9 +8,9 @@ permalink: /3_2_prototyping/
 
 ### Prerequisites
 
-- AI 허브 및 AI 프로젝트 리소스를 만들 수 있는 Azure 구독입니다.
-- 파인튜닝한 모델
+- AI 허브 및 AI 프로젝트 리소스를 만들 수 있는 Azure 구독
 - 파인튜닝한 모델의 온라인 엔드포인트 
+- Azure AI Studio에 배포된 gpt-4o 모델
 
 
 ### Task

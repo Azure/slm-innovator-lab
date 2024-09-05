@@ -1,0 +1,43 @@
+inputs:
+  question:
+    type: string
+    is_chat_input: true
+  contenxt:
+    type: string
+    default: >
+      The Alpine Explorer Tent boasts a detachable divider for privacy, 
+      numerous mesh windows and adjustable vents for ventilation, and 
+      a waterproof design. It even has a built-in gear loft for storing 
+      your outdoor essentials. In short, it's a blend of privacy, comfort, 
+      and convenience, making it your second home in the heart of nature!
+    is_chat_input: false
+  firstName:
+    type: string
+    default: "Jake"
+    is_chat_input: false
+outputs:
+  answer:
+    type: string
+    reference: ${chat.output}
+    is_chat_output: true
+nodes:
+- name: chat
+  type: llm
+  source:
+    type: code
+    path: chat.jinja2
+  inputs:
+    deployment_name: gpt-4o
+    temperature: 0.7
+    top_p: 1
+    max_tokens: 512
+    context: ${inputs.contenxt}
+    firstName: ${inputs.firstName}
+    question: ${inputs.question}
+  api: chat
+  provider: AzureOpenAI
+  connection: ''
+id: chat_variant_flow
+name: Chat Variant Flow
+environment:
+  python_requirements_txt: requirements.txt

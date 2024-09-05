@@ -9,8 +9,8 @@ permalink: /3_2_prototyping/
 ### Prerequisites
 
 - An Azure subscription where you can create an AI Hub and AI project Resource.
-- Registered the Fine-tune model
-- Online endpoint of the fine-tuned model 
+- Online endpoint of the fine-tuned model in Azure ML Studio
+- Deployed gpt-4o model in Azure AI Studio 
 
 
 ### Task

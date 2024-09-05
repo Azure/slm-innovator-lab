@@ -9,7 +9,7 @@ permalink: /3_4_operationalizing/
 ## Overview
 In this lab, you will experience how to ensure production deployment using content safety / content filter. 
 
-![LLMOps](images/3.3_evaluation_sample.png)
+![LLMOps](images/operation_requirement.jpg)
 
 
 ### Prerequisites

@@ -8,7 +8,7 @@ model:
   configuration:
     type: azure_openai
     azure_endpoint: ${env:AZURE_OPENAI_ENDPOINT}
-    azure_deployment: ${env:AZURE_OPENAI_DEPLOYMENT_NAME}
+    azure_deployment: ${env:DEPLOYMENT_NAME}
   parameters:
     max_tokens: 3000
     temperature: 0.7
@@ -36,8 +36,8 @@ system:
 
 다음과 같은 json 객체로 한국어로 응답합니다.
 {
-  "답변": 
-  "농담":
+  "answer": 
+  "joke":
 }
 
 # Customer
