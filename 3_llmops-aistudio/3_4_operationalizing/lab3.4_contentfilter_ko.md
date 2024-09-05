@@ -4,7 +4,7 @@ title: Lab3.4 Ensure production deployment using content filter
 permalink: /3_4_operationalizing/
 ---
 
-# Lab3.3 Ensure production deployment using content filter
+# Lab3.4 Content Safety with Azure AI studio before production
 
 ![LLMOps](images/content_filtering_api_support.jpg)
 [Annotation availability in each API version](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython-new#:~:text=See%20the%20following%20table%20for%20the%20annotation%20availability%20in%20each%20API%20version%3A)

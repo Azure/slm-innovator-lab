@@ -6,7 +6,7 @@ title: Lab3.3 Evaluate your models using Prompt Flow to keep optimizing
 # Lab3.3 Evaluate your models using Prompt Flow to keep optimizing
 
 ![LLMOps](images/evaluation-monitor-flow.png)
-
+[Evaluating and monitoring of generative AI applications](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-approach-gen-ai#evaluating-and-monitoring-of-generative-ai-applications)
 
 ### Prerequisites
 

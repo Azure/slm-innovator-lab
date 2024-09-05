@@ -12,7 +12,7 @@ In this lab, you will learn how to set up, test, deploy, evaluate and monitor yo
 
 **Scenario 3: Evaluate your models using Prompt Flow to keep optimizing**
 
-**Scenario 4: Responsible AI, Content Safety with Azure AI studio before production** ​
+**Scenario 4: Content Safety with Azure AI studio before production** ​
 
 [//]: # (**Scenario 5: Attach Azure API management and Azure Monitor for reliability and monitoring TBD**)
 

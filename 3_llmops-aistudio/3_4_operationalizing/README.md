@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Lab3.4 Responsible AI, Content Safety with Azure AI studio before production
+title: Lab3.4 Content Safety with Azure AI studio before production
 permalink: /3_4_operationalizing/
 ---
 
-# Lab 3.4 Scenario 4: Responsible AI, Content Safety with Azure AI studio before production
+# Lab 3.4 Scenario 4: Content Safety with Azure AI studio before production
 
 ## Overview
 In this lab, you will experience how to ensure production deployment using content filter. This content filtering system is powered by Azure AI Content Safety, and it works by running both the prompt input and completion output through an ensemble of classification models aimed at detecting and preventing the output of harmful content. Variations in API configurations and application design might affect completions and thus filtering behavior.
