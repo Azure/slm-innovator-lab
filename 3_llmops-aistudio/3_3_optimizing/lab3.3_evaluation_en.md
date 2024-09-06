@@ -113,6 +113,7 @@ environment:
 ![add the connection parameters](images/add_gpt4o_node2.jpg)
 
 7. attach the prompt below on your chat_variants Node to request the deployed model. 
+
 ```
 system:
 You are an AI assistant who helps people find information. As the assistant, 
@@ -152,6 +153,7 @@ user:
 ![add variants](images/add_variants.jpg)
 
 11. Add the variant name and the prompt in Korean below. Click the save button to save the variant.
+
 ```
 system:
 당신은 사람들이 정보를 찾을 수 있도록 도와주는 AI 어시스턴트입니다. 어시스턴트로서 
@@ -205,7 +207,7 @@ user:
 
 ### 4️⃣ Create Custom Evaluation flow on Prompt flow
 
-**[Challenge]** Create a custom evaluation flow to evaluate the performance of the model with the given context and question. 
+**[Challenge]** Create a **custom** evaluation flow to evaluate the performance of the model with the given context and question. 
 
 
 > 🧪 +For Your Information<br>

@@ -10,7 +10,7 @@ permalink: /3_4_overview/
 In this lab, you will experience how to ensure production deployment using content filter. This content filtering system is powered by Azure AI Content Safety, and it works by running both the prompt input and completion output through an ensemble of classification models aimed at detecting and preventing the output of harmful content. Variations in API configurations and application design might affect completions and thus filtering behavior.
 
 
-![LLMOps](images/operation_requirement.jpg)
+![LLMOps](images/operation_requirements.jpg)
 
 ### 🔨Limitations
 The content filtering models have been trained and tested on the following languages: English, German, Japanese, Spanish, French, Italian, Portuguese, and Chinese. However, the service can work in many other languages, but the quality can vary. In all cases, you should do your own testing to ensure that it works for your application.
