@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Lab 3. LLMOps for SLM with Azure AI Studio
-parent: SLM Innovator Lab
 nav_order: 4
 ---
 

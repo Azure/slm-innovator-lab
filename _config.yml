@@ -17,7 +17,7 @@ title: SLM Inv Lab
 email: daekeun.kim@microsoft.com, hyo.choi@microsoft.com
 description: >- # this means to ignore newlines until "baseurl:"
   Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AIML Platform.
-baseurl: "https://hyogrin.github.io" # the subpath of your site, e.g. /blog
+#baseurl: "https://hyogrin.github.io" # the subpath of your site, e.g. /blog
 url: "slm-innovator-lab" # the base hostname & protocol for your site, e.g. http://example.com
 
 
