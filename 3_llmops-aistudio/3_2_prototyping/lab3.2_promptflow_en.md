@@ -176,11 +176,13 @@ def my_python_tool(input_data: str, connection: CustomConnection) -> str:
 5. Save the LLM Node and run the chat flow to test the LLM model
 ![save the LLM Node](images/save_open_chat_window.jpg)
 
+
 ### 4️⃣ Interact with the Chat: Test and trace the chat flow
 1. Let's test the phi3.5 and LLM model on the chat window
 ![test the phi3.5 and LLM model](images/ask_about_phi.jpg)
 
-2. You can review the result of both phi3.5 and LLM on the Tracing window
+2. You can review the both phi3.5 and LLM successfully executed and check the detailed output on the Tracing window 
+![save the LLM Node](images/final_dag_graph.jpg)
 ![trace each model](images/trace_each_model.jpg)
 
 3. If you go back to the Azure ML studio, you can get log and monitor your endpoint to check the performance and behavior of the model.
