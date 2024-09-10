@@ -17,9 +17,20 @@ Before starting, you have met the following requirements:
 - [Azure AI Document Intelligence (v4.0 - 2024-02-29 preview)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
 
 - ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
-- ***[Compute cluster - for LLM training]*** A single NVIDIA A100 GPU node (`Standard_NC24ads_A100_v4`) and a single NVIDIA V100 GPU node (`Standard_NC6s_v3`) is recommended. If you do not have a dedicated quota or are on a tight budget, choose Low-priority VM.
+- ***[Compute cluster - for LLM training]*** A single NVIDIA A100 GPU node (`Standard_NC24ads_A100_v4`) and a single NVIDIA V100 GPU node (`Standard_NC6s_v3`) is recommended. If you do not have a dedicated quota or are on a tight budget, choose Low-priority VM. The availabilty of the VMs may vary by region.  
 
 Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it
+
+## Cautions
+This workshop assumes that you are configuring in a public environment and you have access to the internet. If you are configuring in a private environment, you may need to set up a private network to access the services. The following are some common issues you may encounter when you configure in a private environment:
+- If you set up the Azure ML workspace and Azure AI Studio in private network, you may need to set up a VPN or a private link to access the services.
+- If you are using a low-priority VM, you may need to wait for the VM to be available. The availability of the VMs may vary by region.
+- If you have blob storage, you can use it to store the data and models. However, you may need to set up the connection to the blob storage in the Azure ML workspace.
+- If you have a quota issue, you may need to request a quota increase for the VMs or GPUs.
+- Once you configure the network in Azure ML workspace, you can not change it. You may need to create a new workspace if you want to change the network.
+- If you are using a compute instance which is not in the same region as the Azure ML workspace, you may need to set up a VPN or a private link to access the services.
+- If you are using a compute instance which created in Azure AI Studio, you can't execute training jobs in the compute instance. You may need to create a new compute instance in Azure ML workspace.
+- If you run into an PermissionMismatch error when you download the artifacts, you may need to asign the correct permission to the Azure ML workspace.
 
 ## How to get started 
 1. Create your compute instance in Azure ML Studio. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).

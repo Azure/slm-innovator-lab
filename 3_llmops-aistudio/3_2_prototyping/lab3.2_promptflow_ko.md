@@ -180,8 +180,10 @@ def my_python_tool(input_data: str, connection: CustomConnection) -> str:
 1. 채팅 창에서 phi3.5 및 LLM 모델을 테스트해 보겠습니다.
 ![test the phi3.5 and LLM model](images/ask_about_phi.jpg)
 
-2. Tracing 창에서 phi3.5와 LLM의 결과를 모두 검토할 수 있습니다.
+2. phi3.5와 LLM의 실행이 완료되면 Tracing 화면을 통해 output 결과를 검토할 수 있습니다. 
+![save the LLM Node](images/final_dag_graph.jpg)
 ![trace each model](images/trace_each_model.jpg)
+
 
 3. Azure ML studio를 통해 로그와 엔드포인트 모니터링을 할 수 있고 모델의 성능과 동작을 확인할 수 있습니다.
 ![monitor endpoint](images/monitor_endpoint_metrics.png)
