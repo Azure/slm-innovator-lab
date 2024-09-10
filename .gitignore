@@ -171,3 +171,5 @@ cython_debug/
 .ipynb_checkpoints/
 outputs/
 _site/
+
+Gemfile.lock
