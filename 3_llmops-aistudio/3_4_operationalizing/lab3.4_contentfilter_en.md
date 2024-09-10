@@ -3,6 +3,8 @@ layout: default
 title: Lab 3.4.1 Content Safety with Azure AI studio before production (EN)
 permalink: /3_4_contentfilter_en/
 parent: Lab 3.4 Overview
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+nav_order: 341
 ---
 
 # Lab 3.4 Content Safety with Azure AI studio before production

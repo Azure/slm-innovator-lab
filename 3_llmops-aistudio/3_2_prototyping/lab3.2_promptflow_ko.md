@@ -3,6 +3,8 @@ layout: default
 title: Lab 3.2.1 Prototype your first gen AI application with prompt flow (KR)
 permalink: /3_2_prototyping_kr/
 parent: Lab 3.2 Overview
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+nav_order: 321
 ---
 
 # Lab 3.2 Azure AI Studio Prompt Flow를 활용한 Gen AI App 프로토타이핑

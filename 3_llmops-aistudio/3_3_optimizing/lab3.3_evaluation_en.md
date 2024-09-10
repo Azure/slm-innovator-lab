@@ -3,6 +3,8 @@ layout: default
 title: Lab 3.3.1 Evaluate your models using Prompt Flow to keep optimizing (EN)
 permalink: /3_3_evaluation_en/
 parent: Lab 3.3 Overview
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+nav_order: 331
 ---
 
 # Lab 3.3 Evaluate your models using Prompt Flow to keep optimizing
