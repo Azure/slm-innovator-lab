@@ -4,6 +4,7 @@ title: Lab 3.3 Overview
 permalink: /3_3_overview/
 parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 33
+has_children: true
 ---
 
 # Lab 3.3 Scenario 3: Evaluate your models using Prompt Flow to keep optimizing

@@ -4,6 +4,7 @@ title: Lab 3.4 Overview
 permalink: /3_4_overview/
 parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 34
+has_children: true
 ---
 
 # Lab 3.4 Scenario 4: Content Safety with Azure AI studio before production

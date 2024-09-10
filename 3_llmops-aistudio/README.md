@@ -2,6 +2,7 @@
 layout: default
 title: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 4
+has_children: true
 ---
 
 # Lab 3. LLMOps for SLM with Azure AI Studio
