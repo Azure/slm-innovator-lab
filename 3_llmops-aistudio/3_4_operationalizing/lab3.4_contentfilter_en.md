@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Lab3.4.1 Content Safety with Azure AI studio before production (EN)
+title: Lab 3.4.1 Content Safety with Azure AI studio before production (EN)
 permalink: /3_4_contentfilter_en/
+parent: Lab 3.4 Overview
 ---
 
-# Lab3.4 Content Safety with Azure AI studio before production
+# Lab 3.4 Content Safety with Azure AI studio before production
 
 ![LLMOps](images/content_filtering_api_support.jpg)
 [Annotation availability in each API version](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/content-filter?tabs=warning%2Cuser-prompt%2Cpython-new#:~:text=See%20the%20following%20table%20for%20the%20annotation%20availability%20in%20each%20API%20version%3A)

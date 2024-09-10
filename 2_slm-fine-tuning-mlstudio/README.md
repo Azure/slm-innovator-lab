@@ -1,3 +1,10 @@
+---
+layout: default
+title: Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
+parent: SLM Innovator Lab
+nav_order: 3
+---
+
 # Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
 
 This hands-on walks you through fine-tuning an open source LLM on Azure and serving the fine-tuned model on Azure. It is intended for Data Scientists and ML engineers who have experience with fine-tuning but are unfamiliar with Azure ML and Mlflow.

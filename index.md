@@ -1,4 +1,6 @@
 ---
+layout: default
+title: SLM Innovator Lab
 nav_order: 1
 ---
 # SLM Innovator Lab

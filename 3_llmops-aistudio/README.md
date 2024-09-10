@@ -1,3 +1,10 @@
+---
+layout: default
+title: Lab 3. LLMOps for SLM with Azure AI Studio
+parent: SLM Innovator Lab
+nav_order: 4
+---
+
 # Lab 3. LLMOps for SLM with Azure AI Studio
 
 This E2E example is for users who have just adopted Azure Open AI and want to build an LLM evaluation pipeline with Promptflow for quality assurance from scratch. It introduces the end-to-end processes of experimentation, model quality evaluation, deploying, and performance monitoring with Prompt flow and other tools after fine-tuned LLMs.

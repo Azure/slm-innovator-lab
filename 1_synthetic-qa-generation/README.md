@@ -1,3 +1,10 @@
+---
+layout: default
+title: Lab 1. Generate Synthetic QnAs from Real-world Data 
+parent: SLM Innovator Lab
+nav_order: 2
+---
+
 # Lab 1. Generate Synthetic QnAs from Real-world Data 
 
 ## Background

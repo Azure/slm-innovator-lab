@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Lab3.2 Overview
+title: Lab 3.2 Overview
 permalink: /3_2_overview/
+parent: Lab 3. LLMOps for SLM with Azure AI Studio
+nav_order: 32
 ---
 
 # Lab 3.2 Scenario 1: Prototype your first gen AI application with prompt flow

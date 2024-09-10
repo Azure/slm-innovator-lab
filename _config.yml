@@ -34,15 +34,17 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - README.md
+  - SUPPORT.md
   - 1_synthetic-qa-generation/evolve-instruct/
   - 1_synthetic-qa-generation/glan-instruct/
-  - README.md
   - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
   - 2_slm-fine-tuning-mlstudio/phi3/
   - vendor
   - 3_llmops-aistudio/3_2_prototyping/lab3.2_promptflow_ko.md
   - 3_llmops-aistudio/3_3_optimizing/lab3.3_evaluation_ko.md
   - 3_llmops-aistudio/3_4_operationalizing/lab3.4_contentfilter_ko.md
+
 
 # By default, all Capital letters come before all lowercase letters; 
 # you can add nav_sort: case_insensitive in the configuration file to ignore the case. 

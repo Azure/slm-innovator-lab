@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Lab3.2.1 Prototype your first gen AI application with prompt flow (EN)
+title: Lab 3.2.1 Prototype your first gen AI application with prompt flow (EN)
 permalink: /3_2_prototyping_en/
+parent: Lab 3.2 Overview
 ---
 
-# Lab3.2.1 Prototyping a Gen AI app with Azure AI Studio Prompt Flow
+# Lab 3.2.1 Prototyping a Gen AI app with Azure AI Studio Prompt Flow
 
 ### Prerequisites
 
