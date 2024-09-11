@@ -9,7 +9,6 @@ nav_order: 2
 - Ensure you have access to Azure OpenAI Service.
 - Set up your Azure ML workspace and get your <WORKSPACE_NAME>, <RESOURCE_GROUP> and <SUBSCRIPTION_ID>.
 - create a project in Azure AI Studio.
-- Use a low-end compute instance(Standard_DS11_v2) without GPU is recommended. 
 - For LLM training, recommend a single NVIDIA A100 node (Standard_NC24ads_A100_v4)  or NVIDIA V100 GPU node(Standard_NC6s_v3). 
 - Opt for Low-priority VMs if on a budget or without a dedicated quota.
 
@@ -24,9 +23,47 @@ nav_order: 2
 
 Please ensure these points are followed to avoid common issues during the workshop.
 
-## 2. Setup env file
-Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it.
-Modify the `.env` file to match Azure OpenAI Endpoint, OpenAI API key, AI Document Intelligence Endpoint, AI Document Intelligence Key, and other required details.
+## 2. Setup Compute Instance and the configuration file
+- 1️⃣ Prepare your compute resource
+- 2️⃣ Clone the repository
+- 3️⃣ Create `.env` file and Add Azure OpenAI and Azure Document Intelligence details
+- 4️⃣ Setup config.yml
+- 🚀 Get started to validate the setup 
+
+### 1️⃣ Prepare your compute resource
+1. Create your compute instance in Azure ML Studio. Navigate to the Azure ML Studio > Compute > Compute instances and create a new compute instance.
+![create a compute instance](images/create_compute.jpg)
+
+2. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs). Click on the `Review+Create` button to create the compute instance.
+
+3. Once the compute instance is created and change the status as Running, click on the `Jupyter` or `VS Code(Desktop)` to open the Jupyter notebook and terminal.
+![open jupyter](images/open_jupyter.jpg)
+
+### 2️⃣ Clone the repository and install the required packages
+1. Go to your terminal in your evironment and clone the repository. 
+
+```shell
+git clone https://github.com/Azure/slm-innovator-lab.git
+```
+
+
+2. Install all Python modules and packages listed in the requirements.txt file using the below command.
+
+```shell
+cd slm-innovator-lab # Change to the directory where the repository is cloned
+ENVIRONMENT=azureml_py310_sdkv2
+conda activate "$ENVIRONMENT"
+pip install -r requirements.txt
+```
+
+3. If you want to use the Unstructured toolkit for processing a complex PDF, please be sure to execute `startup_unstructured.sh` and include it in your instance startup script.
+
+```shell
+./startup_unstructured.sh
+```
+
+### 3️⃣ Create `.env` file and Add Azure OpenAI and Azure Document Intelligence details
+1. Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it.
 
 ```shell
 # .env
@@ -34,14 +71,22 @@ AZURE_OPENAI_ENDPOINT=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 AZURE_OPENAI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation
-OPENAI_API_VERSION=2024-05-01-preview
+AZURE_OPENAI_API_VERSION=2024-05-01-preview
 DEPLOYMENT_NAME=gpt-4o-mini
 
 AZURE_DOC_INTELLIGENCE_ENDPOINT=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 AZURE_DOC_INTELLIGENCE_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-## 3. Setup config.yml
+2. In order to match your Azure OpenAI authentication information in the `.env` file, please navigate to Azure AI Studio > Deployments > your model deployment to get the Azure OpenAI endpoint and API key after deploying the Azure Open AI models. If you want to understand the LLM deployment process, please refer to the [How to deploy Azure OpenAI models with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-openai).
+![create a new flow](images/copy_api_endpoint_key.jpg)
+
+3. If you want to read and preprocess pdf files during this lab, you need to add the Azure Document Intelligence endpoint and API key to the `.env` file. In order to match your Azure Document Intelligence authentication. Please navigate to Azure AI services Document Intelligence > your model deployment to get the Azure Document Intelligence endpoint and API key after deploying the Azure Document Intelligence models.If you want to understand the Document Intelligence creation process, please refer to the [Create a Document Intelligence resource](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0).
+![create a new flow](images/copy_doc_endpoint_key.jpg)
+
+
+
+### 4️⃣ Setup config.yml
 Modify the `2_slm-fine-tuning-mlstudio/phi3/config.yml` file to match your Azure subscription, resource group, workspace, and data name. 
 
 
@@ -58,3 +103,6 @@ config:
     USE_LOWPRIORITY_VM: true
     ...
 ```
+
+### 🚀 Get started to validate the setup 
+Proceed by opening the [Jupyter notebook](get_started.ipynb), and follow the steps provided.
