@@ -58,3 +58,13 @@ config:
     USE_LOWPRIORITY_VM: true
     ...
 ```
+
+
+## 4. Setup Azure ML workspace
+1. Create your compute instance in Azure ML Studio. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
+2. Open the terminal of the CI and run: 
+    ```shell
+    git clone https://github.com/Azure/slm-innovator-lab.git
+    conda activate azureml_py310_sdkv2
+    pip install -r requirements.txt
+    ```

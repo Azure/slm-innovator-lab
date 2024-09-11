@@ -5,6 +5,16 @@ nav_order: 1
 ---
 # SLM Innovator Lab
 
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Overview
+
 Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AIML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of AI Studio, you can establish efficient and scalable LLMOps.
 
 This hands-on lab is suitable for the following purposes:
@@ -13,7 +23,27 @@ This hands-on lab is suitable for the following purposes:
 2. Hackathon starter code
 3. Reference guide for SLM fine-tuning&serving PoC/Prototype
 
-## Requirements
+## Agenda
+- Why Azure?: Before we get into the hands-on, we explain to participants exactly what the SLM Innovator Lab is all about and give them an overview of the AIML ecosystem in Azure. 
+
+- **Lab 1. Data preparation**: Participants will dive into the critical first step of the GenAI pipeline. The session will focus on how to prepare data from real-world scenarios to create high-quality datasets necessary for fine-tuning models. Participants will learn how to process QnA (Questions & Answers) data and generate synthetic data to augment the training set, ensuring the model can handle a wide range of domain, including those in non-English languages. By the end of this lab, participants will have hands-on experience in transforming raw data into a format ready for effective AI model training. 
+
+- **Lab 2. Fine-tuning and serving**: This lab guides participants through the process of fine-tuning SLMs and deploying them using Azure ML. The focus will be on simplifying the fine-tuning process, enabling participants to fine-tune pre-trained SLMs with their own datasets quickly and efficiently. The session will also demonstrate how to use Azure ML’s tools to serve these models as scalable APIs (Application Programming Interfaces), allowing them to be integrated into real-world applications with ease.  
+
+- **Lab 3. LLMOps**: In this lab, participants will delve into the critical aspects of managing and optimizing SLMs within Azure’s ecosystem, with a particular emphasis on content safety and model evaluation. As organizations increasingly deploy GenAI models in production environments, ensuring that these models operate safely and effectively is paramount. This lab provides participants with the critical skills needed to ensure that their LLMs are not only technically robust but also safe and aligned with the ethical and operational standards of their organizations 
+
+- **Key takeaways**: The final session of the program will be a reflective and strategic discussion focused on the next steps in the participants' AI journey. After gaining hands-on experience in data preparation, fine-tuning, serving, and LLMOps, participants will have the opportunity to share their insights, challenges, and aspirations. This session will emphasize the importance of listening to the customer’s voice, understanding their specific needs, and collaboratively defining the next actions to move towards successful Proof of Concept (PoC), Minimum Viable Product (MVP), and full production deployments. The goal is to ensure that each participant leaves with a clear roadmap for their AI projects, aligned with their business objectives and supported by the technical capabilities they have developed during the program. 
+
+
+## Objectives
+- **Platform Stickiness**: By enabling customers to easily fine-tune models on Azure, the Innovator Lab aims to create a stronger attachment to the Azure ecosystem.  When customers are tuning SLMs using Azure AI Infrastructure and AI Studio, they initially develop the SLM/LLMOps through AI Studio and tools like Prompt Flow, LangChain, LlamaIndex, or Semantic Kernel. This forms the initial approach for the SLM Innovator Lab. However, the primary goal is to migrate compute workloads to an Azure-native platform. Specifically, this involves integrating AKS (containerization with multi-GPU node pools), Blob Storage, databases and Data Lake, Microsoft Fabric, Monitoring and Log Analytics, while working closely with various technical support teams within Microsoft to address the anticipated challenges of launching into production. The hands-on experience shows the practical benefits of using Azure ML and Azure AI Studio, encouraging long-term commitment to the platform. 
+
+- **Ease of Use and Accessibility**: The lab is designed to lower the barriers to entry for customers interested in SLM/LLM fine-tuning. It simplifies the setup process by providing a pre-configured environment that omits the need for complex configurations, making it easier for customers to get started quickly. 
+
+- **Earn trust**: The lab is designed to build and solidify customer trust throughout the GenAI journey, from Proof of Concept (PoC) to Minimum Viable Product (MVP) and to Production. By deeply engaging with customers to understand their unique requirements and challenges, and by collaboratively navigating the complexities of data preparation, model fine-tuning, serving, and evaluation, the SLM Innovator Lab ensures that customers see tangible results and feel confident in the partnership. This trust is crucial for successfully launching GenAI projects, as it fosters stronger relationships and collaboration, ensuring that both the customer's goals and technical needs are met at every stage of the project. The lab's success in earning this trust is key to achieving long-term success and deeper integration in AIML projects. 
+
+
+## Prerequisites
 Before starting, you have met the following requirements:
 
 - [Access to Azure OpenAI Service](https://go.microsoft.com/fwlink/?linkid=2222006)
@@ -25,21 +55,6 @@ Before starting, you have met the following requirements:
 - ***[Compute cluster - for LLM training]*** A single NVIDIA A100 GPU node (`Standard_NC24ads_A100_v4`) and a single NVIDIA V100 GPU node (`Standard_NC6s_v3`) is recommended. If you do not have a dedicated quota or are on a tight budget, choose Low-priority VM.
 
 Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it
-
-## How to get started 
-1. Create your compute instance in Azure ML Studio. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
-2. Open the terminal of the CI and run: 
-    ```shell
-    git clone https://github.com/Azure/slm-innovator-lab.git
-    conda activate azureml_py310_sdkv2
-    pip install -r requirements.txt
-    ```
-
-## Table of contents
-
-### [Lab 1. Data preparation](1_synthetic-qa-generation)
-### [Lab 2. LLM fine-tuning and serving](2_slm-fine-tuning-mlstudio)
-### [Lab 3. LLMOps](3_llmops-aistudio)
 
 ## References
 
@@ -58,29 +73,3 @@ Please do not forget to modify the `.env` file to match your account. Rename `.e
 
 ### LLMOps
 - [LLMOps with Prompt flow (Supports both AI Studio and Azure Machine Learning](https://github.com/microsoft/llmops-promptflow-template)
-
-## Contributing
-
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
-
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
-
-## License Summary
-
-This sample code is provided under the MIT-0 license. See the LICENSE file.
