@@ -8,6 +8,8 @@ This hands-on lab is suitable for the following purposes:
 2. Hackathon starter code
 3. Reference guide for SLM fine-tuning&serving PoC/Prototype
 
+Hands-on guide: https://azure.github.io/slm-innovator-lab/
+
 ## Requirements
 Before starting, you have met the following requirements:
 
@@ -56,10 +58,18 @@ This workshop assumes that you are configuring in a public environment and you h
 - [Azure Machine Learning examples](https://github.com/Azure/azureml-examples)
 
 ### SLM fine-tuning
-- [Azure Machine Learning examples](https://github.com/Azure/azureml-examples)
+
+#### Phi-3/Phi-3.5
 - [Finetune Small Language Model (SLM) Phi-3 using Azure ML](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/finetune-small-language-model-slm-phi-3-using-azure-machine/ba-p/4130399)
 - [microsoft/Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct): This is Microsoft's official Phi-3-mini-4k-instruct model.
+- [microsoft/Phi-3-mini-128k-instruct](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct): This is Microsoft's official Phi-3-mini-128k-instruct model.
+- [microsoft/Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct): This is Microsoft's official Phi-3.5-mini-instruct model.
+- [microsoft/Phi-3.5-MoE-instruct](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct): This is Microsoft's official Phi-3.5-MoE-instruct model.
+- [Korean language proficiency evaluation for LLM/SLM models using KMMLU, CLIcK, and HAE-RAE dataset](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset)
 - [daekeun-ml/Phi-3-medium-4k-instruct-ko-poc-v0.1](https://huggingface.co/daekeun-ml/Phi-3-medium-4k-instruct-ko-poc-v0.1)
+
+#### Florence-2
+- [Fine-tuning Florence-2 for VQA (Visual Question Answering) using the Azure ML Python SDK and MLflow](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/fine-tuning-florence-2-for-vqa-visual-question-answering-using/ba-p/4181123)
 - [Hugging Face Blog - Finetune Florence-2 on DoCVQA](https://huggingface.co/blog/finetune-florence2)
 
 ### LLMOps

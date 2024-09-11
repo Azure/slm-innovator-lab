@@ -24,7 +24,7 @@ This hands-on lab is suitable for the following purposes:
 3. Reference guide for SLM fine-tuning&serving PoC/Prototype
 
 ## Agenda
-- Why Azure?: Before we get into the hands-on, we explain to participants exactly what the SLM Innovator Lab is all about and give them an overview of the AIML ecosystem in Azure. 
+- **Why Azure?**: Before we get into the hands-on, we explain to participants exactly what the SLM Innovator Lab is all about and give them an overview of the AIML ecosystem in Azure. 
 
 - **Lab 1. Data preparation**: Participants will dive into the critical first step of the GenAI pipeline. The session will focus on how to prepare data from real-world scenarios to create high-quality datasets necessary for fine-tuning models. Participants will learn how to process QnA (Questions & Answers) data and generate synthetic data to augment the training set, ensuring the model can handle a wide range of domain, including those in non-English languages. By the end of this lab, participants will have hands-on experience in transforming raw data into a format ready for effective AI model training. 
 
@@ -33,7 +33,6 @@ This hands-on lab is suitable for the following purposes:
 - **Lab 3. LLMOps**: In this lab, participants will delve into the critical aspects of managing and optimizing SLMs within Azure’s ecosystem, with a particular emphasis on content safety and model evaluation. As organizations increasingly deploy GenAI models in production environments, ensuring that these models operate safely and effectively is paramount. This lab provides participants with the critical skills needed to ensure that their LLMs are not only technically robust but also safe and aligned with the ethical and operational standards of their organizations 
 
 - **Key takeaways**: The final session of the program will be a reflective and strategic discussion focused on the next steps in the participants' AI journey. After gaining hands-on experience in data preparation, fine-tuning, serving, and LLMOps, participants will have the opportunity to share their insights, challenges, and aspirations. This session will emphasize the importance of listening to the customer’s voice, understanding their specific needs, and collaboratively defining the next actions to move towards successful Proof of Concept (PoC), Minimum Viable Product (MVP), and full production deployments. The goal is to ensure that each participant leaves with a clear roadmap for their AI projects, aligned with their business objectives and supported by the technical capabilities they have developed during the program. 
-
 
 ## Objectives
 - **Platform Stickiness**: By enabling customers to easily fine-tune models on Azure, the Innovator Lab aims to create a stronger attachment to the Azure ecosystem.  When customers are tuning SLMs using Azure AI Infrastructure and AI Studio, they initially develop the SLM/LLMOps through AI Studio and tools like Prompt Flow, LangChain, LlamaIndex, or Semantic Kernel. This forms the initial approach for the SLM Innovator Lab. However, the primary goal is to migrate compute workloads to an Azure-native platform. Specifically, this involves integrating AKS (containerization with multi-GPU node pools), Blob Storage, databases and Data Lake, Microsoft Fabric, Monitoring and Log Analytics, while working closely with various technical support teams within Microsoft to address the anticipated challenges of launching into production. The hands-on experience shows the practical benefits of using Azure ML and Azure AI Studio, encouraging long-term commitment to the platform. 
@@ -65,10 +64,18 @@ Please do not forget to modify the `.env` file to match your account. Rename `.e
 - [Azure Machine Learning examples](https://github.com/Azure/azureml-examples)
 
 ### SLM fine-tuning
-- [Azure Machine Learning examples](https://github.com/Azure/azureml-examples)
+
+#### Phi-3/Phi-3.5
 - [Finetune Small Language Model (SLM) Phi-3 using Azure ML](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/finetune-small-language-model-slm-phi-3-using-azure-machine/ba-p/4130399)
 - [microsoft/Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct): This is Microsoft's official Phi-3-mini-4k-instruct model.
+- [microsoft/Phi-3-mini-128k-instruct](https://huggingface.co/microsoft/Phi-3-mini-128k-instruct): This is Microsoft's official Phi-3-mini-128k-instruct model.
+- [microsoft/Phi-3.5-mini-instruct](https://huggingface.co/microsoft/Phi-3.5-mini-instruct): This is Microsoft's official Phi-3.5-mini-instruct model.
+- [microsoft/Phi-3.5-MoE-instruct](https://huggingface.co/microsoft/Phi-3.5-MoE-instruct): This is Microsoft's official Phi-3.5-MoE-instruct model.
+- [Korean language proficiency evaluation for LLM/SLM models using KMMLU, CLIcK, and HAE-RAE dataset](https://github.com/daekeun-ml/evaluate-llm-on-korean-dataset)
 - [daekeun-ml/Phi-3-medium-4k-instruct-ko-poc-v0.1](https://huggingface.co/daekeun-ml/Phi-3-medium-4k-instruct-ko-poc-v0.1)
+
+#### Florence-2
+- [Fine-tuning Florence-2 for VQA (Visual Question Answering) using the Azure ML Python SDK and MLflow](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/fine-tuning-florence-2-for-vqa-visual-question-answering-using/ba-p/4181123)
 - [Hugging Face Blog - Finetune Florence-2 on DoCVQA](https://huggingface.co/blog/finetune-florence2)
 
 ### LLMOps
