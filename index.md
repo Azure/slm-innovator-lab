@@ -2,8 +2,13 @@
 layout: default
 title: SLM Innovator Lab
 nav_order: 1
+permalink: /
 ---
 # SLM Innovator Lab
+
+[Agenda](#agenda){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[View it on GitHub][SLM Innovator Lab Repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -43,6 +48,7 @@ This hands-on lab is suitable for the following purposes:
 
 
 ## Prerequisites
+
 Before starting, you have met the following requirements:
 
 - [Access to Azure OpenAI Service](https://go.microsoft.com/fwlink/?linkid=2222006)
@@ -53,6 +59,7 @@ Before starting, you have met the following requirements:
 - ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
 - ***[Compute cluster - for LLM training]*** A single NVIDIA A100 GPU node (`Standard_NC24ads_A100_v4`) and a single NVIDIA V100 GPU node (`Standard_NC6s_v3`) is recommended. If you do not have a dedicated quota or are on a tight budget, choose Low-priority VM.
 
+{: .note }
 Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it
 
 ## References
@@ -80,3 +87,9 @@ Please do not forget to modify the `.env` file to match your account. Rename `.e
 
 ### LLMOps
 - [LLMOps with Prompt flow (Supports both AI Studio and Azure Machine Learning](https://github.com/microsoft/llmops-promptflow-template)
+
+
+----
+changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+
+[SLM Innovator Lab Repo]: https://github.com/Azure/slm-innovator-lab/
