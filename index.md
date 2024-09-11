@@ -90,6 +90,5 @@ Please do not forget to modify the `.env` file to match your account. Rename `.e
 
 
 ----
-changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 
 [SLM Innovator Lab Repo]: https://github.com/Azure/slm-innovator-lab/
