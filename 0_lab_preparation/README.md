@@ -67,12 +67,14 @@ pip install -r requirements.txt
 
 ```shell
 # .env
+# this is a sample for keys used in this code repo. 
+# Please rename it to .env before you can use it
 AZURE_OPENAI_ENDPOINT=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 AZURE_OPENAI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # https://learn.microsoft.com/en-us/azure/ai-services/openai/api-version-deprecation
-AZURE_OPENAI_API_VERSION=2024-05-01-preview
-DEPLOYMENT_NAME=gpt-4o-mini
+AZURE_OPENAI_API_VERSION=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+AZURE_OPENAI_DEPLOYMENT_NAME=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 AZURE_DOC_INTELLIGENCE_ENDPOINT=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 AZURE_DOC_INTELLIGENCE_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
