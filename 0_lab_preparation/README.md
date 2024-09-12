@@ -87,8 +87,8 @@ AZURE_DOC_INTELLIGENCE_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 ### 4️⃣ Setup config.yml
-Modify the `2_slm-fine-tuning-mlstudio/phi3/config.yml` file to match your Azure subscription, resource group, workspace, and data name. 
-
+To get your subscription ID, resource group, and workspace name, go to Azure ML Studio and open your profile. Modify the `2_slm-fine-tuning-mlstudio/phi3/config.yml` file to match your Azure subscription, resource group, workspace, and data name. 
+![copy ml studio auth info](images/copy_ml_auth_info.jpg)
 
 ```yaml
 config:
