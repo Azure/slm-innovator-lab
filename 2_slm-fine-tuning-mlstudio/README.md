@@ -10,9 +10,9 @@ This hands-on walks you through fine-tuning an open source LLM on Azure and serv
 
 ## Use cases
 
-- ### [Phi-3/Phi-3.5 Fine-tuning](phi3)
+- ### [Phi-3/Phi-3.5 Fine-tuning](phi3/1_training_mlflow.ipynb)
 
-- ### [Florence-2 Fine-tuning on DoCVQA](florence2-VQA)
+- ### [Florence-2 Fine-tuning on DoCVQA](florence2-VQA/1_training_mlflow.ipynb)
 
 ## How to get started 
 1. Create your compute instance. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
@@ -24,11 +24,11 @@ This hands-on walks you through fine-tuning an open source LLM on Azure and serv
     ```
 3. Choose the model to use for your desired use case.
     - [Phi-3, Phi-3.5](phi3)
-        - [Option 1. MLflow] Run `1_training_mlflow.ipynb` and `2_serving.ipynb`, respectively.
-        - [Option 2. Custom] Run `1_training_custom.ipynb` and `2_serving.ipynb`, respectively.
+        - [Option 1. MLflow] Run [`1_training_mlflow.ipynb`](phi3/1_training_mlflow.ipynb) and [`2_serving.ipynb`](phi3/2_serving.ipynb), respectively.
+        - [Option 2. Custom] Run [`1_training_custom.ipynb`](phi3/1_training_custom.ipynb) and [`2_serving.ipynb`](phi3/2_serving.ipynb), respectively.
         - *(Optional)* If you are interested in LLM dataset preprocessing, see the hands-ons in `phi3/dataset-preparation` folder.
     - [Florence2-VQA](florence2-VQA)
-        - Run `1_training_mlflow.ipynb` and `2_serving.ipynb`, respectively.
+        - Run [`1_training_mlflow.ipynb`](florence2-VQA/1_training_mlflow.ipynb) and [`2_serving.ipynb`](florence2-VQA/2_serving.ipynb), respectively.
     - Don't forget to edit the `config.yml`.
 
 ## References

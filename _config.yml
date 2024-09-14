@@ -13,40 +13,37 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: SLM Inv Lab
+title: SLM Innv Lab
 email: daekeun.kim@microsoft.com, hyo.choi@microsoft.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AIML Platform.
-#baseurl: "https://hyogrin.github.io" # the subpath of your site, e.g. /blog
+    Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AIML Platform.
+#baseurl: "https://azure.github.io" # the subpath of your site, e.g. /blog
 url: "slm-innovator-lab" # the base hostname & protocol for your site, e.g. http://example.com
-
 
 # Build settings
 markdown: kramdown
 theme: just-the-docs
 plugins:
-  - jekyll-feed
+    - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - README.md
-  - SUPPORT.md
-  - 1_synthetic-qa-generation/evolve-instruct/
-  - 1_synthetic-qa-generation/glan-instruct/
-  - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
-  - 2_slm-fine-tuning-mlstudio/phi3/
-  - vendor
-  - 3_llmops-aistudio/3_2_prototyping/lab3.2_promptflow_ko.md
-  - 3_llmops-aistudio/3_3_optimizing/lab3.3_evaluation_ko.md
-  - 3_llmops-aistudio/3_4_operationalizing/lab3.4_contentfilter_ko.md
+    - Gemfile
+    - Gemfile.lock
+    - node_modules
+    - README.md
+    - SUPPORT.md
+    - 1_synthetic-qa-generation/evolve-instruct/
+    - 1_synthetic-qa-generation/glan-instruct/
+    - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
+    - 2_slm-fine-tuning-mlstudio/phi3/
+    - vendor
+    - 3_llmops-aistudio/3_2_prototyping/lab3.2_promptflow_ko.md
+    - 3_llmops-aistudio/3_3_optimizing/lab3.3_evaluation_ko.md
+    - 3_llmops-aistudio/3_4_operationalizing/lab3.4_contentfilter_ko.md
 
-
-# By default, all Capital letters come before all lowercase letters; 
-# you can add nav_sort: case_insensitive in the configuration file to ignore the case. 
+# By default, all Capital letters come before all lowercase letters;
+# you can add nav_sort: case_insensitive in the configuration file to ignore the case.
 nav_sort: case_insensitive
-
