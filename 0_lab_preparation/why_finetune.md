@@ -107,7 +107,7 @@ Azure AI Studio provides a comprehensive suite of tools for managing and optimiz
 
 ----
 
-[^1]: How Is ChatGPT’s Behavior Changing over Time? - https://arxiv.org/pdf/2307.09009 
+[^1]: [How Is ChatGPT’s Behavior Changing over Time?](https://arxiv.org/pdf/2307.09009)
 
 [^2]: [LLM Drift, Prompt Drift, Chaining & Cascading by Cobus Greyling](https://cobusgreyling.medium.com/llm-drift-prompt-drift-chaining-cascading-fa8fbf67c0fd)
 

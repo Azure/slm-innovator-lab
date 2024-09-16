@@ -4,6 +4,8 @@ title: Lab 0. Requirements (Skip if you have already set up)
 nav_order: 3
 ---
 
+# Lab 0. Requirements (Skip if you have already set up)
+
 ## 1. Requirements
 
 ### Checklist
