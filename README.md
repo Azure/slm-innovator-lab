@@ -51,6 +51,9 @@ This workshop assumes that you are configuring in a public environment and you h
 
 ## References
 
+<details markdown="block">
+<summary>Expand</summary>
+
 ### Data preparation
 - [Evolve-Instruct](https://arxiv.org/pdf/2304.12244)
 - [GLAN (Generalized Instruction Tuning)](https://arxiv.org/pdf/2402.13064)
@@ -74,6 +77,8 @@ This workshop assumes that you are configuring in a public environment and you h
 
 ### LLMOps
 - [LLMOps with Prompt flow (Supports both AI Studio and Azure Machine Learning](https://github.com/microsoft/llmops-promptflow-template)
+
+</details>
 
 ## Contributing
 

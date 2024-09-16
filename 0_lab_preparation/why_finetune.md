@@ -4,6 +4,8 @@ title: Background. Why Azure and Fine-tuning?
 nav_order: 2
 ---
 
+# Background. Why Azure and Fine-tuning?
+
 ## Table of contents
 {: .no_toc .text-delta }
 

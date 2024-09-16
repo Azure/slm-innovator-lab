@@ -28,7 +28,7 @@ This hands-on lab is suitable for the following purposes:
 3. Reference guide for SLM fine-tuning&serving PoC/Prototype
 
 ## Agenda
-- **Why Azure?**: Before we get into the hands-on, we explain to participants exactly what the SLM Innovator Lab is all about and give them an overview of the AIML ecosystem in Azure. 
+- **Background. Why Azure and Fine-tuning?**: Before we get into the hands-on, we explain to participants exactly what the SLM Innovator Lab is all about and give them an overview of the GenAI ecosystem in Azure. 
 
 - **Lab 1. Data preparation**: Participants will dive into the critical first step of the GenAI pipeline. The session will focus on how to prepare data from real-world scenarios to create high-quality datasets necessary for fine-tuning models. Participants will learn how to process QnA (Questions & Answers) data and generate synthetic data to augment the training set, ensuring the model can handle a wide range of domain, including those in non-English languages. By the end of this lab, participants will have hands-on experience in transforming raw data into a format ready for effective AI model training. 
 
@@ -62,7 +62,6 @@ Before starting, you have met the following requirements:
 Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it
 
 ## References
-
 
 <details markdown="block">
 <summary>Expand</summary>
