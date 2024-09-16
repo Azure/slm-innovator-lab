@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: SLM Innovator Lab
 nav_order: 1
 permalink: /
@@ -48,6 +48,9 @@ This hands-on lab is suitable for the following purposes:
 
 ## Prerequisites
 
+{: .note}
+Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it
+
 Before starting, you have met the following requirements:
 
 - [Access to Azure OpenAI Service](https://go.microsoft.com/fwlink/?linkid=2222006)
@@ -57,9 +60,6 @@ Before starting, you have met the following requirements:
 
 - ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
 - ***[Compute cluster - for LLM training]*** A single NVIDIA A100 GPU node (`Standard_NC24ads_A100_v4`) and a single NVIDIA V100 GPU node (`Standard_NC6s_v3`) is recommended. If you do not have a dedicated quota or are on a tight budget, choose Low-priority VM.
-
-{: .note }
-Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it
 
 ## References
 

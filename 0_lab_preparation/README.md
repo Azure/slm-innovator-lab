@@ -1,10 +1,16 @@
 ---
-layout: default
+layout: home
 title: Lab 0. Requirements (Skip if you have already set up)
 nav_order: 3
 ---
 
 ## 1. Requirements
+
+### Checklist
+
+{: .note }
+Customers who participate in this hands-on lab will need to discuss with their Microsoft sales representative and complete the checklist. The checklist will ultimately be completed by the sales representative, but we ask that you cooperate in completing the checklist to ensure the right situation/right person is involved.
+
 ### Hands-on Requirements
 - Ensure you have access to Azure OpenAI Service.
 - Set up your Azure ML workspace and get your <WORKSPACE_NAME>, <RESOURCE_GROUP> and <SUBSCRIPTION_ID>.
