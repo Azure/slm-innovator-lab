@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab 1. Generate Synthetic QnAs from Real-world Data 
-nav_order: 2
+nav_order: 4
 ---
 
 # Lab 1. Generate Synthetic QnAs from Real-world Data 

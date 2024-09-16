@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Requirements (Skip if you have already set up)
-nav_order: 2
+title: Lab 0. Requirements (Skip if you have already set up)
+nav_order: 3
 ---
 
 ## 1. Requirements

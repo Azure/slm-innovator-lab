@@ -9,7 +9,6 @@ permalink: /
 [Agenda](#agenda){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View it on GitHub][SLM Innovator Lab Repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
-
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -64,6 +63,10 @@ Please do not forget to modify the `.env` file to match your account. Rename `.e
 
 ## References
 
+
+<details markdown="block">
+<summary>Expand</summary>
+
 ### Data preparation
 - [Evolve-Instruct](https://arxiv.org/pdf/2304.12244)
 - [GLAN (Generalized Instruction Tuning)](https://arxiv.org/pdf/2402.13064)
@@ -88,6 +91,7 @@ Please do not forget to modify the `.env` file to match your account. Rename `.e
 ### LLMOps
 - [LLMOps with Prompt flow (Supports both AI Studio and Azure Machine Learning](https://github.com/microsoft/llmops-promptflow-template)
 
+</details>
 
 ----
 

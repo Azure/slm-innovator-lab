@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
-nav_order: 4
+nav_order: 5
 ---
 
 # Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
