@@ -92,6 +92,5 @@ Before starting, you have met the following requirements:
 
 </details>
 
-----
 
 [SLM Innovator Lab Repo]: https://github.com/Azure/slm-innovator-lab/

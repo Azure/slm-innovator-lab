@@ -50,10 +50,7 @@ nav_sort: case_insensitive
 
 footer_content: 'Distributed by an <a href="https://github.com/Azure/slm-innovator-lab/blob/main/LICENSE">MIT license.</a> This hands-on lab was developed by Microsoft AI GBB (Global Black Belt).'
 
-# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
-color_scheme: dark
-
-callouts_level: quiet # or loud
+callouts_level: loud # or loud
 callouts:
     highlight:
         color: yellow
