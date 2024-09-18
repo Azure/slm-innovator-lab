@@ -87,7 +87,8 @@ nodes:
 ![add the connection information](images/create_connect_custom_resource.jpg)
 
 5. 배포된 phi3.5 엔드포인트를 호출하기 위해 파이썬 노드에 아래 코드를 첨부합니다. 
-```
+
+```python
 import urllib
 import json
 from promptflow import tool

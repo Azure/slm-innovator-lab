@@ -86,8 +86,9 @@ nodes:
 4. Add the connection information to the Python Node to request the deployed phi3.5 endpoint and click add connection
 ![add the connection information](images/create_connect_custom_resource.jpg)
 
-5. attach the code below on your Python Node to request the deployed phi3.5 endpoint. 
-```
+5. Attach the code below on your Python Node to request the deployed phi3.5 endpoint. 
+
+```python
 import urllib
 import json
 from promptflow import tool
