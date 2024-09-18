@@ -47,3 +47,25 @@ exclude:
 # By default, all Capital letters come before all lowercase letters;
 # you can add nav_sort: case_insensitive in the configuration file to ignore the case.
 nav_sort: case_insensitive
+
+footer_content: 'Distributed by an <a href="https://github.com/Azure/slm-innovator-lab/blob/main/LICENSE">MIT license.</a> This hands-on lab was developed by Microsoft AI GBB (Global Black Belt).'
+
+# Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
+color_scheme: dark
+
+callouts_level: quiet # or loud
+callouts:
+    highlight:
+        color: yellow
+    important:
+        title: Important
+        color: blue
+    new:
+        title: New
+        color: green
+    note:
+        title: Note
+        color: purple
+    warning:
+        title: Warning
+        color: red
