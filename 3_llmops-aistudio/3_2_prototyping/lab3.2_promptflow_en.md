@@ -24,7 +24,7 @@ nav_order: 321
 
 ### TOC
 - 1️⃣ Create a basic chat flow 
-- 2️⃣ Integrate the finetuned phi3.5 endpoint into Python Node
+- 2️⃣ Integrate the fine-tuned phi3.5 endpoint into Python Node
 - 3️⃣ Create another model using LLM Node 
 - 4️⃣ Interact with the Chat: Test and trace the chat flow
 
@@ -79,7 +79,7 @@ nodes:
 1. First of all, In order to get the endpoint information to create a connection, Navigate to the Azure Machine Learning workspace you created > Endpoints > Consume tab > Copy the REST endpoint and primary key as the authentication information.
 ![copy the REST endpoint and primary key](images/copy_endpoint_comsumption_info.jpg)
 
-2. Go back to Azure AI Studio > Settings > Create a new connection to integrate with deployed phi3.5 endpoint. 
+2. Go back to Azure AI Studio > Settings > Create a new connection to integrate with deployed fine-tuned phi3.5 endpoint. 
 ![create a new connection](images/create_new_connection.jpg)
 
 3. Select the connection type as Custom keys and put the connection information 
@@ -88,7 +88,7 @@ nodes:
 4. Add the connection information to the Python Node to request the deployed phi3.5 endpoint and click add connection
 ![add the connection information](images/create_connect_custom_resource.jpg)
 
-5. Attach the code below on your Python Node to request the fine tuned phi3.5 endpoint. 
+5. Attach the code below on your Python Node to request the fine-tuned phi3.5 endpoint. 
 
 {: .note}
 Since this endpoint is based on fine-tuned online endpoints in Azure Machine Learning, the input and output specifications follow the scoring script provided in the previous step on 2_slm-fine-tuning-mlstudio. Please check the [score.py](../../2_slm-fine-tuning-mlstudio/phi3/src_serve/score.py) file in the Azure ML studio to get the input and output format. If you want to understand the scoring_script, please refer to the [Understand the scoring script](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=python#understand-the-scoring-script).
@@ -169,7 +169,7 @@ def my_python_tool(input_data: str, connection: CustomConnection) -> str:
 
 > What is the brief history of Microsoft? 
 
-### 3️⃣ Create another model using LLM Node
+### 3️⃣ Create another model using LLM Node to compare the results
 1. Create a new LLM Node to test the different model and prompt.
 ![create a new LLM Node](images/add_llm.jpg)
 
@@ -190,11 +190,17 @@ def my_python_tool(input_data: str, connection: CustomConnection) -> str:
 1. Let's test the phi3.5 and LLM model on the chat window
 ![test the phi3.5 and LLM model](images/ask_about_phi.jpg)
 
-2. You can review the both phi3.5 and LLM successfully executed and check the detailed output on the Tracing window 
+2. You can review the both phi3.5 and LLM successfully executed  
 ![save the LLM Node](images/final_dag_graph.jpg)
-![trace each model](images/trace_each_model.jpg)
 
-3. If you go back to the Azure ML studio, you can get log and monitor your endpoint to check the performance and behavior of the model.
+3. Click the View outputs to check the each model's output
+![click view output](images/click_view_output.jpg)
+
+
+4. You can trace each model to check the performance and behavior of the model
+![trace each model](images/two_model_comparision.png)
+
+5. If you go back to the Azure ML studio, you can get log and monitor your endpoint to check the performance and behavior of the model.
 ![monitor endpoint](images/monitor_endpoint_metrics.png)
 ![endpoint log](images/endpoint_log.png)
 
