@@ -24,12 +24,14 @@ nav_order: 321
 
 ### TOC
 - 1️⃣ Create a basic chat flow 
-- 2️⃣ Integrate the phi3.5 endpoint into Python Node
+- 2️⃣ Integrate the finetuned phi3.5 endpoint into Python Node
 - 3️⃣ Create another model using LLM Node 
 - 4️⃣ Interact with the Chat: Test and trace the chat flow
 
 ### 1️⃣ Create a basic chat flow 
+
 Define the Chat Flow: Create a new chat flow and define the chat flow structure
+
 1. Azure AI Studio > Prompt flow > Click +Create to create a new flow
 ![create a new flow](images/create_new_flow.jpg)
 
@@ -73,7 +75,7 @@ nodes:
 ![review the modified flow](images/first_dag_graph.jpg)
 
 
-### 2️⃣ Integrate the phi3.5 endpoint into Python Node
+### 2️⃣ Integrate the fine tuned phi3.5 endpoint into Python Node
 1. First of all, In order to get the endpoint information to create a connection, Navigate to the Azure Machine Learning workspace you created > Endpoints > Consume tab > Copy the REST endpoint and primary key as the authentication information.
 ![copy the REST endpoint and primary key](images/copy_endpoint_comsumption_info.jpg)
 
@@ -86,7 +88,10 @@ nodes:
 4. Add the connection information to the Python Node to request the deployed phi3.5 endpoint and click add connection
 ![add the connection information](images/create_connect_custom_resource.jpg)
 
-5. Attach the code below on your Python Node to request the deployed phi3.5 endpoint. 
+5. Attach the code below on your Python Node to request the fine tuned phi3.5 endpoint. 
+
+{: .note}
+Since this endpoint is based on fine-tuned online endpoints in Azure Machine Learning, the input and output specifications follow the scoring script provided in the previous step on 2_slm-fine-tuning-mlstudio. Please check the ![score.py](../../2_slm-fine-tuning-mlstudio/phi3/src_serve/score.py) file in the Azure ML studio to get the input and output format. If you want to understand the scoring_script, please refer to the [Understand the scoring script](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=python#understand-the-scoring-script).
 
 ```python
 import urllib
