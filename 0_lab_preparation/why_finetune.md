@@ -5,6 +5,7 @@ nav_order: 2
 ---
 
 # Background. Why Azure and Fine-tuning?
+{: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }

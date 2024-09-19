@@ -3,6 +3,7 @@ layout: default
 title: Evolve-Instruct
 permalink: /1_2_evolve-instruct/
 parent: Lab 1. Generate Synthetic QnAs from Real-world Data
+nav_order: 4.2
 ---
 
 # Evolve-Instruct
