@@ -75,11 +75,3 @@ Please start a new project by connecting to Codespace Project. The environment r
 
 ### Option 3. Your local PC
 Please start by installing the required packages on your local PC with `cd .. && pip install -r requirements.txt`
-
-## References
-- Evolve-Instruct: https://arxiv.org/pdf/2304.12244
-- GLAN (Generalized Instruction Tuning): https://arxiv.org/pdf/2402.13064
-- Auto Evolve-Instruct: https://arxiv.org/pdf/2406.00770
-
-## License Summary
-This sample code is provided under the MIT-0 license. See the LICENSE file.
