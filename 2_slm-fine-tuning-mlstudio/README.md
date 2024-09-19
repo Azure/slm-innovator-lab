@@ -165,7 +165,8 @@ with mlflow.start_run() as run:
         val_img_result = create_image_with_text(val_img, json.dumps(result))
         mlflow.log_image(val_img_result, key="DocVQA", step=step)    
 ```
-{: .note}
+
+{: .warning}
 Some SLMs/LLMs do not support `mlflow.transformers.log_model()`, so we recommend you save the model with the traditional `save_pretrained()`.
 
 ```python
