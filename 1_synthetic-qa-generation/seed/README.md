@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Lab 1.1 Generate Coverage dataset (seed data)
+title: Generate Coverage dataset (seed data)
 permalink: /1_1_seed/
 parent: Lab 1. Generate Synthetic QnAs from Real-world Data
 nav_order: 4.1
 ---
 
-# Lab 1.1 Generate Coverage dataset (seed data)
+# Generate Coverage dataset (seed data)
 
 ## Overview
 The task is to preprocess and convert this heterogeneous data into a structured format suitable for fine-tuning or RAG. This involves extracting and cleaning text from various file formats, converting tables and images to text using Azure AI Services if necessary. This dataset is used as a seed dataset for fine tuning or RAG and is used as a baseline to improve the performance of domain-specific use cases.

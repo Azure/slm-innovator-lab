@@ -35,8 +35,6 @@ exclude:
     - node_modules
     - README.md
     - SUPPORT.md
-    - 1_synthetic-qa-generation/evolve-instruct/
-    - 1_synthetic-qa-generation/glan-instruct/
     - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
     - 2_slm-fine-tuning-mlstudio/phi3/
     - vendor

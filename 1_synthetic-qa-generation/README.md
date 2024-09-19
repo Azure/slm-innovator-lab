@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Lab 1. Generate Synthetic QnAs from Real-world Data
+permalink: /1_synthetic_data/
 has_children: true
 nav_order: 4
 ---

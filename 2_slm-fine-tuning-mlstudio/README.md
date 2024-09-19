@@ -1,10 +1,12 @@
 ---
 layout: default
 title: Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
+permalink: /2_fine-tuning/
 nav_order: 5
 ---
 
 # Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
+{: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }
