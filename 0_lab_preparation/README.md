@@ -15,9 +15,9 @@ Customers who participate in this hands-on lab will need to discuss with their M
 
 ### Hands-on Requirements
 - Ensure you have access to Azure OpenAI Service.
-- Set up your Azure ML workspace and get your <WORKSPACE_NAME>, <RESOURCE_GROUP> and <SUBSCRIPTION_ID>.
+- Set up your Azure ML workspace and get your `<WORKSPACE_NAME>`, `<RESOURCE_GROUP>` and `<SUBSCRIPTION_ID>`.
 - create a project in Azure AI Studio.
-- For LLM training, recommend a single NVIDIA A100 node (Standard_NC24ads_A100_v4)  or NVIDIA V100 GPU node(Standard_NC6s_v3). 
+- For LLM training, recommend a single NVIDIA A100 node (`Standard_NC24ads_A100_v4`)  or NVIDIA V100 GPU node (`Standard_NC6s_v3`). 
 - Opt for Low-priority VMs if on a budget or without a dedicated quota.
 
 ### Cautions
