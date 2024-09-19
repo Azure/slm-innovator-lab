@@ -224,8 +224,8 @@ Check whether model training is progressing normally through Jobs Asset.
 ![train_job_images](./images/train_job_images.png)
 
 4. **Outputs + log**s tab checks and monitors your model training infrastructure, containers, and code for issues.
-- `system_logs` folder records all key activities and events related to the Training cluster, data assets, hosted tools, etc.
-- `user_logs` folder mainly plays an important role in storing logs and other files created by users within the training script, increasing transparency of the training process and facilitating debugging and monitoring. This allows users to see a detailed record of the training process and identify and resolve issues when necessary.
+    - `system_logs` folder records all key activities and events related to the Training cluster, data assets, hosted tools, etc.
+    - `user_logs` folder mainly plays an important role in storing logs and other files created by users within the training script, increasing transparency of the training process and facilitating debugging and monitoring. This allows users to see a detailed record of the training process and identify and resolve issues when necessary.
 
 ![train_job_logs](./images/train_job_logs.png)
 
@@ -298,10 +298,10 @@ RUN apt-get install -y openssh-server openssh-client
 
 An endpoint refers to an HTTP(S) URL that makes the model accessible from the outside. Endpoint can have multiple deployments, which allows traffic to be distributed across multiple deployments. Endpoint does the following:
 
-- API interface provided: Endpoint provides a URL to receive model prediction requests through a RESTful API.
-- Traffic routing: Endpoint distributes traffic across multiple deployments. This allows you to implement A/B testing or canary deployment strategies.
-- Scalability: Endpoint supports scaling across multiple deployments and can be load balanced across additional deployments as traffic increases.
-- Security Management: Endpoints secure models through authentication and authorization. You can control access using API keys or Microsoft Entra ID.
+- **API interface provided**: Endpoint provides a URL to receive model prediction requests through a RESTful API.
+- **Traffic routing**: Endpoint distributes traffic across multiple deployments. This allows you to implement A/B testing or canary deployment strategies.
+- **Scalability**: Endpoint supports scaling across multiple deployments and can be load balanced across additional deployments as traffic increases.
+- **Security Management**: Endpoints secure models through authentication and authorization. You can control access using API keys or Microsoft Entra ID.
 
 The code snippet is below. Note that this process does not provision a compute cluster yet.
 
@@ -333,13 +333,13 @@ except Exception as err:
     ) from err
 ```
 
-4.5. Create a Deployment
+### 4.5. Create a Deployment
 
 Deployment is the instance that actually run the model. Multiple deployments can be connected to an endpoint, and each deployment contains a model, environment, compute resources, infrastructure settings, and more. Deployment does the following:
 
-- Manage resources: The deployment manages the computing resources needed to run the model. You can set up resources like CPU, GPU, and memory.
-- Versioning: Deployments can manage different versions of a model. This makes it easy to roll back to a previous version or deploy a new version.
-- Monitoring and logging: We can monitor the logs and performance of running models. This helps you detect and resolve issues.
+- **Manage resources**: The deployment manages the computing resources needed to run the model. You can set up resources like CPU, GPU, and memory.
+- **Versioning**: Deployments can manage different versions of a model. This makes it easy to roll back to a previous version or deploy a new version.
+- **Monitoring and logging**: We can monitor the logs and performance of running models. This helps you detect and resolve issues.
 
 The code snippet is below. Note that this takes a lot of time as a GPU cluster must be provisioned and the serving environment must be built.
 
