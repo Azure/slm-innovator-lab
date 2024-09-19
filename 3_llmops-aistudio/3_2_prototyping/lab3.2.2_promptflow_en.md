@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Lab 3.2.2 SLM and LLM comparision with Azure AI Studio Prompt Flow (EN)
+title: Lab 3.2.2 SLM and LLM comparison with Azure AI Studio Prompt Flow (EN)
 permalink: /3_2_2_prototyping_en/
 parent: Lab 3.2 Overview
 grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 322
 ---
 
-# Lab 3.2.2 SLM and LLM comparision with Azure AI Studio Prompt Flow
+# Lab 3.2.2 SLM and LLM comparison with Azure AI Studio Prompt Flow
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ nav_order: 322
 
 
 4. You can trace each model to check the performance and behavior of the model
-![trace each model](images/two_model_comparision.png)
+![trace each model](images/two_model_comparison.png)
 
 5. If you go back to the Azure ML studio, you can get log and monitor your endpoint to check the performance and behavior of the model.
 ![monitor endpoint](images/monitor_endpoint_metrics.png)
