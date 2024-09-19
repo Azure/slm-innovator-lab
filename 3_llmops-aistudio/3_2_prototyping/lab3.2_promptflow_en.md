@@ -91,7 +91,7 @@ nodes:
 5. Attach the code below on your Python Node to request the fine tuned phi3.5 endpoint. 
 
 {: .note}
-Since this endpoint is based on fine-tuned online endpoints in Azure Machine Learning, the input and output specifications follow the scoring script provided in the previous step on 2_slm-fine-tuning-mlstudio. Please check the ![score.py](../../2_slm-fine-tuning-mlstudio/phi3/src_serve/score.py) file in the Azure ML studio to get the input and output format. If you want to understand the scoring_script, please refer to the [Understand the scoring script](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=python#understand-the-scoring-script).
+Since this endpoint is based on fine-tuned online endpoints in Azure Machine Learning, the input and output specifications follow the scoring script provided in the previous step on 2_slm-fine-tuning-mlstudio. Please check the [score.py](../../2_slm-fine-tuning-mlstudio/phi3/src_serve/score.py) file in the Azure ML studio to get the input and output format. If you want to understand the scoring_script, please refer to the [Understand the scoring script](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=python#understand-the-scoring-script).
 
 ```python
 import urllib
