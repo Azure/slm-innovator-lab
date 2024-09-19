@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab 3.2.2 SLM and LLM comparision with Azure AI Studio Prompt Flow (EN)
-permalink: /3_2_prototyping_en/
+permalink: /3_2_2_prototyping_en/
 parent: Lab 3.2 Overview
 grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 322
