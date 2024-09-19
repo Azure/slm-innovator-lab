@@ -2,7 +2,7 @@
 layout: default
 title: Lab 1.2 Evolve-Instruct
 parent: Lab 1. Generate Synthetic QnAs from Real-world Data
-nav_order: 12
+nav_order: 42
 ---
 
 # Lab 1.2 Evolve-Instruct

@@ -3,7 +3,7 @@ layout: default
 title: Lab 3.3 Overview
 permalink: /3_3_overview/
 parent: Lab 3. LLMOps for SLM with Azure AI Studio
-nav_order: 33
+nav_order: 63
 has_children: true
 ---
 

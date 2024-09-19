@@ -4,7 +4,7 @@ title: Lab 3.2.1 Prototype your first gen AI application using the fine-tuned mo
 permalink: /3_2_1_prototyping_en/
 parent: Lab 3.2 Overview
 grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
-nav_order: 321
+nav_order: 621
 ---
 
 # Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Studio Prompt Flow

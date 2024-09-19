@@ -2,7 +2,7 @@
 layout: default
 title: Lab 1.3 GLAN (Generalized Instruction Tuning) 
 parent: Lab 1. Generate Synthetic QnAs from Real-world Data
-nav_order: 13
+nav_order: 43
 ---
 
 # Lab 1.3 GLAN (Generalized Instruction Tuning) 
