@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Lab 3.2.1 Prototype your first gen AI application with prompt flow (EN)
+title: Lab 3.2.1 Prototype your first gen AI application using the fine-tuned model with prompt flow (EN)
 permalink: /3_2_prototyping_en/
 parent: Lab 3.2 Overview
 grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 321
 ---
 
-# Lab 3.2.1 Prototyping a Gen AI app with Azure AI Studio Prompt Flow
+# Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Studio Prompt Flow
 
 ### Prerequisites
 
@@ -20,13 +20,10 @@ nav_order: 321
 
 - I want to run a simple PoC on a model that fine-tuned. 
 - I want to see what results are generated when I run the prompts. 
-- I want to do some testing, log tracing and monitoring to determine the right model. 
 
 ### TOC
 - 1️⃣ Create a basic chat flow 
 - 2️⃣ Integrate the fine-tuned phi3.5 endpoint into Python Node
-- 3️⃣ Create another model using LLM Node 
-- 4️⃣ Interact with the Chat: Test and trace the chat flow
 
 ### 1️⃣ Create a basic chat flow 
 
@@ -168,39 +165,4 @@ def my_python_tool(input_data: str, connection: CustomConnection) -> str:
 8. Let's test phi3.5 model on the chat window
 
 > What is the brief history of Microsoft? 
-
-### 3️⃣ Create another model using LLM Node to compare the results
-1. Create a new LLM Node to test the different model and prompt.
-![create a new LLM Node](images/add_llm.jpg)
-
-2. Put the LLM Node name and select the model type as LLM
-![put the LLM Node name](images/add_node_name.jpg)
-
-3. Add the connection parameters of the LLM Node to call the deployed LLM model and Click Validate and parse input. Don't forget to add inputs to the LLM Node.
-![add the connection parameters](images/add_gpt4o_node.jpg)
-
-4. Add more outputs to the LLM Node to get the generated text from the LLM model. Chat output radio box should be checked to display the generated text on the chat window.
-![add the connection parameters](images/add_more_output.jpg)
-
-5. Save the LLM Node and run the chat flow to test the LLM model
-![save the LLM Node](images/save_open_chat_window.jpg)
-
-
-### 4️⃣ Interact with the Chat: Test and trace the chat flow
-1. Let's test the phi3.5 and LLM model on the chat window
-![test the phi3.5 and LLM model](images/ask_about_phi.jpg)
-
-2. You can review the both phi3.5 and LLM successfully executed  
-![save the LLM Node](images/final_dag_graph.jpg)
-
-3. Click the View outputs to check the each model's output
-![click view output](images/click_view_output.jpg)
-
-
-4. You can trace each model to check the performance and behavior of the model
-![trace each model](images/two_model_comparision.png)
-
-5. If you go back to the Azure ML studio, you can get log and monitor your endpoint to check the performance and behavior of the model.
-![monitor endpoint](images/monitor_endpoint_metrics.png)
-![endpoint log](images/endpoint_log.png)
 
