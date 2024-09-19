@@ -39,7 +39,7 @@ This workshop assumes that you are configuring in a public environment and you h
 2. Open the terminal of the CI and run: 
     ```shell
     git clone https://github.com/Azure/slm-innovator-lab.git
-    conda activate azureml_py310_sdkv2
+    cd slm-innovator-lab && conda activate azureml_py310_sdkv2
     pip install -r requirements.txt
     ```
 

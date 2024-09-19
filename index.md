@@ -61,6 +61,17 @@ Before starting, you have met the following requirements:
 - ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
 - ***[Compute cluster - for LLM training]*** A single NVIDIA A100 GPU node (`Standard_NC24ads_A100_v4`) and a single NVIDIA V100 GPU node (`Standard_NC6s_v3`) is recommended. If you do not have a dedicated quota or are on a tight budget, choose Low-priority VM.
 
+
+## How to get started 
+1. Create your compute instance in Azure ML Studio. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
+2. Open the terminal of the CI and run: 
+    ```shell
+    git clone https://github.com/Azure/slm-innovator-lab.git
+    cd slm-innovator-lab && conda activate azureml_py310_sdkv2
+    pip install -r requirements.txt
+    ```
+
+
 ## References
 
 <details markdown="block">
