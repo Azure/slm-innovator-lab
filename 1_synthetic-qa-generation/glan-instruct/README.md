@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Lab 1.3 GLAN
+permalink: /1_3_glan/
 parent: Lab 1. Generate Synthetic QnAs from Real-world Data
 nav_order: 4.3
 ---

@@ -5,6 +5,7 @@ nav_order: 1
 permalink: /
 ---
 # SLM Innovator Lab
+{: .no_toc }
 
 [Agenda](#agenda){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View it on GitHub][SLM Innovator Lab Repo]{: .btn .fs-5 .mb-4 .mb-md-0 }

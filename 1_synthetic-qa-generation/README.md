@@ -5,7 +5,8 @@ has_children: true
 nav_order: 4
 ---
 
-# Lab 1. Generate Synthetic QnAs from Real-world Data 
+# Lab 1. Generate Synthetic QnAs from Real-world Data
+{: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }

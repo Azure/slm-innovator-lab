@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Lab 1.1 Generate Coverage dataset (seed data)
+permalink: /1_1_seed/
 parent: Lab 1. Generate Synthetic QnAs from Real-world Data
 nav_order: 4.1
 ---

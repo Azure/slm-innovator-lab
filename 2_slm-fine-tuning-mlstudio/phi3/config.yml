@@ -11,7 +11,7 @@ config:
 
 train:
     azure_env_name: "llm-finetuning-2024-08-27" # Please modify to your AzureML env name
-    azure_compute_cluster_name: "gpu-cluster-a100"
+    azure_compute_cluster_name: "gpu-cluster-a100-lowpriority"
     azure_compute_cluster_size: "Standard_NC24ads_A100_v4" # 1 x A100 (80GB)
     epoch: 1
     train_batch_size: 8
