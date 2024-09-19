@@ -1,4 +1,11 @@
-# GLAN (Generalized Instruction Tuning) 
+---
+layout: default
+title: Lab 1.3 GLAN (Generalized Instruction Tuning) 
+parent: Lab 1. Generate Synthetic QnAs from Real-world Data
+nav_order: 13
+---
+
+# Lab 1.3 GLAN (Generalized Instruction Tuning) 
 
 ## Overview
 GLAN uses a systematic taxonomy of human knowledge and abilities to generate large-scale synthetic instruction data across a variety of fields. 

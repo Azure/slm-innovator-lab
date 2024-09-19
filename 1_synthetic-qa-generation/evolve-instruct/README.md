@@ -1,4 +1,11 @@
-# Evolve-Instruct
+---
+layout: default
+title: Lab 1.2 Evolve-Instruct
+parent: Lab 1. Generate Synthetic QnAs from Real-world Data
+nav_order: 12
+---
+
+# Lab 1.2 Evolve-Instruct
 
 ## Overview
 The Evolve Instruct method creates more diverse and complex instructions by modifying (augmenting) existing instruction data. To achieve this, this technique utilizes LLMs such as GPT-4o to rewrite or transform existing instructions. In particular, It uses two strategies to make instructions more complex or create new instructions: In-depth Evolving and In-breadth Evolving.

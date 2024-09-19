@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Lab 1. Generate Synthetic QnAs from Real-world Data 
+title: Lab 1. Generate Synthetic QnAs from Real-world Data
+has_children: true
 nav_order: 4
 ---
 
@@ -39,7 +40,7 @@ Please start by installing the required packages on your local PC with `cd .. &&
 
 We aims to enhance the model's performance by fine-tuning/RAG (Retrieval-Augmented Generation), providing a high-quality dataset. However, no pre-existing dataset is provided; we only have unprocessed raw data in formats such as PDF, CSV, and TXT. This raw data consists of a mixture of images, tables, and text.
 
-### 2.1. Constructing a seed dataset 
+### 2.1. Constructing a coverage dataset (seed data) 
 The task is to preprocess and convert this heterogeneous data into a structured format suitable for fine-tuning or RAG. This involves extracting and cleaning text from various file formats, converting tables and images to text using Azure AI Services if necessary. This dataset is used as a seed dataset for fine tuning or RAG and is used as a baseline to improve the performance of domain-specific use cases.
 
 ### 2.2. Data Augmentation (Optional)
@@ -52,7 +53,7 @@ Below is a comparison of the results before and after fine tuning of GPT-4o with
 
 ## 3. Contents
 
-### 3.1. Constructing a seed dataset 
+### 3.1. Constructing a coverage dataset (seed data) 
 ![diagram1](./imgs/diagram1.png)
 
 Convert the given raw data into data that can be used for model training/RAG/evaluation using Azure OpenAI GPT-4o. `make_qa_multimodal_pdf_docai.ipynb` is most recommended. However, if you feel that the logic of this code is complicated, or if your file content consists only of images or text, please try looking at other Jupyter notebooks first.
