@@ -4,7 +4,7 @@ Unlock the full potential of your AI projects with the SLM Innovator Lab, powere
 
 This hands-on lab is suitable for the following purposes:
 
-1. 1-day workshop / 2-day workshop
+1. 1-day workshop (4-7 hours depending on customer) / 2-day workshop with LLMOps hands-on
 2. Hackathon starter code
 3. Reference guide for SLM fine-tuning&serving PoC/Prototype
 
@@ -14,28 +14,29 @@ Hands-on guide: https://azure.github.io/slm-innovator-lab/
 Before starting, you have met the following requirements:
 
 - [Access to Azure OpenAI Service](https://go.microsoft.com/fwlink/?linkid=2222006)
-- [Azure ML getting started](https://github.com/Azure/azureml-examples/tree/main/tutorials): Connect to Azure ML workspace and get your <WORKSPACE_NAME>, <RESOURCE_GROUP> and <SUBSCRIPTION_ID>.
+- [Azure ML getting started](https://github.com/Azure/azureml-examples/tree/main/tutorials): Connect to [Azure ML] workspace and get your <WORKSPACE_NAME>, <RESOURCE_GROUP> and <SUBSCRIPTION_ID>.
 - [Azure AI Studio getting started](https://aka.ms/azureaistudio): Create a project
 - [Azure AI Document Intelligence (v4.0 - 2024-02-29 preview)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
 
-- ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
-- ***[Compute cluster - for LLM training]*** A single NVIDIA A100 GPU node (`Standard_NC24ads_A100_v4`) and a single NVIDIA V100 GPU node (`Standard_NC6s_v3`) is recommended. If you do not have a dedicated quota or are on a tight budget, choose Low-priority VM. The availabilty of the VMs may vary by region.  
+- ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_DS11_v2]** (2 cores, 14GB RAM, 28GB storage, No GPUs).
+- ***[Compute cluster - for SLM/LLM fine-tuning]*** A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended. If you do not have a dedicated quota or are on a tight budget, choose **[Low-priority VM]**.
+- ***[Compute cluster - for SLM/LLM deployment]*** A single NVIDIA V100 GPU node (**[Standard_NC6s_v3]**) or A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended.
 
 Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it
 
 ## Cautions
 This workshop assumes that you are configuring in a public environment and you have access to the internet. If you are configuring in a private environment, you may need to set up a private network to access the services. The following are some common issues you may encounter when you configure in a private environment:
-- If you set up the Azure ML workspace and Azure AI Studio in private network, you may need to set up a VPN or a private link to access the services.
+- If you set up the [Azure ML] workspace and [Azure AI Studio] in private network, you may need to set up a VPN or a private link to access the services.
 - If you are using a low-priority VM, you may need to wait for the VM to be available. The availability of the VMs may vary by region.
-- If you have blob storage, you can use it to store the data and models. However, you may need to set up the connection to the blob storage in the Azure ML workspace.
+- If you have blob storage, you can use it to store the data and models. However, you may need to set up the connection to the blob storage in the [Azure ML] workspace.
 - If you have a quota issue, you may need to request a quota increase for the VMs or GPUs.
-- Once you configure the network in Azure ML workspace, you can not change it. You may need to create a new workspace if you want to change the network.
-- If you are using a compute instance which is not in the same region as the Azure ML workspace, you may need to set up a VPN or a private link to access the services.
-- If you are using a compute instance which created in Azure AI Studio, you can't execute training jobs in the compute instance. You may need to create a new compute instance in Azure ML workspace.
-- If you run into an PermissionMismatch error when you download the artifacts, you may need to asign the correct permission to the Azure ML workspace.
+- Once you configure the network in [Azure ML] workspace, you can not change it. You may need to create a new workspace if you want to change the network.
+- If you are using a compute instance which is not in the same region as the [Azure ML] workspace, you may need to set up a VPN or a private link to access the services.
+- If you are using a compute instance which created in [Azure AI Studio], you can't execute training jobs in the compute instance. You may need to create a new compute instance in [Azure ML] workspace.
+- If you run into an PermissionMismatch error when you download the artifacts, you may need to asign the correct permission to the [Azure ML] workspace.
 
 ## How to get started 
-1. Create your compute instance in Azure ML Studio. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
+1. Create your compute instance in [Azure ML]. For code development, we recommend **[Standard_DS11_v2]** (2 cores, 14GB RAM, 28GB storage, No GPUs).
 2. Open the terminal of the CI and run: 
     ```shell
     git clone https://github.com/Azure/slm-innovator-lab.git
@@ -43,7 +44,7 @@ This workshop assumes that you are configuring in a public environment and you h
     pip install -r requirements.txt
     ```
 
-## Table of contents
+## Hands-on Labs
 
 ### [Lab 1. Data preparation](1_synthetic-qa-generation)
 ### [Lab 2. LLM fine-tuning and serving](2_slm-fine-tuning-mlstudio)
@@ -105,3 +106,16 @@ Any use of third-party trademarks or logos are subject to those third-party's po
 ## License Summary
 
 This sample code is provided under the MIT-0 license. See the LICENSE file.
+
+[SLM Innovator Lab]: https://github.com/Azure/slm-innovator-lab
+[Azure OpenAI]: https://oai.azure.com/
+[Azure ML]: https://ml.azure.com/
+[Azure AI Studio]: https://ai.azure.com/
+[GenAI ecosystem in Azure]: https://azure.microsoft.com/en-us/products/machine-learning/generative-ai
+[Lab 1. Data preparation]: https://azure.github.io/slm-innovator-lab/1_synthetic_data/
+[Lab 2. Fine-tuning and serving]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/
+[Lab 3. LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aistudio/README.html
+[Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
+[Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic
+[Standard_NC6s_v3]: https://learn.microsoft.com/azure/virtual-machines/sizes/gpu-accelerated/ncv3-series?tabs=sizebasic
+[Low-priority VM]: https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost?view=azureml-api-2#low-pri-vm

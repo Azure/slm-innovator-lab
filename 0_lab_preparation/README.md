@@ -17,16 +17,16 @@ Customers who participate in this hands-on lab will need to discuss with their M
 Please create a resource in one of following regions when creating a AI Document Intelligence resource: **East-US, West-US2, West-Europe**. Otherwise, you may encounter a 404 error when trying to access the resource. ([Source](https://learn.microsoft.com/en-us/answers/questions/1514842/document-intelligence-ai-returns-404))
 
 ### Hands-on Requirements
-- Ensure you have access to Azure OpenAI Service.
-- Set up your Azure ML workspace and get your `<WORKSPACE_NAME>`, `<RESOURCE_GROUP>` and `<SUBSCRIPTION_ID>`.
-- create a project in Azure AI Studio.
-- For LLM training, recommend a single NVIDIA A100 node (`Standard_NC24ads_A100_v4`)  or NVIDIA V100 GPU node (`Standard_NC6s_v3`). 
-- Opt for Low-priority VMs if on a budget or without a dedicated quota.
+- Ensure you have access to [Azure OpenAI Service].
+- Set up your [Azure ML] workspace and get your `<WORKSPACE_NAME>`, `<RESOURCE_GROUP>` and `<SUBSCRIPTION_ID>`.
+- Create a project in [Azure AI Studio].
+- For LLM training, recommend a single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**). Opt for Low-priority VMs if on a budget or without a dedicated quota.
+- For LLM serving, we recommend a single NVIDIA V100 GPU node (**[Standard_NC6s_v3]**). 
 
 ### Cautions
-- **Request Standard_NC6s_v3 GPU quota increase (\*12core) for serving.** 
+- **Request [Standard_NC6s_v3] GPU quota increase (\*12 core) for serving.** 
 - If configuring in a private environment, set up a private network or VPN to access services.
-- Low-priority VM availability may vary by region.
+- **[Low-priority VM]** availability may vary by region.
 - Set up connections for any blob storage used to store data and models within the Azure ML workspace.
 - Request a quota increase if necessary for VMs or GPUs.
 - Network config in Azure ML workspace cannot be changed post-setup; create a new workspace if required.
@@ -124,3 +124,11 @@ config:
 
 ### 🚀 Get started to validate the setup 
 Proceed by opening the [Jupyter notebook](get_started.ipynb), and follow the steps provided.
+
+[Azure OpenAI]: https://oai.azure.com/
+[Azure ML]: https://ml.azure.com/
+[Azure AI Studio]: https://ai.azure.com/
+[Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
+[Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic
+[Standard_NC6s_v3]: https://learn.microsoft.com/azure/virtual-machines/sizes/gpu-accelerated/ncv3-series?tabs=sizebasic
+[Low-priority VM]: https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost?view=azureml-api-2#low-pri-vm
