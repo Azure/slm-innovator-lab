@@ -24,6 +24,7 @@ Please create a resource in one of following regions when creating a AI Document
 - Opt for Low-priority VMs if on a budget or without a dedicated quota.
 
 ### Cautions
+- **Request Standard_NC6s_v3 GPU quota increase (\*12core) for serving.** 
 - If configuring in a private environment, set up a private network or VPN to access services.
 - Low-priority VM availability may vary by region.
 - Set up connections for any blob storage used to store data and models within the Azure ML workspace.
@@ -31,6 +32,8 @@ Please create a resource in one of following regions when creating a AI Document
 - Network config in Azure ML workspace cannot be changed post-setup; create a new workspace if required.
 - Ensure compute instances are in the same region as the Azure ML workspace; otherwise, set up a VPN or private link.
 - If using Azure AI Studio compute instances, note that training jobs cannot be executed on them.
+
+\* For managed onlie endpoints, Azure ML reserves 20% of the quota for the deployment. If you request a given number of instances for those VM SKUs in a deployment, you must have a quota for ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU available to avoid getting an error. For example, f you request 1 instances of a Standard_NC6s_v3 VM (that comes with six cores) in a deployment, you should have a quota for 12 cores (ceil(1.2 × 1 instances) = 2, 2 × 6 cores) available.  
 
 Please ensure these points are followed to avoid common issues during the workshop.
 
@@ -48,7 +51,8 @@ Please ensure these points are followed to avoid common issues during the worksh
 2. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs). Click on the `Review+Create` button to create the compute instance.
 
 3. Once the compute instance is created and change the status as Running, click on the `Jupyter` or `VS Code(Desktop)` to open the Jupyter notebook and terminal.
-![open jupyter](images/open_jupyter.jpg)
+
+![open jupyter](images/open_jupyter_notebook.jpg)
 
 ### 2️⃣ Clone the repository and install the required packages
 1. Go to your terminal in your evironment and clone the repository. 
