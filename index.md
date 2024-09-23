@@ -20,7 +20,7 @@ permalink: /
 
 ## 1. Overview
 
-Unlock the full potential of your AI projects with the [SLM Innovator Lab], powered by the Azure AIML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of [AI Studio], you can establish efficient and scalable LLMOps.
+Unlock the full potential of your AI projects with the [SLM Innovator Lab], powered by the Azure AIML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM/LLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of [AI Studio], you can establish efficient and scalable LLMOps.
 
 This hands-on lab is suitable for the following purposes:
 
@@ -54,7 +54,7 @@ Before starting, you have met the following requirements:
     ```
 
 ## 4. Agenda
-- **Background. Why Azure and Fine-tuning?**: Before we get into the hands-on, we explain to participants exactly what the SLM Innovator Lab is all about and give them an overview of the [GenAI ecosystem in Azure]. 
+- **[Background. Why Azure and Fine-tuning?]**: Before we get into the hands-on, we explain to participants exactly what the SLM Innovator Lab is all about and give them an overview of the [GenAI ecosystem in Azure]. 
 
 - **[Lab 1. Data preparation]**: Participants will dive into the critical first step of the GenAI pipeline. The session will focus on how to prepare data from real-world scenarios to create high-quality datasets necessary for fine-tuning models. Participants will learn how to process QnA (Questions & Answers) data and generate synthetic data to augment the training set, ensuring the model can handle a wide range of domain, including those in non-English languages. By the end of this lab, participants will have hands-on experience in transforming raw data into a format ready for effective AI model training. 
 
@@ -62,10 +62,10 @@ Before starting, you have met the following requirements:
 
 - **[Lab 3. LLMOps]**: In this lab, participants will delve into the critical aspects of managing and optimizing SLMs within [Azure AI Studio], with a particular emphasis on content safety and model evaluation. As organizations increasingly deploy GenAI models in production environments, ensuring that these models operate safely and effectively is paramount. This lab provides participants with the critical skills needed to ensure that their LLMs are not only technically robust but also safe and aligned with the ethical and operational standards of their organizations 
 
-- **Key takeaways**: The final session of the program will be a reflective and strategic discussion focused on the next steps in the participants' AI journey. After gaining hands-on experience in data preparation, fine-tuning, serving, and LLMOps, participants will have the opportunity to share their insights, challenges, and aspirations. This session will emphasize the importance of listening to the customer’s voice, understanding their specific needs, and collaboratively defining the next actions to move towards successful Proof of Concept (PoC), Minimum Viable Product (MVP), and full production deployments. The goal is to ensure that each participant leaves with a clear roadmap for their AI projects, aligned with their business objectives and supported by the technical capabilities they have developed during the program. 
+- **Key takeaways**: The final session of the program will be a reflective and strategic discussion focused on the next steps in the participants' GenAI journey. After gaining hands-on experience, participants will have the opportunity to share their insights, challenges, and aspirations. This session will emphasize the importance of listening to the customer’s voice, understanding their specific needs, and collaboratively defining the next actions to move towards successful Proof of Concept (PoC), Minimum Viable Product (MVP), and full production deployments. The goal is to ensure that each participant leaves with a clear roadmap for their AI projects, aligned with their business objectives and supported by the technical capabilities they have developed during the program. 
 
 ## 5. Objectives
-- **Platform Stickiness**: By enabling customers to easily fine-tune models on Azure, the Innovator Lab aims to create a stronger attachment to the Azure ecosystem.  When customers are tuning SLMs using Azure AI Infrastructure and [AI Studio], they initially develop the SLM/LLMOps through AI Studio and tools like [Prompt flow], [LangChain], [LlamaIndex], or [Semantic Kernel]. This forms the initial approach for the SLM Innovator Lab. However, the primary goal is to migrate compute workloads to an Azure-native platform. Specifically, this involves integrating [Azure AKS] (containerization with multi-GPU node pools), [Azure Blob Storage], [Azure SQL Database], [Azure Data Lake], [Microsoft Fabric], [Azure Monitor] and [Log Analytics], while working closely with various technical support teams within Microsoft to address the anticipated challenges of launching into production. The hands-on experience shows the practical benefits of using [Azure ML] and [Azure AI Studio], encouraging long-term commitment to the platform. 
+- **Platform Stickiness**: By enabling customers to easily fine-tune models on Azure, the SLM Innovator Lab aims to create a stronger attachment to the Azure ecosystem. When customers are tuning SLMs using [Azure ML] and [AI Studio], they initially develop the SLM/LLMOps through AI Studio and tools like [Prompt flow], [LangChain], [LlamaIndex], or [Semantic Kernel]. This forms the initial approach for the SLM Innovator Lab. However, the primary goal is to migrate compute workloads to an Azure-native platform. Specifically, this involves integrating [Azure AKS] (containerization with multi-GPU node pools), [Azure Blob Storage], [Azure SQL Database], [Azure Data Lake], [Microsoft Fabric], [Azure Monitor] and [Log Analytics], while working closely with various technical support teams within Microsoft to address the anticipated challenges of launching into production. The hands-on experience shows the practical benefits of using [Azure ML] and [Azure AI Studio], encouraging long-term commitment to the platform. 
 
 - **Ease of Use and Accessibility**: The lab is designed to lower the barriers to entry for customers interested in SLM/LLM fine-tuning. It simplifies the setup process by providing a pre-configured environment that omits the need for complex configurations, making it easier for customers to get started quickly. 
 
@@ -108,6 +108,7 @@ Before starting, you have met the following requirements:
 [Azure AI Studio]: https://ai.azure.com/
 [AI Studio]: https://ai.azure.com/
 [GenAI ecosystem in Azure]: https://azure.microsoft.com/en-us/products/machine-learning/generative-ai
+[Background. Why Azure and Fine-tuning?]: https://azure.github.io/slm-innovator-lab/0_lab_preparation/why_finetune.html
 [Lab 1. Data preparation]: https://azure.github.io/slm-innovator-lab/1_synthetic_data/
 [Lab 2. Fine-tuning and serving]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/
 [Lab 3. LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aistudio/README.html
