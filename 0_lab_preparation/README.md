@@ -17,7 +17,7 @@ Customers who participate in this hands-on lab will need to discuss with their M
 Please create a resource in one of following regions when creating a AI Document Intelligence resource: **East-US, West-US2, West-Europe**. Otherwise, you may encounter a 404 error when trying to access the resource. ([Source](https://learn.microsoft.com/en-us/answers/questions/1514842/document-intelligence-ai-returns-404))
 
 ### Hands-on Requirements
-- Ensure you have access to [Azure OpenAI Service].
+- Ensure you have access to [Azure OpenAI] Service.
 - Set up your [Azure ML] workspace and get your `<WORKSPACE_NAME>`, `<RESOURCE_GROUP>` and `<SUBSCRIPTION_ID>`.
 - Create a project in [Azure AI Studio].
 - For LLM training, recommend a single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**). Opt for Low-priority VMs if on a budget or without a dedicated quota.
@@ -33,7 +33,8 @@ Please create a resource in one of following regions when creating a AI Document
 - Ensure compute instances are in the same region as the Azure ML workspace; otherwise, set up a VPN or private link.
 - If using Azure AI Studio compute instances, note that training jobs cannot be executed on them.
 
-\* For managed onlie endpoints, Azure ML reserves 20% of the quota for the deployment. If you request a given number of instances for those VM SKUs in a deployment, you must have a quota for ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU available to avoid getting an error. For example, f you request 1 instances of a Standard_NC6s_v3 VM (that comes with six cores) in a deployment, you should have a quota for 12 cores (ceil(1.2 × 1 instances) = 2, 2 × 6 cores) available.  
+{: .note }
+For managed onlie endpoints, [Azure ML reserves 20% of the quota for the deployment].[^1] If you request a given number of instances for those VM SKUs in a deployment, you must have a quota for `ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU` available to avoid getting an error. For example, if you request 1 instances of a `Standard_NC6s_v3` VM (that comes with six cores) in a deployment, you should have a quota for 12 cores (ceil(1.2 × 1 instances) = 2, 2 × 6 cores) available.  
 
 Please ensure these points are followed to avoid common issues during the workshop.
 
@@ -132,3 +133,7 @@ Proceed by opening the [Jupyter notebook](get_started.ipynb), and follow the ste
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic
 [Standard_NC6s_v3]: https://learn.microsoft.com/azure/virtual-machines/sizes/gpu-accelerated/ncv3-series?tabs=sizebasic
 [Low-priority VM]: https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost?view=azureml-api-2#low-pri-vm
+[Azure ML reserves 20% of the quota for the deployment]: https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-quotas?view=azureml-api-2
+
+
+[^1]: This extra quota is reserved for system-initiated operations such as OS upgrades and VM recovery, and it won't incur cost unless such operations run.

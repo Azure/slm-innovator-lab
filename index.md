@@ -56,6 +56,8 @@ Before starting, you have met the following requirements:
 ## 4. Agenda
 - **[Background. Why Azure and Fine-tuning?]**: Before we get into the hands-on, we explain to participants exactly what the SLM Innovator Lab is all about and give them an overview of the [GenAI ecosystem in Azure]. 
 
+- **[Lab 0. Requirements (Skip if you have already set up)]**: If you are not familiar with the Azure environment, be sure to check it out!
+
 - **[Lab 1. Data preparation]**: Participants will dive into the critical first step of the GenAI pipeline. The session will focus on how to prepare data from real-world scenarios to create high-quality datasets necessary for fine-tuning models. Participants will learn how to process QnA (Questions & Answers) data and generate synthetic data to augment the training set, ensuring the model can handle a wide range of domain, including those in non-English languages. By the end of this lab, participants will have hands-on experience in transforming raw data into a format ready for effective AI model training. 
 
 - **[Lab 2. Fine-tuning and serving]**: This lab guides participants through the process of fine-tuning SLMs and deploying them using [Azure ML]. The focus will be on simplifying the fine-tuning process, enabling participants to fine-tune pre-trained SLMs with their own datasets quickly and efficiently. The session will also demonstrate how to use Azure ML’s tools to serve these models as scalable APIs (Application Programming Interfaces), allowing them to be integrated into real-world applications with ease.  
@@ -109,6 +111,7 @@ Before starting, you have met the following requirements:
 [AI Studio]: https://ai.azure.com/
 [GenAI ecosystem in Azure]: https://azure.microsoft.com/en-us/products/machine-learning/generative-ai
 [Background. Why Azure and Fine-tuning?]: https://azure.github.io/slm-innovator-lab/0_lab_preparation/why_finetune.html
+[Lab 0. Requirements (Skip if you have already set up)]: https://azure.github.io/slm-innovator-lab/0_lab_preparation/README.html
 [Lab 1. Data preparation]: https://azure.github.io/slm-innovator-lab/1_synthetic_data/
 [Lab 2. Fine-tuning and serving]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/
 [Lab 3. LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aistudio/README.html
