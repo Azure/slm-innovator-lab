@@ -23,6 +23,31 @@ Please create a resource in one of following regions when creating a AI Document
 - For LLM training, recommend a single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**). Opt for Low-priority VMs if on a budget or without a dedicated quota.
 - For LLM serving, we recommend a single NVIDIA V100 GPU node (**[Standard_NC6s_v3]**). 
 
+### Deploying Azure resources with Azure Developer CLI(azd)
+In case you're looking for the easiest way to get started, this lab provides Bicep to provision everything with ease. The steps below will provision required Azure resources. Download the CLI from the [What is the Azure Developer CLI?](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/overview?tabs=windows#a-sample-azd-workflow) if you don't have it installed yet. 
+
+Login to your Azure account:
+
+```shell
+azd auth login
+```
+
+For GitHub Codespaces users, if the previous command fails, try:
+
+```shell
+ azd auth login --use-device-code
+```
+
+Run azd up - This will provision Azure resources including Azure ML workspace, Azure OpenAI resources, Application Insights, and Azure Document Intelligence.
+
+```shell
+
+azd up
+```
+**Important**: Beware that the resources created by this command will incur immediate costs, primarily from the AI Search resource. These resources may accrue costs even if you interrupt the command before it is fully executed. You can run `azd down` or delete the resources manually to avoid unnecessary spending.
+You will be prompted to select two locations, one for the majority of resources and one for the OpenAI resource, which is currently a short list. That location list is based on the OpenAI model availability table and may become outdated as availability changes.
+After the application has been successfully deployed you will see a URL printed to the console. Click that URL to interact with the application in your browser. It will look like the following:
+
 ### Cautions
 - **Request [Standard_NC6s_v3] GPU quota increase (\*12 core) for serving.** 
 - If configuring in a private environment, set up a private network or VPN to access services.
@@ -49,7 +74,7 @@ Please ensure these points are followed to avoid common issues during the worksh
 1. Create your compute instance in Azure ML Studio. Navigate to the Azure ML Studio > Compute > Compute instances and create a new compute instance.
 ![create a compute instance](images/create_compute.jpg)
 
-2. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs). Click on the `Review+Create` button to create the compute instance.
+2. For code development, we recommend  **[Standard_E2as_v4] (AMD 2 cores, 16GB RAM, 32GB storage) or **[Standard_DS11_v2]** (Intel 2 cores, 14GB RAM, 28GB storage, No GPUs)   Click on the `Review+Create` button to create the compute instance.
 
 3. Once the compute instance is created and change the status as Running, click on the `Jupyter` or `VS Code(Desktop)` to open the Jupyter notebook and terminal.
 
@@ -130,6 +155,7 @@ Proceed by opening the [Jupyter notebook](get_started.ipynb), and follow the ste
 [Azure ML]: https://ml.azure.com/
 [Azure AI Studio]: https://ai.azure.com/
 [Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
+[Standard_E2as_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/easv4-series
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic
 [Standard_NC6s_v3]: https://learn.microsoft.com/azure/virtual-machines/sizes/gpu-accelerated/ncv3-series?tabs=sizebasic
 [Low-priority VM]: https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost?view=azureml-api-2#low-pri-vm
