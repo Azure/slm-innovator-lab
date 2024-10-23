@@ -14,13 +14,12 @@ def chat(input_data: str, connection: CustomConnection) -> str:
     data = {
         "input_data": 
             [
-                {"role": "user", "content": "Tell me Microsoft's brief history."},
-                {"role": "assistant", "content": "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell a BASIC interpreter for the Altair 8800."},
+                {"role": "user", "content": "You are a helpful assistant. Answer questions short and briefly"},
                 {"role": "user", "content": input_data}
             ],
         "params": {
                 "temperature": 0.7,
-                "max_new_tokens": 512,
+                "max_new_tokens": 4096,
                 "do_sample": True,
                 "return_full_text": False
         }

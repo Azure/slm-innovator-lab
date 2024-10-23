@@ -4,7 +4,7 @@ from promptflow import tool
 from promptflow.connections import CustomConnection
 import requests
 
-def chat(input_data: str, connection: CustomConnection) -> str:
+def chat(question: str, context:str, connection: CustomConnection) -> str:
     
     # Request data goes here
     # The example below assumes JSON formatting which may be updated
@@ -13,6 +13,7 @@ def chat(input_data: str, connection: CustomConnection) -> str:
     # https://docs.microsoft.com/azure/machine-learning/how-to-deploy-advanced-entry-script
     endpoint_url = connection.endpoint
     api_key = connection.key
+    
 
     if not api_key:
         raise Exception("A key should be provided to invoke the endpoint")
@@ -23,20 +24,20 @@ def chat(input_data: str, connection: CustomConnection) -> str:
     }
 
     data = {
-        "messages": 
+        "input_data": 
             [
-                {"role": "user", "content": "Tell me Microsoft's brief history."},
-                {"role": "assistant", "content": "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell a BASIC interpreter for the Altair 8800."},
-                {"role": "user", "content": input_data}
+                {"role": "user", "content": "You are an AI assistant who helps people find information. As the assistant, you answer questions not long, simple, short and in a personable manner using markdown and even add some personal flair with appropriate emojis. Add a witty joke that begins with “By the way,” or “By the way. The joke should be related to the specific question asked. For example, if the question is about tents, the joke should be specifically related to tents. Respond in Korean language. "}, 
+                {"role": "user", "content": "Use the following context to provide a more personalized response to the customer:"},
+                {"role": "user", "content": context},
+                {"role": "user", "content": question}
             ],
-        "parameters": {
+        "params": {
                 "temperature": 0.7,
-                "max_new_tokens": 256,
+                "max_new_tokens": 4096,     # The maximum value is 4096.
                 "do_sample": True,
                 "return_full_text": False
         }
     }
-
     try:
         response = requests.post(endpoint_url, json=data, headers=headers)
         response.raise_for_status()
@@ -53,8 +54,8 @@ def chat(input_data: str, connection: CustomConnection) -> str:
         print(error.read().decode("utf8", 'ignore'))
 
 @tool
-def my_python_tool(input_data: str, connection: CustomConnection) -> str:
+def my_python_tool(question: str, context:str, connection: CustomConnection) -> str:
     """
     Tool function to process input data and query the Phi-3 model.
     """
-    return chat(input_data, connection)
+    return chat(question, context, connection)

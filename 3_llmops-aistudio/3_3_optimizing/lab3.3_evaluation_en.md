@@ -7,7 +7,7 @@ grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 631
 ---
 
-# Lab 3.3 Evaluate your models using Prompt Flow to keep optimizing
+# Lab 3.3 Evaluate your models using Prompt Flow (UI))
 
 ![LLMOps](images/evaluation-monitor-flow.png)
 [Evaluating and monitoring of generative AI applications](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-approach-gen-ai#evaluating-and-monitoring-of-generative-ai-applications)
