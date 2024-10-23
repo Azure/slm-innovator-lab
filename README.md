@@ -1,6 +1,6 @@
 # SLM Innovator Lab
 
-Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AIML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of AI Studio, you can establish efficient and scalable LLMOps.
+Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AI/ML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of AI Studio, you can establish efficient and scalable LLMOps.
 
 This hands-on lab is suitable for the following purposes:
 
@@ -11,18 +11,21 @@ This hands-on lab is suitable for the following purposes:
 Hands-on guide: https://azure.github.io/slm-innovator-lab/
 
 ## Requirements
-Before starting, you have met the following requirements:
+Before starting, you should meet the following requirements:
 
 - [Access to Azure OpenAI Service](https://go.microsoft.com/fwlink/?linkid=2222006)
 - [Azure ML getting started](https://github.com/Azure/azureml-examples/tree/main/tutorials): Connect to [Azure ML] workspace and get your <WORKSPACE_NAME>, <RESOURCE_GROUP> and <SUBSCRIPTION_ID>.
 - [Azure AI Studio getting started](https://aka.ms/azureaistudio): Create a project
 - [Azure AI Document Intelligence (v4.0 - 2024-02-29 preview)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
 
-- ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_DS11_v2]** (2 cores, 14GB RAM, 28GB storage, No GPUs).
+- ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_E2as_v4] (AMD 2 cores, 16GB RAM, 32GB storage) or **[Standard_DS11_v2]** (Intel 2 cores, 14GB RAM, 28GB storage, No GPUs)  
 - ***[Compute cluster - for SLM/LLM fine-tuning]*** A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended. If you do not have a dedicated quota or are on a tight budget, choose **[Low-priority VM]**.
 - ***[Compute cluster - for SLM/LLM deployment]*** A single NVIDIA V100 GPU node (**[Standard_NC6s_v3]**) or A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended.
 
-Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it
+In case you don't have any of the above requirements ready yet, please go to Lab preparation first.
+### [Lab 0. Lab preparation](0_lab_preparation)
+
+**Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it**
 
 ## Cautions
 This workshop assumes that you are configuring in a public environment and you have access to the internet. If you are configuring in a private environment, you may need to set up a private network to access the services. The following are some common issues you may encounter when you configure in a private environment:
@@ -116,6 +119,7 @@ This sample code is provided under the MIT-0 license. See the LICENSE file.
 [Lab 2. Fine-tuning and serving]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/
 [Lab 3. LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aistudio/README.html
 [Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
+[Standard_E2as_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/easv4-series
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic
 [Standard_NC6s_v3]: https://learn.microsoft.com/azure/virtual-machines/sizes/gpu-accelerated/ncv3-series?tabs=sizebasic
 [Low-priority VM]: https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost?view=azureml-api-2#low-pri-vm

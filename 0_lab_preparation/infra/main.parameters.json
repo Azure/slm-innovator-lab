@@ -1,0 +1,99 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "resourceGroupName": {
+      "value": "${AZURE_RESOURCE_GROUP}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "azureOpenAiDeploymentName": {
+      "value": "${AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4o-mini}"
+    },
+    "auzreOpenAiResourceGroupName": {
+      "value": "${AZURE_OPENAI_RESOURCE_GROUP}"
+    },
+    "azureOpenAiSkuName": {
+      "value": "S0"
+    },
+    "azureOpenAiDeploymentSkuName": {
+      "value": "Standard"
+    },
+    "azureOpenAiDeploymentCapacity": {
+      "value": "30"
+    },
+    "azureOpenAiDeploymentVersion": {
+      "value": "${AZURE_OPENAI_DEPLOYMENT_VERSION=2024-07-18}"
+    },
+    "documentIntelligenceServiceName": {
+      "value": "${AZURE_DOCUMENTINTELLIGENCE_SERVICE}"
+    },
+    "documentIntelligenceResourceGroupName": {
+      "value": "${AZURE_DOCUMENTINTELLIGENCE_RESOURCE_GROUP}"
+    },
+    "documentIntelligenceSkuName": {
+      "value": "${AZURE_DOCUMENTINTELLIGENCE_SKU=S0}"
+    },
+    "documentIntelligenceResourceGroupLocation": {
+      "value": "${AZURE_DOCUMENTINTELLIGENCE_LOCATION}"
+    },
+    "storageAccountName": {
+      "value": "${AZURE_STORAGE_ACCOUNT}"
+    },
+    "storageSkuName": {
+      "value": "${AZURE_STORAGE_SKU=Standard_LRS}"
+    },
+    "embeddingModelName": {
+      "value": "${AZURE_OPENAI_EMB_MODEL_NAME}"
+    },
+    "embeddingDeploymentName": {
+      "value": "${AZURE_OPENAI_EMB_DEPLOYMENT}"
+    },
+    "embeddingDeploymentVersion": {
+      "value": "${AZURE_OPENAI_EMB_DEPLOYMENT_VERSION}"
+    },
+    "embeddingDeploymentSkuName": {
+      "value": "${AZURE_OPENAI_EMB_DEPLOYMENT_SKU=Standard}"
+    },
+    "embeddingDeploymentCapacity": {
+      "value": "${AZURE_OPENAI_EMB_DEPLOYMENT_CAPACITY}"
+    },
+    "embeddingDimensions": {
+      "value": "${AZURE_OPENAI_EMB_DIMENSIONS}"
+    },
+    "gpt4vModelName": {
+      "value": "${AZURE_OPENAI_GPT4V_MODEL}"
+    },
+    "gpt4vDeploymentName": {
+      "value": "${AZURE_OPENAI_GPT4V_DEPLOYMENT}"
+    },
+    "gpt4vDeploymentVersion": {
+      "value": "${AZURE_OPENAI_GPT4V_DEPLOYMENT_VERSION}"
+    },
+    "gpt4vDeploymentSkuName": {
+      "value": "${AZURE_OPENAI_GPT4V_DEPLOYMENT_SKU=S0}"
+    },
+    "gpt4vDeploymentCapacity": {
+      "value": "${AZURE_OPENAI_GPT4V_DEPLOYMENT_CAPACITY}"
+    },
+    "applicationInsightsName": {
+      "value": "${AZURE_APPLICATION_INSIGHTS}"
+    },
+    "logAnalyticsName": {
+      "value": "${AZURE_LOG_ANALYTICS}"
+    },
+    "useGPT4V": {
+      "value": "${USE_GPT4V=false}"
+    },
+    "publicNetworkAccess": {
+      "value": "${AZURE_PUBLIC_NETWORK_ACCESS=Enabled}"
+    },
+    "bypass": {
+      "value": "${AZURE_NETWORK_BYPASS=AzureServices}"
+    }
+  }
+}
