@@ -7,3 +7,10 @@ pandas~=2.2
 plotly
 matplotlib
 Jinja2
+einops
+onnx>=1.15.0
+onnxruntime>=1.18.0
+onnxruntime-genai>=0.2.0
+onnxscript>=0.1.0.dev20240126
+git+https://github.com/microsoft/Olive
+peft

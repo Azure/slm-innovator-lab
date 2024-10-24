@@ -2,6 +2,7 @@
 layout: default
 title: Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
 permalink: /2_fine-tuning/
+has_children: true
 nav_order: 5
 ---
 
