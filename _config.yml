@@ -36,7 +36,6 @@ exclude:
     - README.md
     - SUPPORT.md
     - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
-    - 2_slm-fine-tuning-mlstudio/phi3/
     - vendor
     - 3_llmops-aistudio/3_2_prototyping/lab3.2_promptflow_ko.md
     - 3_llmops-aistudio/3_3_optimizing/lab3.3_evaluation_ko.md
