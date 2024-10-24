@@ -24,20 +24,25 @@ def chat(question: str, context:str, connection: CustomConnection) -> str:
     }
 
     data = {
-        "input_data": 
+        "messages": 
             [
-                {"role": "user", "content": "You are an AI assistant who helps people find information. As the assistant, you answer questions not long, simple, short and in a personable manner using markdown and even add some personal flair with appropriate emojis. Add a witty joke that begins with “By the way,” or “By the way. The joke should be related to the specific question asked. For example, if the question is about tents, the joke should be specifically related to tents. Respond in Korean language. "}, 
+                {"role": "user", "content": "You are an AI assistant who helps people find information. As the assistant, you answer questions not long, simple, short. Add a witty joke that begins with By the way, or By the way. The joke should be related to the specific question asked. For example, if the question is about tents, the joke should be specifically related to tents."},
                 {"role": "user", "content": "Use the following context to provide a more personalized response to the customer:"},
                 {"role": "user", "content": context},
-                {"role": "user", "content": question}
+                {"role": "user", "content": "tell me about your TrailMaster X4"},
+                {"role": "assistant", "content": "The TrailMaster X4 is a rugged four-wheel off-road vehicle with a powerful engine and durable frame. "},
+                {"role": "user", "content": question},
+                {"role": "user", "content": "Answer in Korean language."},
+                
             ],
-        "params": {
+        "parameters": {
                 "temperature": 0.7,
-                "max_new_tokens": 4096,     # The maximum value is 4096.
+                "max_new_tokens": 1024,
                 "do_sample": True,
                 "return_full_text": False
         }
     }
+    
     try:
         response = requests.post(endpoint_url, json=data, headers=headers)
         response.raise_for_status()

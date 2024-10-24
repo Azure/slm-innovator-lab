@@ -39,14 +39,10 @@ def chat(input_data: str, connection: CustomConnection) -> str:
     req = urllib.request.Request(url, body, headers)
 
     try:
-        response = urllib.request.urlopen(req)
-
-        response = response.read().decode()
-        print(response)
-        
-        result = json.loads(response)["result"]
-        
-        return result
+        with urllib.request.urlopen(req) as response:
+            response_data = response.read().decode('utf-8')
+            result = json.loads(response_data)["result"]
+            return result
     except urllib.error.HTTPError as error:
         print("The request failed with status code: " + str(error.code))
 

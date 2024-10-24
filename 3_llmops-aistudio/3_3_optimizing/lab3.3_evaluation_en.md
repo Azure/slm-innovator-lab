@@ -206,12 +206,5 @@ user:
 ![select metrics](images/evaluation_select_metrics.jpg)
 ![running evaluation](images/evaluation_running.jpg)
 
-7. After the evaluation is done, 
-
-### 4️⃣ Create Custom Evaluation flow on Prompt flow
-
-**[Challenge]** Create a **custom** evaluation flow to evaluate the performance of the model with the given context and question. 
-
-
 > 🧪 +For Your Information<br>
 Evaluator is an asset that can be used to run evaluation. You can define evaluator in SDK and run evaluation to generate scores of one or more metrics. In order to use AI-assisted quality and safety evaluators with the prompt flow SDK, check the [Evaluate with the prompt flow SDK](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/flow-evaluate-sdk)  

@@ -2,7 +2,7 @@ import urllib
 import json
 from promptflow import tool
 from promptflow.connections import CustomConnection
-
+import requests
 
 def chat(question: str, context: str, connection: CustomConnection) -> str:
     
@@ -15,26 +15,28 @@ def chat(question: str, context: str, connection: CustomConnection) -> str:
     # which is the closest capability available. This translation is offered for convenience, 
     # but it's important for you to verify that the model is following the instructions 
     # in the system message with the right level of confidence.
+    # "max_new_tokens": 4096,     # The maximum value is 4096.
+                
     data = {
         "input_data": 
             [
-                {"role": "user", "content": "You are an AI assistant who helps people find information. As the assistant, you answer questions not long, simple, short and in a personable manner using markdown and even add some personal flair with appropriate emojis. Add a witty joke that begins with “By the way,” or “By the way. The joke should be related to the specific question asked. For example, if the question is about tents, the joke should be specifically related to tents. Respond in Korean language. "}, 
-                {"role": "user", "content": "Use the following context to provide a more personalized response to the customer:"},
-                {"role": "user", "content": context},
+                {"role": "system", "content": "You are an AI assistant who helps people find information. As the assistant, you answer questions not long, simple, short and in a personable manner using markdown and even add some personal flair with appropriate emojis. Add a witty joke that begins with By the way, or By the way. The joke should be related to the specific question asked. For example, if the question is about tents, the joke should be specifically related to tents."}, 
+                {"role": "system", "content": "Use the following context to provide a more personalized response to the customer:"},
+                {"role": "system", "content": context},
                 {"role": "user", "content": question}
             ],
         "params": {
                 "temperature": 0.7,
-                # "max_new_tokens": 4096,     # The maximum value is 4096.
-                "max_new_tokens": 256,     
+                "max_new_tokens": 4096,
                 "do_sample": True,
-                "return_full_text": True
+                "return_full_text": False
         }
     }
 
+
     body = str.encode(json.dumps(data))
 
-    url = connection.endpoint
+    endpoint_url = connection.endpoint
     # Replace this with the primary/secondary key, AMLToken, or Microsoft Entra ID token for the endpoint
     api_key = connection.key
     if not api_key:
@@ -43,17 +45,15 @@ def chat(question: str, context: str, connection: CustomConnection) -> str:
 
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
-    req = urllib.request.Request(url, body, headers)
-
     try:
-        response = urllib.request.urlopen(req)
-
-        response = response.read().decode()
-        print(response)
-        
-        result = json.loads(response)["result"]
-        
+        response = requests.post(endpoint_url, json=data, headers=headers)
+        response.raise_for_status()
+        result = response.json()
+        result = result['content']
         return result
+    except requests.exceptions.RequestException as e:
+        print(e)    
+
     except urllib.error.HTTPError as error:
         print("The request failed with status code: " + str(error.code))
 
