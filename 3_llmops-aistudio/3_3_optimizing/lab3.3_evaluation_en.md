@@ -7,7 +7,7 @@ grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 631
 ---
 
-# Lab 3.3 Evaluate your models using Prompt Flow to keep optimizing
+# Lab 3.3 Evaluate your models using Prompt Flow (UI))
 
 ![LLMOps](images/evaluation-monitor-flow.png)
 [Evaluating and monitoring of generative AI applications](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-approach-gen-ai#evaluating-and-monitoring-of-generative-ai-applications)
@@ -205,13 +205,6 @@ user:
 6. Select Evaluation Metrics. You can select the metrics against which you want to evaluate the model. Enter the connection and deployment model and click the Next button, then review the final configuration and click the Submit button to start/wait for the evaluation.
 ![select metrics](images/evaluation_select_metrics.jpg)
 ![running evaluation](images/evaluation_running.jpg)
-
-7. After the evaluation is done, 
-
-### 4️⃣ Create Custom Evaluation flow on Prompt flow
-
-**[Challenge]** Create a **custom** evaluation flow to evaluate the performance of the model with the given context and question. 
-
 
 > 🧪 +For Your Information<br>
 Evaluator is an asset that can be used to run evaluation. You can define evaluator in SDK and run evaluation to generate scores of one or more metrics. In order to use AI-assisted quality and safety evaluators with the prompt flow SDK, check the [Evaluate with the prompt flow SDK](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/flow-evaluate-sdk)  

@@ -1,0 +1,5 @@
+{ "customerId": "4", "question": "tell me about your TrailMaster X4 Tent", "chat_history": [], "intent": "chat"}
+{ "customerId": "1", "question": "Do you have any climbing gear?", "chat_history": [], "intent": "chat" }
+{ "customerId": "3", "question": "Can you tell me about your selection of tents?", "chat_history": [], "intent": "chat" }
+{ "customerId": "6", "question": "Do you have TrekReady Hiking Boots? How much is it?", "chat_history": [], "intent": "chat" }
+{ "customerId": "7", "question": "can you tell me BaseCamp Folding Table?", "chat_history": [], "intent": "chat"}

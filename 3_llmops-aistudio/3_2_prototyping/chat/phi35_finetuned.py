@@ -14,13 +14,12 @@ def chat(input_data: str, connection: CustomConnection) -> str:
     data = {
         "input_data": 
             [
-                {"role": "user", "content": "Tell me Microsoft's brief history."},
-                {"role": "assistant", "content": "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell a BASIC interpreter for the Altair 8800."},
+                {"role": "user", "content": "You are a helpful assistant. Answer questions short and briefly"},
                 {"role": "user", "content": input_data}
             ],
         "params": {
                 "temperature": 0.7,
-                "max_new_tokens": 512,
+                "max_new_tokens": 4096,
                 "do_sample": True,
                 "return_full_text": False
         }
@@ -40,14 +39,10 @@ def chat(input_data: str, connection: CustomConnection) -> str:
     req = urllib.request.Request(url, body, headers)
 
     try:
-        response = urllib.request.urlopen(req)
-
-        response = response.read().decode()
-        print(response)
-        
-        result = json.loads(response)["result"]
-        
-        return result
+        with urllib.request.urlopen(req) as response:
+            response_data = response.read().decode('utf-8')
+            result = json.loads(response_data)["result"]
+            return result
     except urllib.error.HTTPError as error:
         print("The request failed with status code: " + str(error.code))
 

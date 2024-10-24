@@ -1,0 +1,55 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  question:
+    type: string
+    default: What is TrailMaster X4 Tent?
+  context:
+    type: string
+    default:
+      TrailMaster X4 Tent is a durable polyester tent for four, with water-resistant construction, 
+      multiple doors, interior pockets, and reflective guy lines. Summit Breeze Jacket is lightweight, windproof, 
+      and water-resistant hiking jacket with breathable polyester material, adjustable cuffs, 
+      and secure zippered pockets. TrekReady Hiking Boots is durable leather boots 
+      with reinforced stitching, toe protection, cushioned insoles, and breathable materials for comfort. 
+      BaseCamp Folding Table is lightweight aluminum table, 48 x 24 inches, foldable design. 
+      EcoFire Camping Stove is portable stainless steel stove, lightweight, fuel-efficient, and easy to use.
+  answer:
+    type: string
+    default:
+      TrailMaster X4 Tent is a durable polyester tent for four, with water-resistant construction, 
+      multiple doors, interior pockets, and reflective guy lines.
+outputs:
+  gpt_groundedness:
+    type: object
+    reference: ${concat_scores.output.gpt_groundedness}
+nodes:
+- name: groundedness_score
+  type: llm
+  source:
+    type: code
+    path: groundedness_score.jinja2
+  inputs:
+    context: ${inputs.context}
+    answer: ${inputs.answer}
+    max_tokens: 256
+    deployment_name: gpt-4o
+    temperature: 0
+  connection: ai-slmhub1616907550322_aoai
+  api: chat
+- name: concat_scores
+  type: python
+  source:
+    type: code
+    path: concat_scores.py
+  inputs:
+    groundesness_score: ${groundedness_score.output}
+- name: aggregate_variants_results
+  type: python
+  source:
+    type: code
+    path: aggregate_variants_results.py
+  inputs:
+    results: ${concat_scores.output}
+  aggregation: true
