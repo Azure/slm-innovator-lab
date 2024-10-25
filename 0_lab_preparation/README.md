@@ -149,7 +149,7 @@ config:
 
 
 ### 🚀 Get started to validate the setup 
-Proceed by opening the [Jupyter notebook](get_started.ipynb), and follow the steps provided.
+Proceed by opening the [Jupyter notebook](1_get_started.ipynb), and follow the steps provided.
 
 [Azure OpenAI]: https://oai.azure.com/
 [Azure ML]: https://ml.azure.com/
