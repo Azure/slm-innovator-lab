@@ -28,7 +28,8 @@ def chat(input_data: str, connection: CustomConnection) -> str:
             [
                 {"role": "user", "content": "Tell me Microsoft's brief history."},
                 {"role": "assistant", "content": "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell a BASIC interpreter for the Altair 8800."},
-                {"role": "user", "content": input_data}
+                {"role": "user", "content": input_data},
+                {"role": "user", "content": "Keep the answer simple."},
             ],
         "parameters": {
                 "temperature": 0.7,

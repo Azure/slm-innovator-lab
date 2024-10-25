@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Lab 3.3.1 Evaluate your models using Prompt Flow to keep optimizing (EN)
-permalink: /3_3_evaluation_en/
+title: Lab 3.4 groundness evaluation using Prompt Flow
+permalink: /3_4_evaluation/
 parent: Lab 3.3 Overview
 grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
-nav_order: 631
+nav_order: 632
 ---
 
 # Lab 3.4 groundness evaluation using Prompt Flow (Code)
@@ -25,8 +25,8 @@ nav_order: 631
 
 
 ### TOC
-- 1️⃣ Execute batch run to get the base run data 
-- 2️⃣ Evaluate the "groundedness" by your evalution flow
+    1️⃣ Execute batch run to get the base run data 
+    2️⃣ Evaluate the "groundedness" by your evalution flow
 
 
 ### workthough Jupyter Notebook

@@ -22,8 +22,8 @@ nav_order: 621
 - I want to see what results are generated when I run the prompts. 
 
 ### TOC
-- 1️⃣ Create a basic chat flow 
-- 2️⃣ Integrate the fine-tuned phi3.5 endpoint into Python Node
+    1️⃣ Create a basic chat flow 
+    2️⃣ Integrate the fine-tuned phi3.5 endpoint into Python Node
 
 ### 1️⃣ Create a basic chat flow 
 

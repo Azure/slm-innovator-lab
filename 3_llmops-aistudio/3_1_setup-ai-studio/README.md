@@ -19,10 +19,10 @@ In this lab, we will learn how to set up Azure AI studio with Prompt flow for yo
 An Azure subscription is required, where you can create an AI Project along with its AI Hub Resource, Prompt flow, a Content Safety service, deployed fine-tuned model endpoint and an AI Search service.
 
 ### Steps
-- 0️⃣ Create the Azure Resource Group  
-- 1️⃣ Create Azure AI project in Azure AI Studio
-- 2️⃣ Create a compute instance to run Prompt flow
-- 🗑️ Clean up resources
+    0️⃣ Create the Azure Resource Group  
+    1️⃣ Create Azure AI project in Azure AI Studio
+    2️⃣ Create a compute instance to run Prompt flow
+    🗑️ Clean up resources
 
 You can use compute instance as your dev box, learn more here: Get started with Azure AI projects in VS Code (Web)
 We also provide VS code extension to help you develop prompt flow, learn more here: Prompt flow for VS Code
@@ -64,4 +64,10 @@ We also provide VS code extension to help you develop prompt flow, learn more he
 - Option3-1: CodeSpaces -> Prompt flow -> Start compute
 
 Serverless compute sessions offer cost-effectiveness, scalability, reduced management overhead, and quick setup, but come with drawbacks like limited control and cold start latency. On the other hand, VS code extension for prompt flow provides customization, consistency, and flexibility, but can incur higher costs, require more management effort, and take longer to set up.
+
+### 🗑️ Clean up resources
+1. Go to the [Azure portal](https://portal.azure.com/) and select Resource groups
+2. Select the resource group you created for this lab
+3. Select Delete resource group
+4. Enter the resource group name and select Delete
 

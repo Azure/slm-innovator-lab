@@ -10,6 +10,22 @@ This hands-on lab is suitable for the following purposes:
 
 Hands-on guide: https://azure.github.io/slm-innovator-lab/
 
+## New content (25-Oct-2024)
+🔥LLMOps with promptflow python SDK<br>
+In this hands-on, you will learn how to create a new flow, define the chat flow structure, and integrate the fine-tuned model endpoint using Python SDK. You will also learn how to compare and evaluate the model's performance using the flows. This is in addition to the hands-on that was previously available based on the Azure AI Studio UI. 
+<br>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_2_prototyping/promptflow_with_code.ipynb">Go to notebook</a>
+<br><br>
+🔥Microsoft Olive model optimization <br>
+Microsoft Olive is a hardware-aware AI model optimization toolchain developed by Microsoft to streamline the deployment of AI models. Olive simplifies the process of preparing AI models for deployment by making them faster and more efficient, particularly for use on edge devices, cloud, and various hardware configurations. This hands-on considers on-device or hybrid deployment scenarios.
+<br>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/2_slm-fine-tuning-mlstudio/phi3/3_optimization_olive.ipynb">Go to notebook</a>
+<br><br>
+🔥Content Safety with python SDK<br>
+In this hands-on, you will be able to: manage text blocklist, analyze text and images for sexual content, violence, hate, and self-harm with multi-severity levels. You will also learn how to integrate with Azure Open AI Service: Use the Azure Open AI Service to rewrite the content for harmful content.
+<br>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_4_operationalizing/contentsafety_with_code.ipynb">Go to notebook</a>
+
 ## Requirements
 Before starting, you should meet the following requirements:
 

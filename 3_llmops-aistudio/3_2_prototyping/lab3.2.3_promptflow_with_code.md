@@ -21,8 +21,8 @@ nav_order: 623
 - I want to run the flows using promptflow python sdk. Do some testing, log tracing and monitoring to determine the right model. 
 
 ### TOC
-- 1️⃣ Create another flow on the jupyter notebook 
-- 2️⃣ run the flow and check the outputs 
+    1️⃣ Create another flow on the jupyter notebook 
+    2️⃣ run the flow and check the outputs 
 
 
 ### workthough Jupyter Notebook

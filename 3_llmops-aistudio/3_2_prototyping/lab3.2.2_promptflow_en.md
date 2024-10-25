@@ -21,8 +21,8 @@ nav_order: 622
 - I want to do some testing, log tracing and monitoring to determine the right model. 
 
 ### TOC
-- 1️⃣ Create another model using LLM Node 
-- 2️⃣ Interact with the Chat: Test and trace the chat flow
+    1️⃣ Create another model using LLM Node 
+    2️⃣ Interact with the Chat: Test and trace the chat flow
 
 ### 1️⃣ Create another model using LLM Node to compare the results
 1. Create a new LLM Node to test the different model and prompt.

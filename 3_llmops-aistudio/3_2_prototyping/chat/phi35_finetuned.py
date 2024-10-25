@@ -2,6 +2,7 @@ import urllib
 import json
 from promptflow import tool
 from promptflow.connections import CustomConnection
+import requests
 
 
 def chat(input_data: str, connection: CustomConnection) -> str:
@@ -14,12 +15,14 @@ def chat(input_data: str, connection: CustomConnection) -> str:
     data = {
         "input_data": 
             [
-                {"role": "user", "content": "You are a helpful assistant. Answer questions short and briefly"},
-                {"role": "user", "content": input_data}
+                {"role": "user", "content": "Tell me Microsoft's brief history."},
+                {"role": "assistant", "content": "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell a BASIC interpreter for the Altair 8800."},
+                {"role": "user", "content": input_data},
+                {"role": "user", "content": "Keep the answer simple."},
             ],
         "params": {
                 "temperature": 0.7,
-                "max_new_tokens": 4096,
+                "max_new_tokens": 1024,
                 "do_sample": True,
                 "return_full_text": False
         }
@@ -27,7 +30,7 @@ def chat(input_data: str, connection: CustomConnection) -> str:
 
     body = str.encode(json.dumps(data))
 
-    url = connection.endpoint
+    endpoint_url = connection.endpoint
     # Replace this with the primary/secondary key, AMLToken, or Microsoft Entra ID token for the endpoint
     api_key = connection.key
     if not api_key:
@@ -36,13 +39,16 @@ def chat(input_data: str, connection: CustomConnection) -> str:
 
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
-    req = urllib.request.Request(url, body, headers)
-
     try:
-        with urllib.request.urlopen(req) as response:
-            response_data = response.read().decode('utf-8')
-            result = json.loads(response_data)["result"]
-            return result
+        response = requests.post(endpoint_url, json=data, headers=headers)
+        print(response)
+        response.raise_for_status()
+        result = response.json()
+        result = result['result']
+        return result
+    except requests.exceptions.RequestException as e:
+        print(e)    
+
     except urllib.error.HTTPError as error:
         print("The request failed with status code: " + str(error.code))
 
