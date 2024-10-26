@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 3.4.1 Content Safety with Azure AI studio before production (EN)
+title: Lab 3.4.1 Content Safety with Azure AI studio before production
 permalink: /3_4_contentfilter_en/
 parent: Lab 3.4 Overview
 grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
@@ -38,9 +38,5 @@ nav_order: 641
 | F0           | 5 RPS                               | 5 RPS          | 5 RPS                           | N/A                                 | 5 RPS                                  | 5 RPS                                     | 5 RPS          |
 | S0           | 1000 RP10S                          | 1000 RP10S     | 1000 RP10S                      | 50 RPS                              | 1000 RP10S                             | 5 RPS                                     | 10 RPS<br><br> |
 
-
-### 1️⃣ Test your training dataset using content safety
-1. Go to the Azure AI Studio > AI Services > Content Safety
-
-
-2. Click on the "Test" tab to test your training dataset using content safety
+### workthough Jupyter Notebook
+- Let's create and run the Content Safety on the jupyter notebook using python sdk. You will learn how to filter to harmful contents [contentsafety_with_code.ipynb](pcontentsafety_with_code.ipynb)

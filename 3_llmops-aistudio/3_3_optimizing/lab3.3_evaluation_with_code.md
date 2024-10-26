@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Lab 3.4 groundness evaluation using Prompt Flow
-permalink: /3_4_evaluation/
+title: Lab 3.3.2 groundness evaluation using Prompt Flow (Code)
+permalink: /3_3_2_evaluation/
 parent: Lab 3.3 Overview
 grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 632
 ---
 
-# Lab 3.4 groundness evaluation using Prompt Flow (Code)
+# Lab 3.3.2 groundness evaluation using Prompt Flow (Code)
 
 ![LLMOps](images/evaluation-monitor-flow.png)
 [Evaluating and monitoring of generative AI applications](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-approach-gen-ai#evaluating-and-monitoring-of-generative-ai-applications)
