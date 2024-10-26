@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Lab 3.2.3 Prompt Flow with Code (EN)
-permalink: /3_2_3_prototyping_en/
+title: Lab 3.2.3 Run the Chat flows with Code
+permalink: /3_2_3_prototyping/
 parent: Lab 3.2 Overview
 grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 623
