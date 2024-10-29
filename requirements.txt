@@ -1,5 +1,5 @@
 pdf2image==1.17.0
-langchain==0.2.15
+langchain==0.3.0
 langchain-openai==0.1.23
 langchain-community==0.2.15
 python-dotenv==1.0.1
