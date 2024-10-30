@@ -55,3 +55,6 @@ parser.add_argument("--model_name", type=str, default="gpt-4o")
 parser.add_argument("--language", type=str, default="English")
 parser.add_argument("--question_only", type=bool, default=True)
 ```
+
+Run example:
+![evolve-instruct-run-example](../imgs/evolve-instruct-run-example.jpg)
