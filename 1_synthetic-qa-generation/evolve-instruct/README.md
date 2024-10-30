@@ -57,4 +57,4 @@ parser.add_argument("--question_only", type=bool, default=True)
 ```
 
 Run example:
-![evolve-instruct-run-example](../imgs/evolve-instruct-run-example.jpg)
+![evolve-instruct-run-example](../imgs/evolve-instruct-run-example.png)
