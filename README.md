@@ -41,7 +41,7 @@ Before starting, you should meet the following requirements:
 **Note**
 For managed online endpoints, [Azure ML reserves 20% of the quota for the deployment].[^1] If you request a given number of instances for those VM SKUs in a deployment, you must have a quota for `ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU` available to avoid getting an error. For example, if you request 1 instances of a `Standard_NC6s_v3` VM (that comes with six cores) in a deployment, you should have a quota for 12 cores (ceil(1.2 × 1 instances) = 2, 2 × 6 cores) available.  
 
-In case you don't have any of the above requirements ready yet, please go to Lab preparation first.
+In case you do not have any of the above requirements ready yet, please go to Lab preparation first.
 ### [Lab 0. Lab preparation](0_lab_preparation)
 
 **Please do not forget to modify the `.env` file to match your account. Rename `.env.sample` to `.env` or copy and use it**

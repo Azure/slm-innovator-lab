@@ -42,7 +42,7 @@ Before starting, you have met the following requirements:
 
 - ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_DS11_v2]** (2 cores, 14GB RAM, 28GB storage, No GPUs).
 - ***[Compute cluster - for SLM/LLM fine-tuning]*** A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended. If you do not have a dedicated quota or are on a tight budget, choose **[Low-priority VM]**.
-- ***[Compute cluster - for SLM/LLM deployment]*** A single NVIDIA V100 GPU node (**[Standard_NC6s_v3]**) or A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended.
+- ***[SLM/LLM deployment]*** Two NVIDIA V100 GPUs (**[Standard_NC6s_v3]**) or two NVIDIA A100 GPUs (**[Standard_NC24ads_A100_v4]**) are recommended. 
 
 ## 3. How to get started 
 1. Create your compute instance in [Azure ML]. For code development, we recommend **[Standard_DS11_v2]** (2 cores, 14GB RAM, 28GB storage, No GPUs).
