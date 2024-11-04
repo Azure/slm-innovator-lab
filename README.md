@@ -21,7 +21,7 @@ Microsoft Olive is a hardware-aware AI model optimization toolchain developed by
 <br>
 <a href="https://github.com/Azure/slm-innovator-lab/blob/main/2_slm-fine-tuning-mlstudio/phi3/3_optimization_olive.ipynb">Go to notebook</a>
 <br><br>
-🔥 sContent Safety with python SDK<br>
+🔥 Content Safety with python SDK<br>
 In this hands-on, you will be able to: manage text blocklist, analyze text and images for sexual content, violence, hate, and self-harm with multi-severity levels. You will also learn how to integrate with Azure Open AI Service: Use the Azure Open AI Service to rewrite the content for harmful content.
 <br>
 <a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_4_operationalizing/contentsafety_with_code.ipynb">Go to notebook</a>
@@ -36,7 +36,10 @@ Before starting, you should meet the following requirements:
 
 - ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_E2as_v4] (AMD 2 cores, 16GB RAM, 32GB storage) or **[Standard_DS11_v2]** (Intel 2 cores, 14GB RAM, 28GB storage, No GPUs)  
 - ***[Compute cluster - for SLM/LLM fine-tuning]*** A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended. If you do not have a dedicated quota or are on a tight budget, choose **[Low-priority VM]**.
-- ***[Compute cluster - for SLM/LLM deployment]*** A single NVIDIA V100 GPU node (**[Standard_NC6s_v3]**) or A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended.
+- ***[Compute cluster - for SLM/LLM deployment]*** Two NVIDIA V100 GPU node (**[Standard_NC6s_v3]**) or two NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended. 
+
+**Note**
+For managed onlie endpoints, [Azure ML reserves 20% of the quota for the deployment].[^1] If you request a given number of instances for those VM SKUs in a deployment, you must have a quota for `ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU` available to avoid getting an error. For example, if you request 1 instances of a `Standard_NC6s_v3` VM (that comes with six cores) in a deployment, you should have a quota for 12 cores (ceil(1.2 × 1 instances) = 2, 2 × 6 cores) available.  
 
 In case you don't have any of the above requirements ready yet, please go to Lab preparation first.
 ### [Lab 0. Lab preparation](0_lab_preparation)
@@ -139,3 +142,5 @@ This sample code is provided under the MIT-0 license. See the LICENSE file.
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic
 [Standard_NC6s_v3]: https://learn.microsoft.com/azure/virtual-machines/sizes/gpu-accelerated/ncv3-series?tabs=sizebasic
 [Low-priority VM]: https://learn.microsoft.com/en-us/azure/machine-learning/how-to-manage-optimize-cost?view=azureml-api-2#low-pri-vm
+
+[^1]: This extra quota is reserved for system-initiated operations such as OS upgrades and VM recovery, and it won't incur cost unless such operations run.
