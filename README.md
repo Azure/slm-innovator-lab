@@ -8,10 +8,12 @@ This hands-on lab is suitable for the following purposes:
 2. Hackathon starter code
 3. Reference guide for SLM fine-tuning&serving PoC/Prototype
 
-Hands-on guide: https://azure.github.io/slm-innovator-lab/
+For detailed workshop information, please see the hands-on guide at [this link](https://azure.github.io/slm-innovator-lab/).
+
+[**Hands-on guide**](https://azure.github.io/slm-innovator-lab/) | [**Requirements**](#requirements) | [**Get started**](#get-started) 
 
 ## New content (25-Oct-2024)
-🔥 LLMOps with promptflow python SDK<br>
+🔥 LLMOps with Promptflow Python SDK<br>
 In this hands-on, you will learn how to create a new flow, define the chat flow structure, and integrate the fine-tuned model endpoint using Python SDK. You will also learn how to compare and evaluate the model's performance using the flows. This is in addition to the hands-on that was previously available based on the Azure AI Studio UI. 
 <br>
 <a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_2_prototyping/promptflow_with_code.ipynb">Go to notebook</a>
@@ -21,7 +23,7 @@ Microsoft Olive is a hardware-aware AI model optimization toolchain developed by
 <br>
 <a href="https://github.com/Azure/slm-innovator-lab/blob/main/2_slm-fine-tuning-mlstudio/phi3/3_optimization_olive.ipynb">Go to notebook</a>
 <br><br>
-🔥 Content Safety with python SDK<br>
+🔥 Content Safety with Python SDK<br>
 In this hands-on, you will be able to: manage text blocklist, analyze text and images for sexual content, violence, hate, and self-harm with multi-severity levels. You will also learn how to integrate with Azure Open AI Service: Use the Azure Open AI Service to rewrite the content for harmful content.
 <br>
 <a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_4_operationalizing/contentsafety_with_code.ipynb">Go to notebook</a>
@@ -57,7 +59,7 @@ This workshop assumes that you are configuring in a public environment and you h
 - If you are using a compute instance which created in [Azure AI Studio], you can't execute training jobs in the compute instance. You may need to create a new compute instance in [Azure ML] workspace.
 - If you run into an PermissionMismatch error when you download the artifacts, you may need to asign the correct permission to the [Azure ML] workspace.
 
-## How to get started 
+## Get started
 1. Create your compute instance in [Azure ML]. For code development, we recommend **[Standard_DS11_v2]** (2 cores, 14GB RAM, 28GB storage, No GPUs).
 2. Open the terminal of the CI and run: 
     ```shell

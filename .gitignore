@@ -172,4 +172,6 @@ cython_debug/
 outputs/
 _site/
 
+0_lab_preparation/3_structured_output.ipynb
+
 Gemfile.lock
