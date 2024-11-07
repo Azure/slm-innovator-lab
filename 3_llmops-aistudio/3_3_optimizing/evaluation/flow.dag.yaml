@@ -36,7 +36,7 @@ nodes:
     max_tokens: 256
     deployment_name: gpt-4o
     temperature: 0
-  connection: ai-slmhub1616907550322_aoai
+  connection: your-connection-name
   api: chat
 - name: concat_scores
   type: python
