@@ -22,13 +22,13 @@ nav_order: 3
 - Azure Machine Learning Clusters (VM)
     - (Optional) Standard NCSv3 Family Cluster (**[Standard_DS11_v2]**)
         - データ作成やアプリ開発の際に使用します。ローカル PC をご利用いただくことも可能ですが、ハンズオン環境を揃えるため、ご利用をお勧めいたします。
+        - **事前にクオータ付与の申請が必要な場合があります。**
     - Standard NCADSA 100v4 Family Cluster (**[Standard_NC24ads_A100_v4]**)
         - LLM のトレーニングに使用します。 **事前にクオータ付与の申請が必要です。**
         - **[Low-priority VM]** の利用も可能
         - **24 コア** が必要になります
     - Standard NCSv3 Family Cluster (**[Standard_NC6s_v3]**)
-        - Fine Tune を行った LLM のデプロイメント (ホスティング) に使用します。**事前にクオータ付与の申請が必要な場合があります。**
-        - **[Low-priority VM]** の利用も可能
+        - ファインチューニングを行った LLM のデプロイメント (ホスティング) に使用します。**事前にクオータ付与の申請が必要です。**
         - **12 コア** が必要になります
 
 ### クオータの申請
