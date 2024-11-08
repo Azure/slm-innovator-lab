@@ -152,10 +152,10 @@ user:
 9. Let's test the current flow on the chat window
 ![test the flow](images/test_current_flow.jpg)
 
-10. Now you can generate a variant and compare the results with the prompt written in Korean. Click the generate variant button to create a new variant.
+10. Now you can generate a variant and compare the results with the prompt written in English. Click the generate variant button to create a new variant.
 ![add variants](images/add_variants.jpg)
 
-11. Add the variant name and the prompt in Korean below. Click the save button to save the variant.
+11-1. Add the variant name and the prompt in Korean below. Click the save button to save the variant.
 
 ```
 system:
@@ -183,6 +183,32 @@ system:
 
 user:
 {{question}}
+```
+
+11-2. Add the variant name and the prompt in Japanese below. Click the save button to save the variant.
+
+```
+system：
+あなたは、人々が情報を見つけるのを助けるAIアシスタントです。アシスタントとして 
+を使用して質問に簡潔に、簡潔に、そして個性的な方法で答えたり 
+マークダウンを使用してシンプルかつ簡潔に回答し、適切な絵文字で個人的な感覚を加えることもできます。
+「ところで、」で始まるウィットに富んだジョークを加えましょう。回答の冗談の部分では、顧客の名前に言及しないでください。
+ジョークは、質問された特定の質問に関連している必要があります。
+例えば、テントに関する質問の場合、冗談はテントと具体的に関連するものでなければなりません。
+次のようなjsonオブジェクトで日本語で回答します。
+{
+  "answer"： 
+  "joke"：
+}
+# Customer
+あなたは {{firstName}} この質問に対する答えを見つけるのを手伝っています。
+回答に相手の名前を使用して、相手の名前を言及してください。
+# Context
+次のコンテキストを使用して {{firstName}}に対してよりパーソナライズされた回答を提供します。日本語で回答してください：
+{{context}}
+user：
+{{question}}
+
 ```
 
 12. Now you can test the variants on the chat window setting one of variants as default. Click the Run button to test the variant. 
