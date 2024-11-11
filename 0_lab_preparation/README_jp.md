@@ -54,7 +54,7 @@ Azure AI Studio および Azure ML Studio でサービス参照方法が異な�
 2. Azure AI Studio から **新規プロジェクト** および **新規ハブ** を作成します
     - 新規ハブを選択して作成します
     - リソースグループは Azure Portal で作成したハブを選択、Azure AI リソースは新規作成 (または同じサブスクリプション内に作成済みのリソースを設定) を行ってください
-    - 作成した (または設定した) Azure AI リソースで、GPT-4o モデルをデプロイしておきます
+    - 作成した (または設定した) Azure AI リソースで、GPT-4o mini モデルをデプロイしておきます
 
 3. (Optional) Azure Portal から **Document Intelligence (旧称: Form Recognizer)** を作成します
     - リソースグループは、Azure Portal で作成したリソースグループを選択してください
@@ -80,7 +80,7 @@ Azure AI Studio および Azure ML Studio でサービス参照方法が異な�
 
 ### 2️⃣ ハンズオンフォルダーのクローン
 
-1. コンピューティングインスタンスが起動していることを確認して、`JupyterLab` or `VS Code(Web)` からターミナルを開き、code/user/(サインインユーザー名) のディレクトリーに移動します。
+1. コンピューティングインスタンスが起動していることを確認して、`JupyterLab` or `VS Code(Web)` からターミナルを開き、**code/user/(サインインユーザー名)** のディレクトリーに移動します。
 
 2. 以下のコマンドで、インスタンス内の conda 環境を azureml_py310_sdkv2 に指定 (変更) して、SLM Innovator Lab のハンズオンフォルダーを Git clone し、requirements.txt の内容をインストールします。
 

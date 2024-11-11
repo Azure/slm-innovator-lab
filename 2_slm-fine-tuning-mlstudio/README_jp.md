@@ -32,7 +32,7 @@ nav_order: 5
         - *(オプション)* LLM データセットの前処理に関心がある場合は、フォルダ内のハンズオンを参照してください `phi3/dataset-preparation` 。
     - [Florence2-VQA](florence2-VQA)
         - それぞれ Run [`1_training_mlflow.ipynb`](florence2-VQA/1_training_mlflow.ipynb) と [`2_serving.ipynb`](florence2-VQA/2_serving.ipynb)を実行します。
-    - を編集することを忘れないでください`config.yml`。
+    - `config.yml` を忘れずに編集してください。
 
 ## 2. Azure ML トレーニングの準備
 
