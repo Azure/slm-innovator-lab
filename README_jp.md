@@ -44,7 +44,7 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 管理されたオンライン エンドポイントの場合、 [Azure ML では、デプロイのクォータの 20% が予約されています].[^1] デプロイ内の VM SKU に対して特定の数のインスタンスをリクエストする場合は、 `ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU` エラーが発生しないように、使用可能なクォータが必要です。たとえば、 `Standard_NC6s_v3` デプロイで VM (6 コアが付属) の 1 つのインスタンスを要求する場合、12 コア (ceil(1.2 × 1 インスタンス) = 2, 2 × 6 コア) のクォータが使用可能である必要があります。  
 
 上記の要件をまだお持ちでない場合は、まずラボの準備に進んでください。
-### [Lab 0. ラボの準備](0_lab_preparation\README_jp.md)
+### [Lab 0. ラボの準備](0_lab_preparation/README_jp.md)
 
 **アカウントに合わせて `.env` ファイルを忘れずに変更してください  。`.env.sample` のファイル名を `.env` 変更する、またはコピーして `.env` という名前で保存してください**
 
@@ -70,9 +70,9 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 
 ## ハンズオンラボ
 
-### [Lab 1. データ準備](1_synthetic-qa-generation\README_jp.md)
-### [Lab 2. LLMのファインチューニングとサービング](2_slm-fine-tuning-mlstudio\README_jp.md)
-### [Lab 3. LLMOps](3_llmops-aistudio\README_jp.md)
+### [Lab 1. データ準備](1_synthetic-qa-generation/README_jp.md)
+### [Lab 2. LLMのファインチューニングとサービング](2_slm-fine-tuning-mlstudio/README_jp.md)
+### [Lab 3. LLMOps](3_llmops-aistudio/README_jp.md)
 
 ## 参照
 
@@ -101,7 +101,7 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 - [Hugging Face Blog - Finetune Florence-2 on DoCVQA](https://huggingface.co/blog/finetune-florence2)
 
 ### LLMOps
-- [LLMOps with Prompt フロー (AI Studio と Azure Machine Learning の両方をサポート)](https://github.com/microsoft/llmops-promptflow-template)
+- [プロンプトフローを利用した LLMOps (AI Studio と Azure Machine Learning の両方をサポート)](https://github.com/microsoft/llmops-promptflow-template)
 
 </details>
 
