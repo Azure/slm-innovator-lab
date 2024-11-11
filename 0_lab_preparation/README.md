@@ -1,3 +1,5 @@
+[日本語](README_jp.md)
+
 ---
 layout: home
 title: Lab 0. Requirements (Skip if you have already set up)

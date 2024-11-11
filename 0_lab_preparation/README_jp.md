@@ -1,3 +1,5 @@
+[English](README.md)
+
 ---
 layout: home
 title: Lab 0. Requirements (ja-jp)

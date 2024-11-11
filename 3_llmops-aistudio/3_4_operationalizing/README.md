@@ -1,3 +1,5 @@
+[日本語](README_jp.md)
+
 ---
 layout: default
 title: Lab 3.4 Overview

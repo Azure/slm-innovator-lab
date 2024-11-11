@@ -32,7 +32,7 @@ nav_order: 631
 - 4️⃣ プロンプトフローでカスタム評価フローを作成
 
 ### 1️⃣ 選択したモデルの出力を確認するための手動評価 
-1. Azure AI Studio の > Tools > Evaluation に移動する
+1. Azure AI Studio の > Tools > Evaluation に移動します。
 2. 「手動評価」タブをクリックして、AIアプリケーションのパフォーマンスを評価および比較するための手動評価を作成します。
 ![新しいマニュアル評価](images/new_manual_evaluation.jpg)
 
@@ -206,4 +206,4 @@ user:
 ![評価の実行](images/evaluation_running.jpg)
 
 >  +ご参考までに<br>
-エバリュエーターは、評価を実行するために使用できる資産です。SDK でエバリュエーターを定義し、評価を実行して 1 つ以上のメトリックのスコアを生成できます。プロンプトフローSDKでAI支援の品質および安全性評価者を使用するには、[プロンプトフローSDKによる評価を確認してください](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/flow-evaluate-sdk)  
+エバリュエーターは、評価を実行するために使用できるアセットです。SDK でエバリュエーターを定義し、評価を実行して 1 つ以上のメトリックのスコアを生成できます。プロンプトフローSDKでAI支援の品質および安全性エバリュエーターを使用するには、[プロンプトフローSDKによる評価](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/flow-evaluate-sdk) を確認してください。 

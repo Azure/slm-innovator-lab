@@ -1,3 +1,5 @@
+[English](README.md)
+
 ---
 layout: default
 title: Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
@@ -67,16 +69,16 @@ ml_client.begin_create_or_update(endpoint)
 ml_client.online_endpoints.begin_create_or_update(endpoint) 
 ```
 
-### 2.2. データ資産
+### 2.2. データアセット
 
-モデルのトレーニング/検証データセットは、直接ローカルにアップロードすることも、Azure ML ワークスペースのデータ資産として登録することもできます。データ アセットを使用すると、データのバージョン管理が可能になり、データセットの変更を追跡し、必要に応じて以前のバージョンに戻すことができます。これにより、データ品質が維持され、データ解析の再現性が確保されます。
+モデルのトレーニング/検証データセットは、直接ローカルにアップロードすることも、Azure ML ワークスペースのデータアセットとして登録することもできます。データ アセットを使用すると、データのバージョン管理が可能になり、データセットの変更を追跡し、必要に応じて以前のバージョンに戻すことができます。これにより、データ品質が維持され、データ解析の再現性が確保されます。
 
 データ アセットは、Datastore に格納されているデータ ファイルまたはディレクトリを参照することによって作成されます。データストアは、外部データを格納する場所を表し、Azure Blob Storage、Azure File Share、Azure Data Lake Storage、OneLake などのさまざまな Azure データ ストレージ サービスに接続できます。Azure ML ワークスペースを作成すると、既定で 4 つのデータストア (`workspaceworkingdirectory`、 `workspaceartifactstore`、 `workspacefilestore`、`workspaceblobstore`) が自動的に作成されます。その中でも、workspaceblobstore は Azure Blob Storage であり、モデル トレーニング データや大きなファイルを格納するときに既定で使用されます。
 
 
-### 2.3. 環境資産
+### 2.3. 環境アセット
 
-Azure ML は、コードが実行される環境資産を定義します。組み込み環境を使用することも、Conda仕様またはDockerイメージを使用してカスタム環境を構築することもできます。CondaとDockerの長所と短所は次のとおりです。
+Azure ML は、コードが実行される環境アセットを定義します。組み込み環境を使用することも、Conda仕様またはDockerイメージを使用してカスタム環境を構築することもできます。CondaとDockerの長所と短所は次のとおりです。
 
 **Conda 環境**
 
@@ -269,9 +271,9 @@ def get_or_create_model_asset(ml_client, model_name, job_name, model_dir="output
     return model_asset
 ```
 
-### 4.3. 環境資産
+### 4.3. 環境アセット
 
-これは、前のセクションで紹介した環境資産と同じです。ただし、モデルサービングにはウェブホスティングの追加設定が必要なため、以下のコードスニペットの内容を設定します。
+これは、前のセクションで紹介した環境アセットと同じです。ただし、モデルサービングにはウェブホスティングの追加設定が必要なため、以下のコードスニペットの内容を設定します。
 
 ```Dockerfile
 FROM mcr.microsoft.com/aifx/acpt/stable-ubuntu2004-cu118-py38-torch222:biweekly.202406.2

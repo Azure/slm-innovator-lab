@@ -1,3 +1,5 @@
+[日本語](README_jp.md)
+
 ---
 layout: default
 title: Generate Coverage dataset (seed data)
