@@ -18,11 +18,11 @@ nav_order: 61
 ### 前提 条件
 AI Hub リソース、プロンプト フロー、Content Safety サービス、デプロイされた微調整されたモデル エンドポイント、AI Search サービスと共に AI プロジェクトを作成できる Azure サブスクリプションが必要です。
 
-### ステップス
-    0️⃣ Create the Azure Resource Group  
-    1️⃣ Create Azure AI project in Azure AI Studio
-    2️⃣ Create a compute instance to run Prompt flow
-    🗑️ Clean up resources
+### 手順
+    0️⃣ Azureリソースグループの作成   
+    1️⃣ Azure AI Studio で Azure AI プロジェクトを作成する
+    2️⃣ プロンプトフローを実行するコンピューティング インスタンスを作成する
+    🗑️ リソースをクリーンアップする
 
 コンピューティング インスタンスを開発ボックスとして使用することができる場合は、VS Code で Azure AI プロジェクトを開始する (Web) を参照してください。
 また、プロンプト フローの開発に役立つ VS Code 拡張機能も提供しています。詳細については、VS Code のプロンプト フローを参照してください。
@@ -54,7 +54,7 @@ AI Hub リソース、プロンプト フロー、Content Safety サービス、
 5. [レビューと完了] ページに、リソースが作成されることが表示されます。完了するまでに数分かかります。
     ![ハブ](images/project-review-finish.jpg)を作成する
 
-### 2️⃣ Prompt フローを実行するコンピューティング インスタンスを作成する
+### 2️⃣ プロンプトフローを実行するコンピューティング インスタンスを作成する
 1. Azure Open AI プロジェクトの作成が完了すると、次の画面が表示されます
     ![結果](images/created-project.jpg)
 - オプション 1-1: Azure Machine Learning -> プロンプト フロー -> コンピューティング セッションを開始する  

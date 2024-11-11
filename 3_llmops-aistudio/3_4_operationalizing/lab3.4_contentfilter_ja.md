@@ -15,13 +15,13 @@ nav_order: 641
 ### 前提 条件
 
 - AI Hub と AI プロジェクト リソースを作成できる Azure サブスクリプション
-- Fine-tune モデルを登録し、Azure AI Studio に LLM をデプロイしました
+- ファインチューンしたモデルを登録し、Azure AI Studio に LLM をデプロイ済み
 
 ### タスク
 
-- エンドユーザーからの問題のあるプロンプトをフィルタリングしたい 
-- LLMを呼び出す前に、プロンプトのhamfulキーワードを書き換えたいと思います 
-- リスクとコスト管理のメトリックを使用してサービスを監視したい  
+- エンドユーザーからの問題のあるプロンプトをフィルタリングします
+- LLMを呼び出す前に、プロンプトのhamfulキーワードを書き換えます
+- リスクとコスト管理のメトリックを使用してサービスを監視します
 
 
 ### 目次
@@ -39,4 +39,4 @@ nav_order: 641
 | S0           | 1000 RP10Sの                          | 1000 RP10Sの     | 1000 RP10Sの                      | 50 RPSの                              | 1000 RP10Sの                             | 5 RPSの                                     | 10 RPSの<br><br> |
 
 ### Jupyter Notebookを通じて作業
-- Python sdkを使用して、jupyter notebookでContent Safetyを作成して実行してみましょう。有害なコンテンツにフィルタリングする方法を学び [ますcontentsafety_with_code.ipynb](pcontentsafety_with_code.ipynb)
+- Jupyter NotebookでPython sdkを使用してContent Safetyを作成して、実行してみましょう。有害なコンテンツにフィルタリングする方法を学びます。[contentsafety_with_code.ipynb](pcontentsafety_with_code.ipynb) または日本語版 [contentsafety_with_code_ja.ipynb](contentsafety_with_code_ja.ipynb)

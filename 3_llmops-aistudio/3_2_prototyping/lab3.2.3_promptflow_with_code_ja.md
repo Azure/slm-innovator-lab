@@ -18,13 +18,13 @@ nav_order: 623
 
 ### タスク
 
-- promptflow python sdkを使用してフローを実行したいです。テスト、ログトレース、監視を行い、適切なモデルを決定します。 
+- promptflow python sdkを使用してフローを実行します。テスト、ログトレース、監視を行い、適切なモデルを決定します。 
 
 ### 目次
-    1️⃣ Create another flow on the jupyter notebook 
-    2️⃣ run the flow and check the outputs 
+    1️⃣ Jupyter Notebook でフローを作成する 
+    2️⃣ フローを実行して結果を確認する
 
 
-### Jupyter Notebookを通じて作業
-- promptflow python sdk を使用して、jupyter notebook で同じフローを作成して実行してみましょう。Azure [promptflow_with_code.ipynb でフローを実行する方法を学習します](promptflow_with_code.ipynb)
+### Jupyter Notebook でフローを作成する
+- Jupyter Notebook で promptflow python sdk を使用して、同じフローを作成して実行してみましょう。[promptflow_with_code.ipynb](promptflow_with_code.ipynb) から Azure でフローを実行する方法を学習します。
 

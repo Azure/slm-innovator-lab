@@ -12,18 +12,18 @@ nav_order: 621
 ### 前提 条件
 
 - AI Hub と AI プロジェクト リソースを作成できる Azure サブスクリプション。
-- Azure ML Studio での微調整されたモデルのオンライン エンドポイント
+- Azure ML Studio でのファインチューニングされたモデルのオンライン エンドポイント
 - Azure AI Studio にデプロイされた gpt-4o モデル 
 
 
 ### タスク
 
-- 微調整したモデルで簡単なPoCを実行したいです。 
-- プロンプトを実行したときにどのような結果が生成されるかを確認したいです。 
+- ファインチューニングしたモデルで簡単なPoCを実行します。
+- プロンプトを実行したときにどのような結果が生成されるかを確認します。
 
 ### 目次
-    1️⃣ Create a basic chat flow 
-    2️⃣ Integrate the fine-tuned phi3.5 endpoint into Python Node
+    1️⃣ 基本的なチャットフローを作成する  
+    2️⃣ ファインチューニングされたphi3.5エンドポイントをPythonノードに統合します
 
 ### 1️⃣ 基本的なチャットフローを作成する 
 
@@ -72,11 +72,11 @@ nodes:
 ![変更したフローを確認する](images/first_dag_graph.jpg)
 
 
-### 2️⃣微調整されたphi3.5エンドポイントをPythonノードに統合します
+### 2️⃣ファインチューニングされたphi3.5エンドポイントをPythonノードに統合します
 1. まず、エンドポイント情報を取得して接続を作成するには、>作成したAzure Machine Learningワークスペースに移動し、[エンドポイント]>[消費]タブで>RESTエンドポイントとプライマリキーを認証情報としてコピーします。
 ![REST エンドポイントと主キーをコピーする](images/copy_endpoint_comsumption_info.jpg)
 
-2. Azure AI Studio の > 設定 > に戻り、デプロイされた微調整された phi3.5 エンドポイントと統合するための新しい接続を作成します。
+2. Azure AI Studio の > 設定 > に戻り、デプロイされたファインチューニングされた phi3.5 エンドポイントと統合するための新しい接続を作成します。
 ![新しい接続を作成する](images/create_new_connection.jpg)
 
 3. 接続タイプとして [カスタム キー] を選択し、接続情報を入力します
@@ -85,10 +85,10 @@ nodes:
 4. Python ノードに接続情報を追加して、デプロイされた phi3.5 エンドポイントをリクエストし、接続の追加をクリックします
 ![接続情報を追加する](images/create_connect_custom_resource.jpg)
 
-5. 以下のコードをPythonノードに添付して、微調整されたphi3.5エンドポイントをリクエストします。 
+5. 以下のコードをPythonノードに添付して、ファインチューニングされたphi3.5エンドポイントをリクエストします。 
 
 {: .note}
-このエンドポイントは Azure Machine Learning の微調整されたオンライン エンドポイントに基づいているため、入力と出力の仕様は、2_slm-fine-tuning-mlstudio の前の手順で提供されたスコアリング スクリプトに従います。[](../../2_slm-fine-tuning-mlstudio/phi3/src_serve/score.py) Azure ML Studio で score.py ファイルを確認して、入力形式と出力形式を取得してください。scoring_scriptを理解するには、[スコアリング スクリプトの理解を参照してください](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=python#understand-the-scoring-script)。
+このエンドポイントは Azure Machine Learning のファインチューニングされたオンライン エンドポイントに基づいているため、入力と出力の仕様は、2_slm-fine-tuning-mlstudio の前の手順で提供されたスコアリング スクリプトに従います。[](../../2_slm-fine-tuning-mlstudio/phi3/src_serve/score.py) Azure ML Studio で score.py ファイルを確認して、入力形式と出力形式を取得してください。scoring_scriptを理解するには、[スコアリング スクリプトの理解を参照してください](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-deploy-online-endpoints?view=azureml-api-2&tabs=python#understand-the-scoring-script)。
 
 ```python
 import urllib

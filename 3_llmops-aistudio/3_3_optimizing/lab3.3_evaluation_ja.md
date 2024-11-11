@@ -11,7 +11,7 @@ nav_order: 631
 
 ![LLM
 ](images/evaluation-monitor-flow.png)
-[ジェネレーティブAIアプリケーションの評価とモニタリング](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-approach-gen-ai#evaluating-and-monitoring-of-generative-ai-applications)
+[生成AIアプリケーションの評価とモニタリング](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/evaluation-approach-gen-ai#evaluating-and-monitoring-of-generative-ai-applications)
 
 ### 前提 条件
 
@@ -21,19 +21,17 @@ nav_order: 631
 
 ### タスク
 
-- モデルとRAGがどれだけ疑問に答えているかを定量的に検証したい 
-- 本番環境で一括データをベンチマークし、ボトルネックを見つけて改善したい 
+- モデルとRAGがどれだけ疑問に答えているかを定量的に検証します
+- 本番環境で一括データをベンチマークし、ボトルネックを見つけて改善します
 
 
 ### 目次
-- 1️(2)選択したモデルの出力を確認するための手動評価
-- 2️(2) LLMバリアントでA/Bテストを実施
-
+- 1️⃣ 選択したモデルの出力を確認するための手動評価
+- 2️⃣ LLMバリアントでA/Bテストを実施
 - 3️⃣ バリアントによる自動評価の作成
-
 - 4️⃣ プロンプトフローでカスタム評価フローを作成
 
-### 1️(2)選択したモデルの出力を確認するための手動評価 
+### 1️⃣ 選択したモデルの出力を確認するための手動評価 
 1. Azure AI Studio の > Tools > Evaluation に移動する
 2. 「手動評価」タブをクリックして、AIアプリケーションのパフォーマンスを評価および比較するための手動評価を作成します。
 ![新しいマニュアル評価](images/new_manual_evaluation.jpg)
@@ -53,7 +51,7 @@ You are a math assistant, and you are going to read the context which includes s
 7. [実行] ボタンをクリックして、テスト データを使用してモデルをテストします。テストが完了したら、結果を表示してエクスポートしたり、結果を期待される回答と比較したりすることもできます。親指を上または下に使用して、モデルのパフォーマンスを評価します。この結果は手動評価用であるため、結果データセットを自動評価に引き継いで、モデルを一括データで評価できます。
 ![テストの実行](images/manual_eval_run_test.jpg)
 
-### 2️(2) LLMバリアントでA/Bテストを実施
+### 2️⃣ LLMバリアントでA/Bテストを実施
 バリアントを使用した新しいチャットフローを作成する 
 1. Azure AI Studio > プロンプト フロー > [+ 作成] をクリックして新しいフローを作成します
 ![新しいフローを作成する](../3_2_prototyping/images/create_new_flow.jpg)
@@ -190,11 +188,11 @@ user:
 
 
 ### 3️⃣ バリアントを使用した QnA 関連性評価フローの作成
-1. Azure AI Studio の > Tools > Evaluation に移動する
+1. Azure AI Studio の > Tools > Evaluation に移動します。
 
 2. [自動評価] タブの [+ 新しい評価] をクリックして作成します。 
 
-3. 「プロンプトフロー」をクリックして、その出力を評価するフローを選択します
+3. 「プロンプトフロー」をクリックして、その出力を評価するフローを選択します。
 ![新しい評価](images/new_promptflow_evaluation.jpg)
 
 4. 評価の基本情報を追加します。評価の名前を「variant1_en」として入れ、評価するフローを選択します。評価シナリオとして [コンテキストを使用した質問と回答] を選択します。「次へ」ボタンをクリックして続行します。
