@@ -36,9 +36,9 @@ nav_order: 5
 
 ## 2. Azure ML トレーニングの準備
 
-### 2.1. 予備段階: Azure ML Python SDK v2
+### 2.1. 準備: Azure ML Python SDK v2
 
-Azure ML Python SDK v2 は、コツをつかめば簡単に使用できます。 `MLClient` AzureML を操作するためのインスタンスが作成されると、アセットに対応する操作は `create_or_update function`.以下のコードスニペットを参照してください。
+Azure ML Python SDK v2 は、コツをつかめば簡単に使用できます。AzureML を操作するための `MLClient` インスタンスが作成されると、アセットに対応する操作は `create_or_update function` を通して非同期に実行されます。以下のコードスニペットを参照してください。
 
 ```python
 ml_client = MLClient.from_config(credential)
@@ -71,7 +71,7 @@ ml_client.online_endpoints.begin_create_or_update(endpoint)
 
 モデルのトレーニング/検証データセットは、直接ローカルにアップロードすることも、Azure ML ワークスペースのデータ資産として登録することもできます。データ アセットを使用すると、データのバージョン管理が可能になり、データセットの変更を追跡し、必要に応じて以前のバージョンに戻すことができます。これにより、データ品質が維持され、データ解析の再現性が確保されます。
 
-データ アセットは、Datastore に格納されているデータ ファイルまたはディレクトリを参照することによって作成されます。データストアは、外部データを格納する場所を表し、Azure Blob Storage、Azure File Share、Azure Data Lake Storage、OneLake などのさまざまな Azure データ ストレージ サービスに接続できます。Azure ML ワークスペースを作成すると、既定で 4 つのデータストア (`workspaceworkingdirectory`、 `workspaceartifactstore`、 `workspacefilestore`、) `workspaceblobstore`が自動的に作成されます。その中でも、workspaceblobstore は Azure Blob Storage であり、モデル トレーニング データや大きなファイルを格納するときに既定で使用されます。
+データ アセットは、Datastore に格納されているデータ ファイルまたはディレクトリを参照することによって作成されます。データストアは、外部データを格納する場所を表し、Azure Blob Storage、Azure File Share、Azure Data Lake Storage、OneLake などのさまざまな Azure データ ストレージ サービスに接続できます。Azure ML ワークスペースを作成すると、既定で 4 つのデータストア (`workspaceworkingdirectory`、 `workspaceartifactstore`、 `workspacefilestore`、`workspaceblobstore`) が自動的に作成されます。その中でも、workspaceblobstore は Azure Blob Storage であり、モデル トレーニング データや大きなファイルを格納するときに既定で使用されます。
 
 
 ### 2.3. 環境資産
@@ -100,15 +100,15 @@ Azure ML は、コードが実行される環境資産を定義します。組�
 
 Azure ML では、プロジェクトの要件に基づいて適切な方法を選択することが重要です。単純な Python プロジェクトの場合は Conda 環境で十分な場合がありますが、複雑なシステム依存関係が必要な場合は、Docker 環境の方が適している可能性があります。カスタム Docker イメージを作成する最も簡単で最速の方法は、キュレーションされた環境に小さな変更を加えることです。以下はその一例です。
 
- `acft-hf-nlp-gpu` キュレーションされた環境タブで選択してください(もちろん、別の環境を選択することもできます)。
+Azure ML 環境の キュレーションされた環境 タブから `acft-hf-nlp-gpu` を選択してください(もちろん、別の環境を選択することもできます)。
 
 ![環境1](./images/environment_curated1.png)
 
-と をコピーして `Dockerfile` `requirements.txt` 、必要に応じて変更してください。
+`Dockerfile` と `requirements.txt` をコピーして、必要に応じて変更してください。
 
 ![環境2](./images/environment_curated2.png)
 
-次のコード スニペットは、 `Dockerfile`.
+以下のコード スニペットは、 `Dockerfile` の編集例です。
 
 ```Dockerfile
 FROM mcr.microsoft.com/aifx/acpt/stable-ubuntu2004-cu118-py38-torch222:biweekly.202406.2
@@ -129,10 +129,10 @@ RUN MAX_JOBS=4 pip install flash-attn==2.5.9.post1 --no-build-isolation
 
 ### 3.1. MLflow を使用したトレーニングスクリプト
 
-一部の人々は、既存のトレーニングスクリプトに大幅な変更を加える必要がある、またはMlflowツールキットが必須であると考えるかもしれませんが、これは真実ではありません。既存のトレーニング環境に慣れている場合は、Mlflow を採用する必要はありません。それにもかかわらず、MlflowはAzure MLでのモデルのトレーニングとデプロイを非常に便利にするツールキットであるため、この投稿で簡単に説明します。
+一部の人々は、既存のトレーニングスクリプトに大幅な変更を加える必要がある、またはMlflowツールキットが必須であると考えるかもしれませんが、これは真実ではありません。既存のトレーニング環境に慣れている場合は、Mlflow を採用する必要はありません。それにもかかわらず、MlflowはAzure MLでのモデルのトレーニングとデプロイを非常に便利にするツールキットであるため、この章で簡単に説明します。
 
 
-トレーニング スクリプトで、 `mlflow.start_run()` MLflow で実験を開始し、 `mlflow.end_run()` 終了時に実験を終了するために使用します。構文でラップすると、明示的に end_run() を呼び出す必要がなくなります。mlflow ブロック内で mlflow ログを実行できます。トレーニング スクリプトでは`mlflow.log_params()`、`mlflow.log_metric()`、 `mlflow.log_image()` 、 を使用します。詳しくは[こちらをご覧ください](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2&tabs=interactive)。
+トレーニング スクリプトで、 MLflow で実験を開始するには `mlflow.start_run()` 、終了時に実験を終了するには `mlflow.end_run()` 使用します。構文でラップすると、明示的に end_run() を呼び出す必要がなくなります。mlflow ブロック内では mlflow ログを実行できます。今回のトレーニング スクリプトでは `mlflow.log_params()`、`mlflow.log_metric()`、 `mlflow.log_image()` を使用します。詳しくは[こちらをご覧ください](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-log-view-metrics?view=azureml-api-2&tabs=interactive)。
 
 ```python
 import mlflow
@@ -170,16 +170,16 @@ with mlflow.start_run() as run:
 ```
 
 {: .warning}
-一部の SLM/LLM は をサポートしていない `mlflow.transformers.log_model()`ため、モデルを従来の `save_pretrained()`.
+一部の SLM/LLM は `mlflow.transformers.log_model()` をサポートしていないため、従来の `save_pretrained()` を用いてモデルを保存することをお勧めします。
 
 ```python
 model.save_pretrained(model_dir)
 processor.save_pretrained(model_dir)
 ```
 
-### 3.2. 計算クラスターとトレーニングジョブの作成
+### 3.2. コンピューティングクラスターとトレーニングジョブの作成
 
-トレーニングスクリプトの記述とデバッグが完了したら、トレーニングジョブを作成できます。基本的には、 `Standard_NC24ads_A100_v4` NVIDIA A100 GPUを1台搭載してご使用いただけます。2024 年 9 月の米国東部リージョンでの LowPriority VM のプロビジョニングのコストは、1 時間あたりわずか $0.74 です。
+トレーニングスクリプトの記述とデバッグが完了したら、トレーニングジョブを作成できます。基本的には、NVIDIA A100 GPUを1台搭載した `Standard_NC24ads_A100_v4` をご使用いただけます。2024 年 9 月の米国東部リージョンでの LowPriority VM のプロビジョニングのコストは、1 時間あたりわずか $0.74 です。
 
 この `command()` 関数は、トレーニング タスクの定義と実行に使用される Azure ML のメイン関数の 1 つです。この関数は、トレーニング スクリプトとその必要な環境設定を指定し、Azure ML のコンピューティング リソースでジョブを実行できるようにします。
 
@@ -234,15 +234,15 @@ Jobs Assetを通じて、モデルの学習が正常に進行しているか確�
 ![train_job_logs](./images/train_job_logs.png)
 
 ## 4. Azure ML の提供
-モデルのトレーニングが完了したら、ホスティング サーバーにデプロイしましょう。MLflowで保存した場合は `log_model()`、Mlflowで直接デプロイできますが、電流トランスフォーマーとmlflowバージョンでは、モデルを保存する従来の方法を使用したため、カスタムオプションを使用してデプロイする必要があります。
+モデルのトレーニングが完了したら、ホスティング サーバーにデプロイしましょう。MLflowの `log_model()` で保存した場合は  Mlflowで直接デプロイできますが、今回のトランスフォーマー と mlflow バージョンでは、モデルを保存する従来の方法を使用したため、カスタムオプションを使用してデプロイする必要があります。
 
 ### 4.1. 推論スクリプト
 
-2つの関数と、`init()`を定義し`run()`、自由に書くだけです。init() 関数に直接引数を渡すことはできませんが、初期化中に環境変数または設定ファイルを通じて必要な情報を渡すことができます。
+2つの関数 `init()` と `run()` を定義し自由に書くだけです。init() 関数に直接引数を渡すことはできませんが、初期化中に環境変数または設定ファイルを通じて必要な情報を渡すことができます。
 
 ### 4.2. モデルの登録
 
-の Model クラスで登録します `azure.ai.ml.entities`。で登録して使用するときにモデルのパスと名前を入力します `ml_client.models.create_or_update()`。
+`azure.ai.ml.entities` の Model クラスで設定します。`ml_client.models.create_or_update()` で設定して使用するときにモデルのパスと名前を入力します。
 
 ```python
 def get_or_create_model_asset(ml_client, model_name, job_name, model_dir="outputs", model_type="custom_model", update=False):
@@ -269,9 +269,9 @@ def get_or_create_model_asset(ml_client, model_name, job_name, model_dir="output
     return model_asset
 ```
 
-### 4.3. 環境アセット
+### 4.3. 環境資産
 
-これは、前のセクションで紹介した環境アセットと同じです。ただし、モデルサービングにはウェブホスティングの追加設定が必要なため、以下のコードスニペットを参照してください。
+これは、前のセクションで紹介した環境資産と同じです。ただし、モデルサービングにはウェブホスティングの追加設定が必要なため、以下のコードスニペットの内容を設定します。
 
 ```Dockerfile
 FROM mcr.microsoft.com/aifx/acpt/stable-ubuntu2004-cu118-py38-torch222:biweekly.202406.2
@@ -307,7 +307,7 @@ RUN apt-get install -y openssh-server openssh-client
 - **スケーラビリティ**: エンドポイントは、複数のデプロイ間でのスケーリングをサポートし、トラフィックの増加に応じて追加のデプロイ間で負荷分散できます。
 - **セキュリティ管理**: エンドポイントは、認証と承認を通じてモデルを保護します。API キーまたは Microsoft Entra ID を使用してアクセスを制御できます。
 
-コード スニペットを次に示します。このプロセスでは、まだ計算クラスターがプロビジョニングされないことに注意してください。
+コード スニペットを次に示します。このプロセスでは、まだコンピューティングクラスターがプロビジョニングされないことに注意してください。
 
 ```python
 from azure.ai.ml.entities import (
@@ -397,4 +397,4 @@ endpoint_poller = ml_client.online_endpoints.begin_create_or_update(endpoint)
 ```
 
 {: .note}
-liveness probe の設定を直接指定してデプロイし、モデルデプロイコンテナが正常に動作しているか確認してください。デバッグ時には、エラー ログ分析のために、高いinitial_delayと高いfailure_thresholdと高い周期を設定することをお勧めします。 `ProbeSettings()` 上記のコードを確認してください。
+liveness probe の設定を直接指定してデプロイし、モデルデプロイコンテナが正常に動作しているか確認してください。デバッグ時には、高いinitial_delayと高いfailure_threshold、高頻度のエラー ログ分析を設定することをお勧めします。上記の設定については、 `ProbeSettings()` のコードを確認してください。
