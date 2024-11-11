@@ -2,21 +2,17 @@
 name: ExamplePrompt
 description: A prompt that uses context to ground an incoming question
 authors:
-  - 
+  - Seth Juarez
 model:
   api: chat
   configuration:
     type: azure_openai
-    api_version: 2024-05-01-preview
     azure_endpoint: ${env:AZURE_OPENAI_ENDPOINT}
-    azure_deployment: ${env:AZURE_OPENAI_DEPLOYMENT_NAME}
+    azure_deployment: <your-deployment>
   parameters:
-    max_tokens: 2000
-    temperature: 0.7
-    response_format:
-      type: json_object      
+    max_tokens: 3000
 sample:
-  firstName: Annie
+  firstName: Seth
   context: >
     アルパインエクスプローラーテントは、プライバシーを確保するための取り外し可能な仕切り、
     通気のための多数のメッシュ窓と調整可能な通気口、そして防水設計が特徴です。
@@ -32,17 +28,17 @@ system:
 
 回答の最後に「ところで」で始まる機知に富んだジョークを追加します。ただし、ジョークの部分では回答に名前を使用しないでください。
 ジョークは、尋ねられる特定の質問に関連したものでなければなりません。
-例えば、質問がテントについての場合、ジョークもテントに関連したものであるべきです。
+例えば、テントに関する質問の場合、ジョークは具体的にテントに関連している必要があります。
 
 以下のJSONオブジェクトを使用して日本語で応答してください: 
 {
-  "answer": 
-  "joke":
+  “answer": 
+  “joke":
 }
 
 # Customer
-あなたは私がこの質問に対する答えを見つけるのを手伝っています。
-答えに名前を使用して、相手に言及します。
+あなたは{{firstName}}が質問の答えを見つけるのを手伝っています。
+回答には相手の名前を使用して言及してください。
 
 # Context
 次のコンテキストを使用して、よりパーソナライズされた応答を {{firstName}} に提供します。日本語でお答えください:
