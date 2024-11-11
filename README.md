@@ -1,3 +1,5 @@
+[日本語](README_jp.md)
+
 # SLM Innovator Lab
 
 Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AI/ML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of AI Studio, you can establish efficient and scalable LLMOps.

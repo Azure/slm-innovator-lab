@@ -1,3 +1,5 @@
+[English](README.md)
+
 # SLM Innovator Lab
 
 Azure AI/ML Platform を基盤とする SLM Innovator Lab で、AI プロジェクトの可能性を最大限に引き出しましょう。このラボは、Azure での複数の SLM モデルの微調整とデプロイに優れたお客様や、RAG アプリケーションを作成するための微調整を通じて基本モデルのパフォーマンスを最適化することを目指しているお客様向けに設計されています。AI Studio の高度な機能により、効率的でスケーラブルな LLMOps を確立できます。
@@ -42,14 +44,14 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 管理されたオンライン エンドポイントの場合、 [Azure ML では、デプロイのクォータの 20% が予約されています].[^1] デプロイ内の VM SKU に対して特定の数のインスタンスをリクエストする場合は、 `ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU` エラーが発生しないように、使用可能なクォータが必要です。たとえば、 `Standard_NC6s_v3` デプロイで VM (6 コアが付属) の 1 つのインスタンスを要求する場合、12 コア (ceil(1.2 × 1 インスタンス) = 2, 2 × 6 コア) のクォータが使用可能である必要があります。  
 
 上記の要件をまだお持ちでない場合は、まずラボの準備に進んでください。
-### [Lab 0. ラボの準備](0_lab_preparation)
+### [Lab 0. ラボの準備](0_lab_preparation\README_jp.md)
 
-**アカウントに合わせてファイルを変更することを忘れないでください `.env` 。名前を変更する `.env.sample` `.env` か、コピーして使用します**
+**アカウントに合わせて `.env` ファイルを忘れずに変更してください  。`.env.sample` のファイル名を `.env` 変更する、またはコピーして `.env` という名前で保存してください**
 
 ## 注意
 このワークショップは、パブリック環境で設定し、インターネットにアクセスできることを前提としています。プライベート環境で構成している場合は、サービスにアクセスするためにプライベートネットワークの設定が必要になる場合があります。プライベート環境で構成するときに発生する可能性のある一般的な問題を次に示します。
--  [Azure ML] ワークスペースと [Azure AI スタジオ] プライベートネットワークを設定する場合、サービスにアクセスするためにVPNまたはプライベートリンクを設定する必要がある場合があります。
-- 優先度の低い VM を使用している場合は、VM が使用可能になるまで待つ必要がある場合があります。VM の可用性は、リージョンによって異なる場合があります。
+-  [Azure ML] ワークスペースと [Azure AI Studio] プライベートネットワークを設定する場合、サービスにアクセスするためにVPNまたはプライベートリンクを設定する必要がある場合があります。
+- Low-priority VM を使用している場合は、VM が使用可能になるまで待つ必要がある場合があります。VM の可用性は、リージョンによって異なる場合があります。
 - BLOB ストレージがある場合は、それを使用してデータとモデルを格納できます。ただし、ワークスペース内の BLOB ストレージへの接続を設定する必要がある場合があります [Azure ML] 。
 - クォータの問題がある場合は、VM または GPU のクォータの引き上げをリクエストする必要があります。
 - ワークスペースでネットワークを設定すると [Azure ML] 、ネットワークを変更することはできません。ネットワークを変更する場合は、新しいワークスペースを作成する必要がある場合があります。
@@ -58,7 +60,7 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 - 成果物のダウンロード時に PermissionMismatch エラーが発生した場合は、ワークスペースに適切なアクセス許可を割り当てなければならない場合があります [Azure ML] 。
 
 ## 使用を開始する方法 
-1. コンピューティング インスタンスを に作成します [Azure ML]。コード開発には、 **[Standard_DS11_v2]** (2 コア、14 GB RAM、28 GB ストレージ、GPU なし) をお勧めします。
+1. コンピューティング インスタンスを [Azure ML] に作成します 。コード開発には、 **[Standard_DS11_v2]** (2 コア、14 GB RAM、28 GB ストレージ、GPU なし) をお勧めします。
 2. CIのターミナルを開き、次のコマンドを実行します。 
     ```shell
     git clone https://github.com/Azure/slm-innovator-lab.git
@@ -68,9 +70,9 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 
 ## ハンズオンラボ
 
-### [Lab 1. データ準備](1_synthetic-qa-generation)
-### [Lab 2. LLMの微調整と提供](2_slm-fine-tuning-mlstudio)
-### [Lab 3. LLMOpsの](3_llmops-aistudio)
+### [Lab 1. データ準備](1_synthetic-qa-generation\README_jp.md)
+### [Lab 2. LLMのファインチューニングとサービング](2_slm-fine-tuning-mlstudio\README_jp.md)
+### [Lab 3. LLMOps](3_llmops-aistudio\README_jp.md)
 
 ## 参照
 
@@ -81,7 +83,7 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 - [Evolve-Instruct](https://arxiv.org/pdf/2304.12244)
 - [GLAN (一般化命令チューニング)](https://arxiv.org/pdf/2402.13064)
 - [Auto Evolve-Instruct](https://arxiv.org/pdf/2406.00770)
-- [Azure Machine Learning の例](https://github.com/Azure/azureml-examples)
+- [Azure Machine Learning サンプル](https://github.com/Azure/azureml-examples)
 
 ### SLMの微調整
 
@@ -134,9 +136,9 @@ CLA を作成し、PR を適切に装飾します (ステータス チェック�
 [Azure ML]: https://ml.azure.com/
 [Azure AI スタジオ]: https://ai.azure.com/
 [Azure の GenAI エコシステム]: https://azure.microsoft.com/en-us/products/machine-learning/generative-ai
-[ラボ1。データ準備]: https://azure.github.io/slm-innovator-lab/1_synthetic_data/
-[ラボ 2.微調整と提供]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/
-[ラボ 3.LLMOpsの]: https://azure.github.io/slm-innovator-lab/3_llmops-aistudio/README.html
+[Lab1.データ準備]: https://azure.github.io/slm-innovator-lab/1_synthetic_data/
+[Lab2.ファインチューニング]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/
+[Lab3.LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aistudio/README.html
 [Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
 [Standard_E2as_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/easv4-series
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic
