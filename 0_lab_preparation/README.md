@@ -1,4 +1,4 @@
-[日本語](README_jp.md)
+[日本語](README_ja.md)
 
 ---
 layout: home
