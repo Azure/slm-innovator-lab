@@ -40,7 +40,7 @@ nodes:
     top_p: 1
     max_tokens: 256
     question: ${inputs.question}
-  connection: ai-slmhub1616907550322_aoai
+  connection: your-connection-name
   api: chat
   module: promptflow.tools.aoai
   use_variants: false
