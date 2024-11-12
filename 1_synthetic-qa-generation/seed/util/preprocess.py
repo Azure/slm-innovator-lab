@@ -217,7 +217,7 @@ def update_figure_description(md_content, img_description, idx):
     return new_md_content
 
 
-def understand_image_with_gpt(client, deployment_name, image_path, caption="", max_tokens=1024, language="Korean"):
+def understand_image_with_gpt(client, deployment_name, image_path, caption="", max_tokens=1024, language="English"):
 
     data_url = local_image_to_data_url(image_path)
     if caption == "":
