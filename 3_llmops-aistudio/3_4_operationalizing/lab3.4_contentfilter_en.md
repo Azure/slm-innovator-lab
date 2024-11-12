@@ -39,4 +39,4 @@ nav_order: 641
 | S0           | 1000 RP10S                          | 1000 RP10S     | 1000 RP10S                      | 50 RPS                              | 1000 RP10S                             | 5 RPS                                     | 10 RPS<br><br> |
 
 ### workthough Jupyter Notebook
-- Let's create and run the Content Safety on the jupyter notebook using python sdk. You will learn how to filter to harmful contents [contentsafety_with_code.ipynb](pcontentsafety_with_code.ipynb)
+- Let's create and run the Content Safety on the jupyter notebook using python sdk. You will learn how to filter to harmful contents [contentsafety_with_code_en.ipynb](pcontentsafety_with_code_en.ipynb)

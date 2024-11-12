@@ -1,3 +1,5 @@
+[日本語](README_ja.md)
+
 ---
 layout: default
 title: Lab 3. LLMOps for SLM with Azure AI Studio

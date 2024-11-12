@@ -1,3 +1,5 @@
+[日本語](README_ja.md)
+
 ---
 layout: default
 title: Lab 1. Generate Synthetic QnAs from Real-world Data

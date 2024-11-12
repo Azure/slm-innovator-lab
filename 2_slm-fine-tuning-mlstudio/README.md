@@ -1,3 +1,5 @@
+[日本語](README_ja.md)
+
 ---
 layout: default
 title: Lab 2. SLM/LLM Fine-tuning on Azure ML Studio

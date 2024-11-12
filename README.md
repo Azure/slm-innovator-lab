@@ -1,3 +1,5 @@
+[日本語](README_ja.md)
+
 # SLM Innovator Lab
 
 Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AI/ML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of AI Studio, you can establish efficient and scalable LLMOps.
@@ -26,7 +28,7 @@ Microsoft Olive is a hardware-aware AI model optimization toolchain developed by
 🔥 Content Safety with Python SDK<br>
 In this hands-on, you will be able to: manage text blocklist, analyze text and images for sexual content, violence, hate, and self-harm with multi-severity levels. You will also learn how to integrate with Azure Open AI Service: Use the Azure Open AI Service to rewrite the content for harmful content.
 <br>
-<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_4_operationalizing/contentsafety_with_code.ipynb">Go to notebook</a>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_4_operationalizing/contentsafety_with_code_en.ipynb">Go to notebook</a>
 
 ## Requirements
 Before starting, you should meet the following requirements:

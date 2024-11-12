@@ -1,3 +1,5 @@
+[日本語](README_ja.md)
+
 ---
 layout: default
 title: Lab 3.1 Set Up Azure AI Studio for LLMOps
