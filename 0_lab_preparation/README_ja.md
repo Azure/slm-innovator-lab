@@ -1,10 +1,10 @@
-[English](README.md)
-
 ---
 layout: home
 title: Lab 0. Requirements (ja-jp)
 nav_order: 3
 ---
+
+[English](README.md)
 
 # Lab 0. Requirements: ハンズオン環境設定
 

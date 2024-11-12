@@ -1,5 +1,3 @@
-[日本語](README_ja.md)
-
 ---
 layout: default
 title: Lab 3.3 Overview
@@ -8,6 +6,8 @@ parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 63
 has_children: true
 ---
+
+[日本語](README_ja.md)
 
 # Lab 3.3 Scenario 3: Evaluate your models using Prompt Flow to keep optimizing
 

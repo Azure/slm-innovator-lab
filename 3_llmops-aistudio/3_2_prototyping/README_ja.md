@@ -1,5 +1,3 @@
-[English](README.md)
-
 ---
 layout: default
 title: Lab 3.2 Overview
@@ -8,6 +6,8 @@ parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 62
 has_children: true
 ---
+
+[English](README.md)
 
 # Lab 3.2 Scenario 1: Prototype your first gen AI application with prompt flow
 

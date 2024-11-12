@@ -1,10 +1,10 @@
-[日本語](README_ja.md)
-
 ---
 layout: home
 title: Lab 0. Requirements (Skip if you have already set up)
 nav_order: 3
 ---
+
+[日本語](README_ja.md)
 
 # Lab 0. Requirements (Skip if you have already set up)
 

@@ -1,11 +1,11 @@
-[日本語](README_ja.md)
-
 ---
 layout: default
 title: Lab 3.1 Set Up Azure AI Studio for LLMOps
 parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 61
 ---
+
+[日本語](README_ja.md)
 
 # Lab 3.1 Scenario 1: Set Up Azure AI Studio for LLMOps
 

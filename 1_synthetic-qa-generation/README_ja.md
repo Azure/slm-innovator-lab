@@ -6,6 +6,8 @@ has_children: true
 nav_order: 4
 ---
 
+[English](README.md)
+
 # Lab 1. Generate Synthetic QnAs from Real-world Data
 {: .no_toc }
 

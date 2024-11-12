@@ -1,5 +1,3 @@
-[日本語](README_ja.md)
-
 ---
 layout: default
 title: Lab 3.4 Overview
@@ -8,6 +6,8 @@ parent: Lab 3. LLMOps for SLM with Azure AI Studio
 nav_order: 64
 has_children: true
 ---
+
+[日本語](README_ja.md)
 
 # Lab 3.4 Scenario 4: Content Safety with Azure AI studio before production
 

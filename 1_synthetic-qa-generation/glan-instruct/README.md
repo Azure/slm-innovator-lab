@@ -1,5 +1,3 @@
-[日本語](README_ja.md)
-
 ---
 layout: default
 title: GLAN
@@ -7,6 +5,8 @@ permalink: /1_3_glan/
 parent: Lab 1. Generate Synthetic QnAs from Real-world Data
 nav_order: 4.3
 ---
+
+[日本語](README_ja.md)
 
 # GLAN (Generalized Instruction Tuning) 
 

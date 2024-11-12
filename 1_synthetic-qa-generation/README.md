@@ -1,5 +1,3 @@
-[日本語](README_ja.md)
-
 ---
 layout: default
 title: Lab 1. Generate Synthetic QnAs from Real-world Data
@@ -7,6 +5,8 @@ permalink: /1_synthetic_data/
 has_children: true
 nav_order: 4
 ---
+
+[日本語](README_ja.md)
 
 # Lab 1. Generate Synthetic QnAs from Real-world Data
 {: .no_toc }
