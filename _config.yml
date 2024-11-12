@@ -36,6 +36,7 @@ exclude:
     - README.md
     - README_ja.md
     - SUPPORT.md
+    - vendor
     - 0_lab_preparation/README_ja.md
     - 0_lab_preparation/why_finetune_ja.md
     - 1_synthetic-qa-generation/README_ja.md
@@ -43,7 +44,7 @@ exclude:
     - 1_synthetic-qa-generation/glan-instruct/README_ja.md
     - 2_slm-fine-tuning-mlstudio/README_ja.md
     - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
-    - vendor
+    - 3_llmops-aistudio/README_ja.md
     - 3_llmops-aistudio/3_1_setup-ai-studio/README_ja.md
     - 3_llmops-aistudio/3_2_prototyping/README_ja.md
     - 3_llmops-aistudio/3_2_prototyping/lab3.2_promptflow_ko.md
