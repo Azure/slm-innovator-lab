@@ -39,4 +39,4 @@ nav_order: 641
 | S0           | 1000 RP10Sの                          | 1000 RP10Sの     | 1000 RP10Sの                      | 50 RPSの                              | 1000 RP10Sの                             | 5 RPSの                                     | 10 RPSの<br><br> |
 
 ### Jupyter Notebookを通じて作業
-- Jupyter NotebookでPython sdkを使用してContent Safetyを作成して、実行してみましょう。有害なコンテンツにフィルタリングする方法を学びます。[contentsafety_with_code.ipynb](pcontentsafety_with_code.ipynb) または日本語版 [contentsafety_with_code_ja.ipynb](contentsafety_with_code_ja.ipynb)
+- Jupyter NotebookでPython sdkを使用してContent Safetyを作成して、実行してみましょう。有害なコンテンツにフィルタリングする方法を学びます。[contentsafety_with_code_en.ipynb](pcontentsafety_with_code_en.ipynb) または日本語版 [contentsafety_with_code_ja.ipynb](contentsafety_with_code_ja.ipynb)

@@ -26,7 +26,7 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
  Python SDK<br> によるコンテンツの安全性
 このハンズオンでは、テキストブロックリストの管理、性的なコンテンツ、暴力、憎悪、自傷行為に関するテキストと画像の分析を、複数の深刻度レベルで行うことができます。また、Azure Open AI Service と統合する方法についても学習します: Azure Open AI Service を使用して、有害なコンテンツに対してコンテンツを書き換えます。
 <br>
-<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_4_operationalizing/contentsafety_with_code.ipynb">ノートブックに移動</a>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_4_operationalizing/contentsafety_with_code_ja.ipynb">ノートブックに移動</a>
 
 ## 必要条件
 開始する前に、次の要件を満たす必要があります。
