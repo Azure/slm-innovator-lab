@@ -40,9 +40,10 @@ Before starting, you have met the following requirements:
 - [Azure AI Studio getting started](https://aka.ms/azureaistudio): Create a project
 - [Azure AI Document Intelligence (v4.0 - 2024-02-29 preview)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
 
-- ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_DS11_v2]** (2 cores, 14GB RAM, 28GB storage, No GPUs).
+- ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_E2as_v4]** (AMD 2 cores, 16GB RAM, 32GB storage) or **[Standard_DS11_v2]** (Intel 2 cores, 14GB RAM, 28GB storage, No GPUs)  
 - ***[Compute cluster - for SLM/LLM fine-tuning]*** A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended. If you do not have a dedicated quota or are on a tight budget, choose **[Low-priority VM]**.
 - ***[SLM/LLM deployment]*** Two NVIDIA V100 GPUs (**[Standard_NC6s_v3]**) or two NVIDIA A100 GPUs (**[Standard_NC24ads_A100_v4]**) are recommended. 
+
 
 ## 3. How to get started 
 1. Create your compute instance in [Azure ML]. For code development, we recommend **[Standard_DS11_v2]** (2 cores, 14GB RAM, 28GB storage, No GPUs).
