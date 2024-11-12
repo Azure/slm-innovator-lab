@@ -30,3 +30,4 @@ onnxruntime>=1.18.0
 onnxscript>=0.1.0.dev20240126
 git+https://github.com/microsoft/Olive
 peft==0.13.2
+pickleshare==0.7.5
