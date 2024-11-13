@@ -1,5 +1,5 @@
 {
-    "subscription_id": "your subscription id",
-    "resource_group": "your resource group",
-    "workspace_name": "your workspace name = Azure AI studio project name"
+    "subscription_id": "3d4d3dd0-79d4-40cf-a94e-b4154812c6ca",
+    "resource_group": "slm-innovator-rg",
+    "workspace_name": "slm-pjt1"
 }
