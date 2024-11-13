@@ -32,7 +32,7 @@ def chat(input_data: str, connection: CustomConnection) -> str:
                 {"role": "user", "content": "Keep the answer simple."},
             ],
         "parameters": {
-                "temperature": 0.7,
+                "temperature": 0.2,
                 "max_new_tokens": 256,
                 "do_sample": True,
                 "return_full_text": False

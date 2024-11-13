@@ -25,13 +25,12 @@ def chat(question: str, context: str, connection: CustomConnection) -> str:
                 {"role": "user", "content": context},
                 {"role": "user", "content": "tell me about your TrailMaster X4"},
                 {"role": "assistant", "content": "The TrailMaster X4 is a rugged four-wheel off-road vehicle with a powerful engine and durable frame. "},
-                {"role": "user", "content": question},
-                {"role": "user", "content": "Answer in English."},
+                {"role": "user", "content": question}
                 
             ],
         "params": {
-                "temperature": 0.7,
-                "max_new_tokens": 1024,
+                "temperature": 0.2,
+                "max_new_tokens": 256,
                 "do_sample": True,
                 "return_full_text": False
         }
