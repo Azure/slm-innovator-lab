@@ -35,8 +35,8 @@ def chat(question: str, context:str, connection: CustomConnection) -> str:
                 
             ],
         "parameters": {
-                "temperature": 0.7,
-                "max_new_tokens": 1024,
+                "temperature": 0.2,
+                "max_new_tokens": 256,
                 "do_sample": True,
                 "return_full_text": False
         }
