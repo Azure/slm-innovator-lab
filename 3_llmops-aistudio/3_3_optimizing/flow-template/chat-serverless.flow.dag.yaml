@@ -26,6 +26,7 @@ nodes:
     type: code
     path: phi35_chatcompletion.py
   inputs:
+    deployment_name: Phi-3.5-mini-instruct
     connection: {{your_phi35_serverless_connection_name}}
     question: ${inputs.question}
     context: ${inputs.context}

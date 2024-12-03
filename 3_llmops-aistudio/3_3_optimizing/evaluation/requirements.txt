@@ -2,3 +2,4 @@ tiktoken~=0.8.0
 promptflow[azure]==1.16.1
 promptflow-tools==1.4.0
 azure-ai-contentsafety==1.0.0
+azure-ai-inference==1.0.0b6
