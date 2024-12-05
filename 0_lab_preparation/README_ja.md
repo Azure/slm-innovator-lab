@@ -46,14 +46,14 @@ Azure OpenAI Service および Azure Machine Learning CLuster を作成するの
 以下をすべて新規作成する場合は、**East-US** を選択いただくと、同じリージョンでサービスをそろえることができます。
 
 {: .warning}
-Azure AI Studio および Azure ML Studio でサービス参照方法が異なるため、必ず以下の順番で作成を行ってください。
+Azure AI Foundry および Azure ML Studio でサービス参照方法が異なるため、必ず以下の順番で作成を行ってください。
 
 0. Azure Portal から **新規リソースグループ** を作成します。
 
 1. Azure ML Studio から **新規ワークスペース** を作成します
     - リソースグループは Azure Portal で作成したハブを選択してください
 
-2. Azure AI Studio から **新規プロジェクト** および **新規ハブ** を作成します
+2. Azure AI Foundry から **新規プロジェクト** および **新規ハブ** を作成します
     - 新規ハブを選択して作成します
     - リソースグループは Azure Portal で作成したハブを選択、Azure AI リソースは新規作成 (または同じサブスクリプション内に作成済みのリソースを設定) を行ってください
     - 作成した (または設定した) Azure AI リソースで、GPT-4o mini モデルをデプロイしておきます
@@ -152,7 +152,7 @@ config:
 
 [Azure OpenAI]: https://oai.azure.com/
 [Azure ML]: https://ml.azure.com/
-[Azure AI Studio]: https://ai.azure.com/
+[Azure AI Foundry]: https://ai.azure.com/
 [Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
 [Standard_E2as_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/easv4-series
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic

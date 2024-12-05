@@ -2,14 +2,14 @@
 layout: default
 title: Lab 3.4 Overview
 permalink: /3_4_overview/
-parent: Lab 3. LLMOps for SLM with Azure AI Studio
+parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 64
 has_children: true
 ---
 
 [日本語](README_ja.md)
 
-# Lab 3.4 Scenario 4: Content Safety with Azure AI studio before production
+# Lab 3.4 Scenario 4: Content Safety with Azure AI Foundry before production
 
 ## Overview
 In this lab, you will experience how to ensure production deployment using content filter. This content filtering system is powered by Azure AI Content Safety, and it works by running both the prompt input and completion output through an ensemble of classification models aimed at detecting and preventing the output of harmful content. Variations in API configurations and application design might affect completions and thus filtering behavior.

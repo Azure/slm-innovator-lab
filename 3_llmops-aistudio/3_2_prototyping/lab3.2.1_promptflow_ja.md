@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Studio Prompt Flow
+title: Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Foundry Prompt Flow
 permalink: /3_2_1_prototyping_en/
 parent: Lab 3.2 Overview
-grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 621
 ---
 
-# Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Studio Prompt Flow
+# Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Foundry Prompt Flow
 
 ### 前提 条件
 
 - AI Hub と AI プロジェクト リソースを作成できる Azure サブスクリプション。
 - Azure ML Studio でのファインチューニングされたモデルのオンライン エンドポイント
-- Azure AI Studio にデプロイされた gpt-4o モデル 
+- Azure AI Foundry にデプロイされた gpt-4o モデル 
 
 
 ### タスク
@@ -29,7 +29,7 @@ nav_order: 621
 
 チャットフローの定義: 新しいチャットフローを作成し、チャットフロー構造を定義します
 
-1. Azure AI Studio > プロンプト フロー > [+ 作成] をクリックして新しいフローを作成します
+1. Azure AI Foundry > プロンプト フロー > [+ 作成] をクリックして新しいフローを作成します
 ![新しいフローを作成する](images/create_new_flow.jpg)
 
 2. ユーザーフレンドリーなチャットインターフェースを取得するには、[チャットフロー]を選択します
@@ -76,7 +76,7 @@ nodes:
 1. まず、エンドポイント情報を取得して接続を作成するには、>作成したAzure Machine Learningワークスペースに移動し、[エンドポイント]>[消費]タブで>RESTエンドポイントとプライマリキーを認証情報としてコピーします。
 ![REST エンドポイントと主キーをコピーする](images/copy_endpoint_comsumption_info.jpg)
 
-2. Azure AI Studio の > 設定 > に戻り、デプロイされたファインチューニングされた phi3.5 エンドポイントと統合するための新しい接続を作成します。
+2. Azure AI Foundry の > 設定 > に戻り、デプロイされたファインチューニングされた phi3.5 エンドポイントと統合するための新しい接続を作成します。
 ![新しい接続を作成する](images/create_new_connection.jpg)
 
 3. 接続タイプとして [カスタム キー] を選択し、接続情報を入力します

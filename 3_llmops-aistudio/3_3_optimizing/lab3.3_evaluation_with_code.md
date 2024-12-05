@@ -3,7 +3,7 @@ layout: default
 title: Lab 3.3.2 groundness evaluation using Prompt Flow (Code)
 permalink: /3_3_2_evaluation/
 parent: Lab 3.3 Overview
-grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 632
 ---
 
@@ -15,7 +15,7 @@ nav_order: 632
 ### Prerequisites
 
 - An Azure subscription where you can create an AI Hub and AI project Resource
-- Deployed gpt-4o model in Azure AI Studio
+- Deployed gpt-4o model in Azure AI Foundry
 
 
 ### Task

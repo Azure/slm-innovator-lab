@@ -2,7 +2,7 @@
 
 # SLM Innovator Lab
 
-Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AI/ML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of AI Studio, you can establish efficient and scalable LLMOps.
+Unlock the full potential of your AI projects with the SLM Innovator Lab, powered by the Azure AI/ML Platform. Our lab is tailored for customers who excel in fine-tuning and deploying multiple SLM models on Azure, as well as those aiming to optimize base model performance through fine-tuning to create RAG applications. With the advanced capabilities of AI Foundry, you can establish efficient and scalable LLMOps.
 
 This hands-on lab is suitable for the following purposes:
 
@@ -16,7 +16,7 @@ For detailed workshop information, please see the hands-on guide at [this link](
 
 ## New content (25-Oct-2024)
 🔥 LLMOps with Promptflow Python SDK<br>
-In this hands-on, you will learn how to create a new flow, define the chat flow structure, and integrate the fine-tuned model endpoint using Python SDK. You will also learn how to compare and evaluate the model's performance using the flows. This is in addition to the hands-on that was previously available based on the Azure AI Studio UI. 
+In this hands-on, you will learn how to create a new flow, define the chat flow structure, and integrate the fine-tuned model endpoint using Python SDK. You will also learn how to compare and evaluate the model's performance using the flows. This is in addition to the hands-on that was previously available based on the Azure AI Foundry UI. 
 <br>
 <a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_2_prototyping/promptflow_with_code.ipynb">Go to notebook</a>
 <br><br>
@@ -35,7 +35,7 @@ Before starting, you should meet the following requirements:
 
 - [Access to Azure OpenAI Service](https://go.microsoft.com/fwlink/?linkid=2222006)
 - [Azure ML getting started](https://github.com/Azure/azureml-examples/tree/main/tutorials): Connect to [Azure ML] workspace and get your <WORKSPACE_NAME>, <RESOURCE_GROUP> and <SUBSCRIPTION_ID>.
-- [Azure AI Studio getting started](https://aka.ms/azureaistudio): Create a project
+- [Azure AI Foundry getting started](https://int.ai.azure.com/explore/gettingstarted): Create a project
 - [Azure AI Document Intelligence (v4.0 - 2024-02-29 preview)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
 
 - ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_E2as_v4]** (AMD 2 cores, 16GB RAM, 32GB storage) or **[Standard_DS11_v2]** (Intel 2 cores, 14GB RAM, 28GB storage, No GPUs)  
@@ -52,13 +52,13 @@ In case you do not have any of the above requirements ready yet, please go to La
 
 ## Cautions
 This workshop assumes that you are configuring in a public environment and you have access to the internet. If you are configuring in a private environment, you may need to set up a private network to access the services. The following are some common issues you may encounter when you configure in a private environment:
-- If you set up the [Azure ML] workspace and [Azure AI Studio] in private network, you may need to set up a VPN or a private link to access the services.
+- If you set up the [Azure ML] workspace and [Azure AI Foundry] in private network, you may need to set up a VPN or a private link to access the services.
 - If you are using a low-priority VM, you may need to wait for the VM to be available. The availability of the VMs may vary by region.
 - If you have blob storage, you can use it to store the data and models. However, you may need to set up the connection to the blob storage in the [Azure ML] workspace.
 - If you have a quota issue, you may need to request a quota increase for the VMs or GPUs.
 - Once you configure the network in [Azure ML] workspace, you can not change it. You may need to create a new workspace if you want to change the network.
 - If you are using a compute instance which is not in the same region as the [Azure ML] workspace, you may need to set up a VPN or a private link to access the services.
-- If you are using a compute instance which created in [Azure AI Studio], you can't execute training jobs in the compute instance. You may need to create a new compute instance in [Azure ML] workspace.
+- If you are using a compute instance which created in [Azure AI Foundry], you can't execute training jobs in the compute instance. You may need to create a new compute instance in [Azure ML] workspace.
 - If you run into an PermissionMismatch error when you download the artifacts, you may need to asign the correct permission to the [Azure ML] workspace.
 
 ## Get started
@@ -103,7 +103,7 @@ This workshop assumes that you are configuring in a public environment and you h
 - [Hugging Face Blog - Finetune Florence-2 on DoCVQA](https://huggingface.co/blog/finetune-florence2)
 
 ### LLMOps
-- [LLMOps with Prompt flow (Supports both AI Studio and Azure Machine Learning](https://github.com/microsoft/llmops-promptflow-template)
+- [LLMOps with Prompt flow (Supports both AI Foundry and Azure Machine Learning](https://github.com/microsoft/llmops-promptflow-template)
 
 </details>
 
@@ -136,7 +136,7 @@ This sample code is provided under the MIT-0 license. See the LICENSE file.
 [SLM Innovator Lab]: https://github.com/Azure/slm-innovator-lab
 [Azure OpenAI]: https://oai.azure.com/
 [Azure ML]: https://ml.azure.com/
-[Azure AI Studio]: https://ai.azure.com/
+[Azure AI Foundry]: https://ai.azure.com/
 [GenAI ecosystem in Azure]: https://azure.microsoft.com/en-us/products/machine-learning/generative-ai
 [Lab 1. Data preparation]: https://azure.github.io/slm-innovator-lab/1_synthetic_data/
 [Lab 2. Fine-tuning and serving]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/

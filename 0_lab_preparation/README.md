@@ -21,7 +21,7 @@ Please create a resource in one of following regions when creating a AI Document
 ### Hands-on Requirements
 - Ensure you have access to [Azure OpenAI] Service.
 - Set up your [Azure ML] workspace and get your `<WORKSPACE_NAME>`, `<RESOURCE_GROUP>` and `<SUBSCRIPTION_ID>`.
-- Create a project in [Azure AI Studio].
+- Create a project in [Azure AI Foundry].
 - For LLM training, recommend a single NVIDIA A100 GPU (**[Standard_NC24ads_A100_v4]**). Opt for Low-priority VMs if on a budget or without a dedicated quota.
 - For LLM serving, we recommend two NVIDIA V100 GPUs (**[Standard_NC6s_v3]**). Please refer to the note below for why 2 GPUs are required instead of 1 for Azure ML serving.
 
@@ -58,7 +58,7 @@ After the application has been successfully deployed you will see a URL printed 
 - Request a quota increase if necessary for VMs or GPUs.
 - Network config in Azure ML workspace cannot be changed post-setup; create a new workspace if required.
 - Ensure compute instances are in the same region as the Azure ML workspace; otherwise, set up a VPN or private link.
-- If using Azure AI Studio compute instances, note that training jobs cannot be executed on them.
+- If using Azure AI Foundry compute instances, note that training jobs cannot be executed on them.
 
 {: .note }
 For managed online endpoints, [Azure ML reserves 20% of the quota for the deployment].[^1] If you request a given number of instances for those VM SKUs in a deployment, you must have a quota for `ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU` available to avoid getting an error. For example, if you request 1 instances of a `Standard_NC6s_v3` VM (that comes with six cores) in a deployment, you should have a quota for 12 cores (ceil(1.2 × 1 instances) = 2, 2 × 6 cores) available.  
@@ -123,7 +123,7 @@ AZURE_DOC_INTELLIGENCE_ENDPOINT=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 AZURE_DOC_INTELLIGENCE_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-2. In order to match your Azure OpenAI authentication information in the `.env` file, please navigate to Azure AI Studio > Deployments > your model deployment to get the Azure OpenAI endpoint and API key after deploying the Azure Open AI models. If you want to understand the LLM deployment process, please refer to the [How to deploy Azure OpenAI models with Azure AI Studio](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-openai).
+2. In order to match your Azure OpenAI authentication information in the `.env` file, please navigate to Azure AI Foundry > Deployments > your model deployment to get the Azure OpenAI endpoint and API key after deploying the Azure Open AI models. If you want to understand the LLM deployment process, please refer to the [How to deploy Azure OpenAI models with AzureAI Foundryo](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/deploy-models-openai).
 ![create a new flow](images/copy_api_endpoint_key.jpg)
 
 3. If you want to read and preprocess pdf files during this lab, you need to add the Azure Document Intelligence endpoint and API key to the `.env` file. In order to match your Azure Document Intelligence authentication. Please navigate to Azure AI services Document Intelligence > your model deployment to get the Azure Document Intelligence endpoint and API key after deploying the Azure Document Intelligence models.If you want to understand the Document Intelligence creation process, please refer to the [Create a Document Intelligence resource](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/create-document-intelligence-resource?view=doc-intel-4.0.0).
@@ -155,7 +155,7 @@ Proceed by opening the [Jupyter notebook](1_get_started.ipynb), and follow the s
 
 [Azure OpenAI]: https://oai.azure.com/
 [Azure ML]: https://ml.azure.com/
-[Azure AI Studio]: https://ai.azure.com/
+[Azure AI Foundry]: https://ai.azure.com/
 [Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
 [Standard_E2as_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/easv4-series
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic

@@ -68,7 +68,7 @@ Let's take a closer look at this from a LLMOps, Business, and Technical perspect
 
 ### 2.1. Overview
 
-Azure's fine-tuning ecosystem is designed to streamline the process of adapting SLMs/LLMs to specific business requirements. By providing robust tools for data handling, model training, deployment, and ongoing management, Azure enables organizations to harness the power of AI effectively and responsibly. The integration of services like Azure ML Studio and Azure AI Studio simplifies complex workflows, allowing teams to focus on innovation and value creation rather than infrastructure management.
+Azure's fine-tuning ecosystem is designed to streamline the process of adapting SLMs/LLMs to specific business requirements. By providing robust tools for data handling, model training, deployment, and ongoing management, Azure enables organizations to harness the power of AI effectively and responsibly. The integration of services like Azure ML Studio and Azure AI Foundry simplifies complex workflows, allowing teams to focus on innovation and value creation rather than infrastructure management.
 
 The fine-tuning pipeline on Azure consists of several key stages:
 
@@ -76,7 +76,7 @@ The fine-tuning pipeline on Azure consists of several key stages:
 - **Data Generation & Synthesis**: In cases where real data is insufficient, synthetic data can be generated. This process can involve creating "seed data" or generating personas to mimic plausible task-relevant information. 
 - **Fine-tuning & Evaluation**: Fine-tuning is done on pre-trained models by adjusting parameters with new domain-specific data. Evaluation follows to ensure the fine-tuned model meets performance standards.
 - **Deployment**: Once the fine-tuning process is complete, the model is deployed through Azure ML’s managed endpoints, ensuring scalability and easy integration into applications.
-- **LLMOps**: The fine-tuned model is deployed using Azure ML Studio or Azure AI Studio. Monitoring and continuous optimization of the model’s performance is a critical part of this stage.
+- **LLMOps**: The fine-tuned model is deployed using Azure ML Studio or Azure AI Foundry. Monitoring and continuous optimization of the model’s performance is a critical part of this stage.
 
 ### 2.2. Data Generation
 ![ft-azure-overview1](images/ft-azure-overview1.png)
@@ -100,11 +100,11 @@ Azure ML is a comprehensive platform for fine-tuning and deploying models. Key c
 ### 2.4. LLMOps
 ![ft-azure-overview3](images/ft-azure-overview3.png)
 
-Azure AI Studio provides a comprehensive suite of tools for managing and optimizing SLMs/LLMs in production environments. LLMOps encompasses the following key areas:
+Azure AI Foundry provides a comprehensive suite of tools for managing and optimizing SLMs/LLMs in production environments. LLMOps encompasses the following key areas:
 
-- **AI Hub**: A Top-level resource in AI Studio, providing security configuration with a managed network, compute resources for development and deployment, and connections to Azure services like Azure OpenAI and AI Search. It supports multiple child projects and includes an associated storage account for data and artifact storage.
+- **AI Hub**: A Top-level resource in AI Foundry, providing security configuration with a managed network, compute resources for development and deployment, and connections to Azure services like Azure OpenAI and AI Search. It supports multiple child projects and includes an associated storage account for data and artifact storage.
 - **AI Project**: Child resource of the hub, providing access to development tools for building and customizing AI applications. It includes reusable components like datasets, models, and offers an isolated container for data uploads within the AI hub's inherited storage. Project-scoped connections ensure private access to data for project members, and it supports open-source model deployments from the catalog and fine-tuned model endpoints.
-- **Evaluation**: Azure AI Studio provides evaluation tools for automatically evaluating the performance of SLMs/LLMs. Feedback from these evaluations is used to improve the model iteratively.
+- **Evaluation**: Azure AI Foundry provides evaluation tools for automatically evaluating the performance of SLMs/LLMs. Feedback from these evaluations is used to improve the model iteratively.
 
 ----
 

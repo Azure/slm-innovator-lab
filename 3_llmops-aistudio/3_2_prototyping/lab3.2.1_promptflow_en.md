@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Studio Prompt Flow
+title: Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Foundry Prompt Flow
 permalink: /3_2_1_prototyping_en/
 parent: Lab 3.2 Overview
-grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 621
 ---
 
-# Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Studio Prompt Flow
+# Lab 3.2.1 Prototyping a Gen AI app using the fine-tuned model with Azure AI Foundry Prompt Flow
 
 ### Prerequisites
 
 - An Azure subscription where you can create an AI Hub and AI project Resource.
 - Online endpoint of the fine-tuned model in Azure ML Studio
-- Deployed gpt-4o model in Azure AI Studio 
+- Deployed gpt-4o model in Azure AI Foundry 
 
 
 ### Task
@@ -29,7 +29,7 @@ nav_order: 621
 
 Define the Chat Flow: Create a new chat flow and define the chat flow structure
 
-1. Azure AI Studio > Prompt flow > Click +Create to create a new flow
+1. Azure AI Foundry > Prompt flow > Click +Create to create a new flow
 ![create a new flow](images/create_new_flow.jpg)
 
 2. In order to get a user-friendly chat interface, select Chat flow
@@ -76,7 +76,7 @@ nodes:
 1. First of all, In order to get the endpoint information to create a connection, Navigate to the Azure Machine Learning workspace you created > Endpoints > Consume tab > Copy the REST endpoint and primary key as the authentication information.
 ![copy the REST endpoint and primary key](images/copy_endpoint_comsumption_info.jpg)
 
-2. Go back to Azure AI Studio > Settings > Create a new connection to integrate with deployed fine-tuned phi3.5 endpoint. 
+2. Go back to Azure AI Foundry > Settings > Create a new connection to integrate with deployed fine-tuned phi3.5 endpoint. 
 ![create a new connection](images/create_new_connection.jpg)
 
 3. Select the connection type as Custom keys and put the connection information 

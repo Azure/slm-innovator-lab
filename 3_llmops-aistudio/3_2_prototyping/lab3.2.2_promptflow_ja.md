@@ -1,19 +1,19 @@
 ---
 layout: default
-title: Lab 3.2.2 SLM and LLM comparison with Azure AI Studio Prompt Flow (UI)
+title: Lab 3.2.2 SLM and LLM comparison with Azure AI Foundry Prompt Flow (UI)
 permalink: /3_2_2_prototyping/
 parent: Lab 3.2 Overview
-grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 622
 ---
 
-# Lab 3.2.2 SLM and LLM comparison with Azure AI Studio Prompt Flow (UI)
+# Lab 3.2.2 SLM and LLM comparison with Azure AI Foundry Prompt Flow (UI)
 
 ### 前提 条件
 
 - AI Hub と AI プロジェクト リソースを作成できる Azure サブスクリプション
 - Azure ML Studio での微調整されたモデルのオンライン エンドポイント
-- Azure AI Studio にデプロイされた gpt-4o モデル 
+- Azure AI Foundry にデプロイされた gpt-4o モデル 
 
 
 ### タスク

@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Lab 3.1 Set Up Azure AI Studio for LLMOps
-parent: Lab 3. LLMOps for SLM with Azure AI Studio
+title: Lab 3.1 Set Up Azure AI Foundry for LLMOps
+parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 61
 ---
 
 [日本語](README_ja.md)
 
-# Lab 3.1 Scenario 1: Set Up Azure AI Studio for LLMOps
+# Lab 3.1 Scenario 1: Set Up Azure AI Foundry for LLMOps
 
 ## Overview
-In this lab, we will learn how to set up Azure AI studio with Prompt flow for your LLMOps. 
+In this lab, we will learn how to set up Azure AI Foundry with Prompt flow for your LLMOps. 
 
 [no-code, 10min]
 
@@ -22,7 +22,7 @@ An Azure subscription is required, where you can create an AI Project along with
 
 ### Steps
     0️⃣ Create the Azure Resource Group  
-    1️⃣ Create Azure AI project in Azure AI Studio
+    1️⃣ Create Azure AI project in Azure AI Foundry
     2️⃣ Create a compute instance to run Prompt flow
     🗑️ Clean up resources
 
@@ -44,8 +44,8 @@ We also provide VS code extension to help you develop prompt flow, learn more he
 - Resource group: Enter a new resource group name.
 - Region: Select an Azure location, such as Central US.    
 
-### 1️⃣ Create an Azure AI project in Azure AI Studio
-1. Go to the [Home page of Azure AI Studio](https://ai.azure.com/) 
+### 1️⃣ Create an Azure AI project in Azure AI Foundry
+1. Go to the [Home page of Azure AI Foundry](https://ai.azure.com/) 
 2. Select + new project
 3. Enter a name for the project and select a hub from the dropdown to host your project. If you don't have access to a hub yet, select Create a new hub.
     ![Create project](images/create-project.jpg) 
@@ -61,8 +61,8 @@ We also provide VS code extension to help you develop prompt flow, learn more he
     ![result](images/created-project.jpg)
 - Option1-1: Azure Machine Learning -> Prompt flow -> Start compute session  
 - Option1-2: Azure Machine Learning -> Compute Instances -> Launch VS Code 
-- Option2-1: Azure AI Studio -> Prompt flow -> Start compute session
-- Option2-2: Azure AI Studio -> Code -> Create new compute -> VS Code container -> Launch VS Code
+- Option2-1: Azure AI Foundry -> Prompt flow -> Start compute session
+- Option2-2: Azure AI Foundry -> Code -> Create new compute -> VS Code container -> Launch VS Code
 - Option3-1: CodeSpaces -> Prompt flow -> Start compute
 
 Serverless compute sessions offer cost-effectiveness, scalability, reduced management overhead, and quick setup, but come with drawbacks like limited control and cold start latency. On the other hand, VS code extension for prompt flow provides customization, consistency, and flexibility, but can incur higher costs, require more management effort, and take longer to set up.

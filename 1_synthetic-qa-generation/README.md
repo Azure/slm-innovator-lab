@@ -29,7 +29,7 @@ Any option is fine, but you may wish to refer to the instructions below:
 - For instructors who want to use this hands-on in their workshops, we recommend Option 2.
 - For developers in the field who want to launch a production, we recommend Option 3.
 
-### Option 1. Azure AI Studio or Azure ML Studio
+### Option 1. Azure AI Foundry or Azure ML Studio
 Create your compute instance. For code development, we recommend `Standard_DS11_v2` (2 cores, 14GB RAM, 28GB storage, No GPUs).
 
 If you want to use the Unstructured toolkit for processing a complex PDF, please be sure to include `startup_unstructured.sh` in your instance startup script.
@@ -86,7 +86,7 @@ The task is to preprocess and convert this heterogeneous data into a structured 
 After fine-tuning with the generated dataset, a baseline was established, but the performance requires improvement due to lack of data (e.g., there are only 1,000 samples in the dataset). In this case, a synthetic dataset must be created by applying data augmentation techniques to enhance performance. The data augmentation technique utilizes the representative techniques announced by Microsoft: Evol-Instruct, GLAN (Generalized Instruction Tuning), and Auto Evol-Insruct.
 
 ### 3.3. Customer application examples
-Below is a comparison of the results before and after fine tuning of GPT-4o without RAG for customer PoC. GPT-4o is available to a small number of customers as a private preview as of July 2024. This is the result of creating a set of 16 questions and answers for PoC and comparing three indicators of **Similarity, Coherence, and Fluency** in Azure AI studio. The values ​​of the indicator are on a scale of 1-5, with higher values ​​being better.
+Below is a comparison of the results before and after fine tuning of GPT-4o without RAG for customer PoC. GPT-4o is available to a small number of customers as a private preview as of July 2024. This is the result of creating a set of 16 questions and answers for PoC and comparing three indicators of **Similarity, Coherence, and Fluency** in Azure AI Foundry. The values ​​of the indicator are on a scale of 1-5, with higher values ​​being better.
 
 ![evaluation-sample](./imgs/evaluation-sample.png)
 

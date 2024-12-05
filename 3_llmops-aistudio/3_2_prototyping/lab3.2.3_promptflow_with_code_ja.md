@@ -3,7 +3,7 @@ layout: default
 title: Lab 3.2.3 Run the Chat flows with Code
 permalink: /3_2_3_prototyping/
 parent: Lab 3.2 Overview
-grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 623
 ---
 
@@ -13,7 +13,7 @@ nav_order: 623
 
 - AI Hub と AI プロジェクト リソースを作成できる Azure サブスクリプション。
 - Azure ML Studio の phi3 微調整モデルのオンライン エンドポイント
-- Azure AI Studio にデプロイされた gpt4o モデル 
+- Azure AI Foundry にデプロイされた gpt4o モデル 
 
 
 ### タスク

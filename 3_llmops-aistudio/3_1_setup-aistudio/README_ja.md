@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Lab 3.1 Set Up Azure AI Studio for LLMOps
-parent: Lab 3. LLMOps for SLM with Azure AI Studio
+title: Lab 3.1 Set Up Azure AI Foundry for LLMOps
+parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 61
 ---
 
 [English](README.md)
 
-# Lab 3.1 Scenario 1: Set Up Azure AI Studio for LLMOps
+# Lab 3.1 Scenario 1: Set Up Azure AI Foundry for LLMOps
 
 ## 概要
-このラボでは、LLMOps のプロンプト フローを使用して Azure AI Studio を設定する方法について説明します。 
+このラボでは、LLMOps のプロンプト フローを使用して Azure AI Foundry を設定する方法について説明します。 
 
 [ノーコード、10分]
 
@@ -22,7 +22,7 @@ AI Hub リソース、プロンプト フロー、Content Safety サービス、
 
 ### 手順
     0️⃣ Azureリソースグループの作成   
-    1️⃣ Azure AI Studio で Azure AI プロジェクトを作成する
+    1️⃣ Azure AI Foundry で Azure AI プロジェクトを作成する
     2️⃣ プロンプトフローを実行するコンピューティング インスタンスを作成する
     🗑️ リソースをクリーンアップする
 
@@ -44,8 +44,8 @@ AI Hub リソース、プロンプト フロー、Content Safety サービス、
 - リソース グループ: 新しいリソース グループ名を入力します。
 - リージョン: Azure の場所 (米国中部など) を選択します。    
 
-### 1️⃣ Azure AI Studio で Azure AI プロジェクトを作成する
-1. Azure AI Studio[  のホーム ページ](https://ai.azure.com/)に移動します 
+### 1️⃣ Azure AI Foundry で Azure AI プロジェクトを作成する
+1. Azure AI Foundry[  のホーム ページ](https://ai.azure.com/)に移動します 
 2. [+ 新しいプロジェクト] を選択します
 3. プロジェクトの名前を入力し、ドロップダウンからハブを選択してプロジェクトをホストします。ハブへのアクセス権がまだない場合は、 [新しいハブの作成] を選択します。
     ![プロジェクト](images/create-project.jpg)の作成
@@ -61,8 +61,8 @@ AI Hub リソース、プロンプト フロー、Content Safety サービス、
     ![結果](images/created-project.jpg)
 - オプション 1-1: Azure Machine Learning -> プロンプト フロー -> コンピューティング セッションを開始する  
 - オプション 1-2: Azure Machine Learning > コンピューティング インスタンス > VS Code の起動 
-- オプション 2-1: Azure AI Studio -> プロンプト フロー -> コンピューティング セッションの開始
-- オプション 2-2: Azure AI Studio -> コード -> 新しいコンピューティングの作成 -> VS Code コンテナー -> VS Code の起動
+- オプション 2-1: Azure AI Foundry -> プロンプト フロー -> コンピューティング セッションの開始
+- オプション 2-2: Azure AI Foundry -> コード -> 新しいコンピューティングの作成 -> VS Code コンテナー -> VS Code の起動
 - オプション 3-1: CodeSpaces > プロンプト フロー -> コンピューティングの開始
 
 サーバーレス コンピューティング セッションは、費用対効果、スケーラビリティ、管理オーバーヘッドの削減、迅速なセットアップを提供しますが、制御の制限やコールド スタートの遅延などの欠点があります。一方、プロンプト フロー用の VS Code 拡張機能は、カスタマイズ、一貫性、柔軟性を提供しますが、コストが高くなり、管理作業が増え、セットアップに時間がかかる可能性があります。

@@ -2,7 +2,7 @@
 
 # SLM Innovator Lab
 
-Azure AI/ML Platform を基盤とする SLM Innovator Lab で、AI プロジェクトの可能性を最大限に引き出しましょう。このラボは、Azure での複数の SLM モデルの微調整とデプロイに優れたお客様や、RAG アプリケーションを作成するための微調整を通じて基本モデルのパフォーマンスを最適化することを目指しているお客様向けに設計されています。AI Studio の高度な機能により、効率的でスケーラブルな LLMOps を確立できます。
+Azure AI/ML Platform を基盤とする SLM Innovator Lab で、AI プロジェクトの可能性を最大限に引き出しましょう。このラボは、Azure での複数の SLM モデルの微調整とデプロイに優れたお客様や、RAG アプリケーションを作成するための微調整を通じて基本モデルのパフォーマンスを最適化することを目指しているお客様向けに設計されています。AI Foundry の高度な機能により、効率的でスケーラブルな LLMOps を確立できます。
 
 このハンズオンラボは、次の目的に適しています。
 
@@ -14,7 +14,7 @@ Azure AI/ML Platform を基盤とする SLM Innovator Lab で、AI プロジェ�
 
 ## 新しいコンテンツ (2024 年 10 月 25 日)
  LLMOpsとpromptflow python SDK<br>
-このハンズオンでは、Python SDK を使用して、新しいフローを作成し、チャット フロー構造を定義し、微調整されたモデル エンドポイントを統合する方法を学習します。また、フローを使用してモデルのパフォーマンスを比較および評価する方法についても学習します。これは、以前に Azure AI Studio UI に基づいて利用可能だったハンズオンに追加されるものです。
+このハンズオンでは、Python SDK を使用して、新しいフローを作成し、チャット フロー構造を定義し、微調整されたモデル エンドポイントを統合する方法を学習します。また、フローを使用してモデルのパフォーマンスを比較および評価する方法についても学習します。これは、以前に Azure AI Foundry UI に基づいて利用可能だったハンズオンに追加されるものです。
 <br>
 <a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_2_prototyping/promptflow_with_code.ipynb">ノートブックに移動します</a>
 <br><br>
@@ -33,7 +33,7 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 
 - [Azure OpenAI Service へのアクセス](https://go.microsoft.com/fwlink/?linkid=2222006)
 - [Azure ML の概要](https://github.com/Azure/azureml-examples/tree/main/tutorials): [Azure ML] ワークスペースに接続し<WORKSPACE_NAME>、. <RESOURCE_GROUP> <SUBSCRIPTION_ID>
-- [Azure AI Studio の概要](https://aka.ms/azureaistudio): プロジェクトを作成する
+- [Azure AI Foundry の概要](https://int.ai.azure.com/explore/gettingstarted): プロジェクトを作成する
 - [Azure AI ドキュメント インテリジェンス (v4.0 - 2024-02-29 プレビュー)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
 
 - ***[Computing Instance - コード開発用]*** GPU を使用しないローエンド インスタンスをお勧めします: **[Standard_E2as_v4]** (AMD 2 コア、16 GB RAM、32 GB ストレージ) または **[Standard_DS11_v2]** (Intel 2 コア、14 GB RAM、28 GB ストレージ、GPU なし)  
@@ -50,7 +50,7 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 
 ## 注意
 このワークショップは、パブリック環境で設定し、インターネットにアクセスできることを前提としています。プライベート環境で構成している場合は、サービスにアクセスするためにプライベートネットワークの設定が必要になる場合があります。プライベート環境で構成するときに発生する可能性のある一般的な問題を次に示します。
--  [Azure ML] ワークスペースと [Azure AI Studio] プライベートネットワークを設定する場合、サービスにアクセスするためにVPNまたはプライベートリンクを設定する必要がある場合があります。
+-  [Azure ML] ワークスペースと [Azure AI Foundry] プライベートネットワークを設定する場合、サービスにアクセスするためにVPNまたはプライベートリンクを設定する必要がある場合があります。
 - Low-priority VM を使用している場合は、VM が使用可能になるまで待つ必要がある場合があります。VM の可用性は、リージョンによって異なる場合があります。
 - BLOB ストレージがある場合は、それを使用してデータとモデルを格納できます。ただし、ワークスペース内の BLOB ストレージへの接続を設定する必要がある場合があります [Azure ML] 。
 - クォータの問題がある場合は、VM または GPU のクォータの引き上げをリクエストする必要があります。
@@ -101,7 +101,7 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 - [Hugging Face Blog - Finetune Florence-2 on DoCVQA](https://huggingface.co/blog/finetune-florence2)
 
 ### LLMOps
-- [プロンプトフローを利用した LLMOps (AI Studio と Azure Machine Learning の両方をサポート)](https://github.com/microsoft/llmops-promptflow-template)
+- [プロンプトフローを利用した LLMOps (AI Foundry と Azure Machine Learning の両方をサポート)](https://github.com/microsoft/llmops-promptflow-template)
 
 </details>
 

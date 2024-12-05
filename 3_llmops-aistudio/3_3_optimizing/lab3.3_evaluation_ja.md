@@ -3,7 +3,7 @@ layout: default
 title: Lab 3.3.1 Evaluate your models using Prompt Flow (UI)
 permalink: /3_3_1_evaluation/
 parent: Lab 3.3 Overview
-grand_parent: Lab 3. LLMOps for SLM with Azure AI Studio
+grand_parent: Lab 3. LLMOps for SLM with Azure AI Foundry
 nav_order: 631
 ---
 
@@ -16,7 +16,7 @@ nav_order: 631
 ### 前提 条件
 
 - AI Hub と AI プロジェクト リソースを作成できる Azure サブスクリプション
-- Azure AI Studio にデプロイされた gpt-4o モデル
+- Azure AI Foundry にデプロイされた gpt-4o モデル
 
 
 ### タスク
@@ -32,7 +32,7 @@ nav_order: 631
 - 4️⃣ プロンプトフローでカスタム評価フローを作成
 
 ### 1️⃣ 選択したモデルの出力を確認するための手動評価 
-1. Azure AI Studio の > Tools > Evaluation に移動します。
+1. Azure AI Foundry の > Tools > Evaluation に移動します。
 2. 「手動評価」タブをクリックして、AIアプリケーションのパフォーマンスを評価および比較するための手動評価を作成します。
 ![新しいマニュアル評価](images/new_manual_evaluation.jpg)
 
@@ -53,7 +53,7 @@ You are a math assistant, and you are going to read the context which includes s
 
 ### 2️⃣ LLMバリアントでA/Bテストを実施
 バリアントを使用した新しいチャットフローを作成する 
-1. Azure AI Studio > プロンプト フロー > [+ 作成] をクリックして新しいフローを作成します
+1. Azure AI Foundry > プロンプト フロー > [+ 作成] をクリックして新しいフローを作成します
 ![新しいフローを作成する](../3_2_prototyping/images/create_new_flow.jpg)
 
 2. ユーザーフレンドリーなチャットインターフェースを取得するには、[チャットフロー]を選択します
@@ -188,7 +188,7 @@ user:
 
 
 ### 3️⃣ バリアントを使用した QnA 関連性評価フローの作成
-1. Azure AI Studio の > Tools > Evaluation に移動します。
+1. Azure AI Foundry の > Tools > Evaluation に移動します。
 
 2. [自動評価] タブの [+ 新しい評価] をクリックして作成します。 
 
