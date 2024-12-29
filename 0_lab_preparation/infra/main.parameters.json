@@ -75,7 +75,7 @@
       "value": "${AZURE_OPENAI_GPT4V_DEPLOYMENT_VERSION}"
     },
     "gpt4vDeploymentSkuName": {
-      "value": "${AZURE_OPENAI_GPT4V_DEPLOYMENT_SKU=S0}"
+      "value": "${AZURE_OPENAI_GPT4V_DEPLOYMENT_SKU=Standard}"
     },
     "gpt4vDeploymentCapacity": {
       "value": "${AZURE_OPENAI_GPT4V_DEPLOYMENT_CAPACITY}"

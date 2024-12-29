@@ -1,0 +1,675 @@
+{
+  "question": "Imagine a scenario where you possess a collection of 5 distinct marbles, each uniquely marked with a number from 1 to 5. If you were to randomly select two different marbles from this collection, what would be the expected value of the sum of the numbers on the chosen marbles? Please consider and explain how probabilities and combinations influence this expectation.",
+  "final_answer": "6",
+  "reasoning_steps": {
+    "text": "Imagine a scenario where you possess a collection of 5 distinct marbles, each uniquely marked with a number from 1 to 5. If you were to randomly select two different marbles from this collection, what would be the expected value of the sum of the numbers on the chosen marbles? Please consider and explain how probabilities and combinations influence this expectation.",
+    "mc_value": 1.0,
+    "children": [
+      {
+        "text": "To find the expected value of the sum of the numbers on the two chosen marbles, you can follow these steps:\n\n1. **Identify All Possible Combinations**: First, determine all possible combinations of selecting two marbles from the five available. The number of ways to choose 2 marbles out of 5 is given by the combination formula \\(\\binom{5}{2} = 10\\). The possible pairs are: (1,2), (1,3), (1,4), (1,5), (2,3), (2,4), (2,5), (3,4), (3,5), and (4,5).\n\n2. **Calculate the Sum for Each Pair**: For each pair of marbles, calculate the sum of their numbers:\n   - (1,2) -> 3\n   - (1,3) -> 4\n   - (1,4) -> 5\n   - (1,5) -> 6\n   - (2,3) -> 5\n   - (2,4) -> 6\n   - (2,5) -> 7\n   - (3,4) -> 7\n   - (3,5) -> 8\n   - (4,5) -> 9\n\n3. **Calculate the Probability for Each Pair**: Since each pair is equally likely to be chosen, the probability of selecting any specific pair of marbles is \\(\\frac{1}{10}\\).\n\n4. **Compute the Expected Value**: The expected value (E) of the sum of the numbers on the two chosen marbles is the weighted average of all possible sums, where each sum is weighted by its probability. This can be calculated as follows:\n\n\\[ \nE = \\frac{1}{10} \\times (3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9) \n\\]\n\n\\[ \nE = \\frac{1}{10} \\times 60 \n\\]\n\n\\[ \nE = 6 \n\\]\n\nSo, the expected value of the sum of the numbers on the two chosen marbles is 6.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To find the expected value of the sum of the numbers on two randomly selected marbles, we can follow these steps:\n\n1. **Identify all possible pairs of marbles:** Since there are 5 marbles, we can calculate the total number of ways to choose 2 marbles from 5 using combinations. This is given by the combination formula \\(\\binom{n}{k}\\), where \\(n\\) is the total number of items to choose from, and \\(k\\) is the number of items to choose. Thus, \\(\\binom{5}{2} = 10\\) possible pairs.\n\n2. **List all pairs and their sums:** The possible pairs are (1,2), (1,3), (1,4), (1,5), (2,3), (2,4), (2,5), (3,4), (3,5), and (4,5). The corresponding sums of these pairs are: 3, 4, 5, 6, 5, 6, 7, 7, 8, and 9.\n\n3. **Calculate the probability for each pair:** Since each pair is equally likely, the probability of selecting any specific pair is \\( \\frac{1}{10} \\).\n\n4. **Find the expected value:** The expected value (E) of the sum is calculated by multiplying each sum by its probability and then summing up these products. Thus, the expected value is:\n\n\\[ E = \\frac{1}{10}(3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9) \\]\n\n5. **Calculate the expected value:**\n\n\\[ E = \\frac{1}{10}(60) = 6. \\]\n\nTherefore, the expected value of the sum of the numbers on the two randomly chosen marbles is 6.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To determine the expected value of the sum of the numbers on two randomly selected marbles from a collection of 5 distinct marbles numbered 1 to 5, we can follow these steps:\n\n1. **Identify All Possible Combinations:**\n\n   Since we are selecting 2 marbles from a total of 5, the number of possible combinations can be calculated using the combination formula:\n   \\[\n   \\binom{5}{2} = 10\n   \\]\n   These combinations are: (1,2), (1,3), (1,4), (1,5), (2,3), (2,4), (2,5), (3,4), (3,5), (4,5).\n\n2. **Calculate the Sum for Each Combination:**\n   \n   Each combination of two marbles has a sum which we need to compute:\n   - Sum of (1,2) = 3\n   - Sum of (1,3) = 4\n   - Sum of (1,4) = 5\n   - Sum of (1,5) = 6\n   - Sum of (2,3) = 5\n   - Sum of (2,4) = 6\n   - Sum of (2,5) = 7\n   - Sum of (3,4) = 7\n   - Sum of (3,5) = 8\n   - Sum of (4,5) = 9\n\n3. **Calculate the Expected Value:**\n\n   The expected value \\(E\\) of the sum is the average of these sums, weighted by their probabilities. Since each pair is equally likely, each combination has a probability of \\(\\frac{1}{10}\\).\n\n   \\[\n   E = \\frac{1}{10} (3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9)\n   \\]\n   \\[\n   E = \\frac{1}{10} \\times 60\n   \\]\n   \\[\n   E = 6\n   \\]\n\nTherefore, the expected value of the sum of the numbers on the chosen marbles is 6.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To find the expected value of the sum of the numbers on the chosen marbles, follow these steps:\n\n1. **Identify all possible pairs of marbles:**\n\n   Since you have 5 distinct marbles, the number of ways to choose 2 marbles out of 5 is given by the combination formula \\(\\binom{5}{2}\\), which equals 10. Enumerating these combinations, the possible pairs are:\n   - (1, 2), (1, 3), (1, 4), (1, 5)\n   - (2, 3), (2, 4), (2, 5)\n   - (3, 4), (3, 5)\n   - (4, 5)\n\n2. **Calculate the sum for each pair:**\n\n   For each pair, calculate the sum of the numbers:\n   - (1, 2): 1 + 2 = 3\n   - (1, 3): 1 + 3 = 4\n   - (1, 4): 1 + 4 = 5\n   - (1, 5): 1 + 5 = 6\n   - (2, 3): 2 + 3 = 5\n   - (2, 4): 2 + 4 = 6\n   - (2, 5): 2 + 5 = 7\n   - (3, 4): 3 + 4 = 7\n   - (3, 5): 3 + 5 = 8\n   - (4, 5): 4 + 5 = 9\n\n3. **Determine the probability of each pair:**\n\n   Since each pair is equally likely, the probability of selecting any specific pair is \\( \\frac{1}{10} \\).\n\n4. **Calculate the expected value:**\n\n   The expected value \\(E\\) is found by multiplying each sum by its probability and summing the results:\n\n   \\[\n   E = \\left( 3 \\cdot \\frac{1}{10} \\right) + \\left( 4 \\cdot \\frac{1}{10} \\right) + \\left( 5 \\cdot \\frac{1}{10} \\right) + \\left( 6 \\cdot \\frac{1}{10} \\right) + \\left( 5 \\cdot \\frac{1}{10} \\right) + \\left( 6 \\cdot \\frac{1}{10} \\right) + \\left( 7 \\cdot \\frac{1}{10} \\right) + \\left( 7 \\cdot \\frac{1}{10} \\right) + \\left( 8 \\cdot \\frac{1}{10} \\right) + \\left( 9 \\cdot \\frac{1}{10} \\right)\n   \\]\n\n   \\[\n   E = \\frac{3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9}{10}\n   \\]\n\n   \\[\n   E = \\frac{60}{10} = 6\n   \\]\n\nThe expected value of the sum of the numbers on the two randomly selected marbles is 6.",
+        "mc_value": 1.0,
+        "children": []
+      }
+    ]
+  },
+  "question_id": 27
+}
+{
+  "question": "Determine the total quantity of non-decreasing sequences of positive integers \\( a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007 \\) with the condition that the difference \\( a_i-i \\) is an even number for each index \\( 1 \\le i \\le 10 \\). This quantity can be expressed in the combinatorial form \\( {m \\choose n} \\) for certain integers \\( m \\) and \\( n \\) where \\( m > n \\). Calculate the remainder when the value of \\( m \\) is divided by 1000.",
+  "final_answer": "8",
+  "reasoning_steps": {
+    "text": "Determine the total quantity of non-decreasing sequences of positive integers \\( a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007 \\) with the condition that the difference \\( a_i-i \\) is an even number for each index \\( 1 \\le i \\le 10 \\). This quantity can be expressed in the combinatorial form \\( {m \\choose n} \\) for certain integers \\( m \\) and \\( n \\) where \\( m > n \\). Calculate the remainder when the value of \\( m \\) is divided by 1000.",
+    "mc_value": 0.75,
+    "children": [
+      {
+        "text": "To solve the problem, let's start by transforming the condition \\( a_i - i \\) is even. This implies that each \\( a_i \\) can be expressed in the form \\( a_i = b_i + i \\) where \\( b_i \\) is an even number. Set \\( b_i = 2c_i \\), then \\( a_i = 2c_i + i \\).\n\nWe need to ensure that \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007 \\). Substituting for \\( a_i \\), we have:\n\\[ \n2c_1 + 1 \\le 2c_2 + 2 \\le \\cdots \\le 2c_{10} + 10 \\le 2007.\n\\]\n\nThis simplifies to:\n\\[ \n2c_1 \\le 2c_2 + 1 \\le \\cdots \\le 2c_{10} + 9 \\le 1997.\n\\]\n\nDividing the entire inequality by 2, we get:\n\\[ \nc_1 \\le c_2 \\le \\cdots \\le c_{10} \\le 998.\n\\]\n\nThe problem now is to count the number of non-decreasing sequences \\( c_1 \\le c_2 \\le \\cdots \\le c_{10} \\le 998 \\). This is equivalent to the number of solutions to the equation:\n\\[ \nx_1 + x_2 + \\cdots + x_{999} = 10\n\\]\nwhere \\( x_i \\) represents the number of times the integer \\( i \\) appears in the sequence \\( (c_1, c_2, \\ldots, c_{10}) \\).\n\nThis is a classic \"stars and bars\" problem, where we find the number of ways to put 10 indistinguishable balls (sequences) into 999 distinguishable bins (possible values of \\( c_i \\)). The formula for this is:\n\\[\n\\binom{10 + 999 - 1}{999 - 1} = \\binom{1008}{9}.\n\\]\n\nWe are asked to find the remainder when \\( m = 1008 \\) is divided by 1000. Calculating this gives:\n\\[\n1008 \\mod 1000 = 8.\n\\]\n\nTherefore, the remainder is \\(\\boxed{8}\\).",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "We are given the problem of determining the total quantity of non-decreasing sequences of positive integers \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007 \\) where \\( a_i - i \\) is an even number for each index \\( 1 \\le i \\le 10 \\).\n\nTo solve this, we first transform the condition \\( a_i - i \\) is even into a more manageable form. Define \\( a_i - i = 2b_i \\) for integers \\( b_i \\). This implies \\( a_i = 2b_i + i \\), and since \\( a_i \\) is a positive integer, \\( b_i \\) must satisfy \\( b_i \\geq \\frac{i}{2} \\).\n\nThe condition \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\) translates to \\( 2b_1 + 1 \\le 2b_2 + 2 \\le \\cdots \\le 2b_{10} + 10 \\). This simply implies \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\).\n\nThe upper bound \\( a_{10} \\le 2007 \\) becomes \\( 2b_{10} + 10 \\le 2007 \\), which simplifies to \\( b_{10} \\le 998.5 \\). Since \\( b_{10} \\) is an integer, we have \\( b_{10} \\le 998 \\).\n\nThus, the problem reduces to finding the number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) where each \\( b_i \\) is a non-negative integer and \\( b_{10} \\le 998 \\).\n\nThis is a classic \"stars and bars\" problem where we need to count the number of solutions to the equation \\( x_1 + x_2 + \\cdots + x_k = n \\) in non-negative integers, which is given by the binomial coefficient \\( \\binom{n+k-1}{k-1} \\).\n\nIn our case, each \\( b_i \\) can be from the set \\{0, 1, 2, \\ldots, 998\\}. We need to count the number of non-decreasing sequences of length 10, with each element between 0 and 998. This is equivalent to choosing 10 elements from the multiset \\(\\{0, 1, 2, \\ldots, 998\\}\\), which is equivalent to the combinatorial problem of finding the number of multisets of size 10 from a set of 999 elements.\n\nThe number of such sequences is given by the binomial coefficient\n\n\\[\n\\binom{999 + 10 - 1}{10} = \\binom{1008}{10}.\n\\]\n\nThe next step is to find the remainder of \\( m = 1008 \\) when divided by 1000. \n\n\\[\n1008 \\equiv 8 \\pmod{1000}.\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is 8.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To solve this problem, we need to count the number of non-decreasing sequences of positive integers \\( a_1, a_2, \\ldots, a_{10} \\) such that \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007 \\) and \\( a_i - i \\) is an even number for each \\( i \\).\n\nGiven the condition \\( a_i - i \\equiv 0 \\pmod{2} \\), we can express each \\( a_i \\) as \\( a_i = b_i + i \\), where \\( b_i \\) is an even integer. Let \\( b_i = 2c_i \\), where \\( c_i \\) is a non-negative integer. Thus, \\( a_i = 2c_i + i \\).\n\nThe sequence \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\) translates to:\n\\[\n2c_1 + 1 \\le 2c_2 + 2 \\le \\cdots \\le 2c_{10} + 10\n\\]\nwhich simplifies to:\n\\[\nc_1 \\le c_2 \\le \\cdots \\le c_{10}\n\\]\n\nMoreover, the condition \\( a_{10} \\le 2007 \\) becomes:\n\\[\n2c_{10} + 10 \\le 2007\n\\]\nwhich simplifies to:\n\\[\nc_{10} \\le 998\n\\]\n\nThus, we need to count the number of non-decreasing sequences \\( c_1 \\le c_2 \\le \\cdots \\le c_{10} \\) where \\( 0 \\le c_i \\le 998 \\). This is a combinatorial problem of distributing \\( 10 \\) indistinguishable balls (the \\( c_i \\)'s) into \\( 999 \\) distinguishable boxes (integers from 0 to 998), which is a classical \"stars and bars\" problem.\n\nThe number of such sequences is given by the combination:\n\\[\n{999 + 10 - 1 \\choose 10 - 1} = {1008 \\choose 9}\n\\]\n\nNow, to find the remainder when \\( m = 1008 \\) is divided by 1000, we compute:\n\\[\n1008 \\equiv 8 \\pmod{1000}\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To find the total number of non-decreasing sequences \\( a_1 \\le a_2 \\le \\ldots \\le a_{10} \\le 2007 \\) such that \\( a_i - i \\) is even for each \\( i \\), we start by defining a transformation of variables.\n\nDefine \\( b_i = \\frac{a_i - i}{2} \\). This transformation ensures that each \\( b_i \\) is a non-negative integer since \\( a_i - i \\) is even. The given conditions imply:\n\\[ a_i \\le 2007 \\quad \\Rightarrow \\quad b_i = \\frac{a_i - i}{2} \\le \\frac{2007 - i}{2}. \\]\n\nTherefore, we need:\n\\[ b_1 \\le b_2 \\le \\cdots \\le b_{10}, \\]\n\\[ b_i \\le \\frac{2007 - i}{2}. \\]\n\nTo solve this, we first compute the effective upper bound for \\( b_{10} \\):\n\\[ b_{10} \\le \\frac{2007 - 10}{2} = \\frac{1997}{2} = 998.5. \\]\nSince \\( b_{10} \\) is an integer, \\( b_{10} \\le 998 \\).\n\nThe sequence \\( b_1, b_2, \\ldots, b_{10} \\) must be a non-decreasing sequence of non-negative integers such that \\( b_{10} \\le 998 \\).\n\nThe above conditions mean that we are counting the number of non-decreasing sequences of \\( b_i \\), or equivalently, the number of solutions to:\n\\[ 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998. \\]\n\nThis is a classic stars and bars problem. If we set \\( x_i = b_i + (10 - i) \\), then \\( x_1 \\le x_2 \\le \\cdots \\le x_{10} \\le 998 + 9 = 1007 \\). The transformation guarantees non-negativity and non-decreasing order because \\( b_i \\) are non-negative and the added constants \\( (10 - i) \\) decrease as \\( i \\) increases.",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To find the total number of non-decreasing sequences \\( a_1 \\le a_2 \\le \\ldots \\le a_{10} \\le 2007 \\) such that \\( a_i - i \\) is even for each \\( i \\), we start by defining a transformation of variables.\n\nDefine \\( b_i = \\frac{a_i - i}{2} \\). This transformation ensures that each \\( b_i \\) is a non-negative integer since \\( a_i - i \\) is even. The given conditions imply:\n\\[ a_i \\le 2007 \\quad \\Rightarrow \\quad b_i = \\frac{a_i - i}{2} \\le \\frac{2007 - i}{2}. \\]\n\nTherefore, we need:\n\\[ b_1 \\le b_2 \\le \\cdots \\le b_{10}, \\]\n\\[ b_i \\le \\frac{2007 - i}{2}. \\]",
+        "mc_value": 0.75,
+        "children": [
+          {
+            "text": "Continuing from where we left off, we need to find the range for \\( b_i \\) given the transformation \\( b_i = \\frac{a_i - i}{2} \\). The constraint \\( a_i \\le 2007 \\) translates to:\n\n\\[ b_i \\le \\frac{2007 - i}{2}. \\]\n\nHowever, to simplify the calculations, let's redefine the upper limit considering the maximum possible value for \\( i \\). For \\( i = 10 \\), we have:\n\n\\[ b_{10} \\le \\frac{2007 - 10}{2} = 998.5. \\]\n\nSince \\( b_i \\) are integers, this means \\( b_{10} \\le 998 \\).\n\nTherefore, \\( b_i \\) must satisfy:\n\\[ 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998. \\]\n\nThe problem now is equivalent to finding the number of non-decreasing sequences of length 10, where each term is between 0 and 998, inclusive. This is a classic \"stars and bars\" problem in combinatorics, where we need to determine the number of ways to distribute 10 identical items (the sequence positions) into 999 distinct bins (the values from 0 to 998).\n\nThe formula for the number of non-decreasing sequences (with repetition allowed) of length \\( n \\) from \\( m \\) distinct objects is given by:\n\n\\[\n\\binom{m+n-1}{n}\n\\]\n\nIn our case, \\( n = 10 \\) and \\( m = 999 \\) (since the values range from 0 to 998, inclusive), so we have:\n\n\\[\n\\binom{999 + 10 - 1}{10} = \\binom{1008}{10}\n\\]\n\nNow, we need to find the remainder when the value of \\( m = 1008 \\) is divided by 1000:\n\n\\[\n1008 \\div 1000 = 1 \\text{ R } 8\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Continuing from the transformations, we can rewrite the condition \\( b_i \\le \\frac{2007 - i}{2} \\) for each \\( i \\).\n\nFirst, note that:\n\\[ a_i \\le 2007 \\quad \\Rightarrow \\quad a_i - i \\le 2007 - i, \\]\n\\[ \\Rightarrow \\quad \\frac{a_i - i}{2} \\le \\frac{2007 - i}{2}. \\]\n\nHence, we have:\n\\[ b_i \\le \\frac{2007 - i}{2}. \\]\n\nNow, let's redefine \\( c_i = b_i + i \\) for each \\( i \\). Then, the sequence \\( c_1, c_2, \\ldots, c_{10} \\) satisfies:\n\\[ c_1 \\le c_2 \\le \\cdots \\le c_{10}, \\]\nwith\n\\[ c_i = b_i + i \\le \\frac{2007 - i}{2} + i = \\frac{2007 + i}{2}. \\]\n\nSince \\( b_i = \\frac{a_i - i}{2} \\) and \\( a_i = 2b_i + i \\), we see that:\n\\[ b_1 \\le b_2 \\le \\cdots \\le b_{10}. \\]\n\nNow, because \\( b_i \\) are non-negative integers, the problem of finding the number of such sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) can be solved by considering the maximum possible value for \\( b_{10} \\).\n\nDue to the transformation, \\( b_{10} \\) must satisfy the constraint:\n\\[ b_{10} \\le \\frac{2007 - 10}{2} = \\frac{1997}{2} = 998.5. \\]\n\nSince \\( b_i \\) are integers, we have:\n\\[ b_{10} \\le 998. \\]\n\nNow, we need to find the number of ways to distribute 10 non-negative integers such that:\n\\[ 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998. \\]\n\nThis is equivalent to choosing 10 non-negative integers from 0 to 998, which is a classic \"stars and bars\" or \"combinatorial selection\" problem.\n\nThe number of such sequences is given by the combinations:\n\\[ \\binom{998 + 10}{10} = \\binom{1008}{10}. \\]\n\nFinally, we need to compute the remainder of \\( m = 1008 \\) when divided by 1000. Thus, the remainder is:\n\\[ 1008 \\mod 1000 = 8. \\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Continuing from where you left off, we now need to determine the range of the \\( b_i \\) variables. Since \\( a_i \\ge i \\), it follows that \\( a_i - i \\ge 0 \\), which implies \\( b_i = \\frac{a_i - i}{2} \\ge 0 \\). Therefore, each \\( b_i \\) is a non-negative integer.\n\nWe need to find the maximum possible value of \\( b_{10} \\), which occurs when \\( a_{10} = 2007 \\). In this case:\n\n\\[ b_{10} = \\frac{2007 - 10}{2} = \\frac{1997}{2} = 998.5. \\]\n\nSince \\( b_{10} \\) must be an integer, the maximum possible value is \\( b_{10} = 998 \\).\n\nNow, consider the transformation of the sequence problem to a stars and bars problem. We want to determine the number of non-negative integer solutions to:\n\n\\[ b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998. \\]\n\nIntroduce a change of variables where:\n\n\\[ c_i = b_i + i - 1, \\]\n\nfor \\( i = 1, 2, \\ldots, 10 \\). This transformation ensures \\( c_1 < c_2 < \\cdots < c_{10} \\).\n\nThe conditions on \\( b_i \\) transform into:\n\n\\[ c_1 < c_2 < \\cdots < c_{10} \\le 998 + 9 = 1007. \\]\n\nWe need to count the number of ways to choose 10 distinct integers \\( c_1, c_2, \\ldots, c_{10} \\) from the set \\( \\{0, 1, 2, \\ldots, 1007\\} \\).\n\nThis is equivalent to choosing 10 elements from 1008 elements, which can be done in:\n\n\\[ \\binom{1008}{10} \\]\n\nNow, we must compute the remainder of \\( 1008 \\) when divided by 1000. The remainder is:\n\n\\[ 1008 \\mod 1000 = 8. \\]\n\nThus, the answer is:\n\n\\[ \\boxed{8} \\]",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "To solve this, we first compute the effective upper bound for \\( b_{10} \\):\n\\[ b_{10} \\le \\frac{2007 - 10}{2} = \\frac{1997}{2} = 998.5. \\]\nSince \\( b_{10} \\) is an integer, \\( b_{10} \\le 998 \\).\n\nThe sequence \\( b_1, b_2, \\ldots, b_{10} \\) must be a non-decreasing sequence of non-negative integers such that \\( b_{10} \\le 998 \\).",
+            "mc_value": 0.5,
+            "children": [
+              {
+                "text": "To determine the total number of valid sequences, consider the shifted sequence \\( c_i = b_i + i \\) for \\( i = 1, 2, \\ldots, 10 \\). The transformation gives us:\n\n\\[ c_1 \\le c_2 \\le \\ldots \\le c_{10}, \\]\n\\[ c_i = b_i + i, \\]\n\\[ b_i \\le 998, \\]\n\\[ \\Rightarrow c_i \\le 998 + i. \\]\n\nSpecifically, for \\( c_{10} \\):\n\n\\[ c_{10} = b_{10} + 10 \\le 998 + 10 = 1008. \\]\n\nNow we have a sequence \\( c_1 \\le c_2 \\le \\ldots \\le c_{10} \\le 1008 \\), where \\( c_i \\ge i \\). \n\nConsider the transformation \\( d_i = c_i - i \\). Then:\n\n\\[ d_i \\le 1008 - i, \\]\n\\[ 0 \\le d_1 \\le d_2 \\le \\ldots \\le d_{10} \\le 998. \\]\n\nThus, we need to count the number of non-decreasing sequences of \\( d_i \\) such that \\( 0 \\le d_1 \\le d_2 \\le \\ldots \\le d_{10} \\le 998 \\).\n\nThis problem is equivalent to finding the number of weakly increasing sequences of 10 elements each ranging from 0 to 998. This is a classic \"stars and bars\" problem, where the number of such sequences is given by the formula:\n\n\\[ \\binom{n+k-1}{k-1}, \\]\n\nwhere \\( n \\) is the maximum value each \\( d_i \\) can take (998), and \\( k \\) is the number of \\( d_i \\)'s (10).\n\nSo, we have:\n\n\\[ \\binom{998 + 10}{10} = \\binom{1008}{10}. \\]\n\nNext, we need to find the remainder when 1008 is divided by 1000:\n\n\\[ 1008 \\equiv 8 \\pmod{1000}. \\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\( \\boxed{8} \\).",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "To find the total number of such sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use the \"stars and bars\" method in combinatorics. The problem is equivalent to distributing \\( 10 \\) identical items (representing the sequence of \\( b_i \\)'s) into \\( 999 \\) bins (from 0 to 998, inclusive).\n\nIn the \"stars and bars\" method, the number of ways to distribute \\( n \\) identical items into \\( k \\) bins is given by the binomial coefficient:\n\n\\[\n\\binom{n + k - 1}{k - 1}\n\\]\n\nIn this problem, \\( n = 10 \\) (the number of terms in the sequence) and \\( k = 999 \\) (the number of possible values each \\( b_i \\) can take, from 0 to 998 inclusive).\n\nThus, the total number of sequences is:\n\n\\[\n\\binom{10 + 999 - 1}{999 - 1} = \\binom{1008}{998}\n\\]\n\nNow, we need to express this in the form \\( \\binom{m}{n} \\) where \\( m > n \\), and determine the remainder when \\( m \\) is divided by 1000.\n\nHere, \\( m = 1008 \\). Therefore, we need to find \\( 1008 \\mod 1000 \\).\n\n\\[\n1008 \\equiv 8 \\pmod{1000}\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is 8.",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "The above conditions mean that we are counting the number of non-decreasing sequences of \\( b_i \\), or equivalently, the number of solutions to:\n\\[ 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998. \\]",
+                "mc_value": 0.75,
+                "children": [
+                  {
+                    "text": "To count the number of such sequences, we can use a combinatorial approach known as \"stars and bars.\" The problem of finding the number of non-decreasing sequences of integers \\( b_1, b_2, \\ldots, b_{10} \\) such that \\( 0 \\leq b_1 \\leq b_2 \\leq \\cdots \\leq b_{10} \\leq 998 \\) is equivalent to finding the number of ways to choose 10 elements (with repetition allowed) from the set \\(\\{0, 1, 2, \\ldots, 998\\}\\).\n\nThis is a classic combinatorics problem that can be solved by considering the total number of \"gaps\" between these elements. Specifically, we can think of placing 10 indistinguishable \"balls\" (representing the 10 sequence elements) into 999 distinguishable \"bins\" (representing the possible values from 0 to 998). The number of ways to do this is given by the binomial coefficient:\n\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}\n\\]\n\nTo find \\( m \\) and \\( n \\), we have \\( m = 1008 \\) and \\( n = 10 \\). We need to calculate the remainder when \\( m = 1008 \\) is divided by 1000:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThus, the remainder when the value of \\( m \\) is divided by 1000 is \\( 8 \\).",
+                    "mc_value": 1.0,
+                    "children": []
+                  },
+                  {
+                    "text": "To count the number of such non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use a combinatorial argument that involves stars and bars.\n\nWe need to determine the number of ways to place 10 indistinguishable objects (the sequence indices) into 999 distinguishable slots (the possible values of \\( b_i \\) from 0 to 998).\n\nBy defining new variables:\n\\[ c_i = b_i - i, \\]\nwe transform the problem into:\n\\[ 0 \\le c_1 \\le c_2 \\le \\cdots \\le c_{10} \\le 988, \\]\nwhere \\( c_i \\) are non-negative integers. Therefore, we are basically counting the number of non-negative integer solutions to the equation:\n\\[ c_1 + 1 \\le c_2 + 2 \\le \\cdots \\le c_{10} + 10 \\le 998 + 10. \\]\n\nThis is equivalent to finding the number of non-negative integer solutions to the equation:\n\\[ c'_1 + c'_2 + \\cdots + c'_{10} = 998, \\]\nwhere \\( c'_i = c_i + (i-1) \\).\n\nThe number of such solutions is given by the binomial coefficient:\n\\[ \\binom{998 + 10}{10} = \\binom{1008}{10}. \\]\n\nFinally, we need to calculate the remainder when \\( m = 1008 \\) is divided by 1000. \n\nThus, the remainder is:\n\\[ 1008 \\mod 1000 = 8. \\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\( 8 \\).",
+                    "mc_value": 1.0,
+                    "children": []
+                  },
+                  {
+                    "text": "To find the total number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use a combinatorial method known as \"stars and bars\". The problem of counting these sequences is equivalent to finding the number of ways to place 10 indistinguishable objects (the 10 terms \\( b_1, b_2, \\ldots, b_{10} \\)) into 999 distinguishable bins (the numbers 0 through 998).\n\nUsing the stars and bars method, the number of non-decreasing sequences is given by the number of solutions to the equation:\n\n\\[ x_1 + x_2 + \\cdots + x_{999} = 10, \\]\n\nwhere \\( x_i \\geq 0 \\) for all \\( i \\). In combinatorial terms, this is equivalent to choosing 10 \"stars\" to place in a sequence of \"bins\" separated by 998 \"bars\", which corresponds to the number of ways to place 10 identical items into 999 distinct categories.\n\nThe formula for this is:\n\n\\[ \\binom{10 + 999 - 1}{999 - 1} = \\binom{1008}{998}. \\]\n\nThus, the quantity of such sequences is \\( \\binom{1008}{10} \\).\n\nNext, we need to find the remainder when \\( 1008 \\) is divided by 1000:\n\n\\[ 1008 \\equiv 8 \\pmod{1000}. \\]\n\nTherefore, the remainder when the value of \\( m \\) is divided by 1000 is 8.",
+                    "mc_value": 1.0,
+                    "children": []
+                  },
+                  {
+                    "text": "To count the number of solutions to the inequality \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use a combinatorial method. Specifically, we can interpret this as a problem of placing 10 indistinguishable balls (representing the values of \\( b_1, b_2, \\ldots, b_{10} \\)) into 999 distinguishable boxes (representing the possible values from 0 to 998).\n\nThis is equivalent to choosing 10 positions for the balls among the 1009 positions (999 positions plus 10 dividers to separate different values). Thus, we need to calculate the binomial coefficient:\n\n\\[\n\\binom{1009}{10}\n\\]",
+                    "mc_value": 0.25,
+                    "children": [
+                      {
+                        "text": "Now, to find the number of such sequences, we calculate the binomial coefficient \\(\\binom{1009}{10}\\).\n\nThe general formula for the binomial coefficient \\(\\binom{m}{n}\\) is given by:\n\n\\[\n\\binom{m}{n} = \\frac{m!}{n!(m-n)!}\n\\]\n\nSubstituting \\(m = 1009\\) and \\(n = 10\\), we compute:\n\n\\[\n\\binom{1009}{10} = \\frac{1009 \\times 1008 \\times 1007 \\times \\cdots \\times 1000}{10 \\times 9 \\times \\cdots \\times 1}\n\\]\n\nNow, we need to find the remainder when \\(m = 1009\\) is divided by 1000:\n\n\\[\n1009 \\mod 1000 = 9\n\\]\n\nThus, the remainder when \\(m = 1009\\) is divided by 1000 is \\(\\boxed{9}\\).",
+                        "mc_value": 1.0,
+                        "children": []
+                      },
+                      {
+                        "text": "Now, to determine the remainder of \\( m = 1009 \\) when divided by 1000, we compute:\n\n\\[\n1009 \\div 1000 = 1 \\quad \\text{remainder} \\quad 9\n\\]",
+                        "mc_value": 0.0,
+                        "children": []
+                      },
+                      {
+                        "text": "Now, to determine the remainder of \\( m = 1009 \\) when divided by 1000, we compute:",
+                        "mc_value": 0.0,
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "text": "To count the number of solutions to the inequality \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use a combinatorial method. Specifically, we can interpret this as a problem of placing 10 indistinguishable balls (representing the values of \\( b_1, b_2, \\ldots, b_{10} \\)) into 999 distinguishable boxes (representing the possible values from 0 to 998).\n\nThis is equivalent to choosing 10 positions for the balls among the 1009 positions (999 positions plus 10 dividers to separate different values). Thus, we need to calculate the binomial coefficient:\n\n\\[\n\\binom{1009}{10}\n\\]",
+                    "mc_value": 0.0,
+                    "children": []
+                  },
+                  {
+                    "text": "To count the number of solutions to the inequality \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use a combinatorial method. Specifically, we can interpret this as a problem of placing 10 indistinguishable balls (representing the values of \\( b_1, b_2, \\ldots, b_{10} \\)) into 999 distinguishable boxes (representing the possible values from 0 to 998).",
+                    "mc_value": 1.0,
+                    "children": [
+                      {
+                        "text": "To determine the number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use the stars and bars method. The problem is equivalent to finding the number of ways to place 10 indistinguishable balls (the sequence values) into 999 distinguishable boxes (representing the values from 0 to 998).\n\nIn the stars and bars method, the number of ways to distribute \\( n \\) identical items into \\( k \\) distinct bins is given by:\n\n\\[\n{k + n - 1 \\choose n}\n\\]\n\nIn this case, \\( n = 10 \\) (the number of sequence terms) and \\( k = 999 \\) (the upper bound of 998 plus 1, since indices start from 0). Thus, the number of such non-decreasing sequences is:\n\n\\[\n{999 + 10 - 1 \\choose 10} = {1008 \\choose 10}\n\\]\n\nThe remainder of the value of \\( m = 1008 \\) when divided by 1000 is:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nTherefore, the remainder when the value of \\( m \\) is divided by 1000 is \\( 8 \\).",
+                        "mc_value": 1.0,
+                        "children": []
+                      },
+                      {
+                        "text": "To find the number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use the stars and bars combinatorial method. This problem is equivalent to finding the number of ways to distribute 10 indistinguishable balls (the \\( b_i \\)'s) into 999 distinguishable boxes (representing the values 0 through 998).\n\nIn the stars and bars method, if we have to distribute \\( n \\) indistinguishable items into \\( k \\) distinguishable boxes, the number of ways to do this is given by the binomial coefficient:\n\n\\[\n\\binom{n + k - 1}{k - 1}\n\\]\n\nIn our case, we are distributing \\( n = 10 \\) balls into \\( k = 999 \\) boxes, so we have:\n\n\\[\n\\binom{10 + 999 - 1}{999 - 1} = \\binom{1008}{998}\n\\]\n\nThis is equivalent to:\n\n\\[\n\\binom{1008}{10}\n\\]\n\nNow we need to find the remainder of \\( m = 1008 \\) when divided by 1000. Since \\( m = 1008 \\):\n\n\\[ \nm \\equiv 8 \\pmod{1000} \n\\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\( 8 \\).",
+                        "mc_value": 1.0,
+                        "children": []
+                      },
+                      {
+                        "text": "To determine the number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we can use a combinatorial method known as \"stars and bars.\" The idea is to count the number of ways to distribute 10 indistinguishable items (the increments in the sequence) across 999 positions (the possible values each \\( b_i \\) can take, from 0 to 998).\n\nWe need to count the number of solutions to the equation:\n\n\\[ x_1 + x_2 + \\cdots + x_{999} = 10, \\]\n\nwhere each \\( x_i \\) is a non-negative integer representing the number of \\( b_i \\) values that are equal to a particular integer from 0 to 998. \n\nThe number of solutions to this equation, using stars and bars, is given by:\n\n\\[\n\\binom{10 + 999 - 1}{999 - 1} = \\binom{1008}{998}.\n\\]\n\nNow, we need to express this in the form \\(\\binom{m}{n}\\) and find the remainder of \\( m \\) when divided by 1000. Here, \\( m = 1008 \\) and \\( n = 998 \\).\n\nNext, we calculate the remainder of \\( m \\) divided by 1000:\n\n\\[\n1008 \\equiv 8 \\pmod{1000}.\n\\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+                        "mc_value": 1.0,
+                        "children": []
+                      },
+                      {
+                        "text": "To count the number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\), we use the \"stars and bars\" combinatorial method. In this context, the \"stars\" are the increments between successive values of \\( b_i \\), and the \"bars\" are the boundaries between different possible values of \\( b_i \\).\n\nWe introduce a new sequence:\n\\[ x_1 = b_1, \\quad x_2 = b_2 - b_1, \\quad x_3 = b_3 - b_2, \\ldots, \\quad x_{10} = b_{10} - b_9, \\quad x_{11} = 998 - b_{10}. \\]\n\nThis transformation ensures that:\n\\[ x_1 + x_2 + \\cdots + x_{11} = 998, \\]\nwhere each \\( x_i \\geq 0 \\).\n\nThe number of solutions in non-negative integers to this equation can be determined using the stars and bars theorem, which provides us with the formula:\n\\[ \\binom{n + k - 1}{k - 1}, \\]\nwhere \\( n \\) is the total number to be partitioned (998), and \\( k \\) is the number of parts (11).\n\nIn our problem:\n\\[ n = 998, \\quad k = 11. \\]\n\nThus, the number of solutions is:\n\\[ \\binom{998 + 11 - 1}{11 - 1} = \\binom{1008}{10}. \\]\n\nNow, we need to calculate the remainder when \\( m = 1008 \\) is divided by 1000. Performing the division:\n\n\\[ 1008 \\div 1000 = 1 \\text{ remainder } 8. \\]\n\nTherefore, the remainder when \\( m = 1008 \\) is divided by 1000 is \\( 8 \\).",
+                        "mc_value": 1.0,
+                        "children": []
+                      },
+                      {
+                        "text": "This is equivalent to choosing 10 positions for the balls among the 1009 positions (999 positions plus 10 dividers to separate different values). Thus, we need to calculate the binomial coefficient:",
+                        "mc_value": 0.25,
+                        "children": [
+                          {
+                            "text": "To find the number of such sequences, we need to calculate the number of ways to distribute 10 indistinguishable balls (the \\( b_i \\)'s) into 999 distinguishable boxes (representing values from 0 to 998 inclusive). This can be solved by the \"stars and bars\" combinatorial method.\n\nThe problem is equivalent to choosing 10 positions for the balls among a total of \\( 999 + 10 - 1 = 1008 \\) positions (where the additional 9 positions are required to place dividers between different boxes).\n\nThus, the number of ways to do this is given by the binomial coefficient:\n\n\\[\n\\binom{1008}{10}\n\\]\n\nNow, we need to find the remainder when the value of \\( m = 1008 \\) is divided by 1000. \n\nCalculating the remainder:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\( \\boxed{8} \\).",
+                            "mc_value": 1.0,
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "question_id": 29
+}
+{
+  "question": "My school's math club has 6 boys and 8 girls.  I need to select a team to send to the state math competition.  We want 6 people on the team.  In how many ways can I select the team without restrictions?",
+  "final_answer": "3003",
+  "reasoning_steps": {
+    "text": "My school's math club has 6 boys and 8 girls.  I need to select a team to send to the state math competition.  We want 6 people on the team.  In how many ways can I select the team without restrictions?",
+    "mc_value": 0.75,
+    "children": [
+      {
+        "text": "To complete the answer, let's calculate the number of ways to choose a team of 6 members from a total of 14 students (6 boys + 8 girls) without restrictions.\n\nThe number of ways to choose 6 members from 14 is given by the combination formula:\n\n\\[ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} \\]\n\nwhere \\( n \\) is the total number of students, and \\( r \\) is the number of students to choose.\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times (14-6)!} = \\frac{14!}{6! \\times 8!} \\]\n\nNow, calculate the factorials:\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8! \\]\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40320 \\]\n\nSubstitute these values back into the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8!}{720 \\times 8!} \\]\n\nThe \\( 8! \\) in the numerator and denominator cancels out:\n\n\\[ = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} \\]\n\nNow, compute the product in the numerator:\n\n\\[ 14 \\times 13 = 182 \\]\n\n\\[ 182 \\times 12 = 2184 \\]\n\n\\[ 2184 \\times 11 = 24024 \\]\n\n\\[ 24024 \\times 10 = 240240 \\]\n\n\\[ 240240 \\times 9 = 2162160 \\]\n\nNow, divide by 720:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nTherefore, the number of ways to select a team of 6 people from 14 students is 3003.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To find the total number of ways to select a team of 6 people from a group of 14 (6 boys and 8 girls), we use the combination formula:\n\n\\[ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} \\]\n\nHere, \\( n = 14 \\) and \\( r = 6 \\).\n\nCalculate \\( \\binom{14}{6} \\):\n\n\\[ \\binom{14}{6} = \\frac{14!}{6!(14-6)!} = \\frac{14!}{6! \\times 8!} \\]\n\nNow, simplify the factorials:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} \\]\n\nCalculate the numerator and the denominator separately, and then divide.\n\nNumerator: \\( 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2162160 \\)\n\nDenominator: \\( 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\)\n\nNow, divide the results:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nSo, there are 3003 ways to select a team of 6 people from a group of 14 without any restrictions.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To find the number of ways to select a team of 6 people from a group of 14 (6 boys and 8 girls combined), we use the combination formula:\n\n\\[\n\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\n\\]\n\nwhere \\( n \\) is the total number of people to choose from, and \\( r \\) is the number of people to choose.\n\nIn this problem, \\( n = 14 \\) and \\( r = 6 \\).\n\n\\[\n\\binom{14}{6} = \\frac{14!}{6!(14-6)!} = \\frac{14!}{6! \\times 8!}\n\\]\n\nNow, calculate the factorials:\n\n\\[\n14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8!\n\\]\n\n\\[\n6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720\n\\]\n\n\\[\n8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1\n\\]\n\nSubstitute these back into the combination formula:\n\n\\[\n\\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8!}{720 \\times 8!}\n\\]\n\nCancel the \\( 8! \\) in the numerator and the denominator:\n\n\\[\n= \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720}\n\\]\n\nNow compute the numerator:\n\n\\[\n14 \\times 13 = 182\n\\]\n\n\\[\n182 \\times 12 = 2184\n\\]\n\n\\[\n2184 \\times 11 = 24024\n\\]\n\n\\[\n24024 \\times 10 = 240240\n\\]\n\n\\[\n240240 \\times 9 = 2162160\n\\]\n\nDivide by the denominator \\( 720 \\):\n\n\\[\n\\frac{2162160}{720} = 3003\n\\]\n\nThus, there are 3003 ways to select the team without restrictions.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To determine the number of ways to select a team of 6 people from a group of 14 (6 boys and 8 girls combined), you can use the combination formula:\n\n\\[ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} \\]\n\nwhere \\( n \\) is the total number of people to choose from, and \\( r \\) is the number of people to choose. In this case, \\( n = 14 \\) and \\( r = 6 \\).\n\n1. Calculate \\( 14! \\):\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\n2. Calculate \\( 6! \\):\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine the number of ways to select a team of 6 people from a group of 14 (6 boys and 8 girls combined), you can use the combination formula:\n\n\\[ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} \\]\n\nwhere \\( n \\) is the total number of people to choose from, and \\( r \\) is the number of people to choose. In this case, \\( n = 14 \\) and \\( r = 6 \\).",
+        "mc_value": 1.0,
+        "children": [
+          {
+            "text": "Continuing from where you left off, substitute the values of \\( n \\) and \\( r \\) into the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6!(14-6)!} = \\frac{14!}{6! \\times 8!} \\]\n\nNow, simplify the expression:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} \\]\n\nCalculate the numerator:\n\n\\[ 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2162160 \\]\n\nCalculate the denominator:\n\n\\[ 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\nFinally, divide the numerator by the denominator to find the number of ways to select the team:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nTherefore, there are 3003 ways to select a team of 6 people from the 14 available club members.",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Continuing from the given steps, we will calculate the number of combinations:\n\nFirst, plug the values into the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6!(14-6)!} \\]\n\nSimplify the expression:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times 8!} \\]\n\nNow, calculate the factorials:\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8! \\]\n\nNotice that \\( 8! \\) will cancel out:\n\n\\[ \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8!}{6! \\times 8!} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6!} \\]\n\nCalculate \\( 6! \\):\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\nNow, substitute back and simplify:\n\n\\[ \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} \\]\n\nCalculate the numerator:\n\n\\[ 14 \\times 13 = 182 \\]\n\n\\[ 182 \\times 12 = 2184 \\]\n\n\\[ 2184 \\times 11 = 24024 \\]\n\n\\[ 24024 \\times 10 = 240240 \\]\n\n\\[ 240240 \\times 9 = 2162160 \\]\n\nNow, divide by 720:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nTherefore, there are 3,003 ways to select a team of 6 people from the group of 14 without any restrictions.",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Given the values \\( n = 14 \\) and \\( r = 6 \\), you can substitute these into the combination formula to find the number of ways to select the team:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6!(14-6)!} = \\frac{14!}{6! \\times 8!} \\]\n\nNow, calculate the factorial values and simplify:\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8! \\]\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40320 \\]\n\nSubstitute these into the equation:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8!}{720 \\times 40320} \\]\n\nCancel out the \\( 8! \\) in the numerator and the denominator:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} \\]\n\nNow, perform the multiplication for the numerator:\n\n\\[ 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2162160 \\]\n\nDivide by the denominator:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nTherefore, there are 3003 ways to select the team without restrictions.",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "To calculate the number of ways to select a team of 6 people from 14, use the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6!(14-6)!} \\]\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times 8!} \\]\n\nNow, calculate the factorials:\n\n- \\( 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8! \\)\n- \\( 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\)\n- \\( 8! \\) cancels out on top and bottom\n\nThis simplifies to:\n\n\\[ \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} \\]\n\nCalculate the numerator:\n\n\\[ 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2162160 \\]\n\nNow divide by the denominator:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nTherefore, there are 3003 ways to select the team of 6 people from the 14 available students.",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "1. Calculate \\( 14! \\):\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]",
+            "mc_value": 0.5,
+            "children": [
+              {
+                "text": "2. Calculate \\( 6! \\):\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\n3. Calculate \\( (14-6)! = 8! \\):\n\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40,320 \\]\n\n4. Apply the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times 8!} \\]\n\n5. Simplify the expression:\n\n\\[ \\frac{14!}{6! \\times 8!} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} \\]\n\n6. Calculate the result:\n\nFirst calculate the numerator:\n\n\\[ 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2162160 \\]\n\nNow, divide by the denominator:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nThus, there are 3003 ways to select a team of 6 people from the group of 14.",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "2. Calculate \\( 6! \\):\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\n3. Calculate \\( (14-6)! = 8! \\):\n\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\n4. Plug these values into the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times 8!} \\]\n\n5. Simplify the expression:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} \\]\n\n6. Calculate the final result to find the number of ways to select the team:\n\nFirst, calculate the numerator:\n\n\\[ 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2162160 \\]\n\nThen, calculate the denominator:\n\n\\[ 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\nFinally, divide the numerator by the denominator:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nTherefore, there are 3,003 ways to select a team of 6 people from a group of 14.",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "2. Calculate \\( 6! \\):",
+                "mc_value": 0.0,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "To determine the number of ways to select a team of 6 people from a group of 14 (6 boys and 8 girls combined), you can use the combination formula:\n\n\\[ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} \\]\n\nwhere \\( n \\) is the total number of people to choose from, and \\( r \\) is the number of people to choose. In this case, \\( n = 14 \\) and \\( r = 6 \\).\n\n1. Calculate \\( 14! \\):\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\n2. Calculate \\( 6! \\):\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine the number of ways to select a team of 6 people from a group of 14 (6 boys and 8 girls combined), you can use the combination formula:\n\n\\[ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} \\]\n\nwhere \\( n \\) is the total number of people to choose from, and \\( r \\) is the number of people to choose. In this case, \\( n = 14 \\) and \\( r = 6 \\).",
+        "mc_value": 0.75,
+        "children": [
+          {
+            "text": "Now, substitute the values of \\( n \\) and \\( r \\) into the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6!(14-6)!} = \\frac{14!}{6! \\times 8!} \\]\n\nNext, calculate the factorials and simplify:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} \\]\n\n\\[ = \\frac{2162160}{720} \\]\n\n\\[ = 3003 \\]\n\nTherefore, there are 3003 ways to select a team of 6 people from the group of 14 without any restrictions.",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Continuing from where you left off, apply the combination formula to find the number of ways to choose 6 people from 14:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6!(14-6)!} = \\frac{14!}{6! \\times 8!} \\]\n\nCalculate the factorials and simplify:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1} \\]\n\nNow, perform the calculations:\n\nNumerator: \\( 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2162160 \\)\n\nDenominator: \\( 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\)\n\nFinally, divide the numerator by the denominator to find the number of ways:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nTherefore, there are 3,003 ways to select a team of 6 people from the 14 available students without restrictions.",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Continuing from the provided steps, you can calculate the number of ways to select the team by plugging the values into the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6!(14-6)!} \\]\n\n\\[ = \\frac{14!}{6! \\times 8!} \\]\n\nNow, calculate the factorial values:\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8! \\]\n\nNotice that \\( 8! \\) in the numerator and denominator will cancel out:\n\n\\[ = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6!} \\]\n\nCalculate \\( 6! \\):\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\nNow divide:\n\n\\[ = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} \\]\n\nCalculate the product of the numbers in the numerator:\n\n\\[ 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2162160 \\]\n\nFinally, divide by 720:\n\n\\[ \\frac{2162160}{720} = 3003 \\]\n\nTherefore, there are 3,003 ways to select a team of 6 people from the group of 14.",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "1. Calculate \\( 14! \\):\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]",
+            "mc_value": 0.25,
+            "children": [
+              {
+                "text": "2. Calculate \\( 6! \\):\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\n3. Calculate \\( (14-6)! = 8! \\):\n\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40,320 \\]\n\n4. Substitute the calculated factorials into the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times 8!} \\]\n\n5. Simplify the expression:\n\n\\[ \\binom{14}{6} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} \\]\n\n6. Calculate the numerator:\n\n\\[ 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 216,216 \\]\n\n7. Divide the result by \\( 720 \\):\n\n\\[ \\frac{216,216}{720} = 3003 \\]\n\nTherefore, there are 3003 ways to select a team of 6 people from the math club without restrictions.",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "2. Calculate \\( 6! \\):",
+                "mc_value": 0.0,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "To determine the number of ways to select a team of 6 people from a group of 14 (6 boys and 8 girls combined), you can use the combination formula:\n\n\\[ \\binom{n}{r} = \\frac{n!}{r!(n-r)!} \\]\n\nwhere \\( n \\) is the total number of people to choose from, and \\( r \\) is the number of people to choose. In this case, \\( n = 14 \\) and \\( r = 6 \\).\n\n1. Calculate \\( 14! \\):\n\n\\[ 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\n2. Calculate \\( 6! \\):\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]",
+        "mc_value": 0.25,
+        "children": [
+          {
+            "text": "3. Calculate \\( (14-6)! \\), which is \\( 8! \\):\n\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40,320 \\]\n\n4. Use the combination formula to calculate \\( \\binom{14}{6} \\):\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times 8!} \\]\n\n5. Simplify the expression by calculating \\( \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{6!} \\):\n\n\\[ \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} = \\frac{2162160}{720} = 3003 \\]\n\nThus, there are 3,003 ways to select a team of 6 people from the group of 14 without any restrictions.",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "3. Calculate \\( (14-6)! = 8! \\):\n\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40,320 \\]\n\nNow, use the combination formula to find the number of ways to select the team:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times 8!} = \\frac{87,178,291,200}{720 \\times 40,320} \\]",
+            "mc_value": 0.0,
+            "children": []
+          },
+          {
+            "text": "3. Calculate \\( (14-6)! = 8! \\):\n\n\\[ 8! = 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 40,320 \\]",
+            "mc_value": 0.25,
+            "children": [
+              {
+                "text": "4. Substitute these values into the combination formula:\n\n\\[ \\binom{14}{6} = \\frac{14!}{6! \\times 8!} \\]\n\n5. Simplify the expression:\n\nSince \\( 14! = 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8! \\), you can cancel out the \\( 8! \\) in the numerator and denominator:\n\n\\[ \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 \\times 8!}{720 \\times 8!} = \\frac{14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9}{720} \\]\n\n6. Calculate the numerator:\n\n\\[ 14 \\times 13 \\times 12 \\times 11 \\times 10 \\times 9 = 2,162,160 \\]\n\n7. Divide the numerator by 720:\n\n\\[ \\frac{2,162,160}{720} = 3003 \\]\n\nTherefore, there are 3,003 ways to select a team of 6 people from the group of 14.",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "Now, use the combination formula to find the number of ways to select the team:",
+                "mc_value": 0.0,
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "question_id": 2
+}
+{
+  "question": "Melinda will roll two standard six-sided dice and make a two-digit number with the two numbers she rolls. For example, if she rolls a 6 and a 3, she can either form 36 or 63. What is the probability that she will be able to make an integer between 10 and 20, inclusive? Express your answer as a common fraction.",
+  "final_answer": "\\frac{11}{36}",
+  "reasoning_steps": {
+    "text": "Melinda will roll two standard six-sided dice and make a two-digit number with the two numbers she rolls. For example, if she rolls a 6 and a 3, she can either form 36 or 63. What is the probability that she will be able to make an integer between 10 and 20, inclusive? Express your answer as a common fraction.",
+    "mc_value": 0.25,
+    "children": [
+      {
+        "text": "Continuing from the existing steps, we need to determine all possible two-digit numbers that Melinda can form and are between 10 and 20, inclusive. \n\nThe integers between 10 and 20 are: 10, 11, 12, 13, 14, 15, 16, 17, 18, and 19. For each of these numbers, we need to check if they can be formed by rolling two six-sided dice.\n\n- 10: The dice must show 1 and 0. However, there is no 0 on a six-sided die. Thus, 10 cannot be formed.\n- 11: The dice must show 1 and 1. This is possible if both rolls are 1.\n- 12: The dice must show 1 and 2. This is possible if one die shows 1 and the other shows 2.\n- 13: The dice must show 1 and 3. This is possible if one die shows 1 and the other shows 3.\n- 14: The dice must show 1 and 4. This is possible if one die shows 1 and the other shows 4.\n- 15: The dice must show 1 and 5. This is possible if one die shows 1 and the other shows 5.\n- 16: The dice must show 1 and 6. This is possible if one die shows 1 and the other shows 6.\n- 17: The dice must show 1 and 7. However, there is no 7 on a six-sided die. Thus, 17 cannot be formed.\n- 18: The dice must show 1 and 8. However, there is no 8 on a six-sided die. Thus, 18 cannot be formed.\n- 19: The dice must show 1 and 9. However, there is no 9 on a six-sided die. Thus, 19 cannot be formed.\n\nOnly 11, 12, 13, 14, 15, and 16 can be formed.\n\nNow, let's calculate the probability:\n\nThe total number of outcomes when rolling two six-sided dice is \\(6 \\times 6 = 36\\).\n\nThe successful outcomes are:\n- 11: (1,1)\n- 12: (1,2) and (2,1)\n- 13: (1,3) and (3,1)\n- 14: (1,4) and (4,1)\n- 15: (1,5) and (5,1)\n- 16: (1,6) and (6,1)\n\nThus, there are 1 + 2 + 2 + 2 + 2 + 2 = 11 successful outcomes.\n\nTherefore, the probability that Melinda will be able to make an integer between 10 and 20 is \\(\\frac{11}{36}\\).",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To solve this problem, we need to determine the successful outcomes where Melinda can form a two-digit number between 10 and 20 (inclusive) using the numbers rolled on two six-sided dice.\n\nFirst, identify the possible two-digit numbers between 10 and 20:\n- The numbers are: 10, 11, 12, 13, 14, 15, 16, 17, 18, and 19.\n\nNext, determine which numbers can be formed using the numbers rolled on the dice:\n- The tens digit of the number must be 1 (since the two-digit number is between 10 and 19), meaning one die must show a 1.\n- The units digit can be any number from 1 to 6, corresponding to the second die.\n\nNow, list the successful outcomes where the tens digit is 1:\n- If the first die shows 1, the second die can show: 1, 2, 3, 4, 5, or 6.\n- This results in the numbers: 11, 12, 13, 14, 15, 16.\n\nThere are 6 successful outcomes: 11, 12, 13, 14, 15, and 16.",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To solve this problem, we need to determine the successful outcomes where Melinda can form a two-digit number between 10 and 20 (inclusive) using the numbers rolled on two six-sided dice.\n\nFirst, identify the possible two-digit numbers between 10 and 20:\n- The numbers are: 10, 11, 12, 13, 14, 15, 16, 17, 18, and 19.",
+        "mc_value": 0.25,
+        "children": [
+          {
+            "text": "Next, determine which of these numbers can be formed using the two dice. Since Melinda is using two six-sided dice, the digits she can use are 1 through 6. Thus, the tens digit must be 1, and the units digit must be between 1 and 6. The possible numbers that can be formed are 11, 12, 13, 14, 15, and 16.\n\nNow, calculate the total number of possible outcomes when two dice are rolled. Since each die has 6 faces, there are \\(6 \\times 6 = 36\\) possible outcomes.\n\nNow, count the successful outcomes using the numbers identified:\n- To form 11, she must roll a 1 and a 1.\n- To form 12, she must roll a 1 and a 2 (or a 2 and a 1).\n- To form 13, she must roll a 1 and a 3 (or a 3 and a 1).\n- To form 14, she must roll a 1 and a 4 (or a 4 and a 1).\n- To form 15, she must roll a 1 and a 5 (or a 5 and a 1).\n- To form 16, she must roll a 1 and a 6 (or a 6 and a 1).\n\nEach of these numbers (except 11) can be formed in 2 ways, while 11 can only be formed in 1 way.\n\nSo, the total number of successful outcomes is:\n\\[ 1 \\, (\\text{for 11}) + 2 \\, (\\text{for 12}) + 2 \\, (\\text{for 13}) + 2 \\, (\\text{for 14}) + 2 \\, (\\text{for 15}) + 2 \\, (\\text{for 16}) = 11. \\]\n\nFinally, calculate the probability:\n\\[ \\text{Probability} = \\frac{\\text{Number of Successful Outcomes}}{\\text{Total Number of Possible Outcomes}} = \\frac{11}{36}. \\]\n\nThus, the probability that Melinda will be able to make an integer between 10 and 20 is \\(\\frac{11}{36}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Next, determine which numbers can be formed using the numbers rolled on the dice:\n- The tens digit of the number must be 1 (since the two-digit number is between 10 and 19), meaning one die must show a 1.\n- The units digit can be any number from 1 to 6, corresponding to the second die.",
+            "mc_value": 0.0,
+            "children": []
+          }
+        ]
+      },
+      {
+        "text": "To solve this problem, we need to determine the successful outcomes where Melinda can form a two-digit number between 10 and 20 (inclusive) using the numbers rolled on two six-sided dice.\n\nFirst, identify the possible two-digit numbers between 10 and 20:\n- The numbers are: 10, 11, 12, 13, 14, 15, 16, 17, 18, and 19.\n\nNext, determine which numbers can be formed using the numbers rolled on the dice:\n- The tens digit of the number must be 1 (since the two-digit number is between 10 and 19), meaning one die must show a 1.\n- The units digit can be any number from 1 to 6, corresponding to the second die.\n\nNow, list the successful outcomes where the tens digit is 1:\n- If the first die shows 1, the second die can show: 1, 2, 3, 4, 5, or 6.\n- This results in the numbers: 11, 12, 13, 14, 15, 16.\n\nThere are 6 successful outcomes: 11, 12, 13, 14, 15, and 16.",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To solve this problem, we need to determine the successful outcomes where Melinda can form a two-digit number between 10 and 20 (inclusive) using the numbers rolled on two six-sided dice.\n\nFirst, identify the possible two-digit numbers between 10 and 20:\n- The numbers are: 10, 11, 12, 13, 14, 15, 16, 17, 18, and 19.",
+        "mc_value": 0.25,
+        "children": [
+          {
+            "text": "To form a two-digit number between 10 and 20, the tens digit must be 1. Therefore, on the two six-sided dice, one of them must show a 1. The possible rolls for the units digit (the second die) are 0 through 9, but since they are six-sided dice, the units digit can only be 1 through 6.\n\nNext, determine which of these two-digit numbers can be formed based on the possible rolls:\n\n- 10: Requires rolling a 1 and a 0, but 0 is not possible on a six-sided die.\n- 11: Requires rolling a 1 and another 1.\n- 12: Requires rolling a 1 and a 2.\n- 13: Requires rolling a 1 and a 3.\n- 14: Requires rolling a 1 and a 4.\n- 15: Requires rolling a 1 and a 5.\n- 16: Requires rolling a 1 and a 6.\n- 17, 18, 19: Require numbers that cannot be rolled on a six-sided die as the units digits (7, 8, 9 are not possible).\n\nThus, the numbers that can be formed are: 11, 12, 13, 14, 15, and 16.\n\nNow, calculate the total number of possible outcomes when rolling two six-sided dice:\n\nThe total number of outcomes when rolling two dice is \\(6 \\times 6 = 36\\).\n\nNext, count the successful outcomes:\n\n- For each successful number (11, 12, 13, 14, 15, 16), there are two possible outcomes: one where the first die shows 1, and the second die shows the other number, and vice versa (except for 11, where both dice show 1).\n\nThus, the successful outcomes are:\n- 11: (1, 1) \u2192 1 outcome\n- 12: (1, 2) and (2, 1) \u2192 2 outcomes\n- 13: (1, 3) and (3, 1) \u2192 2 outcomes\n- 14: (1, 4) and (4, 1) \u2192 2 outcomes\n- 15: (1, 5) and (5, 1) \u2192 2 outcomes\n- 16: (1, 6) and (6, 1) \u2192 2 outcomes\n\nTotal successful outcomes = \\(1 + 2 + 2 + 2 + 2 + 2 = 11\\).\n\nFinally, calculate the probability:\n\nThe probability that Melinda will roll a two-digit number between 10 and 20 is \\(\\frac{\\text{Number of successful outcomes}}{\\text{Total number of outcomes}}\\).\n\nThis gives us a probability of \\(\\frac{11}{36}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Next, determine which numbers can be formed using the numbers rolled on the dice:\n- The tens digit of the number must be 1 (since the two-digit number is between 10 and 19), meaning one die must show a 1.\n- The units digit can be any number from 1 to 6, corresponding to the second die.",
+            "mc_value": 0.0,
+            "children": []
+          }
+        ]
+      },
+      {
+        "text": "To solve this problem, we need to determine the successful outcomes where Melinda can form a two-digit number between 10 and 20 (inclusive) using the numbers rolled on two six-sided dice.\n\nFirst, identify the possible two-digit numbers between 10 and 20:\n- The numbers are: 10, 11, 12, 13, 14, 15, 16, 17, 18, and 19.\n\nNext, determine which numbers can be formed using the numbers rolled on the dice:\n- The tens digit of the number must be 1 (since the two-digit number is between 10 and 19), meaning one die must show a 1.\n- The units digit can be any number from 1 to 6, corresponding to the second die.\n\nNow, list the successful outcomes where the tens digit is 1:\n- If the first die shows 1, the second die can show: 1, 2, 3, 4, 5, or 6.\n- This results in the numbers: 11, 12, 13, 14, 15, 16.\n\nThere are 6 successful outcomes: 11, 12, 13, 14, 15, and 16.",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To solve this problem, we need to determine the successful outcomes where Melinda can form a two-digit number between 10 and 20 (inclusive) using the numbers rolled on two six-sided dice.\n\nFirst, identify the possible two-digit numbers between 10 and 20:\n- The numbers are: 10, 11, 12, 13, 14, 15, 16, 17, 18, and 19.",
+        "mc_value": 0.25,
+        "children": [
+          {
+            "text": "Next, determine the pairs of dice rolls that can form each of these numbers. Note that the tens place is determined by one die and the units place by the other.\n\n- For 10, Melinda needs to roll a 1 and a 0. Since a standard die does not have a 0, 10 is not possible.\n  \n- For 11, Melinda needs to roll a 1 and another 1. This can be rolled as (1, 1).\n\n- For 12, Melinda needs to roll a 1 and a 2. This can be rolled as (1, 2) or (2, 1).\n\n- For 13, Melinda needs to roll a 1 and a 3. This can be rolled as (1, 3) or (3, 1).\n\n- For 14, Melinda needs to roll a 1 and a 4. This can be rolled as (1, 4) or (4, 1).\n\n- For 15, Melinda needs to roll a 1 and a 5. This can be rolled as (1, 5) or (5, 1).\n\n- For 16, Melinda needs to roll a 1 and a 6. This can be rolled as (1, 6) or (6, 1).\n\n- For 17, Melinda needs to roll a 1 and a 7. Since a standard die does not have a 7, 17 is not possible.\n\n- For 18, Melinda needs to roll a 1 and an 8. Since a standard die does not have an 8, 18 is not possible.\n\n- For 19, Melinda needs to roll a 1 and a 9. Since a standard die does not have a 9, 19 is not possible.\n\nNow, count the successful outcomes:\n\n- 11: 1 outcome\n- 12: 2 outcomes\n- 13: 2 outcomes\n- 14: 2 outcomes\n- 15: 2 outcomes\n- 16: 2 outcomes\n\nTotal successful outcomes = 1 + 2 + 2 + 2 + 2 + 2 = 11\n\nThe total number of possible outcomes when rolling two six-sided dice is 6 * 6 = 36.\n\nFinally, calculate the probability:\n\nProbability = (Number of successful outcomes) / (Total number of possible outcomes) = 11/36\n\nSo, the probability that Melinda will be able to make an integer between 10 and 20, inclusive, is \\(\\frac{11}{36}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "Next, determine which numbers can be formed using the numbers rolled on the dice:\n- The tens digit of the number must be 1 (since the two-digit number is between 10 and 19), meaning one die must show a 1.\n- The units digit can be any number from 1 to 6, corresponding to the second die.",
+            "mc_value": 0.0,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "question_id": 4
+}
+{
+  "question": "How many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5?",
+  "final_answer": "4970",
+  "reasoning_steps": {
+    "text": "How many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5?",
+    "mc_value": 0.5,
+    "children": [
+      {
+        "text": "To solve this problem, we have to consider the range of four-digit numbers greater than 2999, which are those from 3000 to 9999. The first digit can be any digit from 3 to 9.\n\nFor the middle two digits, we need their product to exceed 5. Let's denote these two digits as \\(b\\) and \\(c\\), and thus \\(b \\cdot c > 5\\). Each digit \\(b\\) and \\(c\\) ranges from 0 to 9.\n\n**Steps to follow:**\n\n1. **Determine Valid Digit Pairs:** Identify all combinations of the digits \\(b\\) and \\(c\\) such that their product is greater than 5.\n\n2. **Calculate the Total Combinations for Each Case:**\n\n   - **First Digit:** The first digit \\(a\\) can be 3, 4, 5, 6, 7, 8, or 9, giving us 7 possible choices.\n   \n   - **Last Digit:** The last digit \\(d\\) can be any digit from 0 to 9, giving 10 possible choices.\n\n3. **Combine All Valid Combinations:** For each valid pair \\((b, c)\\), calculate the number of four-digit numbers by multiplying the number of choices for \\(a\\) and \\(d\\).\n\n4. **Sum Up All Possibilities:** Add up all the valid combinations to get the total number of four-digit numbers.\n\nLet's complete the steps by calculating the combinations:\n\n1. **Valid Pairs for Middle Digits:** Find all \\((b, c)\\) pairs such that \\(b \\cdot c > 5\\). These are:\n\n   - \\(b = 1, c = 6, 7, 8, 9\\) (4 combinations)\n   - \\(b = 2, c = 3, 4, 5, 6, 7, 8, 9\\) (7 combinations)\n   - \\(b = 3, c = 2, 3, 4, 5, 6, 7, 8, 9\\) (8 combinations)\n   - \\(b = 4, c = 2, 3, 4, 5, 6, 7, 8, 9\\) (8 combinations)\n   - \\(b = 5, c = 2, 3, 4, 5, 6, 7, 8, 9\\) (8 combinations)\n   - \\(b = 6, c = 1, 2, 3, 4, 5, 6, 7, 8, 9\\) (9 combinations)\n   - \\(b = 7, c = 1, 2, 3, 4, 5, 6, 7, 8, 9\\) (9 combinations)\n   - \\(b = 8, c = 1, 2, 3, 4, 5, 6, 7, 8, 9\\) (9 combinations)\n   - \\(b = 9, c = 1, 2, 3, 4, 5, 6, 7, 8, 9\\) (9 combinations)\n\n   Total valid combinations for \\((b, c)\\) pairs = \\(4 + 7 + 8 + 8 + 8 + 9 + 9 + 9 + 9 = 71\\).\n\n2. **Calculate Total Combinations:**\n\n   - Each valid \\((b, c)\\) pair can form a number with any of the 7 choices for \\(a\\) and any of the 10 choices for \\(d\\).\n   - Total combinations = \\(71 \\times 7 \\times 10 = 4970\\).\n\nTherefore, the total number of four-digit numbers greater than 2999 where the product of the middle two digits exceeds 5 is 4970.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To complete the question, let's continue with the steps:\n\n1. **Identify the Range**: We're looking for four-digit numbers greater than 2999. This means our numbers can range from 3000 to 9999.\n\n2. **Analyze the Digits**:\n   - The first digit can be any number from 3 to 9. So, there are 7 possible choices for the first digit.\n   - The last digit can be any number from 0 to 9, which gives us 10 possible choices for the last digit.\n\n3. **Focus on the Middle Two Digits**:\n   - Let's denote the middle two digits as \\( b \\) and \\( c \\). We need their product \\( b \\times c \\) to be greater than 5.\n\n4. **Consider the Possibilities for \\( b \\) and \\( c \\)**:\n   - \\( b \\) and \\( c \\) can each range from 0 to 9, i.e., 10 choices each.\n   - However, not all combinations will satisfy \\( b \\times c > 5 \\).\n\n5. **Calculate Valid Combinations for \\( b \\times c > 5 \\)**:\n   - We iterate through possible values of \\( b \\) and find suitable \\( c \\) values such that \\( b \\times c > 5 \\).\n\n6. **Count Valid Combinations**:\n   - For each value of \\( b \\), calculate the number of valid \\( c \\) values:\n     - \\( b = 0 \\): No valid \\( c \\) since \\( 0 \\times c \\leq 0 \\).\n     - \\( b = 1 \\): \\( c \\) must be greater than 5, so \\( c = 6, 7, 8, 9 \\) (4 choices).\n     - \\( b = 2 \\): \\( c \\) must be greater than 2.5, so \\( c = 3, 4, 5, 6, 7, 8, 9 \\) (7 choices).\n     - \\( b = 3 \\): \\( c = 2, 3, 4, 5, 6, 7, 8, 9 \\) (8 choices).\n     - \\( b = 4 \\): \\( c = 2, 3, 4, 5, 6, 7, 8, 9 \\) (8 choices).\n     - \\( b = 5 \\): \\( c = 2, 3, 4, 5, 6, 7, 8, 9 \\) (8 choices).\n     - \\( b = 6 \\): \\( c = 1, 2, 3, 4, 5, 6, 7, 8, 9 \\) (9 choices).\n     - \\( b = 7 \\): \\( c = 1, 2, 3, 4, 5, 6, 7, 8, 9 \\) (9 choices).\n     - \\( b = 8 \\): \\( c = 1, 2, 3, 4, 5, 6, 7, 8, 9 \\) (9 choices).\n     - \\( b = 9 \\): \\( c = 1, 2, 3, 4, 5, 6, 7, 8, 9 \\) (9 choices).\n\n7. **Sum Up All Valid Combinations**:\n   - Total valid combinations for \\( b \\) and \\( c \\) that meet the condition: \\( 0 + 4 + 7 + 8 + 8 + 8 + 9 + 9 + 9 + 9 = 71 \\).\n\n8. **Calculate Total Number of Four-Digit Numbers**:\n   - Multiply the number of choices for each digit:\n   \\[\n   \\text{Total numbers} = 7 \\times 71 \\times 10 = 4970\n   \\]\n\nTherefore, 4970 four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:\n\n1. **First Digit**: Since the number should be greater than 2999, the first digit \\( a \\) can be 3, 4, 5, 6, 7, 8, or 9. Hence, there are 7 choices for the first digit.\n\n2. **Middle Two Digits**: Let's denote the middle two digits by \\( b \\) and \\( c \\). We need the product \\( b \\times c > 5 \\). Both \\( b \\) and \\( c \\) can range from 0 to 9, giving us \\( 10 \\times 10 = 100 \\) possible combinations for \\( b \\) and \\( c \\).\n\n3. **Calculate Valid \\( b \\) and \\( c \\) Combinations**: Now, we need to count the combinations where \\( b \\times c \\leq 5 \\) and subtract this from the total combinations (100).\n\n   - \\( b = 0 \\): \\( c \\) can be 0 through 9 (10 combinations).\n   - \\( b = 1 \\): \\( c \\) can be 0 through 5 (6 combinations).\n   - \\( b = 2 \\): \\( c \\) can be 0 through 2 (3 combinations).\n   - \\( b = 3 \\): \\( c \\) can be 0 or 1 (2 combinations).\n   - \\( b = 4 \\): \\( c \\) can be 0 or 1 (2 combinations).\n   - \\( b = 5 \\): \\( c \\) can only be 0 or 1 (2 combinations).\n\nSumming these, we get \\( 10 + 6 + 3 + 2 + 2 + 2 = 25 \\) combinations where \\( b \\times c \\leq 5 \\).",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:\n\n1. **First Digit**: Since the number should be greater than 2999, the first digit \\( a \\) can be 3, 4, 5, 6, 7, 8, or 9. Hence, there are 7 choices for the first digit.\n\n2. **Middle Two Digits**: Let's denote the middle two digits by \\( b \\) and \\( c \\). We need the product \\( b \\times c > 5 \\). Both \\( b \\) and \\( c \\) can range from 0 to 9, giving us \\( 10 \\times 10 = 100 \\) possible combinations for \\( b \\) and \\( c \\).",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:\n\n1. **First Digit**: Since the number should be greater than 2999, the first digit \\( a \\) can be 3, 4, 5, 6, 7, 8, or 9. Hence, there are 7 choices for the first digit.\n\n2. **Middle Two Digits**: Let's denote the middle two digits by \\( b \\) and \\( c \\). We need the product \\( b \\times c > 5 \\). Both \\( b \\) and \\( c \\) can range from 0 to 9, giving us \\( 10 \\times 10 = 100 \\) possible combinations for \\( b \\) and \\( c \\).\n\n3. **Calculate Valid \\( b \\) and \\( c \\) Combinations**: Now, we need to count the combinations where \\( b \\times c \\leq 5 \\) and subtract this from the total combinations (100).\n\n   - \\( b = 0 \\): \\( c \\) can be 0 through 9 (10 combinations).\n   - \\( b = 1 \\): \\( c \\) can be 0 through 5 (6 combinations).\n   - \\( b = 2 \\): \\( c \\) can be 0 through 2 (3 combinations).\n   - \\( b = 3 \\): \\( c \\) can be 0 or 1 (2 combinations).\n   - \\( b = 4 \\): \\( c \\) can be 0 or 1 (2 combinations).\n   - \\( b = 5 \\): \\( c \\) can only be 0 or 1 (2 combinations).\n\nSumming these, we get \\( 10 + 6 + 3 + 2 + 2 + 2 = 25 \\) combinations where \\( b \\times c \\leq 5 \\).",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:\n\n1. **First Digit**: Since the number should be greater than 2999, the first digit \\( a \\) can be 3, 4, 5, 6, 7, 8, or 9. Hence, there are 7 choices for the first digit.\n\n2. **Middle Two Digits**: Let's denote the middle two digits by \\( b \\) and \\( c \\). We need the product \\( b \\times c > 5 \\). Both \\( b \\) and \\( c \\) can range from 0 to 9, giving us \\( 10 \\times 10 = 100 \\) possible combinations for \\( b \\) and \\( c \\).",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:\n\n1. **First Digit**: Since the number should be greater than 2999, the first digit \\( a \\) can be 3, 4, 5, 6, 7, 8, or 9. Hence, there are 7 choices for the first digit.\n\n2. **Middle Two Digits**: Let's denote the middle two digits by \\( b \\) and \\( c \\). We need the product \\( b \\times c > 5 \\). Both \\( b \\) and \\( c \\) can range from 0 to 9, giving us \\( 10 \\times 10 = 100 \\) possible combinations for \\( b \\) and \\( c \\).\n\n3. **Calculate Valid \\( b \\) and \\( c \\) Combinations**: Now, we need to count the combinations where \\( b \\times c \\leq 5 \\) and subtract this from the total combinations (100).\n\n   - \\( b = 0 \\): \\( c \\) can be 0 through 9 (10 combinations).\n   - \\( b = 1 \\): \\( c \\) can be 0 through 5 (6 combinations).\n   - \\( b = 2 \\): \\( c \\) can be 0 through 2 (3 combinations).\n   - \\( b = 3 \\): \\( c \\) can be 0 or 1 (2 combinations).\n   - \\( b = 4 \\): \\( c \\) can be 0 or 1 (2 combinations).\n   - \\( b = 5 \\): \\( c \\) can only be 0 or 1 (2 combinations).\n\nSumming these, we get \\( 10 + 6 + 3 + 2 + 2 + 2 = 25 \\) combinations where \\( b \\times c \\leq 5 \\).",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:\n\n1. **First Digit**: Since the number should be greater than 2999, the first digit \\( a \\) can be 3, 4, 5, 6, 7, 8, or 9. Hence, there are 7 choices for the first digit.\n\n2. **Middle Two Digits**: Let's denote the middle two digits by \\( b \\) and \\( c \\). We need the product \\( b \\times c > 5 \\). Both \\( b \\) and \\( c \\) can range from 0 to 9, giving us \\( 10 \\times 10 = 100 \\) possible combinations for \\( b \\) and \\( c \\).",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To determine how many four-digit numbers greater than 2999 can be formed such that the product of the middle two digits exceeds 5, we can break down the problem as follows:",
+        "mc_value": 0.0,
+        "children": []
+      }
+    ]
+  },
+  "question_id": 6
+}
+{
+  "question": "I have 5 marbles numbered 1 through 5 in a bag.  Suppose I take out two different marbles at random.  What is the expected value of the sum of the numbers on the marbles?",
+  "final_answer": "6",
+  "reasoning_steps": {
+    "text": "I have 5 marbles numbered 1 through 5 in a bag.  Suppose I take out two different marbles at random.  What is the expected value of the sum of the numbers on the marbles?",
+    "mc_value": 1.0,
+    "children": [
+      {
+        "text": "To find the expected value of the sum of the numbers on the marbles, we can use the linearity of expectation. We first need to calculate the possible sums of the numbers on the two marbles and their probabilities.\n\nFirst, calculate all possible combinations of two different marbles from the five marbles. The combinations of two marbles are:\n\n1. (1, 2)\n2. (1, 3)\n3. (1, 4)\n4. (1, 5)\n5. (2, 3)\n6. (2, 4)\n7. (2, 5)\n8. (3, 4)\n9. (3, 5)\n10. (4, 5)\n\nNext, calculate the sum for each of these combinations:\n\n1. Sum of (1, 2) = 3\n2. Sum of (1, 3) = 4\n3. Sum of (1, 4) = 5\n4. Sum of (1, 5) = 6\n5. Sum of (2, 3) = 5\n6. Sum of (2, 4) = 6\n7. Sum of (2, 5) = 7\n8. Sum of (3, 4) = 7\n9. Sum of (3, 5) = 8\n10. Sum of (4, 5) = 9\n\nNow, the probability of each combination occurring is the same because each pair is equally likely to be chosen. There are 10 combinations in total, so the probability of each combination is 1/10.\n\nThe expected value \\(E\\) of the sum of the numbers is calculated by multiplying each sum by its probability and adding these products together:\n\n\\[ \nE = \\frac{1}{10}(3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9)\n\\]\n\nNow calculate the sum inside the parentheses:\n\n\\[\n3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9 = 60\n\\]\n\nFinally, calculate the expected value:\n\n\\[\nE = \\frac{1}{10} \\times 60 = 6\n\\]\n\nThe expected value of the sum of the numbers on the marbles is 6.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To complete the solution for finding the expected value of the sum of two different marbles drawn from the bag, we can continue from the point where we have already calculated the total number of ways to choose two marbles, which is \\(\\binom{5}{2} = 10\\).\n\nWe need to calculate the sum of all possible outcomes and divide it by the number of outcomes to find the expected value.\n\n**Step 1: List all possible outcomes and their sums.**\n\nPossible pairs and their sums:\n\n- (1, 2): Sum = 3\n- (1, 3): Sum = 4\n- (1, 4): Sum = 5\n- (1, 5): Sum = 6\n- (2, 3): Sum = 5\n- (2, 4): Sum = 6\n- (2, 5): Sum = 7\n- (3, 4): Sum = 7\n- (3, 5): Sum = 8\n- (4, 5): Sum = 9\n\n**Step 2: Calculate the total sum of all outcomes.**\n\nTotal sum = 3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9 = 60\n\n**Step 3: Calculate the expected value.**\n\nThe expected value (E) is given by the formula:\n\n\\[ E = \\frac{\\text{Total sum of all outcomes}}{\\text{Number of outcomes}} \\]\n\n\\[ E = \\frac{60}{10} = 6 \\]\n\nThus, the expected value of the sum of the numbers on the two marbles drawn is 6.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To find the expected value of the sum of the numbers on the marbles, we first need to determine all possible outcomes and their probabilities. \n\nThere are \\(\\binom{5}{2} = 10\\) ways to select 2 marbles from 5.\n\nPossible pairs and their sums are:\n1. (1, 2) \u2192 Sum = 3\n2. (1, 3) \u2192 Sum = 4\n3. (1, 4) \u2192 Sum = 5\n4. (1, 5) \u2192 Sum = 6\n5. (2, 3) \u2192 Sum = 5\n6. (2, 4) \u2192 Sum = 6\n7. (2, 5) \u2192 Sum = 7\n8. (3, 4) \u2192 Sum = 7\n9. (3, 5) \u2192 Sum = 8\n10. (4, 5) \u2192 Sum = 9\n\nNext, we calculate the expected value \\(E\\) of the sum of the numbers:\n\n\\[ \nE = \\frac{1}{10} \\times (3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9) \n\\]\n\nNow, calculate the sum inside the parentheses.\n\n\\[ \n3 + 4 + 5 + 6 + 5 + 6 + 7 + 7 + 8 + 9 = 60 \n\\]\n\nThen, divide by the number of outcomes:\n\n\\[ \nE = \\frac{60}{10} = 6 \n\\]\n\nTherefore, the expected value of the sum of the numbers on the marbles is 6.",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To find the expected value of the sum of the numbers on the two marbles drawn, we need to consider all possible pairs of marbles and their corresponding sums. We've already determined the possible pairs and their sums:\n\n- (1, 2): Sum = 3\n- (1, 3): Sum = 4\n- (1, 4): Sum = 5\n- (1, 5): Sum = 6\n- (2, 3): Sum = 5\n- (2, 4): Sum = 6\n- (2, 5): Sum = 7\n- (3, 4): Sum = 7\n- (3, 5): Sum = 8\n- (4, 5): Sum = 9\n\nNow, calculate the expected value of the sum of the numbers on the marbles.\n\n1. List the possible sums and their frequencies.\n   - Sum 3: Frequency = 1\n   - Sum 4: Frequency = 1\n   - Sum 5: Frequency = 2\n   - Sum 6: Frequency = 2\n   - Sum 7: Frequency = 2\n   - Sum 8: Frequency = 1\n   - Sum 9: Frequency = 1\n\n2. Calculate the total number of pairs.\n   - Total number of pairs = 10\n\n3. Calculate the expected value (E) using the formula:\n   \\[\n   E = \\frac{\\sum (\\text{Sum} \\times \\text{Frequency})}{\\text{Total number of pairs}}\n   \\]\n\n4. Substitute the sums and their frequencies into the formula:\n   \\[\n   E = \\frac{(3 \\times 1) + (4 \\times 1) + (5 \\times 2) + (6 \\times 2) + (7 \\times 2) + (8 \\times 1) + (9 \\times 1)}{10}\n   \\]\n\n5. Simplify the calculations:\n   \\[\n   E = \\frac{3 + 4 + 10 + 12 + 14 + 8 + 9}{10} = \\frac{60}{10} = 6\n   \\]\n\nTherefore, the expected value of the sum of the numbers on the marbles is 6.",
+        "mc_value": 1.0,
+        "children": []
+      }
+    ]
+  },
+  "question_id": 7
+}
+{
+  "question": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.",
+  "final_answer": "8",
+  "reasoning_steps": {
+    "text": "The number of increasing sequences of positive integers $a_1 \\le a_2 \\le a_3 \\le \\cdots \\le a_{10} \\le 2007$ such that $a_i-i$ is even for $1\\le i \\le 10$ can be expressed as ${m \\choose n}$ for some positive integers $m > n$. Compute the remainder when $m$ is divided by 1000.",
+    "mc_value": 0.75,
+    "children": [
+      {
+        "text": "To solve this problem, we need to count the number of increasing sequences of positive integers \\(a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007\\) such that \\(a_i - i\\) is even for \\(1 \\le i \\le 10\\).\n\nSince \\(a_i - i\\) must be even, we can write \\(a_i = 2b_i + i\\) for some integers \\(b_i\\). The sequence condition \\(a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007\\) translates to:\n\n\\[ 2b_1 + 1 \\le 2b_2 + 2 \\le \\cdots \\le 2b_{10} + 10 \\le 2007. \\]\n\nThis simplifies to:\n\n\\[ b_1 \\le b_2 \\le \\cdots \\le b_{10} \\]\n\nand \n\n\\[ b_{10} \\le 998. \\]\n\nNow, to count the number of such sequences of \\(b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\\), we can use the stars and bars method. Define \\(c_i = b_i + i\\), then \\(c_1 < c_2 < \\cdots < c_{10} \\le 1008\\). \n\nThis leads us to count the number of ways to choose 10 distinct integers from \\(\\{1, 2, \\ldots, 1008\\}\\), which is given by:\n\n\\[\n\\binom{1008}{10}.\n\\]\n\nNow, we need to express \\(\\binom{1008}{10}\\) in the form \\(\\binom{m}{n}\\) and find \\(m \\mod 1000\\). It is clear that \\(m = 1008\\) and \\(n = 10\\).\n\nFinally, compute \\(1008 \\mod 1000\\):\n\n\\[\n1008 \\equiv 8 \\pmod{1000}.\n\\]\n\nThus, the remainder when \\(m\\) is divided by 1000 is \\(\\boxed{8}\\).",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To solve the problem, we first interpret the condition \\( a_i - i \\) is even as \\( a_i \\equiv i \\pmod{2} \\). Therefore, we can express each \\( a_i \\) as \\( a_i = i + 2b_i \\) for some non-negative integers \\( b_i \\).\n\nGiven the constraints \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007 \\), we substitute \\( a_i = i + 2b_i \\) to get:\n\n\\[\ni + 2b_i \\le i+2b_{i+1} \\quad \\Rightarrow \\quad b_i \\le b_{i+1}\n\\]\n\nAnd for the upper bound,\n\n\\[\na_{10} = 10 + 2b_{10} \\le 2007 \\quad \\Rightarrow \\quad 2b_{10} \\le 1997 \\quad \\Rightarrow \\quad b_{10} \\le 998\n\\]\n\nThus, we need to find the number of non-decreasing sequences of non-negative integers \\( b_1, b_2, \\ldots, b_{10} \\) such that:\n\n\\[\n0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\n\\]\n\nThis is equivalent to finding the number of solutions to the equation:\n\n\\[\nb_1, b_2, \\ldots, b_{10} \\quad \\text{such that} \\quad 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\n\\]\n\nIf we let \\( c_i = b_i + i \\), then we have:\n\n\\[\n1 \\le c_1 < c_2 < \\cdots < c_{10} \\le 1008\n\\]\n\nThe number of such sequences \\( c_1, c_2, \\ldots, c_{10} \\) is given by choosing 10 distinct numbers from the set \\(\\{1, 2, \\ldots, 1008\\}\\). This count is given by the binomial coefficient:\n\n\\[\n{1008 \\choose 10}\n\\]\n\nHence, the expression for the number of sequences is \\({1008 \\choose 10}\\).\n\nTo find the remainder of \\( m = 1008 \\) when divided by 1000, we calculate:\n\n\\[\n1008 \\equiv 8 \\pmod{1000}\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is:\n\n\\[\n\\boxed{8}\n\\]",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To solve the problem, we first recognize the given condition that \\(a_i - i\\) is even for each \\(i\\). This implies that \\(a_i \\equiv i \\pmod{2}\\), so the sequence \\((a_1, a_2, \\ldots, a_{10})\\) is entirely determined by the sequence of differences \\((a_1-1, a_2-2, \\ldots, a_{10}-10)\\).\n\nNow, define \\(b_i = \\frac{a_i - i}{2}\\), which simplifies to \\(a_i = 2b_i + i\\). The condition \\(a_1 \\le a_2 \\le \\cdots \\le a_{10} \\le 2007\\) translates to:\n\n\\[\n2b_1 + 1 \\le 2b_2 + 2 \\le \\cdots \\le 2b_{10} + 10 \\le 2007.\n\\]\n\nSimplifying the inequalities, we get:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10},\n\\]\n\nand\n\n\\[\n2b_{10} + 10 \\le 2007.\n\\]\n\nThis implies:\n\n\\[\n2b_{10} \\le 1997 \\quad \\Rightarrow \\quad b_{10} \\le 998.5.\n\\]\n\nSince \\(b_{10}\\) is an integer, we have \\(b_{10} \\le 998\\).\n\nNext, consider \\(b_1, b_2, \\ldots, b_{10}\\) as a non-decreasing sequence of non-negative integers with \\(b_{10} \\le 998\\). This is equivalent to choosing 10 non-negative integers such that the largest is at most 998.\n\nWe can instead count the number of solutions to:\n\n\\[\nx_1 + x_2 + \\cdots + x_{10} \\le 998,\n\\]\n\nwhere \\(x_1, x_2, \\ldots, x_{10}\\) are non-negative integers. By introducing a slack variable \\(x_{11}\\) such that:\n\n\\[\nx_1 + x_2 + \\cdots + x_{10} + x_{11} = 998,\n\\]\n\nwe transform the problem into finding the number of non-negative integer solutions to the equation above. According to the stars and bars method, the number of solutions is:\n\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}.\n\\]\n\nThus, \\(m = 1008\\) and \\(n = 10\\). We are required to find the remainder of \\(m\\) when divided by 1000, which is:\n\n\\[\n1008 \\mod 1000 = 8.\n\\]\n\nTherefore, the remainder when \\(m\\) is divided by 1000 is \\(\\boxed{8}\\).",
+        "mc_value": 1.0,
+        "children": []
+      },
+      {
+        "text": "To solve the problem, we start by introducing a transformation to simplify the constraints. Define \\( b_i = \\frac{a_i - i}{2} \\). Since \\( a_i - i \\) is even for all \\( i \\), \\( b_i \\) is an integer. The condition \\( a_i \\le 2007 \\) translates to:\n\n\\[\nb_i = \\frac{a_i - i}{2} \\le \\frac{2007 - i}{2}\n\\]\n\nThis simplifies to \\( a_i = 2b_i + i \\), thus the sequence \\( (b_i) \\) must satisfy:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10}\n\\]\n\nand\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nThe sequence conditions \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\) automatically hold if \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\).\n\nNow, consider the upper bound for \\( b_i \\):\n\n\\[\nb_i \\le \\frac{2007 - i}{2} \\implies b_i \\le 1003.5 - \\frac{i}{2}\n\\]\n\nSince \\( b_i \\) must be an integer, we take the floor:",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To solve the problem, we start by introducing a transformation to simplify the constraints. Define \\( b_i = \\frac{a_i - i}{2} \\). Since \\( a_i - i \\) is even for all \\( i \\), \\( b_i \\) is an integer. The condition \\( a_i \\le 2007 \\) translates to:\n\n\\[\nb_i = \\frac{a_i - i}{2} \\le \\frac{2007 - i}{2}\n\\]\n\nThis simplifies to \\( a_i = 2b_i + i \\), thus the sequence \\( (b_i) \\) must satisfy:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10}\n\\]\n\nand",
+        "mc_value": 0.5,
+        "children": [
+          {
+            "text": "the condition for each \\( b_i \\) becomes:\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nTo ensure all \\( b_i \\) are integers, we consider the maximum possible value for each \\( b_i \\), which is the floor of the expression above:\n\n\\[\nb_i \\le \\left\\lfloor \\frac{2007 - i}{2} \\right\\rfloor\n\\]\n\nNow, let's determine the upper bound for \\( b_{10} \\):\n\n\\[\nb_{10} \\le \\left\\lfloor \\frac{2007 - 10}{2} \\right\\rfloor = \\left\\lfloor \\frac{1997}{2} \\right\\rfloor = 998\n\\]\n\nThus, we must count the number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) such that each \\( b_i \\) is a non-negative integer satisfying \\( b_i \\le 998 \\).\n\nThis is equivalent to finding the number of solutions in non-negative integers to the equation:\n\n\\[\nb_1 + b_2 + \\cdots + b_{10} \\le 998\n\\]\n\nUsing the stars and bars method, we introduce a new variable \\( x \\) to represent the total sum of all \\( b_i \\):\n\n\\[\nb_1 + b_2 + \\cdots + b_{10} + x = 998\n\\]\n\nwhere \\( x \\) is a non-negative integer. The number of solutions to this equation is given by the binomial coefficient:\n\n\\[\n{998 + 10 \\choose 10} = {1008 \\choose 10}\n\\]\n\nHence, \\( m = 1008 \\) and \\( n = 10 \\). The remainder when \\( m \\) is divided by 1000 is:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThus, the answer is \\(\\boxed{8}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "and\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nNext, we need to find the range for each \\( b_i \\). The maximum possible value for \\( b_i \\) is determined by the condition \\( b_i \\le \\frac{2007 - i}{2} \\). Therefore, \n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nFor \\( b_1 \\), \\( b_1 \\le \\frac{2007 - 1}{2} = 1003 \\).\n\nFor \\( b_2 \\), \\( b_2 \\le \\frac{2007 - 2}{2} = 1002.5 \\), so \\( b_2 \\le 1002 \\).\n\nContinuing this pattern, we find that\n\n\\[\nb_{10} \\le \\frac{2007 - 10}{2} = 998.5\n\\]\n\nso \\( b_{10} \\le 998 \\).\n\nNow, since the sequence \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) consists of non-negative integers and each \\( b_i \\) is bounded above as computed, we need to count the number of non-negative integer solutions to the inequality:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\n\\]\n\nThis is equivalent to choosing 10 elements (with repetition allowed) from the set \\(\\{0, 1, 2, \\ldots, 998\\}\\), which is a classic stars and bars problem in combinatorics.\n\nThe number of such sequences is given by the binomial coefficient:\n\n\\[\n{998 + 10 \\choose 10} = {1008 \\choose 10}\n\\]\n\nFinally, to find the remainder when \\( m = 1008 \\) is divided by 1000, compute:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nThe sequence conditions \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\) automatically hold if \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\).",
+            "mc_value": 0.25,
+            "children": [
+              {
+                "text": "To count the number of sequences \\( (b_1, b_2, \\ldots, b_{10}) \\), notice that \\( b_i \\) must satisfy the conditions:\n\n1. \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\)\n2. \\( b_i \\le \\frac{2007 - i}{2} \\)\n\nThis can be thought of as placing 10 indistinguishable items (the values of \\( b_i \\)) into bins labeled from 0 to \\( \\left\\lfloor \\frac{2007-i}{2} \\right\\rfloor \\).\n\nFirst, calculate the maximum value of \\( b_{10} \\):\n\n\\[\nb_{10} \\le \\frac{2007 - 10}{2} = \\frac{1997}{2} = 998.5\n\\]\n\nSince \\( b_i \\) must be an integer, \\( b_{10} \\le 998 \\).\n\nThe problem now reduces to finding the number of non-decreasing sequences \\( (b_1, b_2, \\ldots, b_{10}) \\) such that \\( 0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\).\n\nUsing the \"stars and bars\" method, the number of such sequences is equivalent to the number of ways to choose 10 non-negative integers \\( c_0, c_1, \\ldots, c_{998} \\) such that:\n\n\\[\nc_0 + c_1 + \\cdots + c_{998} = 10\n\\]\n\nThis is given by:\n\n\\[\n\\binom{10 + 998}{998} = \\binom{1008}{10}\n\\]\n\nTherefore, the expression for the number of sequences is:\n\n\\[\n\\binom{1008}{10}\n\\]\n\nFinally, compute the remainder when 1008 is divided by 1000:\n\n\\[\n1008 \\equiv 8 \\pmod{1000}\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\( \\boxed{8} \\).",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "Now, consider the upper bound for \\( b_i \\):",
+                "mc_value": 0.75,
+                "children": [
+                  {
+                    "text": "The upper bound for \\( b_i \\) is given by the expression:\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nTo simplify, note that \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) implies \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le \\frac{2007 - 10}{2} = 998.5 \\). Since \\( b_i \\) must be an integer, we have:\n\n\\[\nb_i \\le 998\n\\]\n\nThus, each \\( b_i \\) can range from 0 to 998, subject to the non-decreasing condition \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\).\n\nNext, we need to determine the number of non-decreasing sequences \\( b_1, b_2, \\ldots, b_{10} \\) where each \\( b_i \\) is an integer between 0 and 998. This is a classic \"stars and bars\" problem where we need to distribute 10 indistinguishable items (the sequence values \\( b_i \\)) into 999 distinguishable bins (the possible values from 0 to 998).\n\nThe number of ways to do this is given by the formula for combinations with repetition:\n\n\\[\n{n+k-1 \\choose k} = {998 + 10 \\choose 10}\n\\]\n\nwhere \\( n = 999 \\) (the number of bins) and \\( k = 10 \\) (the number of items).\n\nNow we need to express this as a binomial coefficient and find \\( m \\) and \\( n \\) such that:\n\n\\[\n{m \\choose n} = {1008 \\choose 10}\n\\]\n\nTo find the remainder when \\( m = 1008 \\) is divided by 1000, we calculate:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+                    "mc_value": 1.0,
+                    "children": []
+                  },
+                  {
+                    "text": "The upper bound for \\( b_i \\) is given by:\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nThis implies that each \\( b_i \\) satisfies:\n\n\\[\nb_i \\le 1003 - \\frac{i}{2}\n\\]\n\nSince \\( b_i \\) must also be an integer, we further refine this to:\n\n\\[\nb_i \\le \\left\\lfloor 1003 - \\frac{i}{2} \\right\\rfloor\n\\]\n\nNow let's transform the sequence \\( b_1, b_2, \\ldots, b_{10} \\) into a standard stars and bars problem. The conditions \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) can be rephrased as finding non-negative integer solutions to:\n\n\\[\nx_1 + x_2 + \\cdots + x_{10} = N\n\\]\n\nwhere \\( x_i = b_i - b_{i-1} \\) for \\( i = 2, 3, \\ldots, 10 \\) and \\( x_1 = b_1 \\). Here, \\( N \\) is the maximum value that \\( b_{10} \\) can take, which is:\n\n\\[\nb_{10} \\le \\left\\lfloor 1003 - \\frac{10}{2} \\right\\rfloor = \\left\\lfloor 1003 - 5 \\right\\rfloor = 998\n\\]\n\nLet \\( b_1 = y \\). Then:\n\n\\[\ny \\le 998\n\\]\n\nand there are no further restrictions on \\( y \\) as long as it satisfies the sequence constraint.\n\nWe count the number of ways to distribute the remainder \\( N - y \\) into 10 non-negative parts. The total number of solutions is a combination problem where we choose 10 partitions among \\( N' = 998 \\), which is given by:\n\n\\[\n{N' + 9 \\choose 9}\n\\]\n\nThus, we have:\n\n\\[\n{998 + 10 - 1 \\choose 10 - 1} = {1007 \\choose 9}\n\\]\n\nFinally, we need to compute the remainder when 1007 is divided by 1000:\n\n\\[\n1007 \\equiv 7 \\pmod{1000}\n\\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{7}\\).",
+                    "mc_value": 1.0,
+                    "children": []
+                  },
+                  {
+                    "text": "The upper bound for \\( b_i \\) is given by:\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nFor simplicity, let's define:\n\n\\[\nc_i = \\frac{2007 - i}{2}\n\\]\n\nThus, we need to find the number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) such that \\( b_i \\le c_i \\) for each \\( i \\).\n\nLet's further transform the sequence \\( b_i \\) to a sequence \\( x_i \\) of non-negative integers where:\n\n\\[\nx_i = b_i + 10 - i\n\\]\n\nThis transformation ensures that the sequence \\( x_1, x_2, \\ldots, x_{10} \\) is non-decreasing, \\( x_1 \\le x_2 \\le \\cdots \\le x_{10} \\), without changing the count of sequences.\n\nThe constraint \\( b_i \\le c_i \\) becomes:\n\n\\[\nb_i = x_i - (10 - i) \\le c_i = \\frac{2007 - i}{2}\n\\]\n\nSimplifying the inequality, we get:\n\n\\[\nx_i \\le \\frac{2007 - i}{2} + (10 - i)\n\\]\n\nCompute the maximum value of \\( x_{10} \\) (which is the largest value since the sequence is non-decreasing):\n\n\\[\nx_{10} \\le \\frac{2007 - 10}{2} + (10 - 10) = \\frac{1997}{2} = 998.5\n\\]\n\nSince \\( x_{10} \\) must be an integer, we have:\n\n\\[\nx_{10} \\le 998\n\\]\n\nThe problem then reduces to finding the number of non-decreasing sequences of non-negative integers \\( x_1 \\le x_2 \\le \\cdots \\le x_{10} \\) such that \\( x_{10} \\le 998 \\).\n\nThis is a classic stars and bars problem, counting the number of weak compositions of 998 (the maximum value \\( x_{10} \\) can take) into 10 non-negative parts.\n\nThe number of such sequences is given by the binomial coefficient:\n\n\\[\n\\binom{998 + 10}{10} = \\binom{1008}{10}\n\\]\n\nThus, we have \\( m = 1008 \\) and \\( n = 10 \\). Finally, we need to compute the remainder when \\( m = 1008 \\) is divided by 1000:\n\n\\[\n1008 \\equiv 8 \\pmod{1000}\n\\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\( \\boxed{8} \\).",
+                    "mc_value": 1.0,
+                    "children": []
+                  },
+                  {
+                    "text": "\\[\nb_i \\le \\frac{2007 - i}{2} \\implies b_i \\le 1003.5 - \\frac{i}{2}\n\\]",
+                    "mc_value": 0.25,
+                    "children": [
+                      {
+                        "text": "Continuing from where we left off, since \\( b_i \\) must be an integer, we take the floor of the upper bound:\n\n\\[\nb_i \\le \\left\\lfloor 1003.5 - \\frac{i}{2} \\right\\rfloor = 1003 - \\left\\lfloor \\frac{i}{2} \\right\\rfloor\n\\]\n\nFor each \\( i \\), the sequence \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) must satisfy:\n\n\\[\n0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 1003 - \\left\\lfloor \\frac{i}{2} \\right\\rfloor\n\\]\n\nTo find the number of such sequences, we use a transformation that converts the problem into a combinatorial one. Define \\( c_i = b_i + (i-1) \\). Then we get:\n\n\\[\nc_1 < c_2 < \\cdots < c_{10}\n\\]\n\nand\n\n\\[\nc_i \\le 1003 - \\left\\lfloor \\frac{i}{2} \\right\\rfloor + (i-1)\n\\]\n\nNotice that the largest possible value for \\( c_{10} \\) is:\n\n\\[\nc_{10} \\le 1003 - \\left\\lfloor \\frac{10}{2} \\right\\rfloor + 9 = 1003 - 5 + 9 = 1007\n\\]\n\nThe transformation \\( c_i = b_i + (i-1) \\) increases each \\( b_i \\) by a different amount, essentially shifting the problem into finding the number of ways to choose 10 distinct integers from the set \\(\\{0, 1, 2, \\ldots, 1007\\}\\).\n\nThis is equivalent to choosing 10 positions from 1008 possible positions (since they are indexed from 0 to 1007). Therefore, the number of increasing sequences \\( (b_1, b_2, \\dots, b_{10}) \\) is given by:\n\n\\[\n{1008 \\choose 10}\n\\]\n\nFinally, compute the remainder when \\( m = 1008 \\) is divided by 1000:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+                        "mc_value": 1.0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "To solve the problem, we start by introducing a transformation to simplify the constraints. Define \\( b_i = \\frac{a_i - i}{2} \\). Since \\( a_i - i \\) is even for all \\( i \\), \\( b_i \\) is an integer. The condition \\( a_i \\le 2007 \\) translates to:\n\n\\[\nb_i = \\frac{a_i - i}{2} \\le \\frac{2007 - i}{2}\n\\]\n\nThis simplifies to \\( a_i = 2b_i + i \\), thus the sequence \\( (b_i) \\) must satisfy:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10}\n\\]\n\nand\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nThe sequence conditions \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\) automatically hold if \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\).\n\nNow, consider the upper bound for \\( b_i \\):\n\n\\[\nb_i \\le \\frac{2007 - i}{2} \\implies b_i \\le 1003.5 - \\frac{i}{2}\n\\]\n\nSince \\( b_i \\) must be an integer, we take the floor:",
+        "mc_value": 0.0,
+        "children": []
+      },
+      {
+        "text": "To solve the problem, we start by introducing a transformation to simplify the constraints. Define \\( b_i = \\frac{a_i - i}{2} \\). Since \\( a_i - i \\) is even for all \\( i \\), \\( b_i \\) is an integer. The condition \\( a_i \\le 2007 \\) translates to:\n\n\\[\nb_i = \\frac{a_i - i}{2} \\le \\frac{2007 - i}{2}\n\\]\n\nThis simplifies to \\( a_i = 2b_i + i \\), thus the sequence \\( (b_i) \\) must satisfy:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10}\n\\]\n\nand",
+        "mc_value": 0.75,
+        "children": [
+          {
+            "text": "and\n\n\\[\nb_i \\le \\frac{2007 - i}{2}.\n\\]\n\nTo further simplify, note that the condition \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) is equivalent to finding non-negative integer solutions to:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10} \\le \\left\\lfloor \\frac{2007 - 10}{2} \\right\\rfloor = 998.\n\\]\n\nWe introduce a new variable \\( c_i = b_i + i - 1 \\), transforming the condition to:\n\n\\[\nc_1 < c_2 < \\cdots < c_{10} \\le 1007.\n\\]\n\nThis is equivalent to choosing 10 distinct numbers from the set \\(\\{0, 1, 2, \\ldots, 1007\\}\\), and the number of ways to choose 10 numbers from 1008 numbers is given by:\n\n\\[\n\\binom{1008}{10}.\n\\]\n\nThus, \\( m = 1008 \\) and \\( n = 10 \\).\n\nFinally, compute the remainder when \\( m = 1008 \\) is divided by 1000:\n\n\\[\n1008 \\equiv 8 \\pmod{1000}.\n\\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\( \\boxed{8} \\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "the constraint for each \\( b_i \\) becomes:\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nTo simplify, note that the largest possible \\( b_i \\) for \\( i = 10 \\) is:\n\n\\[\nb_{10} \\le \\frac{2007 - 10}{2} = \\frac{1997}{2} = 998\n\\]\n\nWe need to determine the number of non-negative integer sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998 \\).\n\nThis is equivalent to choosing 10 non-negative integers (with repetition) that do not exceed 998, which can be solved using the stars and bars method. The number of non-negative integer solutions to:\n\n\\[\nx_1 + x_2 + \\cdots + x_{10} \\le 998\n\\]\n\nis the same as finding the number of solutions to:\n\n\\[\nx_1 + x_2 + \\cdots + x_{10} + x_{11} = 998\n\\]\n\nwhere \\( x_{11} \\) represents the leftover amount to reach 998.\n\nThe number of solutions is given by:\n\n\\[\n{998 + 10 \\choose 10} = {1008 \\choose 10}\n\\]\n\nNow we need to compute the remainder when 1008 is divided by 1000. Since 1008 modulo 1000 is simply the last three digits of 1008, we have:\n\n\\[\n1008 \\equiv 8 \\pmod{1000}\n\\]\n\nTherefore, the remainder when \\( m = 1008 \\) is divided by 1000 is \\(\\boxed{8}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "\\[\nb_{10} \\le \\frac{2007 - 10}{2} = 998.5\n\\]\n\nSince \\( b_i \\) must be an integer, we have:\n\n\\[\nb_{10} \\le 998\n\\]\n\nThus, the sequence \\( (b_1, b_2, \\ldots, b_{10}) \\) consists of non-negative integers such that:\n\n\\[\n0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\n\\]\n\nWe need to find the number of such sequences. This is equivalent to finding the number of non-negative integer solutions to the equation:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\n\\]\n\nBy the \"stars and bars\" method, this problem can be converted into finding the number of ways to place 9 dividers (bars) among the numbers 0 through 998 (stars). The number of stars is \\( 998 + 10 - 1 = 1007 \\), therefore, the number of solutions is:\n\n\\[\n\\binom{1008}{10}\n\\]\n\nThis binomial coefficient represents the number of ways to choose 10 positions for the dividers among the 1008 available spots.\n\nFinally, we need to find the remainder when \\( m = 1008 \\) is divided by 1000. Calculating this gives:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+            "mc_value": 1.0,
+            "children": []
+          },
+          {
+            "text": "\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nThe sequence conditions \\( a_1 \\le a_2 \\le \\cdots \\le a_{10} \\) automatically hold if \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\).",
+            "mc_value": 0.75,
+            "children": [
+              {
+                "text": "Continuing from where we left off, we need to determine the possible values for each \\( b_i \\) under the given conditions. \n\nFirst, let's rewrite the inequality for each \\( b_i \\):\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nLet's examine the maximum value for \\( b_{10} \\):\n\n\\[\nb_{10} \\le \\frac{2007 - 10}{2} = \\frac{1997}{2} = 998.5\n\\]\n\nSince \\( b_{10} \\) must be an integer, we have:\n\n\\[\nb_{10} \\le 998\n\\]\n\nSimilarly, for \\( b_1 \\), we have:\n\n\\[\nb_1 \\le \\frac{2007 - 1}{2} = \\frac{2006}{2} = 1003\n\\]\n\nThus, the sequence \\( (b_1, b_2, \\ldots, b_{10}) \\) can be any non-decreasing sequence of integers satisfying:\n\n\\[\n0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\n\\]\n\nThis is equivalent to finding the number of non-negative integer solutions to the equation:\n\n\\[\nx_1 + x_2 + \\cdots + x_{999} = 10\n\\]\n\nwhere \\( x_i \\) represents the number of times \\( i-1 \\) appears in the sequence \\( (b_1, b_2, \\ldots, b_{10}) \\).\n\nThe number of solutions to this equation is given by the \"stars and bars\" method:\n\n\\[\n\\binom{10 + 999 - 1}{999 - 1} = \\binom{1008}{9}\n\\]\n\nThus, the sequence can be expressed as \\( \\binom{1008}{9} \\).\n\nFinally, we need to find the remainder of \\( m = 1008 \\) when divided by 1000. Therefore, the remainder is:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThe final answer is \\(\\boxed{8}\\).",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "Next, we need to determine the range for each \\( b_i \\). The maximum value \\( b_i \\) can take is given by:\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nTo simplify the expression, note that \\( b_i \\) is also a non-negative integer. Therefore, we have:\n\n\\[\n0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le \\frac{2007 - 10}{2} = 998.5\n\\]\n\nSince \\( b_i \\) is an integer, the maximum possible value for \\( b_{10} \\) is 998. Thus, we have:\n\n\\[\n0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\n\\]\n\nNow, we need to count the number of non-decreasing sequences \\( (b_1, b_2, \\ldots, b_{10}) \\) where each \\( b_i \\) is an integer satisfying the above conditions. This is a classic stars and bars problem.\n\nThe number of such sequences can be determined by considering \\( b_1, b_2, \\ldots, b_{10} \\) as \\( x_1 \\le x_2 \\le \\cdots \\le x_{10} \\), where each \\( x_i \\) is a non-negative integer and \\( x_{10} \\le 998 \\).\n\nDefine \\( y_i = x_i + i - 1 \\) for \\( i = 1, 2, \\ldots, 10 \\). This transformation makes the sequence \\( (y_1, y_2, \\ldots, y_{10}) \\) strictly increasing, with:\n\n\\[\n0 + 0 \\le y_1 < y_2 < \\cdots < y_{10} \\le 998 + 9 = 1007\n\\]\n\nThe number of such sequences \\( (y_1, y_2, \\ldots, y_{10}) \\) is the number of ways to choose 10 distinct integers from the set \\( \\{0, 1, 2, \\ldots, 1007\\} \\). This is given by:\n\n\\[\n\\binom{1008}{10}\n\\]\n\nWe need to express this in the form \\( \\binom{m}{n} \\) and find the remainder when \\( m \\) is divided by 1000. Clearly, in this case, \\( m = 1008 \\) and \\( n = 10 \\).\n\nFinally, compute the remainder of \\( m = 1008 \\) when divided by 1000:\n\n\\[\n1008 \\equiv 8 \\pmod{1000}\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "From the transformation, we have \\( b_i = \\frac{a_i - i}{2} \\), which are non-negative integers satisfying \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\). The condition \\( a_i \\le 2007 \\) translates to:\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nNow consider the sequence of inequalities:\n\n\\[\nb_1 \\le b_2 \\le \\cdots \\le b_{10}\n\\]\n\nWe transform this into a problem of counting non-decreasing sequences of integers. To express this in terms of combinations, we consider the constraints \\( b_i \\le \\frac{2007 - i}{2} \\). The maximum value for \\( b_i \\) is:\n\n\\[\nb_i \\le \\frac{2007 - i}{2} = 1003.5 - \\frac{i}{2}\n\\]\n\nSince \\( b_i \\) must be an integer, we take the floor:\n\n\\[\nb_i \\le \\left\\lfloor 1003.5 - \\frac{i}{2} \\right\\rfloor = 1003 - \\left\\lfloor \\frac{i}{2} \\right\\rfloor\n\\]\n\nFor \\( i = 1, 2, \\ldots, 10 \\), we have:\n\n\\[\n\\begin{align*}\nb_1 &\\le 1003, \\\\\nb_2 &\\le 1002, \\\\\nb_3 &\\le 1002, \\\\\nb_4 &\\le 1001, \\\\\nb_5 &\\le 1001, \\\\\nb_6 &\\le 1000, \\\\\nb_7 &\\le 1000, \\\\\nb_8 &\\le 999, \\\\\nb_9 &\\le 999, \\\\\nb_{10} &\\le 998.\n\\end{align*}\n\\]\n\nThe problem now becomes counting the number of solutions to the inequality:\n\n\\[\n0 \\le b_1 \\le b_2 \\le \\cdots \\le b_{10} \\le 998\n\\]\n\nThis is equivalent to finding the number of non-decreasing sequences of length 10 where each term is between 0 and 998. This can be solved using the \"stars and bars\" method for multisets, which is a combinatorial method to find the number of ways to distribute \\( n \\) identical items into \\( k \\) distinct groups.\n\nThe problem translates to counting the number of multisets of size 10 from a set of size 999:\n\n\\[\n\\text{Number of solutions} = \\binom{999 + 10 - 1}{10} = \\binom{1008}{10}\n\\]\n\nThus, the expression for \\( m \\) and \\( n \\) is:\n\n\\[\nm = 1008, \\quad n = 10\n\\]\n\nFinally, we need to find the remainder when \\( m = 1008 \\) is divided by 1000. Calculating this, we find:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+                "mc_value": 1.0,
+                "children": []
+              },
+              {
+                "text": "Now, consider the upper bound for \\( b_i \\):",
+                "mc_value": 0.5,
+                "children": [
+                  {
+                    "text": "The upper bound for \\( b_i \\) is given by:\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nThis means \\( b_i \\) must be an integer such that \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) and \\( b_i \\) satisfies the above inequality for each \\( i \\).\n\nNext, let's find the maximum possible value for \\( b_{10} \\). For \\( i = 10 \\), we have:\n\n\\[\nb_{10} \\le \\frac{2007 - 10}{2} = \\frac{1997}{2} = 998.5\n\\]\n\nSince \\( b_{10} \\) must be an integer, the maximum possible value for \\( b_{10} \\) is 998.\n\nNow, note that the sequence \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) is weakly increasing, with each \\( b_i \\) being an integer between 0 and 998. Let \\( x_i = b_i + (10 - i) \\), for \\( i = 1, 2, \\ldots, 10 \\). Then the sequence \\( x_i \\) is strictly increasing, and each \\( x_i \\) is an integer between 0 and 998 + 9 = 1007.\n\nWe need to count the number of strictly increasing sequences \\( x_1, x_2, \\ldots, x_{10} \\) where \\( 0 \\le x_1 < x_2 < \\cdots < x_{10} \\le 1007 \\).\n\nThis is equivalent to choosing 10 distinct integers from the set \\( \\{0, 1, 2, \\ldots, 1007\\} \\), which can be done in:\n\n\\[\n{1008 \\choose 10}\n\\]\n\nNow, \\( {1008 \\choose 10} \\) is the expression for the number of such sequences. The problem states that this expression can be written as \\( {m \\choose n} \\) and asks for the remainder when \\( m \\) is divided by 1000.\n\nIn this case, we have:\n\n\\[\nm = 1008\n\\]\n\nTo find the remainder when \\( m = 1008 \\) is divided by 1000, we calculate:\n\n\\[\n1008 \\mod 1000 = 8\n\\]\n\nThus, the remainder when \\( m \\) is divided by 1000 is \\(\\boxed{8}\\).",
+                    "mc_value": 1.0,
+                    "children": []
+                  },
+                  {
+                    "text": "The upper bound for \\( b_i \\) is given by\n\n\\[\nb_i \\le \\frac{2007 - i}{2}\n\\]\n\nWe can express this as:\n\n\\[\nb_i \\le 1003 - \\frac{i}{2}\n\\]\n\nSince \\( b_i \\) must be an integer, we actually have:\n\n\\[\nb_i \\le \\left\\lfloor 1003 - \\frac{i}{2} \\right\\rfloor\n\\]\n\nNow let us transform these inequalities into a form more amenable to combinatorial counting. We will define new variables to count the non-decreasing sequences of \\( b_i \\).\n\nDefine \\( c_i = b_i + i \\). Then the condition \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) becomes:\n\n\\[\nc_1 < c_2 < \\cdots < c_{10}\n\\]\n\nAdditionally, using the upper bound condition on \\( b_i \\),\n\n\\[\nb_i \\le 1003 - \\frac{i}{2}\n\\]\n\ntransforms to\n\n\\[\nc_i \\le 1003 + \\frac{i}{2}\n\\]\n\nSince \\( c_i = b_i + i \\), and \\( b_i \\) is an integer, we have:\n\n\\[\nc_i \\le 1003 + \\frac{i}{2} + i - i = 1003 + \\frac{i}{2}\n\\]\n\nFor combinatorial purposes, note that \\( c_i \\) are distinct integers. Define:\n\n\\[\nd_i = c_i - i = b_i\n\\]\n\nThen the condition \\( c_1 < c_2 < \\cdots < c_{10} \\) translates to choosing 10 distinct numbers \\( d_1, d_2, \\ldots, d_{10} \\) from the available range for each \\( i \\).\n\nTo count the number of ways to choose these numbers, note that the sequence \\( d_1, d_2, \\ldots, d_{10} \\) is subject to the conditions:\n\n1. \\( d_i \\le 1003 + \\frac{i}{2} - i \\)\n2. \\( d_i \\) are integers.\n\nThus, we need to find the number of distinct sequences \\((d_1, d_2, \\ldots, d_{10})\\).\n\nBy transforming the constraints and using these inequalities, we can reformulate the problem as a combinatorial selection:\n\nChoose 10 numbers from a set of available indices representing valid \\( d_i \\), bounded by the maximum constraints.\n\nFinally, the total number of such sequences is given by:\n\n\\[\n{m \\choose 10}\n\\]\n\nwhere \\( m \\) is the maximum possible value for the largest \\( d_i \\) plus the number of \\( d_i \\). Compute \\( m \\) and find the remainder of \\( m \\) when divided by 1000.\n\n\\[\nm = 2008\n\\]\n\nTherefore, the remainder when \\( m \\) is divided by 1000 is:\n\n\\[\n\\boxed{8}\n\\]",
+                    "mc_value": 1.0,
+                    "children": []
+                  },
+                  {
+                    "text": "\\[\nb_i \\le \\frac{2007 - i}{2} \\implies b_i \\le 1003.5 - \\frac{i}{2}\n\\]",
+                    "mc_value": 0.25,
+                    "children": [
+                      {
+                        "text": "Continuing from the transformation, we know that \\( b_i \\) must be an integer, so the condition \\( b_i \\le 1003.5 - \\frac{i}{2} \\) tells us that:\n\n\\[\nb_i \\le \\left\\lfloor 1003.5 - \\frac{i}{2} \\right\\rfloor = 1003 - \\left\\lfloor \\frac{i}{2} \\right\\rfloor\n\\]\n\nSince \\( \\left\\lfloor \\frac{i}{2} \\right\\rfloor = \\left\\{\n\\begin{array}{ll}\n\\frac{i}{2} & \\text{if } i \\text{ is even} \\\\\n\\frac{i-1}{2} & \\text{if } i \\text{ is odd}\n\\end{array}\n\\right. \\), we have:\n\n\\[\nb_i \\le 1003 - \\left\\lfloor \\frac{i}{2} \\right\\rfloor\n\\]\n\nNext, consider the transformation of the problem into a combinatorial one. We want to count the number of non-decreasing sequences \\( b_1 \\le b_2 \\le \\cdots \\le b_{10} \\) where each \\( b_i \\) is constrained by the above condition.\n\nTo simplify, define the adjusted variables \\( c_i = b_i + (10 - i) \\) so that the inequality \\( c_1 \\le c_2 \\le \\cdots \\le c_{10} \\) holds automatically. The conditions become:\n\n\\[\nb_i \\le 1003 - \\left\\lfloor \\frac{i}{2} \\right\\rfloor \\implies c_i \\le 1003 - \\left\\lfloor \\frac{i}{2} \\right\\rfloor + (10-i)\n\\]\n\nNow, each \\( c_i \\) is bounded by \\( 1003 + 10 - i - \\left\\lfloor \\frac{i}{2} \\right\\rfloor = 1013 - i - \\left\\lfloor \\frac{i}{2} \\right\\rfloor \\).\n\nSince \\( c_i \\) are non-negative integers, consider the sequence:\n\n\\[\nc_1 \\le c_2 \\le \\cdots \\le c_{10} \\le 1013 - 1 - \\left\\lfloor \\frac{1}{2} \\right\\rfloor, 1013 - 2 - \\left\\lfloor \\frac{2}{2} \\right\\rfloor, \\ldots, 1013 - 10 - \\left\\lfloor \\frac{10}{2} \\right\\rfloor\n\\]\n\nwhich translates to:\n\n\\[\nc_1 \\le c_2 \\le \\cdots \\le c_{10} \\le 1008\n\\]\n\nThe problem is now equivalent to distributing 10 indistinguishable items (representing the sequence terms \\( c_i \\)) into 1009 distinguishable bins (from \\( 0 \\) to \\( 1008 \\)).\n\nThis is a classic stars and bars problem, and the number of solutions is given by the binomial coefficient:\n\n\\[\n{1009 + 10 - 1 \\choose 10} = {1018 \\choose 10}\n\\]\n\nThus, \\( m = 1018 \\) and \\( n = 10 \\). Finally, compute the remainder when \\( m = 1018 \\) is divided by 1000:\n\n\\[\n1018 \\mod 1000 = 18\n\\]\n\nSo, the remainder when \\( m \\) is divided by 1000 is \\( \\boxed{18} \\).",
+                        "mc_value": 1.0,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "question_id": 9
+}
