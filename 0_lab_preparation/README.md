@@ -24,6 +24,7 @@ Please create a resource in one of following regions when creating a AI Document
 - Create a project in [Azure AI Foundry].
 - For LLM training, recommend a single NVIDIA A100 GPU (**[Standard_NC24ads_A100_v4]**). Opt for Low-priority VMs if on a budget or without a dedicated quota. And the quota should be better request in [Azure ML].
 - For LLM serving, we recommend two NVIDIA V100 GPUs (**[Standard_NC6s_v3]**). Please refer to the note below for why 2 GPUs are required instead of 1 for Azure ML serving. And the quota should be better request in [Azure ML].
+- for LLMOps, we need to grant ***Storage File Data Privileged Contributor, Storage Blob Data Contributor*** at the storage of AI Foundry role to user, group, service principle and managed Identity which you are trying to access the data.
 
 ### Deploying Azure resources with Azure Developer CLI(azd) and Azure CLI(az)
 In case you're looking for the easiest way to get started, this lab provides Bicep to provision everything with ease. The steps below will provision required Azure resources. Download the CLI from the [What is the Azure Developer CLI?](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/overview?tabs=windows#a-sample-azd-workflow) and [Install the Azure CLI on Linux ](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)if you don't have it installed yet. 
