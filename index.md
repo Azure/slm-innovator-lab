@@ -43,6 +43,7 @@ Before starting, you have met the following requirements:
 - ***[Compute instance - for code development]*** A low-end instance without GPU is recommended: **[Standard_E2as_v4]** (AMD 2 cores, 16GB RAM, 32GB storage) or **[Standard_DS11_v2]** (Intel 2 cores, 14GB RAM, 28GB storage, No GPUs)  
 - ***[Compute cluster - for SLM/LLM fine-tuning]*** A single NVIDIA A100 GPU node (**[Standard_NC24ads_A100_v4]**) is recommended. If you do not have a dedicated quota or are on a tight budget, choose **[Low-priority VM]**.
 - ***[SLM/LLM deployment]*** Two NVIDIA V100 GPUs (**[Standard_NC6s_v3]**) or two NVIDIA A100 GPUs (**[Standard_NC24ads_A100_v4]**) are recommended. 
+- ***[Evaluation driven LLMOps]*** Need to grant ***Storage File Data Privileged Contributor, Storage Blob Data Contributor*** at the storage of AI Foundry role to user, group, service principle and managed Identity which you are trying to access the data.
 
 
 ## 3. How to get started 

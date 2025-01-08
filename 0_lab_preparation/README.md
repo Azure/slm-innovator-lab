@@ -22,11 +22,12 @@ Please create a resource in one of following regions when creating a AI Document
 - Ensure you have access to [Azure OpenAI] Service.
 - Set up your [Azure ML] workspace and get your `<WORKSPACE_NAME>`, `<RESOURCE_GROUP>` and `<SUBSCRIPTION_ID>`.
 - Create a project in [Azure AI Foundry].
-- For LLM training, recommend a single NVIDIA A100 GPU (**[Standard_NC24ads_A100_v4]**). Opt for Low-priority VMs if on a budget or without a dedicated quota.
-- For LLM serving, we recommend two NVIDIA V100 GPUs (**[Standard_NC6s_v3]**). Please refer to the note below for why 2 GPUs are required instead of 1 for Azure ML serving.
+- For LLM training, recommend a single NVIDIA A100 GPU (**[Standard_NC24ads_A100_v4]**). Opt for Low-priority VMs if on a budget or without a dedicated quota. And the quota should be better request in [Azure ML].
+- For LLM serving, we recommend two NVIDIA V100 GPUs (**[Standard_NC6s_v3]**). Please refer to the note below for why 2 GPUs are required instead of 1 for Azure ML serving. And the quota should be better request in [Azure ML].
+- for LLMOps, we need to grant ***Storage File Data Privileged Contributor, Storage Blob Data Contributor*** at the storage of AI Foundry role to user, group, service principle and managed Identity which you are trying to access the data.
 
-### Deploying Azure resources with Azure Developer CLI(azd)
-In case you're looking for the easiest way to get started, this lab provides Bicep to provision everything with ease. The steps below will provision required Azure resources. Download the CLI from the [What is the Azure Developer CLI?](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/overview?tabs=windows#a-sample-azd-workflow) if you don't have it installed yet. 
+### Deploying Azure resources with Azure Developer CLI(azd) and Azure CLI(az)
+In case you're looking for the easiest way to get started, this lab provides Bicep to provision everything with ease. The steps below will provision required Azure resources. Download the CLI from the [What is the Azure Developer CLI?](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/overview?tabs=windows#a-sample-azd-workflow) and [Install the Azure CLI on Linux ](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt)if you don't have it installed yet. 
 
 Login to your Azure account:
 
@@ -39,6 +40,13 @@ For GitHub Codespaces users, if the previous command fails, try:
 ```shell
  azd auth login --use-device-code
 ```
+And then please run below command:
+
+```shell
+ az ad signed-in-user show --query id  --output tsv
+```
+Get the objectId of current user.
+***Get it for the below command azd up's input paramter 'currentUserObjectId'***
 
 Run azd up - This will provision Azure resources including Azure ML workspace, Azure OpenAI resources, Application Insights, and Azure Document Intelligence.
 
@@ -46,6 +54,11 @@ Run azd up - This will provision Azure resources including Azure ML workspace, A
 
 azd up
 ```
+
+***when you see the message "Enter a value for the 'currentUserObjectId' infrastructure parameter" then paste the output of command" az ad signed-in-user show --query id  --output tsv"***
+
+After executing the `azd up` command, an `.azure` folder will be generated under the `0_lab_preparation` directory. Within the subfiles of the `.azure` folder, you can locate the `.env` file required to access the resources created by the `azd up` command. Copy this `.env` file to the root directory of this workshop project, and replace the dummy KEY values with the your actual KEYs.
+
 **Important**: Beware that the resources created by this command will incur immediate costs, primarily from the AI Search resource. These resources may accrue costs even if you interrupt the command before it is fully executed. You can run `azd down` or delete the resources manually to avoid unnecessary spending.
 You will be prompted to select two locations, one for the majority of resources and one for the OpenAI resource, which is currently a short list. That location list is based on the OpenAI model availability table and may become outdated as availability changes.
 After the application has been successfully deployed you will see a URL printed to the console. Click that URL to interact with the application in your browser. It will look like the following:
