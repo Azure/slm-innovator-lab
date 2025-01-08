@@ -76,7 +76,7 @@ nodes:
 1. First of all, In order to get the endpoint information to create a connection, Navigate to the Azure Machine Learning workspace you created > Endpoints > Consume tab > Copy the REST endpoint and primary key as the authentication information.
 ![copy the REST endpoint and primary key](images/copy_endpoint_comsumption_info.jpg)
 
-2. Go back to Azure AI Foundry > Settings > Create a new connection to integrate with deployed fine-tuned phi3.5 endpoint. 
+2. Go back to Azure AI Foundry > Management center > Create a new connection to integrate with deployed fine-tuned phi3.5 endpoint. 
 ![create a new connection](images/create_new_connection.jpg)
 
 3. Select the connection type as Custom keys and put the connection information 
