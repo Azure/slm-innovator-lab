@@ -44,20 +44,20 @@ exclude:
     - 1_synthetic-qa-generation/glan-instruct/README_ja.md
     - 2_slm-fine-tuning-mlstudio/README_ja.md
     - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
-    - 3_llmops-aistudio/README_ja.md
-    - 3_llmops-aistudio/3_1_setup-ai-studio/README_ja.md
-    - 3_llmops-aistudio/3_2_prototyping/README_ja.md
-    - 3_llmops-aistudio/3_2_prototyping/lab3.2_promptflow_ko.md
-    - 3_llmops-aistudio/3_2_prototyping/lab3.2.1_promptflow_ja.md
-    - 3_llmops-aistudio/3_2_prototyping/lab3.2.2_promptflow_ja.md
-    - 3_llmops-aistudio/3_2_prototyping/lab3.2.3_promptflow_with_code_ja.md
-    - 3_llmops-aistudio/3_3_optimizing/README_ja.md
-    - 3_llmops-aistudio/3_3_optimizing/lab3.3_evaluation_ja.md
-    - 3_llmops-aistudio/3_3_optimizing/lab3.3_evaluation_with_code_ja.md
-    - 3_llmops-aistudio/3_3_optimizing/lab3.3_evaluation_ko.md
-    - 3_llmops-aistudio/3_4_operationalizing/README_ja.md
-    - 3_llmops-aistudio/3_4_operationalizing/lab3.4_contentfilter_ja.md
-    - 3_llmops-aistudio/3_4_operationalizing/lab3.4_contentfilter_ko.md
+    - 3_llmops-aifoundry/README_ja.md
+    - 3_llmops-aifoundry/3_1_setup-ai-studio/README_ja.md
+    - 3_llmops-aifoundry/3_2_prototyping/README_ja.md
+    - 3_llmops-aifoundry/3_2_prototyping/lab3.2_promptflow_ko.md
+    - 3_llmops-aifoundry/3_2_prototyping/lab3.2.1_promptflow_ja.md
+    - 3_llmops-aifoundry/3_2_prototyping/lab3.2.2_promptflow_ja.md
+    - 3_llmops-aifoundry/3_2_prototyping/lab3.2.3_promptflow_with_code_ja.md
+    - 3_llmops-aifoundry/3_3_optimizing/README_ja.md
+    - 3_llmops-aifoundry/3_3_optimizing/lab3.3_evaluation_ja.md
+    - 3_llmops-aifoundry/3_3_optimizing/lab3.3_evaluation_with_code_ja.md
+    - 3_llmops-aifoundry/3_3_optimizing/lab3.3_evaluation_ko.md
+    - 3_llmops-aifoundry/3_4_operationalizing/README_ja.md
+    - 3_llmops-aifoundry/3_4_operationalizing/lab3.4_contentfilter_ja.md
+    - 3_llmops-aifoundry/3_4_operationalizing/lab3.4_contentfilter_ko.md
 
 # By default, all Capital letters come before all lowercase letters;
 # you can add nav_sort: case_insensitive in the configuration file to ignore the case.
