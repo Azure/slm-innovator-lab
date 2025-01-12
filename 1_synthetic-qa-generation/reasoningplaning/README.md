@@ -1,4 +1,10 @@
-
+---
+layout: default
+title: GLAN
+permalink: /1_4_reasoning-planning/
+parent: Lab 1. Generate Synthetic QnAs from Real-world Data
+nav_order: 4.4
+---
 
 # Synthetic Data for Training Your Own O1
 

@@ -18,7 +18,7 @@ For detailed workshop information, please see the hands-on guide at [this link](
 🔥 LLMOps with Promptflow Python SDK<br>
 In this hands-on, you will learn how to create a new flow, define the chat flow structure, and integrate the fine-tuned model endpoint using Python SDK. You will also learn how to compare and evaluate the model's performance using the flows. This is in addition to the hands-on that was previously available based on the Azure AI Foundry UI. 
 <br>
-<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_2_prototyping/promptflow_with_code.ipynb">Go to notebook</a>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aifoundry/3_2_prototyping/promptflow_with_code.ipynb">Go to notebook</a>
 <br><br>
 🔥 Microsoft Olive model optimization <br>
 Microsoft Olive is a hardware-aware AI model optimization toolchain developed by Microsoft to streamline the deployment of AI models. Olive simplifies the process of preparing AI models for deployment by making them faster and more efficient, particularly for use on edge devices, cloud, and various hardware configurations. This hands-on considers on-device or hybrid deployment scenarios.
@@ -28,7 +28,7 @@ Microsoft Olive is a hardware-aware AI model optimization toolchain developed by
 🔥 Content Safety with Python SDK<br>
 In this hands-on, you will be able to: manage text blocklist, analyze text and images for sexual content, violence, hate, and self-harm with multi-severity levels. You will also learn how to integrate with Azure Open AI Service: Use the Azure Open AI Service to rewrite the content for harmful content.
 <br>
-<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_4_operationalizing/contentsafety_with_code_en.ipynb">Go to notebook</a>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aifoundry/3_4_operationalizing/contentsafety_with_code_en.ipynb">Go to notebook</a>
 
 ## Requirements
 Before starting, you should meet the following requirements:
@@ -76,7 +76,7 @@ This workshop assumes that you are configuring in a public environment and you h
 
 ### [Lab 1. Data preparation](1_synthetic-qa-generation)
 ### [Lab 2. LLM fine-tuning and serving](2_slm-fine-tuning-mlstudio)
-### [Lab 3. LLMOps](3_llmops-aistudio)
+### [Lab 3. LLMOps](3_llmops-aifoundry)
 
 ## References
 
@@ -142,7 +142,7 @@ This sample code is provided under the MIT-0 license. See the LICENSE file.
 [GenAI ecosystem in Azure]: https://azure.microsoft.com/en-us/products/machine-learning/generative-ai
 [Lab 1. Data preparation]: https://azure.github.io/slm-innovator-lab/1_synthetic_data/
 [Lab 2. Fine-tuning and serving]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/
-[Lab 3. LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aistudio/README.html
+[Lab 3. LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aifoundry/README.html
 [Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
 [Standard_E2as_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/easv4-series
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic

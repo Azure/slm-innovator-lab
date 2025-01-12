@@ -116,7 +116,7 @@ Before starting, you have met the following requirements:
 [Lab 0. Requirements (Skip if you have already set up)]: https://azure.github.io/slm-innovator-lab/0_lab_preparation/README.html
 [Lab 1. Data preparation]: https://azure.github.io/slm-innovator-lab/1_synthetic_data/
 [Lab 2. Fine-tuning and serving]: https://azure.github.io/slm-innovator-lab/2_fine-tuning/
-[Lab 3. LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aistudio/README.html
+[Lab 3. LLMOps]: https://azure.github.io/slm-innovator-lab/3_llmops-aifoundry/README.html
 [Standard_DS11_v2]: https://learn.microsoft.com/azure/virtual-machines/sizes/memory-optimized/dv2-dsv2-series-memory
 [Standard_NC24ads_A100_v4]: https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nca100v4-series?tabs=sizebasic
 [Standard_NC6s_v3]: https://learn.microsoft.com/azure/virtual-machines/sizes/gpu-accelerated/ncv3-series?tabs=sizebasic
