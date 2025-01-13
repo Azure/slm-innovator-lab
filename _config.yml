@@ -45,7 +45,7 @@ exclude:
     - 2_slm-fine-tuning-mlstudio/README_ja.md
     - 2_slm-fine-tuning-mlstudio/phi3/dataset-preparation/
     - 3_llmops-aifoundry/README_ja.md
-    - 3_llmops-aifoundry/3_1_setup-ai-aifoundry/README_ja.md
+    - 3_llmops-aifoundry/3_1_setup-aifoundry/README_ja.md
     - 3_llmops-aifoundry/3_2_prototyping/README_ja.md
     - 3_llmops-aifoundry/3_2_prototyping/lab3.2_promptflow_ko.md
     - 3_llmops-aifoundry/3_2_prototyping/lab3.2.1_promptflow_ja.md
