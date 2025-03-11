@@ -22,7 +22,7 @@ pymupdf==1.24.12
 Jinja2==3.1.5
 jsonlines==4.0.0
 promptflow[azure]==1.16.1
-promptflow-tools==1.4.0
+promptflow-tools==1.6.0
 azure-ai-contentsafety==1.0.0
 einops==0.8.0
 onnx>=1.15.0
