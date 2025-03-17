@@ -28,7 +28,7 @@ nav_order: 5
     pip install -r requirements.txt
     ```
 3. 目的のユースケースに使用するモデルを選択します。
-    - [Phi-3、Phi-3.5](phi3)
+    - [Phi-3-mini, Phi-3.5-mini, Phi-4-mini](phi3)
         - [Option 1.MLフロー] それぞれ Run [`1_training_mlflow.ipynb`](phi3/1_training_mlflow.ipynb) と [`2_serving.ipynb`](phi3/2_serving.ipynb)を実行します。
         - [Option 2.Custom] それぞれ Run [`1_training_custom.ipynb`](phi3/1_training_custom.ipynb) と [`2_serving.ipynb`](phi3/2_serving.ipynb)を実行します。
         - *(オプション)* LLM データセットの前処理に関心がある場合は、フォルダ内のハンズオンを参照してください `phi3/dataset-preparation` 。
