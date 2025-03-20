@@ -28,3 +28,5 @@ serve:
     azure_endpoint_name: "phi4-endpoint-2025-03-17"
     azure_deployment_name: "phi4-blue"
     azure_serving_cluster_size: "Standard_NC24ads_A100_v4"
+    port: 8000
+    engine: "vllm" # "vllm" or "sglang" or "basic"
