@@ -2,6 +2,7 @@ config:
     AZURE_SUBSCRIPTION_ID: "<YOUR-SUBSCRIPTION-ID>" # Please modify to your subscription
     AZURE_RESOURCE_GROUP: "<YOUR-RESOURCE-GROUP>" # Please modify to your Azure resource group
     AZURE_WORKSPACE: "<YOUR-AZURE-WORKSPACE>" # Please modify to your Azure workspace
+    HF_TOKEN: "" # Please modify to your Hugging Face token
     AZURE_DATA_NAME: "hf-ultrachat" # Please modify to your AzureML data name
     DATA_DIR: "./dataset"
     CLOUD_DIR: "./cloud"
@@ -22,8 +23,8 @@ train:
     wandb_run_name: ""
 
 serve:
-    azure_env_name: "llm-serving-2025-03-17" # Please modify to your AzureML env name
+    azure_env_name: "llm-serving-vllm-2025-01-28" # Please modify to your AzureML env name
     azure_model_name: "phi4-finetune-2025-03-17" # Please modify to your AzureML model name
     azure_endpoint_name: "phi4-endpoint-2025-03-17"
     azure_deployment_name: "phi4-blue"
-    azure_serving_cluster_size: "Standard_NC6s_v3"
+    azure_serving_cluster_size: "Standard_NC24ads_A100_v4"

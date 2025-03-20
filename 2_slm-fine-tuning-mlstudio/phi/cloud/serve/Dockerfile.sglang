@@ -1,0 +1,9 @@
+FROM lmsysorg/sglang:latest
+
+ENV MODEL_NAME=microsoft/Phi-4-mini-instruct
+
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir sglang-router    
+
+EXPOSE 30010
+ENTRYPOINT python3 -m sglang.launch_server --model-path $MODEL_NAME --host 0.0.0.0 --port 30010 $SGLANG_ARGS

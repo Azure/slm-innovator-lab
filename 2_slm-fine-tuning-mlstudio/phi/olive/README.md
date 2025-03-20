@@ -16,6 +16,6 @@ Microsoft Olive is a hardware-aware AI model optimization toolchain developed by
 
 Key features of Microsoft Olive include:
 
-- Automated optimization: Olive analyzes and applies optimizations specific to the model’s hardware environment.
-- Cross-platform compatibility: It supports various platforms such as Windows, Linux, and different hardware architectures, including CPUs, GPUs, and specialized AI accelerators.
-- Integration with Microsoft tools: Olive is designed to work seamlessly with Microsoft AI services like Azure, making it easier to deploy optimized models in cloud-based solutions.
+- **Automated optimization**: Olive analyzes and applies optimizations specific to the model’s hardware environment.
+- **Cross-platform compatibility**: It supports various platforms such as Windows, Linux, and different hardware architectures, including CPUs, GPUs, and specialized AI *accelerators.
+- **Integration with Microsoft tools**: Olive is designed to work seamlessly with Microsoft AI services like Azure, making it easier to deploy optimized models in cloud-based solutions.

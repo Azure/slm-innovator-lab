@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
+title: Lab 2. SLM/LLM Fine-tuning on Azure ML
 permalink: /2_fine-tuning/
 has_children: true
 nav_order: 5
@@ -8,7 +8,7 @@ nav_order: 5
 
 [English](README.md)
 
-# Lab 2. SLM/LLM Fine-tuning on Azure ML Studio
+# Lab 2. SLM/LLM Fine-tuning on Azure ML
 {: .no_toc }
 
 ## 目次
@@ -28,9 +28,9 @@ nav_order: 5
     pip install -r requirements.txt
     ```
 3. 目的のユースケースに使用するモデルを選択します。
-    - [Phi-3-mini, Phi-3.5-mini, Phi-4-mini](phi3)
-        - [Option 1.MLフロー] それぞれ Run [`1_training_mlflow.ipynb`](phi3/1_training_mlflow.ipynb) と [`2_serving.ipynb`](phi3/2_serving.ipynb)を実行します。
-        - [Option 2.Custom] それぞれ Run [`1_training_custom.ipynb`](phi3/1_training_custom.ipynb) と [`2_serving.ipynb`](phi3/2_serving.ipynb)を実行します。
+    - [Phi variants (e.g., Phi-4-mini, Phi-3.5-mini, Phi-3-mini)](phi)
+        - [Option 1.MLフロー] それぞれ Run [`1_training_mlflow.ipynb`](phi3/1_training_mlflow.ipynb) と [`2_serving_llm_phi.ipynb`](phi/2_serving_llm_phi.ipynb)を実行します。
+        - [Option 2.Custom] それぞれ Run [`1_training_custom.ipynb`](phi3/1_training_custom.ipynb) と [`2_serving_llm_phi.ipynb`](phi/2_serving_llm_phi.ipynb)を実行します。
         - *(オプション)* LLM データセットの前処理に関心がある場合は、フォルダ内のハンズオンを参照してください `phi3/dataset-preparation` 。
     - [Florence2-VQA](florence2-VQA)
         - それぞれ Run [`1_training_mlflow.ipynb`](florence2-VQA/1_training_mlflow.ipynb) と [`2_serving.ipynb`](florence2-VQA/2_serving.ipynb)を実行します。
