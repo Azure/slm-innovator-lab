@@ -13,7 +13,7 @@ MarkupSafe==3.0.2
 regex
 pybind11
 bitsandbytes==0.45.3
-transformers==4.49.0
+transformers==4.53.0
 peft~=0.14.0
 accelerate~=1.5.2
 datasets==3.4.0
