@@ -6,7 +6,7 @@ azureml-metrics[text]==0.0.70
 mltable==1.6.1
 mpi4py==4.0.3
 sentencepiece==0.2.0
-transformers==4.49.0
+transformers==4.53.0
 datasets==3.4.0
 accelerate~=1.5.2
 diffusers==0.32.2
