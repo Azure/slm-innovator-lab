@@ -15,7 +15,7 @@ rouge-score==0.1.2
 sacrebleu==2.5.1
 bitsandbytes==0.45.3
 einops==0.8.1
-aiohttp==3.10.11
+aiohttp==3.13.3
 peft~=0.14.0
 deepspeed==0.16.4
 trl==0.15.2
