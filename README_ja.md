@@ -8,7 +8,7 @@ Azure AI/ML Platform を基盤とする SLM Innovator Lab で、AI プロジェ�
 
 1. 1日ワークショップ(お客様により異なる4〜7時間) / LLMOpsハンズオンによる2日ワークショップ
 2. ハッカソンスターターコード
-3. SLMのfine-tuning&serving PoC/Prototypeのリファレンスガイド
+3. SLM のファインチューニングおよびサービングに関する PoC（概念実証）やプロトタイプ作成のリファレンスガイド
 
 ハンズオンガイド:https://azure.github.io/slm-innovator-lab/
 
@@ -16,12 +16,12 @@ Azure AI/ML Platform を基盤とする SLM Innovator Lab で、AI プロジェ�
  LLMOpsとpromptflow python SDK<br>
 このハンズオンでは、Python SDK を使用して、新しいフローを作成し、チャット フロー構造を定義し、微調整されたモデル エンドポイントを統合する方法を学習します。また、フローを使用してモデルのパフォーマンスを比較および評価する方法についても学習します。これは、以前に Azure AI Foundry UI に基づいて利用可能だったハンズオンに追加されるものです。
 <br>
-<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_2_prototyping/promptflow_with_code.ipynb">ノートブックに移動します</a>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/3_llmops-aistudio/3_2_prototyping/promptflow_with_code.ipynb">ノートブックに移動</a>
 <br><br>
  Microsoft Olive モデルの最適化 <br>
 Microsoft Olive は、AI モデルのデプロイを効率化するために Microsoft が開発したハードウェア対応の AI モデル最適化ツールチェーンです。オリーブは、特にエッジデバイス、クラウド、およびさまざまなハードウェア構成で使用するために、AIモデルをより速く、より効率的にすることで、デプロイ用のAIモデルを準備するプロセスを簡素化します。このハンズオンでは、デバイス上またはハイブリッドのデプロイ シナリオを検討します。
 <br>
-<a href="https://github.com/Azure/slm-innovator-lab/blob/main/2_slm-fine-tuning-mlstudio/phi3/3_optimization_olive.ipynb">ノートブックに移動します</a>
+<a href="https://github.com/Azure/slm-innovator-lab/blob/main/2_slm-fine-tuning-mlstudio/phi3/3_optimization_olive.ipynb">ノートブックに移動</a>
 <br><br>
  Python SDK<br> によるコンテンツの安全性
 このハンズオンでは、テキストブロックリストの管理、性的なコンテンツ、暴力、憎悪、自傷行為に関するテキストと画像の分析を、複数の深刻度レベルで行うことができます。また、Azure Open AI Service と統合する方法についても学習します: Azure Open AI Service を使用して、有害なコンテンツに対してコンテンツを書き換えます。
@@ -32,13 +32,13 @@ Microsoft Olive は、AI モデルのデプロイを効率化するために Mic
 開始する前に、次の要件を満たす必要があります。
 
 - [Azure OpenAI Service へのアクセス](https://go.microsoft.com/fwlink/?linkid=2222006)
-- [Azure ML の概要](https://github.com/Azure/azureml-examples/tree/main/tutorials): [Azure ML] ワークスペースに接続し<WORKSPACE_NAME>、. <RESOURCE_GROUP> <SUBSCRIPTION_ID>
+- [Azure ML の概要](https://github.com/Azure/azureml-examples/tree/main/tutorials): [Azure ML] ワークスペースに接続し、<WORKSPACE_NAME>、<RESOURCE_GROUP>、<SUBSCRIPTION_ID> を取得してください。
 - [Azure AI Foundry の概要](https://int.ai.azure.com/explore/gettingstarted): プロジェクトを作成する
 - [Azure AI ドキュメント インテリジェンス (v4.0 - 2024-02-29 プレビュー)](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0)
 
-- ***[Computing Instance - コード開発用]*** GPU を使用しないローエンド インスタンスをお勧めします: **[Standard_E2as_v4]** (AMD 2 コア、16 GB RAM、32 GB ストレージ) または **[Standard_DS11_v2]** (Intel 2 コア、14 GB RAM、28 GB ストレージ、GPU なし)  
-- ***[Computing Cluster - SLM/LLM の微調整用]*** 単一の NVIDIA A100 GPU ノード (**[Standard_NC24ads_A100_v4]**) をお勧めします。専用のクォータがない場合、または予算が限られている場合は、**[低優先度 VM]** を選択します。
-- ***[SLM/LLM の展開]*** 2 つの NVIDIA V100 GPU (**[Standard_NC6s_v3]**) または 2 つの NVIDIA A100 GPU (**[Standard_NC24ads_A100_v4]**) をお勧めします。 
+- ***[コンピューティング インスタンス - コード開発用]*** GPU を使用しないローエンド インスタンスをお勧めします: **[Standard_E2as_v4]** (AMD 2 コア、16 GB RAM、32 GB ストレージ) または **[Standard_DS11_v2]** (Intel 2 コア、14 GB RAM、28 GB ストレージ、GPU なし)  
+- ***[コンピューティング クラスター - SLM/LLM の微調整 (ファインチューニング) 用]*** 単一の NVIDIA A100 GPU ノード (**[Standard_NC24ads_A100_v4]**) をお勧めします。専用のクォータがない場合、または予算が限られている場合は、**[低優先度 VM]** を選択します。
+- ***[SLM/LLM のデプロイ]*** 2 つの NVIDIA V100 GPU (**[Standard_NC6s_v3]**) または 2 つの NVIDIA A100 GPU (**[Standard_NC24ads_A100_v4]**) をお勧めします。 
 
 **Note**
 管理されたオンライン エンドポイントの場合、 [Azure ML では、デプロイのクォータの 20% が予約されています].[^1] デプロイ内の VM SKU に対して特定の数のインスタンスをリクエストする場合は、 `ceil(1.2 × number of instances requested for deployment) × number of cores for the VM SKU` エラーが発生しないように、使用可能なクォータが必要です。たとえば、 `Standard_NC6s_v3` デプロイで VM (6 コアが付属) の 1 つのインスタンスを要求する場合、12 コア (ceil(1.2 × 1 インスタンス) = 2, 2 × 6 コア) のクォータが使用可能である必要があります。  
