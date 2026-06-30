@@ -96,7 +96,7 @@ fine-tuning/RAG(Retrieval-Augmented Generation)によりモデルの性能向上
 ![図1](./imgs/diagram1.png)
 
 与えられた生データを、Azure OpenAI GPT-4o を使用したモデルのトレーニング/RAG/評価に使用できるデータに変換します。 `make_qa_multimodal_pdf_docai.ipynb`が最も推奨されます。 ただし、このコードのロジックが複雑だと感じた場合や、ファイルの内容が画像やテキストのみで構成されている場合は、まず他の Jupyter Notebook を試してみてください。
-Jupyter ノートブックを **[seed](seed)** フォルダーで実行します。 
+Jupyter Notebookを **[seed](seed)** フォルダーで実行します。 
 
 #### PDFで見る
 - `make_qa_multimodal_pdf_docai.ipynb`: (推奨) Azure AI Document Intelligence を使用して、複雑な PDF から QnA 合成データセットを生成します。
